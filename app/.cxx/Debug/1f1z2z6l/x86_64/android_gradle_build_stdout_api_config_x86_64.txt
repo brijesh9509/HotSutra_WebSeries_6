@@ -1,0 +1,3 @@
+ninja: Entering directory `F:\AndroidStudioProjects\QfonApp\HotSutra_WebSeries_5\app\.cxx\Debug\1f1z2z6l\x86_64'
+[1/2] Building CXX object CMakeFiles/api_config.dir/api_config.cpp.o
+[2/2] Linking CXX shared library F:\AndroidStudioProjects\QfonApp\HotSutra_WebSeries_5\app\build\intermediates\cxx\Debug\1f1z2z6l\obj\x86_64\libapi_config.so

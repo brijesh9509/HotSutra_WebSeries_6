@@ -1,0 +1,23 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android.datatransport:transport-runtime:3.1.6@aar">
+    <CLASSES>
+      <root url="jar://E:/AndroidGradle/caches/transforms-3/4c8b6e6d55e0be036b15e5e94487610c/transformed/jetified-transport-runtime-3.1.6/jars/classes.jar!/" />
+      <root url="file://E:/AndroidGradle/caches/transforms-3/4c8b6e6d55e0be036b15e5e94487610c/transformed/jetified-transport-runtime-3.1.6/res" />
+      <root url="file://E:/AndroidGradle/caches/transforms-3/4c8b6e6d55e0be036b15e5e94487610c/transformed/jetified-transport-runtime-3.1.6/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/4c8b6e6d55e0be036b15e5e94487610c/transformed/jetified-transport-runtime-3.1.6/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/4ff6415e9f00b71403813d7e7e20805a/transformed/jetified-transport-runtime-3.1.6/res" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/4ff6415e9f00b71403813d7e7e20805a/transformed/jetified-transport-runtime-3.1.6/res" />
+      <root url="jar://E:/AndroidGradle/caches/transforms-3/c3118acb31500f1de73b2cdf56ff90b8/transformed/jetified-transport-runtime-3.1.6/jars/classes.jar!/" />
+      <root url="file://E:/AndroidGradle/caches/transforms-3/c3118acb31500f1de73b2cdf56ff90b8/transformed/jetified-transport-runtime-3.1.6/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/c3118acb31500f1de73b2cdf56ff90b8/transformed/jetified-transport-runtime-3.1.6/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/c3118acb31500f1de73b2cdf56ff90b8/transformed/jetified-transport-runtime-3.1.6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c3118acb31500f1de73b2cdf56ff90b8/transformed/jetified-transport-runtime-3.1.6/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/c3118acb31500f1de73b2cdf56ff90b8/transformed/jetified-transport-runtime-3.1.6/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://E:/AndroidGradle/caches/modules-2/files-2.1/com.google.android.datatransport/transport-runtime/3.1.6/f1e65f42c5aea6a698c7b4cbe4904ca1e1e040a4/transport-runtime-3.1.6-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.datatransport/transport-runtime/3.1.6/f1e65f42c5aea6a698c7b4cbe4904ca1e1e040a4/transport-runtime-3.1.6-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

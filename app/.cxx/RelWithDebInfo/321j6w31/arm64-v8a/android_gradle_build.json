@@ -1,0 +1,40 @@
+{
+  "stringTable": {},
+  "buildFiles": [
+    "F:\\AndroidStudioProjects\\QfonApp\\HotSutra_WebSeries\\app\\src\\main\\jni\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "F:\\AndroidSDK\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+      "-C",
+      "F:\\AndroidStudioProjects\\QfonApp\\HotSutra_WebSeries\\app\\.cxx\\RelWithDebInfo\\321j6w31\\arm64-v8a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "F:\\AndroidSDK\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+    "-C",
+    "F:\\AndroidStudioProjects\\QfonApp\\HotSutra_WebSeries\\app\\.cxx\\RelWithDebInfo\\321j6w31\\arm64-v8a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "api_config-RelWithDebInfo-arm64-v8a": {
+      "buildCommandComponents": [
+        "F:\\AndroidSDK\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+        "-C",
+        "F:\\AndroidStudioProjects\\QfonApp\\HotSutra_WebSeries\\app\\.cxx\\RelWithDebInfo\\321j6w31\\arm64-v8a",
+        "api_config"
+      ],
+      "buildType": "release",
+      "abi": "arm64-v8a",
+      "artifactName": "api_config",
+      "output": "F:\\AndroidStudioProjects\\QfonApp\\HotSutra_WebSeries\\app\\build\\intermediates\\cxx\\RelWithDebInfo\\321j6w31\\obj\\arm64-v8a\\libapi_config.so",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {},
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

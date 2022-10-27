@@ -1,0 +1,5 @@
+# ninja log v5
+0	9	0	clean	bf7f04d26f8701e0
+1	31	0	clean	bf7f04d26f8701e0
+40	4500	683065515	CMakeFiles/api_config.dir/api_config.cpp.o	140efe0af031405d
+4503	5878	683065517	F:/AndroidStudioProjects/QfonApp/HotSutra_WebSeries_3/app/build/intermediates/cxx/Debug/3u564d13/obj/x86/libapi_config.so	91cd86a94df5a14e

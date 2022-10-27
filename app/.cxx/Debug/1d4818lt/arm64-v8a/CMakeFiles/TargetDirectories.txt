@@ -1,0 +1,3 @@
+F:/AndroidNative/BGD/HotSutra_WebSeries/app/.cxx/Debug/1d4818lt/arm64-v8a/CMakeFiles/api_config.dir
+F:/AndroidNative/BGD/HotSutra_WebSeries/app/.cxx/Debug/1d4818lt/arm64-v8a/CMakeFiles/edit_cache.dir
+F:/AndroidNative/BGD/HotSutra_WebSeries/app/.cxx/Debug/1d4818lt/arm64-v8a/CMakeFiles/rebuild_cache.dir

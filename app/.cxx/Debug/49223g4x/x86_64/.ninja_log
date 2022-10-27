@@ -1,0 +1,10 @@
+# ninja log v5
+0	814	678815967	CMakeFiles/api_config.dir/api_config.cpp.o	a737046f17cfb980
+816	1014	678815967	F:/AndroidNative/BGD/HotSutra_WebSeries_3/app/build/intermediates/cxx/Debug/49223g4x/obj/x86_64/libapi_config.so	616fc84123489c26
+0	11	0	clean	6f45ba1bad46d958
+45	5427	679239415	CMakeFiles/api_config.dir/api_config.cpp.o	a737046f17cfb980
+5427	6407	679239416	F:/AndroidNative/BGD/HotSutra_WebSeries_3/app/build/intermediates/cxx/Debug/49223g4x/obj/x86_64/libapi_config.so	616fc84123489c26
+0	10	0	clean	6f45ba1bad46d958
+6	1444	679239670	CMakeFiles/api_config.dir/api_config.cpp.o	a737046f17cfb980
+1444	2222	679239671	F:/AndroidNative/BGD/HotSutra_WebSeries_3/app/build/intermediates/cxx/Debug/49223g4x/obj/x86_64/libapi_config.so	616fc84123489c26
+0	14	0	clean	6f45ba1bad46d958

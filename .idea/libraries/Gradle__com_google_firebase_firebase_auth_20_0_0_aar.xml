@@ -1,0 +1,33 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.firebase:firebase-auth:20.0.0@aar">
+    <CLASSES>
+      <root url="file://D:/AndroidGradle/caches/transforms-3/2572d475d957e98779d0e87197e99b94/transformed/jetified-firebase-auth-20.0.0/res" />
+      <root url="file://D:/AndroidGradle/caches/transforms-3/2d951a283eb19bcee0d438a0d27bd60a/transformed/jetified-firebase-auth-20.0.0/res" />
+      <root url="file://D:/AndroidGradle/caches/transforms-3/c2c664121a51e4ecfcae83062ee721a9/transformed/jetified-firebase-auth-20.0.0/res" />
+      <root url="file://D:/AndroidGradle/caches/transforms-3/c2c664121a51e4ecfcae83062ee721a9/transformed/jetified-firebase-auth-20.0.0/AndroidManifest.xml" />
+      <root url="jar://D:/AndroidGradle/caches/transforms-3/c2c664121a51e4ecfcae83062ee721a9/transformed/jetified-firebase-auth-20.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c2c664121a51e4ecfcae83062ee721a9/transformed/jetified-firebase-auth-20.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c2c664121a51e4ecfcae83062ee721a9/transformed/jetified-firebase-auth-20.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/c2c664121a51e4ecfcae83062ee721a9/transformed/jetified-firebase-auth-20.0.0/jars/classes.jar!/" />
+      <root url="file://E:/AndroidGradle/caches/transforms-3/c2c664121a51e4ecfcae83062ee721a9/transformed/jetified-firebase-auth-20.0.0/res" />
+      <root url="file://E:/AndroidGradle/caches/transforms-3/3d70ba7d1988c306d96b7da32b38efd6/transformed/jetified-firebase-auth-20.0.0/res" />
+      <root url="file://E:/AndroidGradle/caches/transforms-3/3d70ba7d1988c306d96b7da32b38efd6/transformed/jetified-firebase-auth-20.0.0/AndroidManifest.xml" />
+      <root url="jar://E:/AndroidGradle/caches/transforms-3/3d70ba7d1988c306d96b7da32b38efd6/transformed/jetified-firebase-auth-20.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3d70ba7d1988c306d96b7da32b38efd6/transformed/jetified-firebase-auth-20.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7adb59895fdfae8e140b6d22933e1fa2/transformed/jetified-firebase-auth-20.0.0/res" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/7adb59895fdfae8e140b6d22933e1fa2/transformed/jetified-firebase-auth-20.0.0/res" />
+      <root url="file://E:/AndroidGradle/caches/transforms-3/aea9d990e79e8f18adb7cbaaa01d9e01/transformed/jetified-firebase-auth-20.0.0/AndroidManifest.xml" />
+      <root url="jar://E:/AndroidGradle/caches/transforms-3/aea9d990e79e8f18adb7cbaaa01d9e01/transformed/jetified-firebase-auth-20.0.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/aea9d990e79e8f18adb7cbaaa01d9e01/transformed/jetified-firebase-auth-20.0.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/aea9d990e79e8f18adb7cbaaa01d9e01/transformed/jetified-firebase-auth-20.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/aea9d990e79e8f18adb7cbaaa01d9e01/transformed/jetified-firebase-auth-20.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/aea9d990e79e8f18adb7cbaaa01d9e01/transformed/jetified-firebase-auth-20.0.0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/AndroidGradle/caches/modules-2/files-2.1/com.google.firebase/firebase-auth/20.0.0/480f5e9265c83c513b61ae49b12c5d607e80694e/firebase-auth-20.0.0-javadoc.jar!/" />
+      <root url="jar://E:/AndroidGradle/caches/modules-2/files-2.1/com.google.firebase/firebase-auth/20.0.0/480f5e9265c83c513b61ae49b12c5d607e80694e/firebase-auth-20.0.0-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.firebase/firebase-auth/20.0.0/480f5e9265c83c513b61ae49b12c5d607e80694e/firebase-auth-20.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

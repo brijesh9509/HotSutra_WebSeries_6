@@ -1,0 +1,2 @@
+ninja: Entering directory `E:\ANDROID_NATIVE\BGD\Hot-Sutra-06-04-2022\app\.cxx\RelWithDebInfo\2f28p391\arm64-v8a'
+ninja: no work to do.

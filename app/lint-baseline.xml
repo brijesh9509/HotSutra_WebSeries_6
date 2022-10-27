@@ -1,0 +1,2094 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="6" by="lint 7.2.1" type="baseline" client="gradle" dependencies="false" name="AGP (7.2.1)" variant="fatal" version="7.2.1">
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerView.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/nav_fragments/CountryFragment.java"
+            line="109"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        rvComment.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="468"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        rvComment.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="468"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        rvComment.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="468"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        rvComment.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="468"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        rvComment.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="468"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        rvComment.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="468"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        rvComment.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="468"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        rvComment.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="468"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        rvComment.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="468"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        rvComment.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="468"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        rvComment.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="468"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        rvComment.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="468"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        internalServerRv.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1174"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        internalServerRv.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1174"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        externalServerRv.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1179"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        externalServerRv.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1179"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        serverRv.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1194"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                rvRelated.setHasFixedSize(true);"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1501"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                rvRelated.setHasFixedSize(true);"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1501"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                rvRelated.setHasFixedSize(true);"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1501"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                rvRelated.setHasFixedSize(true);"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1501"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                rvRelated.setHasFixedSize(true);"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1501"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                rvRelated.setHasFixedSize(true);"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1501"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                rvRelated.setHasFixedSize(true);"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1501"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                rvRelated.setHasFixedSize(true);"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1501"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                rvRelated.setHasFixedSize(true);"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1501"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                rvRelated.setHasFixedSize(true);"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1501"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                rvRelated.setHasFixedSize(true);"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1501"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                rvRelated.setHasFixedSize(true);"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1501"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                    castRv.setHasFixedSize(true);"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1523"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                    castRv.setHasFixedSize(true);"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1523"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                    castRv.setHasFixedSize(true);"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1523"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                    castRv.setHasFixedSize(true);"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1523"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                    castRv.setHasFixedSize(true);"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1523"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                    castRv.setHasFixedSize(true);"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1523"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                    castRv.setHasFixedSize(true);"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1523"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                    castRv.setHasFixedSize(true);"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1523"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                    castRv.setHasFixedSize(true);"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1523"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                    castRv.setHasFixedSize(true);"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1523"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                    castRv.setHasFixedSize(true);"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1523"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                    castRv.setHasFixedSize(true);"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1523"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                    castRv.setHasFixedSize(true);"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1544"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                    castRv.setHasFixedSize(true);"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1544"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                    castRv.setHasFixedSize(true);"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1544"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                    castRv.setHasFixedSize(true);"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1544"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                    castRv.setHasFixedSize(true);"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1544"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                    castRv.setHasFixedSize(true);"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1544"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                    castRv.setHasFixedSize(true);"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1544"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                    castRv.setHasFixedSize(true);"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1544"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                    castRv.setHasFixedSize(true);"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1544"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                    castRv.setHasFixedSize(true);"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1544"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                    castRv.setHasFixedSize(true);"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1544"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                    castRv.setHasFixedSize(true);"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1544"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                programRv.setHasFixedSize(true);"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1585"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                programRv.setHasFixedSize(true);"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1585"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                programRv.setHasFixedSize(true);"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1585"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                programRv.setHasFixedSize(true);"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1585"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                programRv.setHasFixedSize(true);"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1585"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                programRv.setHasFixedSize(true);"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1585"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                programRv.setHasFixedSize(true);"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1585"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                programRv.setHasFixedSize(true);"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1585"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                programRv.setHasFixedSize(true);"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1585"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                programRv.setHasFixedSize(true);"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1585"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                programRv.setHasFixedSize(true);"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1585"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                programRv.setHasFixedSize(true);"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1585"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                rvRelated.setHasFixedSize(true);"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1593"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                rvRelated.setHasFixedSize(true);"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1593"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                rvRelated.setHasFixedSize(true);"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1593"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                rvRelated.setHasFixedSize(true);"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1593"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                rvRelated.setHasFixedSize(true);"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1593"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                rvRelated.setHasFixedSize(true);"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1593"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                rvRelated.setHasFixedSize(true);"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1593"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                rvRelated.setHasFixedSize(true);"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1593"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                rvRelated.setHasFixedSize(true);"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1593"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                rvRelated.setHasFixedSize(true);"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1593"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                rvRelated.setHasFixedSize(true);"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1593"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                rvRelated.setHasFixedSize(true);"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1593"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                rvServerForTV.setHasFixedSize(true);"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1601"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                rvServerForTV.setHasFixedSize(true);"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1601"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                rvServerForTV.setHasFixedSize(true);"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1601"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                rvServerForTV.setHasFixedSize(true);"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1601"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                rvServerForTV.setHasFixedSize(true);"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1601"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                rvServerForTV.setHasFixedSize(true);"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1601"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                rvServerForTV.setHasFixedSize(true);"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1601"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                rvServerForTV.setHasFixedSize(true);"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1601"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                rvServerForTV.setHasFixedSize(true);"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1601"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                rvServerForTV.setHasFixedSize(true);"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1601"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                rvServerForTV.setHasFixedSize(true);"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1601"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                rvServerForTV.setHasFixedSize(true);"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="1601"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        liveChatRV.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="2093"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        liveChatRV.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="2093"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        liveChatRV.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="2093"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        liveChatRV.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="2093"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        liveChatRV.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="2093"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        liveChatRV.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="2093"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        liveChatRV.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="2093"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        liveChatRV.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="2093"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        liveChatRV.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="2093"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        liveChatRV.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="2093"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        liveChatRV.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="2093"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        liveChatRV.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DetailsActivity.java"
+            line="2093"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        downloadedFileRv.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DownloadActivity.java"
+            line="113"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        downloadedFileRv.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/DownloadActivity.java"
+            line="113"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerView.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/nav_fragments/FavoriteFragment.java"
+            line="132"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerView.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/nav_fragments/GenreFragment.java"
+            line="110"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                    recyclerViewContinueWatching.setHasFixedSize(true);"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="214"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                    recyclerViewContinueWatching.setHasFixedSize(true);"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="214"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                    recyclerViewContinueWatching.setHasFixedSize(true);"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="214"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                    recyclerViewContinueWatching.setHasFixedSize(true);"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="214"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                    recyclerViewContinueWatching.setHasFixedSize(true);"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="214"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                    recyclerViewContinueWatching.setHasFixedSize(true);"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="214"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                    recyclerViewContinueWatching.setHasFixedSize(true);"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="214"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="                    recyclerViewContinueWatching.setHasFixedSize(true);"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="214"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        genreRv.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="228"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        genreRv.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="228"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        genreRv.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="228"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        genreRv.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="228"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        genreRv.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="228"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        genreRv.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="228"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        genreRv.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="228"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        genreRv.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="228"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        countryRv.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="235"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        countryRv.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="235"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        countryRv.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="235"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        countryRv.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="235"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        countryRv.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="235"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        countryRv.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="235"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        countryRv.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="235"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        countryRv.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="235"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        popularStarsRv.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="242"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        popularStarsRv.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="242"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        popularStarsRv.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="242"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        popularStarsRv.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="242"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        popularStarsRv.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="242"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        popularStarsRv.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="242"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        popularStarsRv.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="242"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        popularStarsRv.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="242"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewTv.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="251"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewTv.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="251"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewTv.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="251"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewTv.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="251"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewTv.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="251"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewTv.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="251"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewTv.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="251"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewTv.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="251"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewMovie.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="259"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewMovie.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="259"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewMovie.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="259"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewMovie.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="259"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewMovie.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="259"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewMovie.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="259"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewMovie.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="259"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewMovie.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="259"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewTvSeries.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="267"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewTvSeries.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="267"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewTvSeries.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="267"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewTvSeries.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="267"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewTvSeries.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="267"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewTvSeries.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="267"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewTvSeries.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="267"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewTvSeries.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="267"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewGenre.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="275"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewGenre.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="275"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewGenre.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="275"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewGenre.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="275"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewGenre.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="275"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewGenre.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="275"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewGenre.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="275"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerViewGenre.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/HomeFragment.java"
+            line="275"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerView.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/ItemMovieActivity.java"
+            line="150"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerView.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/ItemSeriesActivity.java"
+            line="142"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerView.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/ItemTVActivity.java"
+            line="139"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="            holder.channelRv.setHasFixedSize(true);"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/adapters/LiveTvCategoryAdapter.java"
+            line="55"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerView.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/LiveTvFragment.java"
+            line="117"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerView.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/MainActivity.java"
+            line="183"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerView.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/MoviesFragment.java"
+            line="132"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        packageRv.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/PurchasePlanActivity.java"
+            line="124"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerView.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/ReplyActivity.java"
+            line="91"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        movieRv.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/SearchResultActivity.java"
+            line="134"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        movieRv.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/SearchResultActivity.java"
+            line="134"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        movieRv.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/SearchResultActivity.java"
+            line="134"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        tvRv.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/SearchResultActivity.java"
+            line="142"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        tvRv.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/SearchResultActivity.java"
+            line="142"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        tvRv.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/SearchResultActivity.java"
+            line="142"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        tvSeriesRv.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/SearchResultActivity.java"
+            line="148"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        tvSeriesRv.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/SearchResultActivity.java"
+            line="148"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        tvSeriesRv.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/SearchResultActivity.java"
+            line="148"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        mInactiveRv.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/SubscriptionActivity.java"
+            line="107"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerView.setHasFixedSize(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/app/hotsutra/fragments/TvSeriesFragment.java"
+            line="128"
+            column="9"/>
+    </issue>
+
+</issues>

@@ -1,0 +1,3 @@
+E:/ANDROID_NATIVE/BGD/Hot-Sutra-06-04-2022/app/.cxx/RelWithDebInfo/2f28p391/armeabi-v7a/CMakeFiles/api_config.dir
+E:/ANDROID_NATIVE/BGD/Hot-Sutra-06-04-2022/app/.cxx/RelWithDebInfo/2f28p391/armeabi-v7a/CMakeFiles/edit_cache.dir
+E:/ANDROID_NATIVE/BGD/Hot-Sutra-06-04-2022/app/.cxx/RelWithDebInfo/2f28p391/armeabi-v7a/CMakeFiles/rebuild_cache.dir

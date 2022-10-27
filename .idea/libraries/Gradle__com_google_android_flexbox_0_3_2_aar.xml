@@ -1,0 +1,54 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android:flexbox:0.3.2@aar">
+    <ANNOTATIONS>
+      <root url="jar://D:/AndroidGradle/caches/transforms-3/f470d168f9a28635034d2ecc15f0a028/transformed/jetified-flexbox-0.3.2/annotations.zip!/" />
+      <root url="jar://D:/AndroidGradle/caches/transforms-3/3edc3e1504d9898f01960b42477acac1/transformed/jetified-flexbox-0.3.2/annotations.zip!/" />
+      <root url="jar://D:/AndroidGradle/caches/transforms-3/44d4c48a6d2683faf4a7af55962243eb/transformed/jetified-flexbox-0.3.2/annotations.zip!/" />
+      <root url="jar://D:/AndroidGradle/caches/transforms-3/6c145b9f4de4752ef7f537508aba9f85/transformed/jetified-flexbox-0.3.2/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/fea373b232c6abca7b92bf1a5be6d404/transformed/jetified-flexbox-0.3.2/annotations.zip!/" />
+      <root url="jar://E:/AndroidGradle/caches/transforms-3/f4c49d4dc57813916bca78a653d1ba0f/transformed/jetified-flexbox-0.3.2/annotations.zip!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/587ffd2933b82e48e134c0e0fcfeb96c/transformed/jetified-flexbox-0.3.2/annotations.zip!/" />
+      <root url="jar://E:/AndroidGradle/caches/transforms-3/843b995722d7dc95eac4df623ae2a15c/transformed/jetified-flexbox-0.3.2/annotations.zip!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/843b995722d7dc95eac4df623ae2a15c/transformed/jetified-flexbox-0.3.2/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/843b995722d7dc95eac4df623ae2a15c/transformed/jetified-flexbox-0.3.2/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://D:/AndroidGradle/caches/transforms-3/f470d168f9a28635034d2ecc15f0a028/transformed/jetified-flexbox-0.3.2/jars/classes.jar!/" />
+      <root url="file://D:/AndroidGradle/caches/transforms-3/f470d168f9a28635034d2ecc15f0a028/transformed/jetified-flexbox-0.3.2/res" />
+      <root url="file://D:/AndroidGradle/caches/transforms-3/f470d168f9a28635034d2ecc15f0a028/transformed/jetified-flexbox-0.3.2/AndroidManifest.xml" />
+      <root url="file://D:/AndroidGradle/caches/transforms-3/3edc3e1504d9898f01960b42477acac1/transformed/jetified-flexbox-0.3.2/AndroidManifest.xml" />
+      <root url="jar://D:/AndroidGradle/caches/transforms-3/3edc3e1504d9898f01960b42477acac1/transformed/jetified-flexbox-0.3.2/jars/classes.jar!/" />
+      <root url="file://D:/AndroidGradle/caches/transforms-3/3edc3e1504d9898f01960b42477acac1/transformed/jetified-flexbox-0.3.2/res" />
+      <root url="jar://D:/AndroidGradle/caches/transforms-3/44d4c48a6d2683faf4a7af55962243eb/transformed/jetified-flexbox-0.3.2/jars/classes.jar!/" />
+      <root url="file://D:/AndroidGradle/caches/transforms-3/44d4c48a6d2683faf4a7af55962243eb/transformed/jetified-flexbox-0.3.2/AndroidManifest.xml" />
+      <root url="file://D:/AndroidGradle/caches/transforms-3/44d4c48a6d2683faf4a7af55962243eb/transformed/jetified-flexbox-0.3.2/res" />
+      <root url="file://D:/AndroidGradle/caches/transforms-3/6c145b9f4de4752ef7f537508aba9f85/transformed/jetified-flexbox-0.3.2/res" />
+      <root url="file://D:/AndroidGradle/caches/transforms-3/6c145b9f4de4752ef7f537508aba9f85/transformed/jetified-flexbox-0.3.2/AndroidManifest.xml" />
+      <root url="jar://D:/AndroidGradle/caches/transforms-3/6c145b9f4de4752ef7f537508aba9f85/transformed/jetified-flexbox-0.3.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/fea373b232c6abca7b92bf1a5be6d404/transformed/jetified-flexbox-0.3.2/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/fea373b232c6abca7b92bf1a5be6d404/transformed/jetified-flexbox-0.3.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/fea373b232c6abca7b92bf1a5be6d404/transformed/jetified-flexbox-0.3.2/res" />
+      <root url="jar://E:/AndroidGradle/caches/transforms-3/f4c49d4dc57813916bca78a653d1ba0f/transformed/jetified-flexbox-0.3.2/jars/classes.jar!/" />
+      <root url="file://E:/AndroidGradle/caches/transforms-3/f4c49d4dc57813916bca78a653d1ba0f/transformed/jetified-flexbox-0.3.2/res" />
+      <root url="file://E:/AndroidGradle/caches/transforms-3/f4c49d4dc57813916bca78a653d1ba0f/transformed/jetified-flexbox-0.3.2/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/587ffd2933b82e48e134c0e0fcfeb96c/transformed/jetified-flexbox-0.3.2/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/587ffd2933b82e48e134c0e0fcfeb96c/transformed/jetified-flexbox-0.3.2/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/587ffd2933b82e48e134c0e0fcfeb96c/transformed/jetified-flexbox-0.3.2/res" />
+      <root url="jar://E:/AndroidGradle/caches/transforms-3/843b995722d7dc95eac4df623ae2a15c/transformed/jetified-flexbox-0.3.2/jars/classes.jar!/" />
+      <root url="file://E:/AndroidGradle/caches/transforms-3/843b995722d7dc95eac4df623ae2a15c/transformed/jetified-flexbox-0.3.2/AndroidManifest.xml" />
+      <root url="file://E:/AndroidGradle/caches/transforms-3/843b995722d7dc95eac4df623ae2a15c/transformed/jetified-flexbox-0.3.2/res" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/843b995722d7dc95eac4df623ae2a15c/transformed/jetified-flexbox-0.3.2/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/843b995722d7dc95eac4df623ae2a15c/transformed/jetified-flexbox-0.3.2/res" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/843b995722d7dc95eac4df623ae2a15c/transformed/jetified-flexbox-0.3.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/843b995722d7dc95eac4df623ae2a15c/transformed/jetified-flexbox-0.3.2/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/843b995722d7dc95eac4df623ae2a15c/transformed/jetified-flexbox-0.3.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/843b995722d7dc95eac4df623ae2a15c/transformed/jetified-flexbox-0.3.2/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://D:/AndroidGradle/caches/modules-2/files-2.1/com.google.android/flexbox/0.3.2/8d8e90b2216eeeeb6bed4259dd3af97172c9bcd4/flexbox-0.3.2-sources.jar!/" />
+      <root url="jar://E:/AndroidGradle/caches/modules-2/files-2.1/com.google.android/flexbox/0.3.2/8d8e90b2216eeeeb6bed4259dd3af97172c9bcd4/flexbox-0.3.2-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android/flexbox/0.3.2/8d8e90b2216eeeeb6bed4259dd3af97172c9bcd4/flexbox-0.3.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

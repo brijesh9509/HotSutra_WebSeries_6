@@ -1,0 +1,38 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.browser:browser:1.0.0@aar">
+    <ANNOTATIONS>
+      <root url="jar://D:/AndroidGradle/caches/transforms-3/19bf50475d54026165c0a1e5e1ebeee4/transformed/browser-1.0.0/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/19bf50475d54026165c0a1e5e1ebeee4/transformed/browser-1.0.0/annotations.zip!/" />
+      <root url="jar://E:/AndroidGradle/caches/transforms-3/2e659769a878718d9b6ddd44eed5d657/transformed/browser-1.0.0/annotations.zip!/" />
+      <root url="jar://E:/AndroidGradle/caches/transforms-3/9858df127539dc5c65af58c8466d1b98/transformed/browser-1.0.0/annotations.zip!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/9858df127539dc5c65af58c8466d1b98/transformed/browser-1.0.0/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/9858df127539dc5c65af58c8466d1b98/transformed/browser-1.0.0/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://D:/AndroidGradle/caches/transforms-3/19bf50475d54026165c0a1e5e1ebeee4/transformed/browser-1.0.0/AndroidManifest.xml" />
+      <root url="file://D:/AndroidGradle/caches/transforms-3/19bf50475d54026165c0a1e5e1ebeee4/transformed/browser-1.0.0/res" />
+      <root url="jar://D:/AndroidGradle/caches/transforms-3/19bf50475d54026165c0a1e5e1ebeee4/transformed/browser-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/19bf50475d54026165c0a1e5e1ebeee4/transformed/browser-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/19bf50475d54026165c0a1e5e1ebeee4/transformed/browser-1.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/19bf50475d54026165c0a1e5e1ebeee4/transformed/browser-1.0.0/jars/classes.jar!/" />
+      <root url="jar://E:/AndroidGradle/caches/transforms-3/2e659769a878718d9b6ddd44eed5d657/transformed/browser-1.0.0/jars/classes.jar!/" />
+      <root url="file://E:/AndroidGradle/caches/transforms-3/2e659769a878718d9b6ddd44eed5d657/transformed/browser-1.0.0/AndroidManifest.xml" />
+      <root url="file://E:/AndroidGradle/caches/transforms-3/2e659769a878718d9b6ddd44eed5d657/transformed/browser-1.0.0/res" />
+      <root url="file://E:/AndroidGradle/caches/transforms-3/9858df127539dc5c65af58c8466d1b98/transformed/browser-1.0.0/AndroidManifest.xml" />
+      <root url="file://E:/AndroidGradle/caches/transforms-3/9858df127539dc5c65af58c8466d1b98/transformed/browser-1.0.0/res" />
+      <root url="jar://E:/AndroidGradle/caches/transforms-3/9858df127539dc5c65af58c8466d1b98/transformed/browser-1.0.0/jars/classes.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/9858df127539dc5c65af58c8466d1b98/transformed/browser-1.0.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/9858df127539dc5c65af58c8466d1b98/transformed/browser-1.0.0/res" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/9858df127539dc5c65af58c8466d1b98/transformed/browser-1.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/9858df127539dc5c65af58c8466d1b98/transformed/browser-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9858df127539dc5c65af58c8466d1b98/transformed/browser-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9858df127539dc5c65af58c8466d1b98/transformed/browser-1.0.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://D:/AndroidGradle/caches/modules-2/files-2.1/androidx.browser/browser/1.0.0/804dc4c93b5f45da8f72c10a5080dbb21715d813/browser-1.0.0-sources.jar!/" />
+      <root url="jar://E:/AndroidGradle/caches/modules-2/files-2.1/androidx.browser/browser/1.0.0/804dc4c93b5f45da8f72c10a5080dbb21715d813/browser-1.0.0-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.browser/browser/1.0.0/804dc4c93b5f45da8f72c10a5080dbb21715d813/browser-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,7 @@
+Executable : D:\AndroidSDK\cmake\3.10.2.4988404\bin\ninja.exe
+arguments : 
+-C
+E:\ANDROID_NATIVE\BGD\Hot Sutra Web Series\app\.cxx\RelWithDebInfo\2h662a2e\x86_64
+api_config
+jvmArgs : 
+

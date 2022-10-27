@@ -1,0 +1,3 @@
+F:/AndroidStudioProjects/QfonApp/HotSutra_WebSeries_6/app/.cxx/RelWithDebInfo/2c624e10/arm64-v8a/CMakeFiles/api_config.dir
+F:/AndroidStudioProjects/QfonApp/HotSutra_WebSeries_6/app/.cxx/RelWithDebInfo/2c624e10/arm64-v8a/CMakeFiles/edit_cache.dir
+F:/AndroidStudioProjects/QfonApp/HotSutra_WebSeries_6/app/.cxx/RelWithDebInfo/2c624e10/arm64-v8a/CMakeFiles/rebuild_cache.dir

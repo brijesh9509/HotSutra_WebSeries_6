@@ -1,0 +1,15 @@
+# ninja log v5
+1	2631	671111347	CMakeFiles/api_config.dir/api_config.cpp.o	5e0b96b90116d1bc
+2633	3839	671111348	E:/ANDROID_NATIVE/BGD/Hot-Sutra-06-04-2022/app/build/intermediates/cxx/Debug/45s3w93a/obj/arm64-v8a/libapi_config.so	1e57e08cedc8f44e
+59	5141	672590136	CMakeFiles/api_config.dir/api_config.cpp.o	5e0b96b90116d1bc
+5141	6394	672590137	E:/ANDROID_NATIVE/BGD/Hot-Sutra-06-04-2022/app/build/intermediates/cxx/Debug/45s3w93a/obj/arm64-v8a/libapi_config.so	1e57e08cedc8f44e
+26	6035	672679932	CMakeFiles/api_config.dir/api_config.cpp.o	5e0b96b90116d1bc
+6062	7448	672679933	E:/ANDROID_NATIVE/BGD/Hot-Sutra-06-04-2022/app/build/intermediates/cxx/Debug/45s3w93a/obj/arm64-v8a/libapi_config.so	1e57e08cedc8f44e
+26	5886	672754998	CMakeFiles/api_config.dir/api_config.cpp.o	5e0b96b90116d1bc
+5886	9462	672755001	E:/ANDROID_NATIVE/BGD/Hot-Sutra-06-04-2022/app/build/intermediates/cxx/Debug/45s3w93a/obj/arm64-v8a/libapi_config.so	1e57e08cedc8f44e
+38	5988	674135006	CMakeFiles/api_config.dir/api_config.cpp.o	5e0b96b90116d1bc
+5989	6904	674135007	E:/ANDROID_NATIVE/BGD/Hot-Sutra-06-04-2022/app/build/intermediates/cxx/Debug/45s3w93a/obj/arm64-v8a/libapi_config.so	1e57e08cedc8f44e
+133	18452	675332726	CMakeFiles/api_config.dir/api_config.cpp.o	5e0b96b90116d1bc
+18452	23942	675332732	E:/ANDROID_NATIVE/BGD/Hot-Sutra-06-04-2022/app/build/intermediates/cxx/Debug/45s3w93a/obj/arm64-v8a/libapi_config.so	1e57e08cedc8f44e
+26	3761	675590238	CMakeFiles/api_config.dir/api_config.cpp.o	5e0b96b90116d1bc
+3761	5686	675590240	E:/ANDROID_NATIVE/BGD/Hot-Sutra-06-04-2022/app/build/intermediates/cxx/Debug/45s3w93a/obj/arm64-v8a/libapi_config.so	1e57e08cedc8f44e

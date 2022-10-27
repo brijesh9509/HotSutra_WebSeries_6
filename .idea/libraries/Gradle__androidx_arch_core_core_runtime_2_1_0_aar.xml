@@ -1,0 +1,33 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.arch.core:core-runtime:2.1.0@aar">
+    <CLASSES>
+      <root url="file://D:/AndroidGradle/caches/transforms-3/730e15bb1d309f69aa9dd8939062e92a/transformed/core-runtime-2.1.0/res" />
+      <root url="file://D:/AndroidGradle/caches/transforms-3/312e5d2da34f6b934d79ce712b0bd38f/transformed/core-runtime-2.1.0/res" />
+      <root url="file://D:/AndroidGradle/caches/transforms-3/f0cc54e94dacb0fd5a7dca9ed0a08885/transformed/core-runtime-2.1.0/res" />
+      <root url="file://D:/AndroidGradle/caches/transforms-3/f0cc54e94dacb0fd5a7dca9ed0a08885/transformed/core-runtime-2.1.0/AndroidManifest.xml" />
+      <root url="jar://D:/AndroidGradle/caches/transforms-3/f0cc54e94dacb0fd5a7dca9ed0a08885/transformed/core-runtime-2.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f0cc54e94dacb0fd5a7dca9ed0a08885/transformed/core-runtime-2.1.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/f0cc54e94dacb0fd5a7dca9ed0a08885/transformed/core-runtime-2.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f0cc54e94dacb0fd5a7dca9ed0a08885/transformed/core-runtime-2.1.0/res" />
+      <root url="file://E:/AndroidGradle/caches/transforms-3/f0cc54e94dacb0fd5a7dca9ed0a08885/transformed/core-runtime-2.1.0/res" />
+      <root url="file://E:/AndroidGradle/caches/transforms-3/da1be9ed758f9c99115e408315a3aade/transformed/core-runtime-2.1.0/res" />
+      <root url="file://E:/AndroidGradle/caches/transforms-3/da1be9ed758f9c99115e408315a3aade/transformed/core-runtime-2.1.0/AndroidManifest.xml" />
+      <root url="jar://E:/AndroidGradle/caches/transforms-3/da1be9ed758f9c99115e408315a3aade/transformed/core-runtime-2.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/da1be9ed758f9c99115e408315a3aade/transformed/core-runtime-2.1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/12475374e7c2ebfcb944cbcc3a4f0678/transformed/core-runtime-2.1.0/res" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/12475374e7c2ebfcb944cbcc3a4f0678/transformed/core-runtime-2.1.0/res" />
+      <root url="file://E:/AndroidGradle/caches/transforms-3/ce4f0dfa3fdc9f131562853e900ebcb7/transformed/core-runtime-2.1.0/AndroidManifest.xml" />
+      <root url="jar://E:/AndroidGradle/caches/transforms-3/ce4f0dfa3fdc9f131562853e900ebcb7/transformed/core-runtime-2.1.0/jars/classes.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/ce4f0dfa3fdc9f131562853e900ebcb7/transformed/core-runtime-2.1.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/ce4f0dfa3fdc9f131562853e900ebcb7/transformed/core-runtime-2.1.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/ce4f0dfa3fdc9f131562853e900ebcb7/transformed/core-runtime-2.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ce4f0dfa3fdc9f131562853e900ebcb7/transformed/core-runtime-2.1.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://D:/AndroidGradle/caches/modules-2/files-2.1/androidx.arch.core/core-runtime/2.1.0/f19886651c9946b39f83d8c184fd0e2ce9f43c16/core-runtime-2.1.0-sources.jar!/" />
+      <root url="jar://E:/AndroidGradle/caches/modules-2/files-2.1/androidx.arch.core/core-runtime/2.1.0/f19886651c9946b39f83d8c184fd0e2ce9f43c16/core-runtime-2.1.0-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.arch.core/core-runtime/2.1.0/f19886651c9946b39f83d8c184fd0e2ce9f43c16/core-runtime-2.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

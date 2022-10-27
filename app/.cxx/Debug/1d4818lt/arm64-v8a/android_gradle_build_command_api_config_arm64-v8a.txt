@@ -1,0 +1,7 @@
+Executable : E:\Android\sdk\cmake\3.10.2.4988404\bin\ninja.exe
+arguments : 
+-C
+F:\AndroidNative\BGD\HotSutra_WebSeries\app\.cxx\Debug\1d4818lt\arm64-v8a
+api_config
+jvmArgs : 
+

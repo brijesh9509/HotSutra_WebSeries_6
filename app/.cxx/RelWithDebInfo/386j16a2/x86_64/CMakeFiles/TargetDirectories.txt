@@ -1,0 +1,3 @@
+F:/AndroidNative/BGD/HotSutra_WebSeries_3/app/.cxx/RelWithDebInfo/386j16a2/x86_64/CMakeFiles/api_config.dir
+F:/AndroidNative/BGD/HotSutra_WebSeries_3/app/.cxx/RelWithDebInfo/386j16a2/x86_64/CMakeFiles/edit_cache.dir
+F:/AndroidNative/BGD/HotSutra_WebSeries_3/app/.cxx/RelWithDebInfo/386j16a2/x86_64/CMakeFiles/rebuild_cache.dir

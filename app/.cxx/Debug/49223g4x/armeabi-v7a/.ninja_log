@@ -1,0 +1,10 @@
+# ninja log v5
+39	5665	678815954	CMakeFiles/api_config.dir/api_config.cpp.o	fc2f5deccfb00c18
+5669	6426	678815955	F:/AndroidNative/BGD/HotSutra_WebSeries_3/app/build/intermediates/cxx/Debug/49223g4x/obj/armeabi-v7a/libapi_config.so	c33fe03630cf0308
+0	25	0	clean	6f45ba1bad46d958
+198	2778	679239400	CMakeFiles/api_config.dir/api_config.cpp.o	fc2f5deccfb00c18
+2778	3487	679239400	F:/AndroidNative/BGD/HotSutra_WebSeries_3/app/build/intermediates/cxx/Debug/49223g4x/obj/armeabi-v7a/libapi_config.so	c33fe03630cf0308
+0	19	0	clean	6f45ba1bad46d958
+43	1725	679239661	CMakeFiles/api_config.dir/api_config.cpp.o	fc2f5deccfb00c18
+1725	3268	679239663	F:/AndroidNative/BGD/HotSutra_WebSeries_3/app/build/intermediates/cxx/Debug/49223g4x/obj/armeabi-v7a/libapi_config.so	c33fe03630cf0308
+1	15	0	clean	6f45ba1bad46d958

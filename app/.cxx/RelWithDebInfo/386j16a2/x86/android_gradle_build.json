@@ -1,0 +1,40 @@
+{
+  "stringTable": {},
+  "buildFiles": [
+    "F:\\AndroidNative\\BGD\\HotSutra_WebSeries_3\\app\\src\\main\\jni\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "E:\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+      "-C",
+      "F:\\AndroidNative\\BGD\\HotSutra_WebSeries_3\\app\\.cxx\\RelWithDebInfo\\386j16a2\\x86",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "E:\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+    "-C",
+    "F:\\AndroidNative\\BGD\\HotSutra_WebSeries_3\\app\\.cxx\\RelWithDebInfo\\386j16a2\\x86",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "api_config-RelWithDebInfo-x86": {
+      "buildCommandComponents": [
+        "E:\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+        "-C",
+        "F:\\AndroidNative\\BGD\\HotSutra_WebSeries_3\\app\\.cxx\\RelWithDebInfo\\386j16a2\\x86",
+        "api_config"
+      ],
+      "buildType": "release",
+      "abi": "x86",
+      "artifactName": "api_config",
+      "output": "F:\\AndroidNative\\BGD\\HotSutra_WebSeries_3\\app\\build\\intermediates\\cxx\\RelWithDebInfo\\386j16a2\\obj\\x86\\libapi_config.so",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {},
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

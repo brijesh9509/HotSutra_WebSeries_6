@@ -1,0 +1,4 @@
+# Project exclude paths
+/.gradle/
+/nativetemplates/build/
+/nativetemplates/build/intermediates/javac/debug/classes/

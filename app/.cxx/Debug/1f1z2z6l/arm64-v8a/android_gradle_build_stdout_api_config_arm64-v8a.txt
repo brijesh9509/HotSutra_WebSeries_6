@@ -1,0 +1,2 @@
+ninja: Entering directory `F:\AndroidStudioProjects\QfonApp\HotSutra_WebSeries_5\app\.cxx\Debug\1f1z2z6l\arm64-v8a'
+ninja: no work to do.

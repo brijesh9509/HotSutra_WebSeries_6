@@ -1,0 +1,143 @@
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+buildscript {
+    repositories {
+        maven { url 'https://plugins.gradle.org/m2/' }
+    }
+    dependencies {
+        classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:0.14.0'
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven { url 'https://maven.google.com' }
+}
+
+android {
+    compileSdkVersion 33
+    defaultConfig {
+        applicationId "app.hotsutra.live"
+        minSdkVersion 21
+        targetSdkVersion 33
+        versionCode 3
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+
+        externalNativeBuild {
+            cmake {
+                cppFlags ""
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    externalNativeBuild {
+        cmake {
+            path "src/main/jni/CMakeLists.txt"
+            version "3.10.2"
+        }
+    }
+    ndkVersion '21.3.6528147'
+    lint {
+        abortOnError false
+        checkReleaseBuilds false
+    }
+
+}
+
+dependencies {
+    implementation files('libs/YouTubeAndroidPlayerApi.jar')
+    implementation 'androidx.navigation:navigation-fragment:2.5.1'
+    implementation 'androidx.navigation:navigation-ui:2.5.1'
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.5.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.6.1'
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    def lifecycle_version = "2.5.1"
+    // ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version"
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    // LiveData
+    implementation "androidx.lifecycle:lifecycle-livedata:$lifecycle_version"
+
+    //firebase
+    implementation 'com.google.firebase:firebase-analytics:21.1.0'
+    implementation 'com.google.firebase:firebase-messaging:23.0.7'
+    //firebase auth
+    implementation 'com.firebaseui:firebase-ui-auth:7.1.1'
+
+    implementation 'com.google.android:flexbox:0.3.2'                  // google flexible box
+    implementation 'com.crystal:crystalrangeseekbar:1.1.3'             // range seek bar
+
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'com.mikhaellopez:circularimageview:3.2.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    //bottom navigation
+    implementation 'com.github.volsahin:bottomify-navigation-view:1.0.2'
+
+    // shimmer layout
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+    implementation 'com.balysv:material-ripple:1.0.2'
+
+    def room_version = "2.4.3"
+    //Room
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+    implementation "androidx.room:room-rxjava2:$room_version"
+
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.github.bumptech.glide:glide:4.13.2'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.13.2'
+    // retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.9'
+
+    // stripe
+    implementation 'com.stripe:stripe-android:16.0.0'
+    implementation 'com.stripe:stripe-java:5.36.0'
+    // paypal
+    implementation 'com.paypal.sdk:paypal-android-sdk:2.16.0'
+    // razor pay
+    implementation 'com.razorpay:checkout:1.6.19'
+    // card slider
+    implementation 'com.github.IslamKhSh:CardSlider:0.4'
+    //OneSignal
+    implementation 'com.onesignal:OneSignal:[4.0.0, 4.99.99]'
+    // exo player
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.14.1'
+    implementation 'com.google.android.exoplayer:exoplayer-dash:2.14.1'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.14.1'
+    implementation 'com.google.android.exoplayer:exoplayer-hls:2.14.1'
+    implementation 'com.google.android.exoplayer:extension-rtmp:2.14.1'
+    implementation 'com.google.android.exoplayer:extension-cast:2.7.3'
+    implementation 'com.github.HaarigerHarald:android-youtubeExtractor:master-SNAPSHOT'
+
+    implementation 'com.android.billingclient:billing:4.1.0'
+    //implementation "com.android.billingclient:billing:5.0.0"
+
+    implementation 'androidx.work:work-runtime:2.7.1'
+}

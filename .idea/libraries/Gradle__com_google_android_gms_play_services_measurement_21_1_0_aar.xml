@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android.gms:play-services-measurement:21.1.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f45bfa7f810d898f1cd3c3ef4b596134/transformed/jetified-play-services-measurement-21.1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8e8a410fd31bd9427538ca1c1ad32ce8/transformed/jetified-play-services-measurement-21.1.0/res" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/8e8a410fd31bd9427538ca1c1ad32ce8/transformed/jetified-play-services-measurement-21.1.0/res" />
+      <root url="jar://E:/AndroidGradle/caches/transforms-3/7c8524f6aa06cacd8d0ecc6b0aec5b5d/transformed/jetified-play-services-measurement-21.1.0/jars/classes.jar!/" />
+      <root url="file://E:/AndroidGradle/caches/transforms-3/7c8524f6aa06cacd8d0ecc6b0aec5b5d/transformed/jetified-play-services-measurement-21.1.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/7c8524f6aa06cacd8d0ecc6b0aec5b5d/transformed/jetified-play-services-measurement-21.1.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/7c8524f6aa06cacd8d0ecc6b0aec5b5d/transformed/jetified-play-services-measurement-21.1.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7c8524f6aa06cacd8d0ecc6b0aec5b5d/transformed/jetified-play-services-measurement-21.1.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/7c8524f6aa06cacd8d0ecc6b0aec5b5d/transformed/jetified-play-services-measurement-21.1.0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://E:/AndroidGradle/caches/modules-2/files-2.1/com.google.android.gms/play-services-measurement/21.1.0/82484a71a32cda83762be860dfd246217d09a313/play-services-measurement-21.1.0-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.gms/play-services-measurement/21.1.0/82484a71a32cda83762be860dfd246217d09a313/play-services-measurement-21.1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

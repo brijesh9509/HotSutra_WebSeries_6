@@ -1,0 +1,29 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android.gms:play-services-cast:11.4.2@aar">
+    <CLASSES>
+      <root url="jar://D:/AndroidGradle/caches/transforms-3/25ec345f48058bc2d3e20b54ebea5cae/transformed/jetified-play-services-cast-11.4.2/jars/classes.jar!/" />
+      <root url="file://D:/AndroidGradle/caches/transforms-3/25ec345f48058bc2d3e20b54ebea5cae/transformed/jetified-play-services-cast-11.4.2/res" />
+      <root url="file://D:/AndroidGradle/caches/transforms-3/25ec345f48058bc2d3e20b54ebea5cae/transformed/jetified-play-services-cast-11.4.2/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/030dd3e2fd209fe57824e42b3c6b2228/transformed/jetified-play-services-cast-11.4.2/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/030dd3e2fd209fe57824e42b3c6b2228/transformed/jetified-play-services-cast-11.4.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/030dd3e2fd209fe57824e42b3c6b2228/transformed/jetified-play-services-cast-11.4.2/res" />
+      <root url="file://E:/AndroidGradle/caches/transforms-3/b4ea6180a9f64419a8087b476849938e/transformed/jetified-play-services-cast-11.4.2/res" />
+      <root url="jar://E:/AndroidGradle/caches/transforms-3/b4ea6180a9f64419a8087b476849938e/transformed/jetified-play-services-cast-11.4.2/jars/classes.jar!/" />
+      <root url="file://E:/AndroidGradle/caches/transforms-3/b4ea6180a9f64419a8087b476849938e/transformed/jetified-play-services-cast-11.4.2/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/35489bb31f1ff3a9aa7c246e2b2510ca/transformed/jetified-play-services-cast-11.4.2/res" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/35489bb31f1ff3a9aa7c246e2b2510ca/transformed/jetified-play-services-cast-11.4.2/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/35489bb31f1ff3a9aa7c246e2b2510ca/transformed/jetified-play-services-cast-11.4.2/AndroidManifest.xml" />
+      <root url="file://E:/AndroidGradle/caches/transforms-3/9be02579d15dc4ecf068fe5fd1beb1c1/transformed/jetified-play-services-cast-11.4.2/AndroidManifest.xml" />
+      <root url="jar://E:/AndroidGradle/caches/transforms-3/9be02579d15dc4ecf068fe5fd1beb1c1/transformed/jetified-play-services-cast-11.4.2/jars/classes.jar!/" />
+      <root url="file://E:/AndroidGradle/caches/transforms-3/9be02579d15dc4ecf068fe5fd1beb1c1/transformed/jetified-play-services-cast-11.4.2/res" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/9be02579d15dc4ecf068fe5fd1beb1c1/transformed/jetified-play-services-cast-11.4.2/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/9be02579d15dc4ecf068fe5fd1beb1c1/transformed/jetified-play-services-cast-11.4.2/res" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/9be02579d15dc4ecf068fe5fd1beb1c1/transformed/jetified-play-services-cast-11.4.2/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9be02579d15dc4ecf068fe5fd1beb1c1/transformed/jetified-play-services-cast-11.4.2/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/9be02579d15dc4ecf068fe5fd1beb1c1/transformed/jetified-play-services-cast-11.4.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9be02579d15dc4ecf068fe5fd1beb1c1/transformed/jetified-play-services-cast-11.4.2/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

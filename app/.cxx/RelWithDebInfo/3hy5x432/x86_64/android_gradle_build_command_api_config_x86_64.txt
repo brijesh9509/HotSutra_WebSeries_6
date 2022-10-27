@@ -1,0 +1,7 @@
+Executable : F:\AndroidSDK\Sdk\cmake\3.10.2.4988404\bin\ninja.exe
+arguments : 
+-C
+F:\AndroidStudioProjects\QfonApp\HotSutra_WebSeries_3\app\.cxx\RelWithDebInfo\3hy5x432\x86_64
+api_config
+jvmArgs : 
+

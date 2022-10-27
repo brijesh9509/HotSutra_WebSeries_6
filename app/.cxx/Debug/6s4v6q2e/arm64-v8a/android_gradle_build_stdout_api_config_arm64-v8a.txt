@@ -1,0 +1,3 @@
+ninja: Entering directory `E:\ANDROID_NATIVE\BGD\Hot Sutra Web Series\app\.cxx\Debug\6s4v6q2e\arm64-v8a'
+[1/2] Building CXX object CMakeFiles/api_config.dir/api_config.cpp.o
+[2/2] Linking CXX shared library "E:\ANDROID_NATIVE\BGD\Hot Sutra Web Series\app\build\intermediates\cxx\Debug\6s4v6q2e\obj\arm64-v8a\libapi_config.so"

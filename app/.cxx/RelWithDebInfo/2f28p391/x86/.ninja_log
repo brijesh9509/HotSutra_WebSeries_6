@@ -1,0 +1,5 @@
+# ninja log v5
+1	1540	671715974	CMakeFiles/api_config.dir/api_config.cpp.o	e2a859bc5d4c3511
+1542	2814	671715976	E:/ANDROID_NATIVE/BGD/Hot-Sutra-06-04-2022/app/build/intermediates/cxx/RelWithDebInfo/2f28p391/obj/x86/libapi_config.so	d8208f924b89bd21
+47	2267	672756008	CMakeFiles/api_config.dir/api_config.cpp.o	e2a859bc5d4c3511
+2267	5640	672756011	E:/ANDROID_NATIVE/BGD/Hot-Sutra-06-04-2022/app/build/intermediates/cxx/RelWithDebInfo/2f28p391/obj/x86/libapi_config.so	d8208f924b89bd21

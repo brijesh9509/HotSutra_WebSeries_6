@@ -1,0 +1,336 @@
+{
+  "project_info": {
+    "project_number": "305476373270",
+    "project_id": "hotsutra-web-series---movies",
+    "storage_bucket": "hotsutra-web-series---movies.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:305476373270:android:3275a19b52dfce4faa5e37",
+        "android_client_info": {
+          "package_name": "app.hotsutra.live"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "305476373270-kssl3pk7rn3btk74a2732mlkjt7rvqji.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.hotsutra.live",
+            "certificate_hash": "6c921bd0eec343466df1d0a95958122270378e5f"
+          }
+        },
+        {
+          "client_id": "305476373270-nlkgoan9j4rsgi6932na7r1pbj6q9saa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5C79rwreVOEqNH007L9gB37E0v7t3BHE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "305476373270-nlkgoan9j4rsgi6932na7r1pbj6q9saa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:305476373270:android:e46fc2cc0c9ef621aa5e37",
+        "android_client_info": {
+          "package_name": "com.app.hotsutra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "305476373270-49kmna38opqcrovjc93nvt53obieht4n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.hotsutra",
+            "certificate_hash": "4cd91a71b025a4d7ccb007dd29aaa6dbfd23cece"
+          }
+        },
+        {
+          "client_id": "305476373270-8emaghc3pv0dcktkdgq416pljg9084vm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.hotsutra",
+            "certificate_hash": "aa6e21569f128e21db7d957f9a44f8075d3ea7a5"
+          }
+        },
+        {
+          "client_id": "305476373270-g41a67g4dr7mh8uh5sljd00ohuai2ios.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.hotsutra",
+            "certificate_hash": "707aaf56894df14373d11a7b6489905192b04995"
+          }
+        },
+        {
+          "client_id": "305476373270-hi3tjuj3ppvqtm2is35fd37scu0fhoi3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.hotsutra",
+            "certificate_hash": "1608801e412e0c1b31d4cfb17f3adf536e23d7ae"
+          }
+        },
+        {
+          "client_id": "305476373270-q2pjdf5qmj9edlcp5e57ar2e7bh2oph5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.hotsutra",
+            "certificate_hash": "f845913821961dd660a67a7bfe5fa85e27e39510"
+          }
+        },
+        {
+          "client_id": "305476373270-qn74q73fqrnhvd6dfdq3aq9uoqav9oqv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.hotsutra",
+            "certificate_hash": "6c921bd0eec343466df1d0a95958122270378e5f"
+          }
+        },
+        {
+          "client_id": "305476373270-nlkgoan9j4rsgi6932na7r1pbj6q9saa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5C79rwreVOEqNH007L9gB37E0v7t3BHE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "305476373270-nlkgoan9j4rsgi6932na7r1pbj6q9saa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:305476373270:android:3b5f533d372d5629aa5e37",
+        "android_client_info": {
+          "package_name": "com.hotsutra.videos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "305476373270-84d0kegtkc49kifie6hcg2rk9d7tv1tv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hotsutra.videos",
+            "certificate_hash": "9cf1ad56da641e7a339bc7e135f326207dae57db"
+          }
+        },
+        {
+          "client_id": "305476373270-bmlppj5r2l92jo3kdcak6afptagkfhl0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hotsutra.videos",
+            "certificate_hash": "361a0aa493c0324d8c8e19bac1d173ef6eb79ee4"
+          }
+        },
+        {
+          "client_id": "305476373270-n857m38rtrvl77k14bcvqv30c5jgj5e4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hotsutra.videos",
+            "certificate_hash": "f845913821961dd660a67a7bfe5fa85e27e39510"
+          }
+        },
+        {
+          "client_id": "305476373270-s1deru3hc7qnnb0at0igfn7r74bcni2h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hotsutra.videos",
+            "certificate_hash": "6c921bd0eec343466df1d0a95958122270378e5f"
+          }
+        },
+        {
+          "client_id": "305476373270-nlkgoan9j4rsgi6932na7r1pbj6q9saa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5C79rwreVOEqNH007L9gB37E0v7t3BHE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "305476373270-nlkgoan9j4rsgi6932na7r1pbj6q9saa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:305476373270:android:93784bb636e76ce0aa5e37",
+        "android_client_info": {
+          "package_name": "com.live.hotsutra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "305476373270-9pdsp7e072vi6vebhb4eugh9eu5llkks.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.live.hotsutra",
+            "certificate_hash": "f845913821961dd660a67a7bfe5fa85e27e39510"
+          }
+        },
+        {
+          "client_id": "305476373270-d3jknmt3sehs2gm54cjujppl32a3but7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.live.hotsutra",
+            "certificate_hash": "4cd91a71b025a4d7ccb007dd29aaa6dbfd23cece"
+          }
+        },
+        {
+          "client_id": "305476373270-i83kq1lmap19gcudud07bpekmqcrm4ht.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.live.hotsutra",
+            "certificate_hash": "707aaf56894df14373d11a7b6489905192b04995"
+          }
+        },
+        {
+          "client_id": "305476373270-nlkgoan9j4rsgi6932na7r1pbj6q9saa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5C79rwreVOEqNH007L9gB37E0v7t3BHE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "305476373270-nlkgoan9j4rsgi6932na7r1pbj6q9saa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:305476373270:android:dae4cf9985f6088daa5e37",
+        "android_client_info": {
+          "package_name": "com.movies.hotsutra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "305476373270-pb07ivd6u5s9856ekeidharhg6vjhqbd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.movies.hotsutra",
+            "certificate_hash": "f845913821961dd660a67a7bfe5fa85e27e39510"
+          }
+        },
+        {
+          "client_id": "305476373270-nlkgoan9j4rsgi6932na7r1pbj6q9saa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5C79rwreVOEqNH007L9gB37E0v7t3BHE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "305476373270-nlkgoan9j4rsgi6932na7r1pbj6q9saa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:305476373270:android:9fa417fbd3718ebdaa5e37",
+        "android_client_info": {
+          "package_name": "com.ott.hotsutra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "305476373270-1d18jq12nfo6b8jolvqlu7n98khbd4ub.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ott.hotsutra",
+            "certificate_hash": "8703bb9f308245c59ed325a1112ef67bd9f7db80"
+          }
+        },
+        {
+          "client_id": "305476373270-8gkio3eml1gj5a3g2mja9mbv76u4k30o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ott.hotsutra",
+            "certificate_hash": "6c921bd0eec343466df1d0a95958122270378e5f"
+          }
+        },
+        {
+          "client_id": "305476373270-c22ct6bed1p2996l54j3pflsojh8dcms.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ott.hotsutra",
+            "certificate_hash": "f845913821961dd660a67a7bfe5fa85e27e39510"
+          }
+        },
+        {
+          "client_id": "305476373270-c2c920f37bb5rdimmjplvlupaav00frb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ott.hotsutra",
+            "certificate_hash": "361a0aa493c0324d8c8e19bac1d173ef6eb79ee4"
+          }
+        },
+        {
+          "client_id": "305476373270-nlkgoan9j4rsgi6932na7r1pbj6q9saa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5C79rwreVOEqNH007L9gB37E0v7t3BHE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "305476373270-nlkgoan9j4rsgi6932na7r1pbj6q9saa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

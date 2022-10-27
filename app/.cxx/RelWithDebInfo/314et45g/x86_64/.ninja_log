@@ -1,0 +1,6 @@
+# ninja log v5
+1	1004	685572513	CMakeFiles/api_config.dir/api_config.cpp.o	3aa681da33d9cc83
+1005	2448	685572514	F:/AndroidStudioProjects/QfonApp/HotSutra_WebSeries_5/app/build/intermediates/cxx/RelWithDebInfo/314et45g/obj/x86_64/libapi_config.so	30eeeec5b712728a
+176	1485	685574234	CMakeFiles/api_config.dir/api_config.cpp.o	3aa681da33d9cc83
+1485	3100	685574236	F:/AndroidStudioProjects/QfonApp/HotSutra_WebSeries_5/app/build/intermediates/cxx/RelWithDebInfo/314et45g/obj/x86_64/libapi_config.so	30eeeec5b712728a
+0	19	0	clean	bf7f04d26f8701e0

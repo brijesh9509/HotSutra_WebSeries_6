@@ -1,0 +1,23 @@
+                    Executable : D:\AndroidSDK\cmake\3.10.2.4988404\bin\cmake.exe
+arguments : 
+-HE:\ANDROID_NATIVE\BGD\Hot-Sutra-06-04-2022\app\src\main\jni
+-DCMAKE_SYSTEM_NAME=Android
+-DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+-DCMAKE_SYSTEM_VERSION=21
+-DANDROID_PLATFORM=android-21
+-DANDROID_ABI=x86_64
+-DCMAKE_ANDROID_ARCH_ABI=x86_64
+-DANDROID_NDK=D:\AndroidSDK\ndk\21.3.6528147
+-DCMAKE_ANDROID_NDK=D:\AndroidSDK\ndk\21.3.6528147
+-DCMAKE_TOOLCHAIN_FILE=D:\AndroidSDK\ndk\21.3.6528147\build\cmake\android.toolchain.cmake
+-DCMAKE_MAKE_PROGRAM=D:\AndroidSDK\cmake\3.10.2.4988404\bin\ninja.exe
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=E:\ANDROID_NATIVE\BGD\Hot-Sutra-06-04-2022\app\build\intermediates\cxx\Debug\45s3w93a\obj\x86_64
+-DCMAKE_RUNTIME_OUTPUT_DIRECTORY=E:\ANDROID_NATIVE\BGD\Hot-Sutra-06-04-2022\app\build\intermediates\cxx\Debug\45s3w93a\obj\x86_64
+-DCMAKE_BUILD_TYPE=Debug
+-BE:\ANDROID_NATIVE\BGD\Hot-Sutra-06-04-2022\app\.cxx\Debug\45s3w93a\x86_64
+-GNinja
+jvmArgs : 
+
+
+                    Build command args: []
+                    Version: 2

@@ -1,0 +1,2 @@
+ninja: Entering directory `E:\ANDROID_NATIVE\BGD\Hot-Sutra-06-04-2022\app\.cxx\Debug\45s3w93a\armeabi-v7a'
+ninja: no work to do.

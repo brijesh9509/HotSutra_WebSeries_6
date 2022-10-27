@@ -1,0 +1,7 @@
+Executable : D:\AndroidSDK\cmake\3.10.2.4988404\bin\ninja.exe
+arguments : 
+-C
+E:\ANDROID_NATIVE\BGD\Hot-Sutra-06-04-2022\app\.cxx\Debug\45s3w93a\x86
+api_config
+jvmArgs : 
+

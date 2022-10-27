@@ -1,0 +1,2 @@
+ninja: Entering directory `F:\AndroidNative\BGD\HotSutra_WebSeries\app\.cxx\Debug\1d4818lt\arm64-v8a'
+ninja: no work to do.

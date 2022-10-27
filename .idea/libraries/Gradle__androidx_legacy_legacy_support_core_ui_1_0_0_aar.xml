@@ -1,0 +1,33 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.legacy:legacy-support-core-ui:1.0.0@aar">
+    <CLASSES>
+      <root url="file://D:/AndroidGradle/caches/transforms-3/3d8277520c8a7cbf86cb3f91a4c314a9/transformed/legacy-support-core-ui-1.0.0/res" />
+      <root url="file://D:/AndroidGradle/caches/transforms-3/5b3ea8f6800caf33c5d0efeec0130b45/transformed/legacy-support-core-ui-1.0.0/res" />
+      <root url="file://D:/AndroidGradle/caches/transforms-3/5bc3dd6a432f361a062b0518db5deeaa/transformed/legacy-support-core-ui-1.0.0/res" />
+      <root url="file://D:/AndroidGradle/caches/transforms-3/5bc3dd6a432f361a062b0518db5deeaa/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml" />
+      <root url="jar://D:/AndroidGradle/caches/transforms-3/5bc3dd6a432f361a062b0518db5deeaa/transformed/legacy-support-core-ui-1.0.0/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/5bc3dd6a432f361a062b0518db5deeaa/transformed/legacy-support-core-ui-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/5bc3dd6a432f361a062b0518db5deeaa/transformed/legacy-support-core-ui-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/5bc3dd6a432f361a062b0518db5deeaa/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml" />
+      <root url="file://E:/AndroidGradle/caches/transforms-3/5bc3dd6a432f361a062b0518db5deeaa/transformed/legacy-support-core-ui-1.0.0/res" />
+      <root url="file://E:/AndroidGradle/caches/transforms-3/09b7513c5f449b617f409c76bf1ba304/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml" />
+      <root url="file://E:/AndroidGradle/caches/transforms-3/09b7513c5f449b617f409c76bf1ba304/transformed/legacy-support-core-ui-1.0.0/res" />
+      <root url="jar://E:/AndroidGradle/caches/transforms-3/09b7513c5f449b617f409c76bf1ba304/transformed/legacy-support-core-ui-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/09b7513c5f449b617f409c76bf1ba304/transformed/legacy-support-core-ui-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/365ff2a6cf95cc2bde8821d70f461a8e/transformed/legacy-support-core-ui-1.0.0/res" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/365ff2a6cf95cc2bde8821d70f461a8e/transformed/legacy-support-core-ui-1.0.0/res" />
+      <root url="file://E:/AndroidGradle/caches/transforms-3/ca8695fbca71fe68a6bb4f1dc0a32e11/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml" />
+      <root url="jar://E:/AndroidGradle/caches/transforms-3/ca8695fbca71fe68a6bb4f1dc0a32e11/transformed/legacy-support-core-ui-1.0.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/ca8695fbca71fe68a6bb4f1dc0a32e11/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/ca8695fbca71fe68a6bb4f1dc0a32e11/transformed/legacy-support-core-ui-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ca8695fbca71fe68a6bb4f1dc0a32e11/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/ca8695fbca71fe68a6bb4f1dc0a32e11/transformed/legacy-support-core-ui-1.0.0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://D:/AndroidGradle/caches/modules-2/files-2.1/androidx.legacy/legacy-support-core-ui/1.0.0/f6044eaebe354c778f1f147ddb9e92a3f1e22fc7/legacy-support-core-ui-1.0.0-sources.jar!/" />
+      <root url="jar://E:/AndroidGradle/caches/modules-2/files-2.1/androidx.legacy/legacy-support-core-ui/1.0.0/f6044eaebe354c778f1f147ddb9e92a3f1e22fc7/legacy-support-core-ui-1.0.0-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.legacy/legacy-support-core-ui/1.0.0/f6044eaebe354c778f1f147ddb9e92a3f1e22fc7/legacy-support-core-ui-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
