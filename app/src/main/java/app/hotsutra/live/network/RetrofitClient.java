@@ -19,7 +19,7 @@ public class RetrofitClient {
     public static Retrofit getRetrofitInstance() {
 
         HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
-        interceptor.setLevel(HttpLoggingInterceptor.Level.NONE);
+        interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
         OkHttpClient client = new OkHttpClient.Builder()
                 .addInterceptor(interceptor)
                 .addInterceptor(new BasicAuthInterceptor(API_USER_NAME, API_PASSWORD)).build();

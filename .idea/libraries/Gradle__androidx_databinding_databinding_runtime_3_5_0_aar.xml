@@ -13,18 +13,15 @@
       <root url="jar://E:/AndroidGradle/caches/transforms-3/693fb81de0baf85c1e5df1b909e9d9fd/transformed/databinding-runtime-3.5.0/jars/classes.jar!/" />
       <root url="file://E:/AndroidGradle/caches/transforms-3/693fb81de0baf85c1e5df1b909e9d9fd/transformed/databinding-runtime-3.5.0/AndroidManifest.xml" />
       <root url="file://E:/AndroidGradle/caches/transforms-3/693fb81de0baf85c1e5df1b909e9d9fd/transformed/databinding-runtime-3.5.0/res" />
-      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/693fb81de0baf85c1e5df1b909e9d9fd/transformed/databinding-runtime-3.5.0/AndroidManifest.xml" />
-      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/693fb81de0baf85c1e5df1b909e9d9fd/transformed/databinding-runtime-3.5.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/693fb81de0baf85c1e5df1b909e9d9fd/transformed/databinding-runtime-3.5.0/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/693fb81de0baf85c1e5df1b909e9d9fd/transformed/databinding-runtime-3.5.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/693fb81de0baf85c1e5df1b909e9d9fd/transformed/databinding-runtime-3.5.0/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/693fb81de0baf85c1e5df1b909e9d9fd/transformed/databinding-runtime-3.5.0/res" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/ddbc63fa20ed693eb03ffa703078815d/transformed/databinding-runtime-3.5.0/res" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/ddbc63fa20ed693eb03ffa703078815d/transformed/databinding-runtime-3.5.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/ddbc63fa20ed693eb03ffa703078815d/transformed/databinding-runtime-3.5.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://D:/AndroidGradle/caches/modules-2/files-2.1/androidx.databinding/databinding-runtime/3.5.0/f4f0d692bdbcf1720c0cb62c1814388e1d3c72ac/databinding-runtime-3.5.0-sources.jar!/" />
       <root url="jar://E:/AndroidGradle/caches/modules-2/files-2.1/androidx.databinding/databinding-runtime/3.5.0/f4f0d692bdbcf1720c0cb62c1814388e1d3c72ac/databinding-runtime-3.5.0-sources.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.databinding/databinding-runtime/3.5.0/f4f0d692bdbcf1720c0cb62c1814388e1d3c72ac/databinding-runtime-3.5.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/modules-2/files-2.1/androidx.databinding/databinding-runtime/3.5.0/f4f0d692bdbcf1720c0cb62c1814388e1d3c72ac/databinding-runtime-3.5.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

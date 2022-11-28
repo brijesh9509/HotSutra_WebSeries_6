@@ -3,8 +3,7 @@
     <ANNOTATIONS>
       <root url="jar://E:/AndroidGradle/caches/transforms-3/2a80d18a9f64a8ac37a57aaee54efa3c/transformed/core-1.8.0/annotations.zip!/" />
       <root url="jar://E:/AndroidGradle/caches/transforms-3/a98d268c038f4d67cd0849dd8bc978c2/transformed/core-1.8.0/annotations.zip!/" />
-      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/a98d268c038f4d67cd0849dd8bc978c2/transformed/core-1.8.0/annotations.zip!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/a98d268c038f4d67cd0849dd8bc978c2/transformed/core-1.8.0/annotations.zip!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/9ff12b50571e6ace3773e7133028b2f3/transformed/core-1.8.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="jar://E:/AndroidGradle/caches/transforms-3/2a80d18a9f64a8ac37a57aaee54efa3c/transformed/core-1.8.0/jars/classes.jar!/" />
@@ -13,17 +12,14 @@
       <root url="jar://E:/AndroidGradle/caches/transforms-3/a98d268c038f4d67cd0849dd8bc978c2/transformed/core-1.8.0/jars/classes.jar!/" />
       <root url="file://E:/AndroidGradle/caches/transforms-3/a98d268c038f4d67cd0849dd8bc978c2/transformed/core-1.8.0/AndroidManifest.xml" />
       <root url="file://E:/AndroidGradle/caches/transforms-3/a98d268c038f4d67cd0849dd8bc978c2/transformed/core-1.8.0/res" />
-      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/a98d268c038f4d67cd0849dd8bc978c2/transformed/core-1.8.0/res" />
-      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/a98d268c038f4d67cd0849dd8bc978c2/transformed/core-1.8.0/AndroidManifest.xml" />
-      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/a98d268c038f4d67cd0849dd8bc978c2/transformed/core-1.8.0/jars/classes.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/a98d268c038f4d67cd0849dd8bc978c2/transformed/core-1.8.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a98d268c038f4d67cd0849dd8bc978c2/transformed/core-1.8.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a98d268c038f4d67cd0849dd8bc978c2/transformed/core-1.8.0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/9ff12b50571e6ace3773e7133028b2f3/transformed/core-1.8.0/res" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/9ff12b50571e6ace3773e7133028b2f3/transformed/core-1.8.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/9ff12b50571e6ace3773e7133028b2f3/transformed/core-1.8.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://E:/AndroidGradle/caches/modules-2/files-2.1/androidx.core/core/1.8.0/6d9dc81a87506edbc4890ff898df98c709a79fdf/core-1.8.0-sources.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.core/core/1.8.0/6d9dc81a87506edbc4890ff898df98c709a79fdf/core-1.8.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/modules-2/files-2.1/androidx.core/core/1.8.0/6d9dc81a87506edbc4890ff898df98c709a79fdf/core-1.8.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

@@ -1,17 +1,18 @@
 package app.hotsutra.live;
 
 import android.Manifest;
+import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.content.DialogInterface;
 import android.content.Intent;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.Signature;
-import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -24,13 +25,14 @@ import android.widget.MediaController;
 import android.widget.Toast;
 import android.widget.VideoView;
 
-import app.hotsutra.live.R;
-
 import app.hotsutra.live.database.DatabaseHelper;
 import app.hotsutra.live.network.apis.ConfigurationApi;
 import app.hotsutra.live.network.model.config.ApkUpdateInfo;
 import app.hotsutra.live.network.model.config.Configuration;
+
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
+import com.permissionx.guolindev.PermissionX;
+
 import app.hotsutra.live.network.RetrofitClient;
 import app.hotsutra.live.utils.HelperUtils;
 import app.hotsutra.live.utils.PreferenceUtils;
@@ -40,6 +42,7 @@ import app.hotsutra.live.utils.ToastMsg;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.ArrayList;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -47,6 +50,7 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 
 
+@SuppressLint("CustomSplashScreen")
 public class SplashScreenActivity extends AppCompatActivity {
     private static final String TAG = "SplashScreen";
     private final int PERMISSION_REQUEST_CODE = 100;
@@ -150,27 +154,60 @@ public class SplashScreenActivity extends AppCompatActivity {
         videoView.requestFocus();
         videoView.start();
 
-        videoView.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+        videoView.setOnCompletionListener(mp -> {
+            // not playVideo
+            // playVideo();
+            Log.e("FINISH", "FINISH");
+            //videoView.setVisibility(View.GONE);
 
-            @Override
-            public void onCompletion(MediaPlayer mp) {
-                // not playVideo
-                // playVideo();
-                Log.e("FINISH", "FINISH");
-                //videoView.setVisibility(View.GONE);
 
-                // checking storage permission
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                    if (checkStoragePermission()) {
-                        getConfigurationData();
-                    }
-                } else {
+            PermissionX.init(this)
+                    .permissions(Manifest.permission.READ_EXTERNAL_STORAGE,
+                            Manifest.permission.WRITE_EXTERNAL_STORAGE)
+                    .request((allGranted, grantedList, deniedList) ->
+                    {
+                        if (allGranted) {
+                            Toast.makeText(this, "All permissions are granted", Toast.LENGTH_LONG).show();
+                        } else {
+                            Toast.makeText(this, "These permissions are denied: $deniedList", Toast.LENGTH_LONG).show();
+                        }
+                    });
+            // checking storage permission
+           /* if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                if ( requestPermission(2,
+                        Manifest.permission.READ_EXTERNAL_STORAGE,
+                        Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
                     getConfigurationData();
                 }
-            }
+            } else {
+                getConfigurationData();
+            }*/
         });
 
-       // Log.e("OneSignal User ID", OneSignal.getDeviceState().getUserId().toString());
+        // Log.e("OneSignal User ID", OneSignal.getDeviceState().getUserId().toString());
+    }
+
+    boolean requestPermission(int id, String... permissions) {
+        System.out.println("REQUEST PERMISSION METHOD");
+        boolean granted = true;
+        ArrayList<String> list = new ArrayList<>();
+
+        for (String s : permissions) {
+            int check = ContextCompat.checkSelfPermission(this, s);
+            boolean hasPermission = (check == PackageManager.PERMISSION_GRANTED);
+            granted &= hasPermission;
+            if (!hasPermission) {
+                list.add(s);
+            }
+        }
+
+        if (granted) {
+            return true;
+        } else {
+            //ActivityCompat.requestPermissions(this, permissionsNeeded.toArray(new String[permissionsNeeded.size()]), id);
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE}, id);
+            return false;
+        }
     }
 
     public boolean isLoginMandatory() {
@@ -186,7 +223,7 @@ public class SplashScreenActivity extends AppCompatActivity {
             call.enqueue(new Callback<Configuration>() {
                 @Override
 
-                public void onResponse(Call<Configuration> call, Response<Configuration> response) {
+                public void onResponse(@NonNull Call<Configuration> call, @NonNull Response<Configuration> response) {
                     if (response.code() == 200) {
                         Configuration configuration = response.body();
                         if (configuration != null) {
@@ -242,7 +279,7 @@ public class SplashScreenActivity extends AppCompatActivity {
                 }
 
                 @Override
-                public void onFailure(Call<Configuration> call, Throwable t) {
+                public void onFailure(@NonNull Call<Configuration> call, @NonNull Throwable t) {
                     Log.e("ConfigError", t.getLocalizedMessage());
                     showErrorDialog(getString(R.string.error_toast), getString(R.string.failed_to_communicate));
                 }
@@ -256,32 +293,26 @@ public class SplashScreenActivity extends AppCompatActivity {
         new MaterialAlertDialogBuilder(this)
                 .setTitle("New version: " + info.getVersionName())
                 .setMessage(info.getWhatsNew())
-                .setPositiveButton("Update Now", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        //update clicked
-                        dialog.dismiss();
-                        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(info.getApkUrl()));
-                        startActivity(browserIntent);
-                        finish();
-                    }
+                .setPositiveButton("Update Now", (dialog, which) -> {
+                    //update clicked
+                    dialog.dismiss();
+                    Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(info.getApkUrl()));
+                    startActivity(browserIntent);
+                    finish();
                 })
-                .setNegativeButton("Later", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        //exit clicked
-                        if (info.isSkipable()) {
-                            if (db.getConfigurationData() != null) {
-                                timer.start();
-                            } else {
-                                new ToastMsg(SplashScreenActivity.this).toastIconError(getString(R.string.error_toast));
-                                finish();
-                            }
+                .setNegativeButton("Later", (dialog, which) -> {
+                    //exit clicked
+                    if (info.isSkipable()) {
+                        if (db.getConfigurationData() != null) {
+                            timer.start();
                         } else {
-                            System.exit(0);
+                            new ToastMsg(SplashScreenActivity.this).toastIconError(getString(R.string.error_toast));
+                            finish();
                         }
-                        dialog.dismiss();
+                    } else {
+                        System.exit(0);
                     }
+                    dialog.dismiss();
                 })
                 .setCancelable(false)
                 .show();
@@ -292,12 +323,9 @@ public class SplashScreenActivity extends AppCompatActivity {
                 .setTitle(title)
                 .setCancelable(false)
                 .setMessage(message)
-                .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        System.exit(0);
-                        finish();
-                    }
+                .setPositiveButton("Ok", (dialog, which) -> {
+                    System.exit(0);
+                    finish();
                 })
                 .show();
     }
@@ -328,7 +356,7 @@ public class SplashScreenActivity extends AppCompatActivity {
 
 
     @Override
-    public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED
                 && grantResults.length > 0 && grantResults[1] == PackageManager.PERMISSION_GRANTED) {
@@ -339,7 +367,7 @@ public class SplashScreenActivity extends AppCompatActivity {
 
     public static void createKeyHash(Activity activity, String yourPackage) {
         try {
-            PackageInfo info = activity.getPackageManager().getPackageInfo(yourPackage, PackageManager.GET_SIGNATURES);
+            @SuppressLint("PackageManagerGetSignatures") PackageInfo info = activity.getPackageManager().getPackageInfo(yourPackage, PackageManager.GET_SIGNATURES);
             for (Signature signature : info.signatures) {
                 MessageDigest md = MessageDigest.getInstance("SHA");
                 md.update(signature.toByteArray());

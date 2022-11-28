@@ -18,15 +18,13 @@
       <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/c15893b29d01d44c06d9e73ecef38d54/transformed/jetified-transport-api-3.0.0/res" />
       <root url="jar://E:/AndroidGradle/caches/transforms-3/999e4a421142d8b927d3e1388b8eeb09/transformed/jetified-transport-api-3.0.0/jars/classes.jar!/" />
       <root url="file://E:/AndroidGradle/caches/transforms-3/999e4a421142d8b927d3e1388b8eeb09/transformed/jetified-transport-api-3.0.0/AndroidManifest.xml" />
-      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/999e4a421142d8b927d3e1388b8eeb09/transformed/jetified-transport-api-3.0.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/999e4a421142d8b927d3e1388b8eeb09/transformed/jetified-transport-api-3.0.0/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/999e4a421142d8b927d3e1388b8eeb09/transformed/jetified-transport-api-3.0.0/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/999e4a421142d8b927d3e1388b8eeb09/transformed/jetified-transport-api-3.0.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/372de573e577651f615948d8e23555c0/transformed/jetified-transport-api-3.0.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/372de573e577651f615948d8e23555c0/transformed/jetified-transport-api-3.0.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://D:/AndroidGradle/caches/modules-2/files-2.1/com.google.android.datatransport/transport-api/3.0.0/7f506fe3498cda976d1b350c218464a0f1974982/transport-api-3.0.0-javadoc.jar!/" />
       <root url="jar://E:/AndroidGradle/caches/modules-2/files-2.1/com.google.android.datatransport/transport-api/3.0.0/7f506fe3498cda976d1b350c218464a0f1974982/transport-api-3.0.0-javadoc.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.datatransport/transport-api/3.0.0/7f506fe3498cda976d1b350c218464a0f1974982/transport-api-3.0.0-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/modules-2/files-2.1/com.google.android.datatransport/transport-api/3.0.0/7f506fe3498cda976d1b350c218464a0f1974982/transport-api-3.0.0-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES />
   </library>

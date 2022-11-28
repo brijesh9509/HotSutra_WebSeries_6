@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.test.espresso:espresso-core:3.5.0@aar">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/15d64bce4b11bbed9aee4f20bc4433c9/transformed/espresso-core-3.5.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/15d64bce4b11bbed9aee4f20bc4433c9/transformed/espresso-core-3.5.0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/modules-2/files-2.1/androidx.test.espresso/espresso-core/3.5.0/f69b42009b83f3d93e6a5a3d1968eef9865beb02/espresso-core-3.5.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/modules-2/files-2.1/androidx.test.espresso/espresso-core/3.5.0/50bb4dd95e68eb3fdc986995afab6730be477cdb/espresso-core-3.5.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -16,16 +16,14 @@
       <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/63ad592c5cb7be82697ca582a116d625/transformed/jetified-extension-rtmp-2.14.1/res" />
       <root url="file://E:/AndroidGradle/caches/transforms-3/9eaae742c86eb9226795ada21789582f/transformed/jetified-extension-rtmp-2.14.1/AndroidManifest.xml" />
       <root url="jar://E:/AndroidGradle/caches/transforms-3/9eaae742c86eb9226795ada21789582f/transformed/jetified-extension-rtmp-2.14.1/jars/classes.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/9eaae742c86eb9226795ada21789582f/transformed/jetified-extension-rtmp-2.14.1/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/9eaae742c86eb9226795ada21789582f/transformed/jetified-extension-rtmp-2.14.1/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/9eaae742c86eb9226795ada21789582f/transformed/jetified-extension-rtmp-2.14.1/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9eaae742c86eb9226795ada21789582f/transformed/jetified-extension-rtmp-2.14.1/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/64072b0bdafa6e1e60c7664531bd6920/transformed/jetified-extension-rtmp-2.14.1/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/64072b0bdafa6e1e60c7664531bd6920/transformed/jetified-extension-rtmp-2.14.1/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://D:/AndroidGradle/caches/modules-2/files-2.1/com.google.android.exoplayer/extension-rtmp/2.14.1/64b1e214106cf17d83b932414aaabb34057a4e1d/extension-rtmp-2.14.1-sources.jar!/" />
       <root url="jar://E:/AndroidGradle/caches/modules-2/files-2.1/com.google.android.exoplayer/extension-rtmp/2.14.1/64b1e214106cf17d83b932414aaabb34057a4e1d/extension-rtmp-2.14.1-sources.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.exoplayer/extension-rtmp/2.14.1/64b1e214106cf17d83b932414aaabb34057a4e1d/extension-rtmp-2.14.1-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/modules-2/files-2.1/com.google.android.exoplayer/extension-rtmp/2.14.1/64b1e214106cf17d83b932414aaabb34057a4e1d/extension-rtmp-2.14.1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

@@ -13,17 +13,14 @@
       <root url="file://E:/AndroidGradle/caches/transforms-3/b20ff206c040afa85c4241f32ed50d4b/transformed/jetified-play-services-wallet-18.1.3/AndroidManifest.xml" />
       <root url="jar://E:/AndroidGradle/caches/transforms-3/b20ff206c040afa85c4241f32ed50d4b/transformed/jetified-play-services-wallet-18.1.3/jars/classes.jar!/" />
       <root url="file://E:/AndroidGradle/caches/transforms-3/b20ff206c040afa85c4241f32ed50d4b/transformed/jetified-play-services-wallet-18.1.3/res" />
-      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/b20ff206c040afa85c4241f32ed50d4b/transformed/jetified-play-services-wallet-18.1.3/AndroidManifest.xml" />
-      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/b20ff206c040afa85c4241f32ed50d4b/transformed/jetified-play-services-wallet-18.1.3/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/b20ff206c040afa85c4241f32ed50d4b/transformed/jetified-play-services-wallet-18.1.3/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b20ff206c040afa85c4241f32ed50d4b/transformed/jetified-play-services-wallet-18.1.3/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/b20ff206c040afa85c4241f32ed50d4b/transformed/jetified-play-services-wallet-18.1.3/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b20ff206c040afa85c4241f32ed50d4b/transformed/jetified-play-services-wallet-18.1.3/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/e2e8afa29659a2254e3b9be6593d050e/transformed/jetified-play-services-wallet-18.1.3/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/e2e8afa29659a2254e3b9be6593d050e/transformed/jetified-play-services-wallet-18.1.3/res" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/e2e8afa29659a2254e3b9be6593d050e/transformed/jetified-play-services-wallet-18.1.3/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://D:/AndroidGradle/caches/modules-2/files-2.1/com.google.android.gms/play-services-wallet/18.1.3/6aad1194851fb24d542f67160c976ddcbdb54f3d/play-services-wallet-18.1.3-javadoc.jar!/" />
       <root url="jar://E:/AndroidGradle/caches/modules-2/files-2.1/com.google.android.gms/play-services-wallet/18.1.3/6aad1194851fb24d542f67160c976ddcbdb54f3d/play-services-wallet-18.1.3-javadoc.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.gms/play-services-wallet/18.1.3/6aad1194851fb24d542f67160c976ddcbdb54f3d/play-services-wallet-18.1.3-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/modules-2/files-2.1/com.google.android.gms/play-services-wallet/18.1.3/6aad1194851fb24d542f67160c976ddcbdb54f3d/play-services-wallet-18.1.3-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES />
   </library>

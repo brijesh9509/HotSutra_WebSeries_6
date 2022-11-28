@@ -16,12 +16,9 @@
       <root url="file://E:/AndroidGradle/caches/transforms-3/9be02579d15dc4ecf068fe5fd1beb1c1/transformed/jetified-play-services-cast-11.4.2/AndroidManifest.xml" />
       <root url="jar://E:/AndroidGradle/caches/transforms-3/9be02579d15dc4ecf068fe5fd1beb1c1/transformed/jetified-play-services-cast-11.4.2/jars/classes.jar!/" />
       <root url="file://E:/AndroidGradle/caches/transforms-3/9be02579d15dc4ecf068fe5fd1beb1c1/transformed/jetified-play-services-cast-11.4.2/res" />
-      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/9be02579d15dc4ecf068fe5fd1beb1c1/transformed/jetified-play-services-cast-11.4.2/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/9be02579d15dc4ecf068fe5fd1beb1c1/transformed/jetified-play-services-cast-11.4.2/res" />
-      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/9be02579d15dc4ecf068fe5fd1beb1c1/transformed/jetified-play-services-cast-11.4.2/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9be02579d15dc4ecf068fe5fd1beb1c1/transformed/jetified-play-services-cast-11.4.2/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/9be02579d15dc4ecf068fe5fd1beb1c1/transformed/jetified-play-services-cast-11.4.2/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9be02579d15dc4ecf068fe5fd1beb1c1/transformed/jetified-play-services-cast-11.4.2/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/e190e89b0306da9370e0b0823f6d4e00/transformed/jetified-play-services-cast-11.4.2/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/e190e89b0306da9370e0b0823f6d4e00/transformed/jetified-play-services-cast-11.4.2/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/e190e89b0306da9370e0b0823f6d4e00/transformed/jetified-play-services-cast-11.4.2/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

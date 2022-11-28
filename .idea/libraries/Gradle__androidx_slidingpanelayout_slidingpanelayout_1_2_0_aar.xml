@@ -5,8 +5,8 @@
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/2daf8af464a8357368b4a96916305ddb/transformed/slidingpanelayout-1.2.0/annotations.zip!/" />
       <root url="jar://E:/AndroidGradle/caches/transforms-3/27ca19b8e4716f8834cc1ae34516d4d8/transformed/slidingpanelayout-1.2.0/annotations.zip!/" />
       <root url="jar://E:/AndroidGradle/caches/transforms-3/00d99280d3da7084620328e27dd6c0f6/transformed/slidingpanelayout-1.2.0/annotations.zip!/" />
-      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/00d99280d3da7084620328e27dd6c0f6/transformed/slidingpanelayout-1.2.0/annotations.zip!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/00d99280d3da7084620328e27dd6c0f6/transformed/slidingpanelayout-1.2.0/annotations.zip!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/cbd615cff5e1e174ab10c5709442dd26/transformed/slidingpanelayout-1.2.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="jar://D:/AndroidGradle/caches/transforms-3/2daf8af464a8357368b4a96916305ddb/transformed/slidingpanelayout-1.2.0/jars/classes.jar!/" />
@@ -21,18 +21,18 @@
       <root url="file://E:/AndroidGradle/caches/transforms-3/00d99280d3da7084620328e27dd6c0f6/transformed/slidingpanelayout-1.2.0/AndroidManifest.xml" />
       <root url="file://E:/AndroidGradle/caches/transforms-3/00d99280d3da7084620328e27dd6c0f6/transformed/slidingpanelayout-1.2.0/res" />
       <root url="jar://E:/AndroidGradle/caches/transforms-3/00d99280d3da7084620328e27dd6c0f6/transformed/slidingpanelayout-1.2.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/00d99280d3da7084620328e27dd6c0f6/transformed/slidingpanelayout-1.2.0/res" />
-      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/00d99280d3da7084620328e27dd6c0f6/transformed/slidingpanelayout-1.2.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/00d99280d3da7084620328e27dd6c0f6/transformed/slidingpanelayout-1.2.0/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/00d99280d3da7084620328e27dd6c0f6/transformed/slidingpanelayout-1.2.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/00d99280d3da7084620328e27dd6c0f6/transformed/slidingpanelayout-1.2.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/00d99280d3da7084620328e27dd6c0f6/transformed/slidingpanelayout-1.2.0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/cbd615cff5e1e174ab10c5709442dd26/transformed/slidingpanelayout-1.2.0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/cbd615cff5e1e174ab10c5709442dd26/transformed/slidingpanelayout-1.2.0/res" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/cbd615cff5e1e174ab10c5709442dd26/transformed/slidingpanelayout-1.2.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://D:/AndroidGradle/caches/modules-2/files-2.1/androidx.slidingpanelayout/slidingpanelayout/1.2.0/6cdf3fd538b995c58d602da7114a92fdeeff92ac/slidingpanelayout-1.2.0-sources.jar!/" />
       <root url="jar://E:/AndroidGradle/caches/modules-2/files-2.1/androidx.slidingpanelayout/slidingpanelayout/1.2.0/6cdf3fd538b995c58d602da7114a92fdeeff92ac/slidingpanelayout-1.2.0-sources.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.slidingpanelayout/slidingpanelayout/1.2.0/6cdf3fd538b995c58d602da7114a92fdeeff92ac/slidingpanelayout-1.2.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/modules-2/files-2.1/androidx.slidingpanelayout/slidingpanelayout/1.2.0/6cdf3fd538b995c58d602da7114a92fdeeff92ac/slidingpanelayout-1.2.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

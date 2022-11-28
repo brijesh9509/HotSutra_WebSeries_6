@@ -18,16 +18,14 @@
       <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/0fbff45dd3237fbeb6ff377b629ca856/transformed/lifecycle-extensions-2.2.0/res" />
       <root url="file://E:/AndroidGradle/caches/transforms-3/920aab349fd1b6ddca2f8e1360d03f9e/transformed/lifecycle-extensions-2.2.0/AndroidManifest.xml" />
       <root url="jar://E:/AndroidGradle/caches/transforms-3/920aab349fd1b6ddca2f8e1360d03f9e/transformed/lifecycle-extensions-2.2.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/920aab349fd1b6ddca2f8e1360d03f9e/transformed/lifecycle-extensions-2.2.0/AndroidManifest.xml" />
-      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/920aab349fd1b6ddca2f8e1360d03f9e/transformed/lifecycle-extensions-2.2.0/jars/classes.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/920aab349fd1b6ddca2f8e1360d03f9e/transformed/lifecycle-extensions-2.2.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/920aab349fd1b6ddca2f8e1360d03f9e/transformed/lifecycle-extensions-2.2.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/ffd30804d57eafa374d9bef6d2b3535c/transformed/lifecycle-extensions-2.2.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/ffd30804d57eafa374d9bef6d2b3535c/transformed/lifecycle-extensions-2.2.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://D:/AndroidGradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-extensions/2.2.0/32e7a190b796f6853c89f5d6b92b64a6fe8318d3/lifecycle-extensions-2.2.0-sources.jar!/" />
       <root url="jar://E:/AndroidGradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-extensions/2.2.0/32e7a190b796f6853c89f5d6b92b64a6fe8318d3/lifecycle-extensions-2.2.0-sources.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-extensions/2.2.0/32e7a190b796f6853c89f5d6b92b64a6fe8318d3/lifecycle-extensions-2.2.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-extensions/2.2.0/32e7a190b796f6853c89f5d6b92b64a6fe8318d3/lifecycle-extensions-2.2.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

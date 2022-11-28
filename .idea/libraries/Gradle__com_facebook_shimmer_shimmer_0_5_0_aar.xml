@@ -3,8 +3,7 @@
     <ANNOTATIONS>
       <root url="jar://E:/AndroidGradle/caches/transforms-3/2c065253ca1e20a581ccfe32dd84341f/transformed/jetified-shimmer-0.5.0/annotations.zip!/" />
       <root url="jar://E:/AndroidGradle/caches/transforms-3/7b18a21f41b2ee7728cf59126845f5c2/transformed/jetified-shimmer-0.5.0/annotations.zip!/" />
-      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/7b18a21f41b2ee7728cf59126845f5c2/transformed/jetified-shimmer-0.5.0/annotations.zip!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/7b18a21f41b2ee7728cf59126845f5c2/transformed/jetified-shimmer-0.5.0/annotations.zip!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/e1827fb30243f8564ffd6a57804e66a3/transformed/jetified-shimmer-0.5.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="jar://E:/AndroidGradle/caches/transforms-3/2c065253ca1e20a581ccfe32dd84341f/transformed/jetified-shimmer-0.5.0/jars/classes.jar!/" />
@@ -13,20 +12,17 @@
       <root url="file://E:/AndroidGradle/caches/transforms-3/7b18a21f41b2ee7728cf59126845f5c2/transformed/jetified-shimmer-0.5.0/res" />
       <root url="jar://E:/AndroidGradle/caches/transforms-3/7b18a21f41b2ee7728cf59126845f5c2/transformed/jetified-shimmer-0.5.0/jars/classes.jar!/" />
       <root url="file://E:/AndroidGradle/caches/transforms-3/7b18a21f41b2ee7728cf59126845f5c2/transformed/jetified-shimmer-0.5.0/AndroidManifest.xml" />
-      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/7b18a21f41b2ee7728cf59126845f5c2/transformed/jetified-shimmer-0.5.0/AndroidManifest.xml" />
-      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/7b18a21f41b2ee7728cf59126845f5c2/transformed/jetified-shimmer-0.5.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/7b18a21f41b2ee7728cf59126845f5c2/transformed/jetified-shimmer-0.5.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7b18a21f41b2ee7728cf59126845f5c2/transformed/jetified-shimmer-0.5.0/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7b18a21f41b2ee7728cf59126845f5c2/transformed/jetified-shimmer-0.5.0/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/7b18a21f41b2ee7728cf59126845f5c2/transformed/jetified-shimmer-0.5.0/jars/classes.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/e1827fb30243f8564ffd6a57804e66a3/transformed/jetified-shimmer-0.5.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/e1827fb30243f8564ffd6a57804e66a3/transformed/jetified-shimmer-0.5.0/res" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/e1827fb30243f8564ffd6a57804e66a3/transformed/jetified-shimmer-0.5.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://E:/AndroidGradle/caches/modules-2/files-2.1/com.facebook.shimmer/shimmer/0.5.0/8f2cac7f46a15f00f1ee997fe744d0b16677cc30/shimmer-0.5.0-javadoc.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.shimmer/shimmer/0.5.0/8f2cac7f46a15f00f1ee997fe744d0b16677cc30/shimmer-0.5.0-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/modules-2/files-2.1/com.facebook.shimmer/shimmer/0.5.0/8f2cac7f46a15f00f1ee997fe744d0b16677cc30/shimmer-0.5.0-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
       <root url="jar://E:/AndroidGradle/caches/modules-2/files-2.1/com.facebook.shimmer/shimmer/0.5.0/c72bd010f27bca0db2557c0e37c54f35333a4690/shimmer-0.5.0-sources.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.shimmer/shimmer/0.5.0/c72bd010f27bca0db2557c0e37c54f35333a4690/shimmer-0.5.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/modules-2/files-2.1/com.facebook.shimmer/shimmer/0.5.0/c72bd010f27bca0db2557c0e37c54f35333a4690/shimmer-0.5.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

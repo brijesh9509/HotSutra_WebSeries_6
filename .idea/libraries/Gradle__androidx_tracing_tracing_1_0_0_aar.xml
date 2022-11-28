@@ -16,16 +16,16 @@
       <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/acab110b42bce558f5603a62c13db8b0/transformed/jetified-tracing-1.0.0/res" />
       <root url="file://E:/AndroidGradle/caches/transforms-3/2001813a80068849ea3710fcb36bb31f/transformed/jetified-tracing-1.0.0/AndroidManifest.xml" />
       <root url="jar://E:/AndroidGradle/caches/transforms-3/2001813a80068849ea3710fcb36bb31f/transformed/jetified-tracing-1.0.0/jars/classes.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/2001813a80068849ea3710fcb36bb31f/transformed/jetified-tracing-1.0.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/2001813a80068849ea3710fcb36bb31f/transformed/jetified-tracing-1.0.0/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/2001813a80068849ea3710fcb36bb31f/transformed/jetified-tracing-1.0.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2001813a80068849ea3710fcb36bb31f/transformed/jetified-tracing-1.0.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/42f5fc57650ae42bd639d6cc127125c5/transformed/jetified-tracing-1.0.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/42f5fc57650ae42bd639d6cc127125c5/transformed/jetified-tracing-1.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://D:/AndroidGradle/caches/modules-2/files-2.1/androidx.tracing/tracing/1.0.0/aa6dafdce323d80a993c5427cf81d5072f023c8c/tracing-1.0.0-sources.jar!/" />
       <root url="jar://E:/AndroidGradle/caches/modules-2/files-2.1/androidx.tracing/tracing/1.0.0/aa6dafdce323d80a993c5427cf81d5072f023c8c/tracing-1.0.0-sources.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.tracing/tracing/1.0.0/aa6dafdce323d80a993c5427cf81d5072f023c8c/tracing-1.0.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/modules-2/files-2.1/androidx.tracing/tracing/1.0.0/aa6dafdce323d80a993c5427cf81d5072f023c8c/tracing-1.0.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

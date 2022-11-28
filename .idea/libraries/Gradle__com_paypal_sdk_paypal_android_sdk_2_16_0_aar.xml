@@ -18,10 +18,8 @@
       <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/88c42262259324f4a678e9790753df35/transformed/jetified-paypal-android-sdk-2.16.0/res" />
       <root url="file://E:/AndroidGradle/caches/transforms-3/e2184a718a3ec7095ae721bad1e5440a/transformed/jetified-paypal-android-sdk-2.16.0/AndroidManifest.xml" />
       <root url="jar://E:/AndroidGradle/caches/transforms-3/e2184a718a3ec7095ae721bad1e5440a/transformed/jetified-paypal-android-sdk-2.16.0/jars/classes.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/e2184a718a3ec7095ae721bad1e5440a/transformed/jetified-paypal-android-sdk-2.16.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/e2184a718a3ec7095ae721bad1e5440a/transformed/jetified-paypal-android-sdk-2.16.0/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/e2184a718a3ec7095ae721bad1e5440a/transformed/jetified-paypal-android-sdk-2.16.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e2184a718a3ec7095ae721bad1e5440a/transformed/jetified-paypal-android-sdk-2.16.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/c769615e5c23e4133bf32a2c596b5df9/transformed/jetified-paypal-android-sdk-2.16.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/c769615e5c23e4133bf32a2c596b5df9/transformed/jetified-paypal-android-sdk-2.16.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
