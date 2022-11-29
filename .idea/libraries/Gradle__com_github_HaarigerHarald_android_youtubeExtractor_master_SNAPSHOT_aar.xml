@@ -31,6 +31,9 @@
       <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/b7ca35939bd1fd0d6bf8b7775d6d7c65/transformed/jetified-android-youtubeExtractor-master-SNAPSHOT/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/b7ca35939bd1fd0d6bf8b7775d6d7c65/transformed/jetified-android-youtubeExtractor-master-SNAPSHOT/res" />
       <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/b7ca35939bd1fd0d6bf8b7775d6d7c65/transformed/jetified-android-youtubeExtractor-master-SNAPSHOT/AndroidManifest.xml" />
+      <root url="file://E:/AndroidGradle/caches/transforms-3/b7ca35939bd1fd0d6bf8b7775d6d7c65/transformed/jetified-android-youtubeExtractor-master-SNAPSHOT/AndroidManifest.xml" />
+      <root url="jar://E:/AndroidGradle/caches/transforms-3/b7ca35939bd1fd0d6bf8b7775d6d7c65/transformed/jetified-android-youtubeExtractor-master-SNAPSHOT/jars/classes.jar!/" />
+      <root url="file://E:/AndroidGradle/caches/transforms-3/b7ca35939bd1fd0d6bf8b7775d6d7c65/transformed/jetified-android-youtubeExtractor-master-SNAPSHOT/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

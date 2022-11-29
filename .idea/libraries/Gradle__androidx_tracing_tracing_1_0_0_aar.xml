@@ -20,6 +20,8 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2001813a80068849ea3710fcb36bb31f/transformed/jetified-tracing-1.0.0/AndroidManifest.xml" />
       <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/42f5fc57650ae42bd639d6cc127125c5/transformed/jetified-tracing-1.0.0/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/42f5fc57650ae42bd639d6cc127125c5/transformed/jetified-tracing-1.0.0/AndroidManifest.xml" />
+      <root url="file://E:/AndroidGradle/caches/transforms-3/42f5fc57650ae42bd639d6cc127125c5/transformed/jetified-tracing-1.0.0/AndroidManifest.xml" />
+      <root url="jar://E:/AndroidGradle/caches/transforms-3/42f5fc57650ae42bd639d6cc127125c5/transformed/jetified-tracing-1.0.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

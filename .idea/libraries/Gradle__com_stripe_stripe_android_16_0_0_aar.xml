@@ -16,6 +16,9 @@
       <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/69ae27f5c9d5759209984492b95f8e85/transformed/jetified-stripe-android-16.0.0/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/69ae27f5c9d5759209984492b95f8e85/transformed/jetified-stripe-android-16.0.0/res" />
       <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/69ae27f5c9d5759209984492b95f8e85/transformed/jetified-stripe-android-16.0.0/AndroidManifest.xml" />
+      <root url="jar://E:/AndroidGradle/caches/transforms-3/69ae27f5c9d5759209984492b95f8e85/transformed/jetified-stripe-android-16.0.0/jars/classes.jar!/" />
+      <root url="file://E:/AndroidGradle/caches/transforms-3/69ae27f5c9d5759209984492b95f8e85/transformed/jetified-stripe-android-16.0.0/res" />
+      <root url="file://E:/AndroidGradle/caches/transforms-3/69ae27f5c9d5759209984492b95f8e85/transformed/jetified-stripe-android-16.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://D:/AndroidGradle/caches/modules-2/files-2.1/com.stripe/stripe-android/16.0.0/2acb15af902480bd2f74e127d73afb95ead23ad2/stripe-android-16.0.0-javadoc.jar!/" />

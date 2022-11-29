@@ -22,6 +22,8 @@
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/20f27df35dd275d7f7583eb3ff2fbbad/transformed/legacy-support-core-utils-1.0.0/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/a465d1f77798e7cdc8d7ebfa6311b846/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml" />
       <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/a465d1f77798e7cdc8d7ebfa6311b846/transformed/legacy-support-core-utils-1.0.0/jars/classes.jar!/" />
+      <root url="file://E:/AndroidGradle/caches/transforms-3/a465d1f77798e7cdc8d7ebfa6311b846/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml" />
+      <root url="jar://E:/AndroidGradle/caches/transforms-3/a465d1f77798e7cdc8d7ebfa6311b846/transformed/legacy-support-core-utils-1.0.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

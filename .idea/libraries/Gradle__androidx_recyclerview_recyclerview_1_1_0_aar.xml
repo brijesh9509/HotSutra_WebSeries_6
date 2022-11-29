@@ -4,6 +4,7 @@
       <root url="jar://E:/AndroidGradle/caches/transforms-3/59a8c784419ae436654194c4ee50083c/transformed/recyclerview-1.1.0/annotations.zip!/" />
       <root url="jar://E:/AndroidGradle/caches/transforms-3/5efdf75092ab70dde03fc2c08155872c/transformed/recyclerview-1.1.0/annotations.zip!/" />
       <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/1972edbb01c2e8eeebab8c80deae6bea/transformed/recyclerview-1.1.0/annotations.zip!/" />
+      <root url="jar://E:/AndroidGradle/caches/transforms-3/1972edbb01c2e8eeebab8c80deae6bea/transformed/recyclerview-1.1.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="jar://E:/AndroidGradle/caches/transforms-3/59a8c784419ae436654194c4ee50083c/transformed/recyclerview-1.1.0/jars/classes.jar!/" />
@@ -15,6 +16,9 @@
       <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/1972edbb01c2e8eeebab8c80deae6bea/transformed/recyclerview-1.1.0/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/1972edbb01c2e8eeebab8c80deae6bea/transformed/recyclerview-1.1.0/res" />
       <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/1972edbb01c2e8eeebab8c80deae6bea/transformed/recyclerview-1.1.0/AndroidManifest.xml" />
+      <root url="file://E:/AndroidGradle/caches/transforms-3/1972edbb01c2e8eeebab8c80deae6bea/transformed/recyclerview-1.1.0/AndroidManifest.xml" />
+      <root url="file://E:/AndroidGradle/caches/transforms-3/1972edbb01c2e8eeebab8c80deae6bea/transformed/recyclerview-1.1.0/res" />
+      <root url="jar://E:/AndroidGradle/caches/transforms-3/1972edbb01c2e8eeebab8c80deae6bea/transformed/recyclerview-1.1.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

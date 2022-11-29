@@ -20,6 +20,8 @@
       <root url="jar://E:/AndroidGradle/caches/transforms-3/96b9bea8b71ce07aec5aa4ba9e5602e1/transformed/asynclayoutinflater-1.0.0/jars/classes.jar!/" />
       <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/9a12d019b88e1c136a1eda0af9bac274/transformed/asynclayoutinflater-1.0.0/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/9a12d019b88e1c136a1eda0af9bac274/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml" />
+      <root url="file://E:/AndroidGradle/caches/transforms-3/9a12d019b88e1c136a1eda0af9bac274/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml" />
+      <root url="jar://E:/AndroidGradle/caches/transforms-3/9a12d019b88e1c136a1eda0af9bac274/transformed/asynclayoutinflater-1.0.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

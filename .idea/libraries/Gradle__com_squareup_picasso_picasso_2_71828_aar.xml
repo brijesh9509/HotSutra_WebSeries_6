@@ -33,6 +33,8 @@
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/0bd368c32266ead628c4ed0da4115bc8/transformed/jetified-picasso-2.71828/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/ebace008748dda920dbc6ff69acbd318/transformed/jetified-picasso-2.71828/AndroidManifest.xml" />
       <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/ebace008748dda920dbc6ff69acbd318/transformed/jetified-picasso-2.71828/jars/classes.jar!/" />
+      <root url="jar://E:/AndroidGradle/caches/transforms-3/ebace008748dda920dbc6ff69acbd318/transformed/jetified-picasso-2.71828/jars/classes.jar!/" />
+      <root url="file://E:/AndroidGradle/caches/transforms-3/ebace008748dda920dbc6ff69acbd318/transformed/jetified-picasso-2.71828/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://D:/AndroidGradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.71828/2843564e6bac90b1e125104d7c842c87a96a8ee9/picasso-2.71828-javadoc.jar!/" />

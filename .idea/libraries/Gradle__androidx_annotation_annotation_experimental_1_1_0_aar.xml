@@ -19,6 +19,9 @@
       <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/0b599e7778154607b75e5c0e02382e0e/transformed/jetified-annotation-experimental-1.1.0/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/0b599e7778154607b75e5c0e02382e0e/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml" />
       <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/0b599e7778154607b75e5c0e02382e0e/transformed/jetified-annotation-experimental-1.1.0/res" />
+      <root url="file://E:/AndroidGradle/caches/transforms-3/0b599e7778154607b75e5c0e02382e0e/transformed/jetified-annotation-experimental-1.1.0/res" />
+      <root url="jar://E:/AndroidGradle/caches/transforms-3/0b599e7778154607b75e5c0e02382e0e/transformed/jetified-annotation-experimental-1.1.0/jars/classes.jar!/" />
+      <root url="file://E:/AndroidGradle/caches/transforms-3/0b599e7778154607b75e5c0e02382e0e/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

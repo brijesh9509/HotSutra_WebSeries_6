@@ -18,6 +18,8 @@
       <root url="file://E:/AndroidGradle/caches/transforms-3/965c413ac159847041083a72ebcc8e26/transformed/jetified-lifecycle-livedata-ktx-2.2.0/AndroidManifest.xml" />
       <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/f285d0709c52b9531f90abdb3c2dcdca/transformed/jetified-lifecycle-livedata-ktx-2.2.0/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/f285d0709c52b9531f90abdb3c2dcdca/transformed/jetified-lifecycle-livedata-ktx-2.2.0/AndroidManifest.xml" />
+      <root url="file://E:/AndroidGradle/caches/transforms-3/f285d0709c52b9531f90abdb3c2dcdca/transformed/jetified-lifecycle-livedata-ktx-2.2.0/AndroidManifest.xml" />
+      <root url="jar://E:/AndroidGradle/caches/transforms-3/f285d0709c52b9531f90abdb3c2dcdca/transformed/jetified-lifecycle-livedata-ktx-2.2.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

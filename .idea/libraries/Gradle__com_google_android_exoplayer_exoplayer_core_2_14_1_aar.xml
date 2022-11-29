@@ -6,6 +6,7 @@
       <root url="jar://E:/AndroidGradle/caches/transforms-3/5a07f0147c3c4b44313feea4e7cc89d1/transformed/jetified-exoplayer-core-2.14.1/annotations.zip!/" />
       <root url="jar://E:/AndroidGradle/caches/transforms-3/b836ff6caaa34052796e82495cd5c171/transformed/jetified-exoplayer-core-2.14.1/annotations.zip!/" />
       <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/911fd7a30c62ebc65d1db71d26944fe7/transformed/jetified-exoplayer-core-2.14.1/annotations.zip!/" />
+      <root url="jar://E:/AndroidGradle/caches/transforms-3/911fd7a30c62ebc65d1db71d26944fe7/transformed/jetified-exoplayer-core-2.14.1/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="jar://D:/AndroidGradle/caches/transforms-3/1d53cd87f3eaff4a966282a8ec3dead2/transformed/jetified-exoplayer-core-2.14.1/jars/classes.jar!/" />
@@ -25,6 +26,8 @@
       <root url="file://E:/AndroidGradle/caches/transforms-3/b836ff6caaa34052796e82495cd5c171/transformed/jetified-exoplayer-core-2.14.1/AndroidManifest.xml" />
       <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/911fd7a30c62ebc65d1db71d26944fe7/transformed/jetified-exoplayer-core-2.14.1/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/911fd7a30c62ebc65d1db71d26944fe7/transformed/jetified-exoplayer-core-2.14.1/AndroidManifest.xml" />
+      <root url="jar://E:/AndroidGradle/caches/transforms-3/911fd7a30c62ebc65d1db71d26944fe7/transformed/jetified-exoplayer-core-2.14.1/jars/classes.jar!/" />
+      <root url="file://E:/AndroidGradle/caches/transforms-3/911fd7a30c62ebc65d1db71d26944fe7/transformed/jetified-exoplayer-core-2.14.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

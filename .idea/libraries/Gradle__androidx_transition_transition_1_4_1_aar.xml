@@ -6,6 +6,7 @@
       <root url="jar://E:/AndroidGradle/caches/transforms-3/6f9d96f14e3c9f730b87244a22c3417d/transformed/transition-1.4.1/annotations.zip!/" />
       <root url="jar://E:/AndroidGradle/caches/transforms-3/e960aaef28d3b023f88dc6d93b6805cb/transformed/transition-1.4.1/annotations.zip!/" />
       <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/7c30851221d3fb01a7c32307ce9b7004/transformed/transition-1.4.1/annotations.zip!/" />
+      <root url="jar://E:/AndroidGradle/caches/transforms-3/7c30851221d3fb01a7c32307ce9b7004/transformed/transition-1.4.1/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="file://D:/AndroidGradle/caches/transforms-3/b1c85e0a2a379652b750eacd5dff98c7/transformed/transition-1.4.1/AndroidManifest.xml" />
@@ -23,6 +24,9 @@
       <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/7c30851221d3fb01a7c32307ce9b7004/transformed/transition-1.4.1/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/7c30851221d3fb01a7c32307ce9b7004/transformed/transition-1.4.1/res" />
       <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/7c30851221d3fb01a7c32307ce9b7004/transformed/transition-1.4.1/AndroidManifest.xml" />
+      <root url="jar://E:/AndroidGradle/caches/transforms-3/7c30851221d3fb01a7c32307ce9b7004/transformed/transition-1.4.1/jars/classes.jar!/" />
+      <root url="file://E:/AndroidGradle/caches/transforms-3/7c30851221d3fb01a7c32307ce9b7004/transformed/transition-1.4.1/res" />
+      <root url="file://E:/AndroidGradle/caches/transforms-3/7c30851221d3fb01a7c32307ce9b7004/transformed/transition-1.4.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

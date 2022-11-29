@@ -20,6 +20,8 @@
       <root url="file://E:/AndroidGradle/caches/transforms-3/e26ec1ecfcc0b6a246650bc321a82516/transformed/customview-1.1.0/AndroidManifest.xml" />
       <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/bc2847f35eed4b0722b43e8f5d08ef08/transformed/customview-1.1.0/AndroidManifest.xml" />
       <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/bc2847f35eed4b0722b43e8f5d08ef08/transformed/customview-1.1.0/jars/classes.jar!/" />
+      <root url="jar://E:/AndroidGradle/caches/transforms-3/bc2847f35eed4b0722b43e8f5d08ef08/transformed/customview-1.1.0/jars/classes.jar!/" />
+      <root url="file://E:/AndroidGradle/caches/transforms-3/bc2847f35eed4b0722b43e8f5d08ef08/transformed/customview-1.1.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

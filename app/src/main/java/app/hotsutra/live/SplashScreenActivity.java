@@ -2,21 +2,15 @@ package app.hotsutra.live;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
-import android.app.Activity;
 import android.content.Intent;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
-
-import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
-import android.content.pm.Signature;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.util.Base64;
 import android.util.Log;
 import android.view.View;
 import android.view.Window;
@@ -31,7 +25,6 @@ import app.hotsutra.live.network.model.config.ApkUpdateInfo;
 import app.hotsutra.live.network.model.config.Configuration;
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
-import com.permissionx.guolindev.PermissionX;
 
 import app.hotsutra.live.network.RetrofitClient;
 import app.hotsutra.live.utils.HelperUtils;
@@ -39,10 +32,6 @@ import app.hotsutra.live.utils.PreferenceUtils;
 import app.hotsutra.live.utils.ApiResources;
 import app.hotsutra.live.utils.Constants;
 import app.hotsutra.live.utils.ToastMsg;
-
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-import java.util.ArrayList;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -54,11 +43,11 @@ import retrofit2.Retrofit;
 public class SplashScreenActivity extends AppCompatActivity {
     private static final String TAG = "SplashScreen";
     private final int PERMISSION_REQUEST_CODE = 100;
-    private int SPLASH_TIME = 1500;
+    private final int SPLASH_TIME = 1500;
     private Thread timer;
     private DatabaseHelper db;
-    private boolean isRestricted = false;
-    private boolean isUpdate = false;
+    private final boolean isRestricted = false;
+    private final boolean isUpdate = false;
     private boolean vpnStatus = false;
     private HelperUtils helperUtils;
 
@@ -160,54 +149,21 @@ public class SplashScreenActivity extends AppCompatActivity {
             Log.e("FINISH", "FINISH");
             //videoView.setVisibility(View.GONE);
 
-
-            PermissionX.init(this)
-                    .permissions(Manifest.permission.READ_EXTERNAL_STORAGE,
-                            Manifest.permission.WRITE_EXTERNAL_STORAGE)
-                    .request((allGranted, grantedList, deniedList) ->
-                    {
-                        if (allGranted) {
-                            Toast.makeText(this, "All permissions are granted", Toast.LENGTH_LONG).show();
-                        } else {
-                            Toast.makeText(this, "These permissions are denied: $deniedList", Toast.LENGTH_LONG).show();
-                        }
-                    });
             // checking storage permission
-           /* if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                if ( requestPermission(2,
-                        Manifest.permission.READ_EXTERNAL_STORAGE,
-                        Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
+
+            if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+                getConfigurationData();
+            }else{
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                if (checkStoragePermission()) {
                     getConfigurationData();
                 }
             } else {
                 getConfigurationData();
-            }*/
+            }}
         });
 
         // Log.e("OneSignal User ID", OneSignal.getDeviceState().getUserId().toString());
-    }
-
-    boolean requestPermission(int id, String... permissions) {
-        System.out.println("REQUEST PERMISSION METHOD");
-        boolean granted = true;
-        ArrayList<String> list = new ArrayList<>();
-
-        for (String s : permissions) {
-            int check = ContextCompat.checkSelfPermission(this, s);
-            boolean hasPermission = (check == PackageManager.PERMISSION_GRANTED);
-            granted &= hasPermission;
-            if (!hasPermission) {
-                list.add(s);
-            }
-        }
-
-        if (granted) {
-            return true;
-        } else {
-            //ActivityCompat.requestPermissions(this, permissionsNeeded.toArray(new String[permissionsNeeded.size()]), id);
-            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE}, id);
-            return false;
-        }
     }
 
     public boolean isLoginMandatory() {
@@ -362,19 +318,6 @@ public class SplashScreenActivity extends AppCompatActivity {
                 && grantResults.length > 0 && grantResults[1] == PackageManager.PERMISSION_GRANTED) {
             //resume tasks needing this permission
             getConfigurationData();
-        }
-    }
-
-    public static void createKeyHash(Activity activity, String yourPackage) {
-        try {
-            @SuppressLint("PackageManagerGetSignatures") PackageInfo info = activity.getPackageManager().getPackageInfo(yourPackage, PackageManager.GET_SIGNATURES);
-            for (Signature signature : info.signatures) {
-                MessageDigest md = MessageDigest.getInstance("SHA");
-                md.update(signature.toByteArray());
-                Log.e("KeyHash:", Base64.encodeToString(md.digest(), Base64.DEFAULT));
-            }
-        } catch (PackageManager.NameNotFoundException | NoSuchAlgorithmException e) {
-            e.printStackTrace();
         }
     }
 

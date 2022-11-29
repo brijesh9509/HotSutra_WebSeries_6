@@ -141,5 +141,4 @@ dependencies {
     //implementation "com.android.billingclient:billing:5.0.0"
 
     implementation 'androidx.work:work-runtime:2.7.1'
-    implementation 'com.guolindev.permissionx:permissionx:1.7.1'
 }

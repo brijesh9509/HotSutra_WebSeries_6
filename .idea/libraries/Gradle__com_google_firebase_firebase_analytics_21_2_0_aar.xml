@@ -3,9 +3,12 @@
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/bc23ee1e7043dd39df715af91e67909f/transformed/jetified-firebase-analytics-21.2.0/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/bc23ee1e7043dd39df715af91e67909f/transformed/jetified-firebase-analytics-21.2.0/AndroidManifest.xml" />
+      <root url="jar://E:/AndroidGradle/caches/transforms-3/bc23ee1e7043dd39df715af91e67909f/transformed/jetified-firebase-analytics-21.2.0/jars/classes.jar!/" />
+      <root url="file://E:/AndroidGradle/caches/transforms-3/bc23ee1e7043dd39df715af91e67909f/transformed/jetified-firebase-analytics-21.2.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/modules-2/files-2.1/com.google.firebase/firebase-analytics/21.2.0/e30555d01f4b419de1eed6ceed27b98aedecf946/firebase-analytics-21.2.0-javadoc.jar!/" />
+      <root url="jar://E:/AndroidGradle/caches/modules-2/files-2.1/com.google.firebase/firebase-analytics/21.2.0/e30555d01f4b419de1eed6ceed27b98aedecf946/firebase-analytics-21.2.0-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES />
   </library>

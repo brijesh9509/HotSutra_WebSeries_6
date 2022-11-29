@@ -6,6 +6,7 @@
       <root url="jar://E:/AndroidGradle/caches/transforms-3/f13a53ed123cb4d181a43c3134798a86/transformed/jetified-media2-1.0.0-alpha02/annotations.zip!/" />
       <root url="jar://E:/AndroidGradle/caches/transforms-3/afcc4507db0c5f5391ab3d435ffbdb27/transformed/jetified-media2-1.0.0-alpha02/annotations.zip!/" />
       <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/35d519ea7f938d687937f13ac661af8f/transformed/jetified-media2-1.0.0-alpha02/annotations.zip!/" />
+      <root url="jar://E:/AndroidGradle/caches/transforms-3/35d519ea7f938d687937f13ac661af8f/transformed/jetified-media2-1.0.0-alpha02/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="jar://D:/AndroidGradle/caches/transforms-3/c6d7e5ecf474bdcf8a55a675a22b973c/transformed/jetified-media2-1.0.0-alpha02/jars/classes.jar!/" />
@@ -25,6 +26,8 @@
       <root url="jar://E:/AndroidGradle/caches/transforms-3/afcc4507db0c5f5391ab3d435ffbdb27/transformed/jetified-media2-1.0.0-alpha02/jars/classes.jar!/" />
       <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/35d519ea7f938d687937f13ac661af8f/transformed/jetified-media2-1.0.0-alpha02/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/35d519ea7f938d687937f13ac661af8f/transformed/jetified-media2-1.0.0-alpha02/AndroidManifest.xml" />
+      <root url="file://E:/AndroidGradle/caches/transforms-3/35d519ea7f938d687937f13ac661af8f/transformed/jetified-media2-1.0.0-alpha02/AndroidManifest.xml" />
+      <root url="jar://E:/AndroidGradle/caches/transforms-3/35d519ea7f938d687937f13ac661af8f/transformed/jetified-media2-1.0.0-alpha02/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
