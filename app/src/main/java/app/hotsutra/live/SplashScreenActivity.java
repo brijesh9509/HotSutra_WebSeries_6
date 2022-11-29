@@ -7,6 +7,7 @@ import android.content.Intent;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
+
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
@@ -153,14 +154,15 @@ public class SplashScreenActivity extends AppCompatActivity {
 
             if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
                 getConfigurationData();
-            }else{
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                if (checkStoragePermission()) {
+            } else {
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                    if (checkStoragePermission()) {
+                        getConfigurationData();
+                    }
+                } else {
                     getConfigurationData();
                 }
-            } else {
-                getConfigurationData();
-            }}
+            }
         });
 
         // Log.e("OneSignal User ID", OneSignal.getDeviceState().getUserId().toString());

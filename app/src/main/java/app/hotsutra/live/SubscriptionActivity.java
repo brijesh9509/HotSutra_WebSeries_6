@@ -33,6 +33,7 @@ import app.hotsutra.live.network.model.ActiveSubscription;
 import app.hotsutra.live.network.model.SubscriptionHistory;
 import app.hotsutra.live.network.model.User;
 import app.hotsutra.live.utils.ApiResources;
+import app.hotsutra.live.utils.Constants;
 import app.hotsutra.live.utils.NetworkInst;
 import app.hotsutra.live.utils.PreferenceUtils;
 import app.hotsutra.live.utils.RtlUtils;
@@ -115,7 +116,7 @@ public class SubscriptionActivity extends AppCompatActivity implements ActiveSub
         Retrofit retrofit = RetrofitClient.getRetrofitInstance();
         SubscriptionApi subscriptionApi = retrofit.create(SubscriptionApi.class);
         Call<SubscriptionHistory> call = subscriptionApi.getSubscriptionHistory(AppConfig.API_KEY, userId,
-                BuildConfig.VERSION_CODE,PreferenceUtils.getUserId(this));
+                BuildConfig.VERSION_CODE, Constants.getDeviceId(getApplicationContext()));
         call.enqueue(new Callback<SubscriptionHistory>() {
             @Override
             public void onResponse(Call<SubscriptionHistory> call, Response<SubscriptionHistory> response) {
@@ -305,7 +306,7 @@ public class SubscriptionActivity extends AppCompatActivity implements ActiveSub
         Retrofit retrofit = RetrofitClient.getRetrofitInstance();
         SubscriptionApi api = retrofit.create(SubscriptionApi.class);
         Call<ResponseBody> call = api.cancelSubscription(AppConfig.API_KEY, userId, subscriptionId,
-                BuildConfig.VERSION_CODE,PreferenceUtils.getUserId(this));
+                BuildConfig.VERSION_CODE,Constants.getDeviceId(this));
         call.enqueue(new Callback<ResponseBody>() {
             @Override
             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
