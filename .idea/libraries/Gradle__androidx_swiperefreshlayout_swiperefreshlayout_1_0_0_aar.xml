@@ -2,7 +2,6 @@
   <library name="Gradle: androidx.swiperefreshlayout:swiperefreshlayout:1.0.0@aar">
     <ANNOTATIONS>
       <root url="jar://D:/AndroidGradle/caches/transforms-3/f1ee3b693c81011da51e18b2212f3bbe/transformed/swiperefreshlayout-1.0.0/annotations.zip!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/f1ee3b693c81011da51e18b2212f3bbe/transformed/swiperefreshlayout-1.0.0/annotations.zip!/" />
       <root url="jar://E:/AndroidGradle/caches/transforms-3/ae373fea850493faaa3cd0e8acba44cf/transformed/swiperefreshlayout-1.0.0/annotations.zip!/" />
       <root url="jar://E:/AndroidGradle/caches/transforms-3/d96c72090954356a34e787acc87739c7/transformed/swiperefreshlayout-1.0.0/annotations.zip!/" />
       <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/15845dd6109395636d823d0e192123e9/transformed/swiperefreshlayout-1.0.0/annotations.zip!/" />
@@ -14,8 +13,6 @@
       <root url="file://D:/AndroidGradle/caches/transforms-3/f1ee3b693c81011da51e18b2212f3bbe/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml" />
       <root url="jar://D:/AndroidGradle/caches/transforms-3/f1ee3b693c81011da51e18b2212f3bbe/transformed/swiperefreshlayout-1.0.0/jars/classes.jar!/" />
       <root url="file://D:/AndroidGradle/caches/transforms-3/f1ee3b693c81011da51e18b2212f3bbe/transformed/swiperefreshlayout-1.0.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f1ee3b693c81011da51e18b2212f3bbe/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/f1ee3b693c81011da51e18b2212f3bbe/transformed/swiperefreshlayout-1.0.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f1ee3b693c81011da51e18b2212f3bbe/transformed/swiperefreshlayout-1.0.0/res" />
       <root url="file://E:/AndroidGradle/caches/transforms-3/f1ee3b693c81011da51e18b2212f3bbe/transformed/swiperefreshlayout-1.0.0/res" />
       <root url="jar://E:/AndroidGradle/caches/transforms-3/ae373fea850493faaa3cd0e8acba44cf/transformed/swiperefreshlayout-1.0.0/jars/classes.jar!/" />

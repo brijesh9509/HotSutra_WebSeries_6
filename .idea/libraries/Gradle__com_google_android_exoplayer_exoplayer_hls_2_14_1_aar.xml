@@ -2,7 +2,6 @@
   <library name="Gradle: com.google.android.exoplayer:exoplayer-hls:2.14.1@aar">
     <ANNOTATIONS>
       <root url="jar://D:/AndroidGradle/caches/transforms-3/d790eebd99f8d4229f3f3572098d258e/transformed/jetified-exoplayer-hls-2.14.1/annotations.zip!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/d790eebd99f8d4229f3f3572098d258e/transformed/jetified-exoplayer-hls-2.14.1/annotations.zip!/" />
       <root url="jar://E:/AndroidGradle/caches/transforms-3/bee3a2bd75aa846a2a9d0b6f241390f3/transformed/jetified-exoplayer-hls-2.14.1/annotations.zip!/" />
       <root url="jar://E:/AndroidGradle/caches/transforms-3/23a6633182dbac751abb15bcba8989d7/transformed/jetified-exoplayer-hls-2.14.1/annotations.zip!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/23a6633182dbac751abb15bcba8989d7/transformed/jetified-exoplayer-hls-2.14.1/annotations.zip!/" />
@@ -14,8 +13,6 @@
       <root url="file://D:/AndroidGradle/caches/transforms-3/d790eebd99f8d4229f3f3572098d258e/transformed/jetified-exoplayer-hls-2.14.1/res" />
       <root url="file://D:/AndroidGradle/caches/transforms-3/d790eebd99f8d4229f3f3572098d258e/transformed/jetified-exoplayer-hls-2.14.1/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d790eebd99f8d4229f3f3572098d258e/transformed/jetified-exoplayer-hls-2.14.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d790eebd99f8d4229f3f3572098d258e/transformed/jetified-exoplayer-hls-2.14.1/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/d790eebd99f8d4229f3f3572098d258e/transformed/jetified-exoplayer-hls-2.14.1/jars/classes.jar!/" />
       <root url="file://E:/AndroidGradle/caches/transforms-3/d790eebd99f8d4229f3f3572098d258e/transformed/jetified-exoplayer-hls-2.14.1/res" />
       <root url="jar://E:/AndroidGradle/caches/transforms-3/bee3a2bd75aa846a2a9d0b6f241390f3/transformed/jetified-exoplayer-hls-2.14.1/jars/classes.jar!/" />
       <root url="file://E:/AndroidGradle/caches/transforms-3/bee3a2bd75aa846a2a9d0b6f241390f3/transformed/jetified-exoplayer-hls-2.14.1/AndroidManifest.xml" />

@@ -2,7 +2,6 @@
   <library name="Gradle: com.google.android.exoplayer:exoplayer-extractor:2.14.1@aar">
     <ANNOTATIONS>
       <root url="jar://D:/AndroidGradle/caches/transforms-3/29e9902014512fba27ef114fcc367ba7/transformed/jetified-exoplayer-extractor-2.14.1/annotations.zip!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/29e9902014512fba27ef114fcc367ba7/transformed/jetified-exoplayer-extractor-2.14.1/annotations.zip!/" />
       <root url="jar://E:/AndroidGradle/caches/transforms-3/f3e3f82b913523523cd57ae20e31d6b0/transformed/jetified-exoplayer-extractor-2.14.1/annotations.zip!/" />
       <root url="jar://E:/AndroidGradle/caches/transforms-3/6dd504fe438f23fb315f6bc7fed7f76d/transformed/jetified-exoplayer-extractor-2.14.1/annotations.zip!/" />
       <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/83929688ac455a00cfdbef7477275785/transformed/jetified-exoplayer-extractor-2.14.1/annotations.zip!/" />
@@ -12,9 +11,7 @@
       <root url="jar://D:/AndroidGradle/caches/transforms-3/29e9902014512fba27ef114fcc367ba7/transformed/jetified-exoplayer-extractor-2.14.1/jars/classes.jar!/" />
       <root url="file://D:/AndroidGradle/caches/transforms-3/29e9902014512fba27ef114fcc367ba7/transformed/jetified-exoplayer-extractor-2.14.1/res" />
       <root url="file://D:/AndroidGradle/caches/transforms-3/29e9902014512fba27ef114fcc367ba7/transformed/jetified-exoplayer-extractor-2.14.1/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/29e9902014512fba27ef114fcc367ba7/transformed/jetified-exoplayer-extractor-2.14.1/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/29e9902014512fba27ef114fcc367ba7/transformed/jetified-exoplayer-extractor-2.14.1/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/29e9902014512fba27ef114fcc367ba7/transformed/jetified-exoplayer-extractor-2.14.1/jars/classes.jar!/" />
       <root url="file://E:/AndroidGradle/caches/transforms-3/29e9902014512fba27ef114fcc367ba7/transformed/jetified-exoplayer-extractor-2.14.1/res" />
       <root url="file://E:/AndroidGradle/caches/transforms-3/f3e3f82b913523523cd57ae20e31d6b0/transformed/jetified-exoplayer-extractor-2.14.1/AndroidManifest.xml" />
       <root url="file://E:/AndroidGradle/caches/transforms-3/f3e3f82b913523523cd57ae20e31d6b0/transformed/jetified-exoplayer-extractor-2.14.1/res" />

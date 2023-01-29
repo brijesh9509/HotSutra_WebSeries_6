@@ -20,5 +20,5 @@ public interface ReportApi {
                                     @Field("message") String message,
                                     @Field("version") Integer vId,
                                     @Field("user_id") String userId,
-                                    @Query("udid") String uDID);
+                                    @Field("udid") String uDID);
 }

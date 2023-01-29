@@ -81,7 +81,7 @@ public class EpisodeAdapter extends RecyclerView.Adapter<EpisodeAdapter.Original
         holder.cardView.setOnClickListener(v -> {
             ((DetailsActivity)ctx).hideDescriptionLayout();
             ((DetailsActivity)ctx).showSeriesLayout();
-            ((DetailsActivity)ctx).setMediaUrlForTvSeries(obj.getStreamURL());
+            ((DetailsActivity)ctx).setMediaUrlForTvSeries(obj.getStreamURL(), obj.getSeson(), obj.getEpi());
             boolean castSession = ((DetailsActivity)ctx).getCastSession();
             //Toast.makeText(ctx, "cast:"+castSession, Toast.LENGTH_SHORT).show();
             if (!castSession) {

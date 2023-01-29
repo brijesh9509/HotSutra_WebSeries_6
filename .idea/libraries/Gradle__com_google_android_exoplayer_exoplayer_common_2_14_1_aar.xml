@@ -2,7 +2,6 @@
   <library name="Gradle: com.google.android.exoplayer:exoplayer-common:2.14.1@aar">
     <ANNOTATIONS>
       <root url="jar://D:/AndroidGradle/caches/transforms-3/efc00df26d40c03e305abeb275f66c3b/transformed/jetified-exoplayer-common-2.14.1/annotations.zip!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/efc00df26d40c03e305abeb275f66c3b/transformed/jetified-exoplayer-common-2.14.1/annotations.zip!/" />
       <root url="jar://E:/AndroidGradle/caches/transforms-3/5228ad80239db5d88204cef8cdb2a886/transformed/jetified-exoplayer-common-2.14.1/annotations.zip!/" />
       <root url="jar://E:/AndroidGradle/caches/transforms-3/3e7c882ef526e1f382b4c2fd101b4575/transformed/jetified-exoplayer-common-2.14.1/annotations.zip!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/3e7c882ef526e1f382b4c2fd101b4575/transformed/jetified-exoplayer-common-2.14.1/annotations.zip!/" />
@@ -13,9 +12,7 @@
       <root url="jar://D:/AndroidGradle/caches/transforms-3/efc00df26d40c03e305abeb275f66c3b/transformed/jetified-exoplayer-common-2.14.1/jars/classes.jar!/" />
       <root url="file://D:/AndroidGradle/caches/transforms-3/efc00df26d40c03e305abeb275f66c3b/transformed/jetified-exoplayer-common-2.14.1/res" />
       <root url="file://D:/AndroidGradle/caches/transforms-3/efc00df26d40c03e305abeb275f66c3b/transformed/jetified-exoplayer-common-2.14.1/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/efc00df26d40c03e305abeb275f66c3b/transformed/jetified-exoplayer-common-2.14.1/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/efc00df26d40c03e305abeb275f66c3b/transformed/jetified-exoplayer-common-2.14.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/efc00df26d40c03e305abeb275f66c3b/transformed/jetified-exoplayer-common-2.14.1/AndroidManifest.xml" />
       <root url="file://E:/AndroidGradle/caches/transforms-3/efc00df26d40c03e305abeb275f66c3b/transformed/jetified-exoplayer-common-2.14.1/res" />
       <root url="jar://E:/AndroidGradle/caches/transforms-3/5228ad80239db5d88204cef8cdb2a886/transformed/jetified-exoplayer-common-2.14.1/jars/classes.jar!/" />
       <root url="file://E:/AndroidGradle/caches/transforms-3/5228ad80239db5d88204cef8cdb2a886/transformed/jetified-exoplayer-common-2.14.1/res" />

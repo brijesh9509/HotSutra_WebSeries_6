@@ -2,7 +2,6 @@
   <library name="Gradle: androidx.media:media:1.2.1@aar">
     <ANNOTATIONS>
       <root url="jar://D:/AndroidGradle/caches/transforms-3/e9d356ed92caf8f904b4a1da6684fda7/transformed/media-1.2.1/annotations.zip!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/e9d356ed92caf8f904b4a1da6684fda7/transformed/media-1.2.1/annotations.zip!/" />
       <root url="jar://E:/AndroidGradle/caches/transforms-3/df7966879ffeb59a7ae6524ca6618b52/transformed/media-1.2.1/annotations.zip!/" />
       <root url="jar://E:/AndroidGradle/caches/transforms-3/e43dfe8754da53bf3aed1dabfcb353e5/transformed/media-1.2.1/annotations.zip!/" />
       <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/81fc5227b769f8b628905ab1b71452ec/transformed/media-1.2.1/annotations.zip!/" />
@@ -12,9 +11,6 @@
       <root url="jar://D:/AndroidGradle/caches/transforms-3/e9d356ed92caf8f904b4a1da6684fda7/transformed/media-1.2.1/jars/classes.jar!/" />
       <root url="file://D:/AndroidGradle/caches/transforms-3/e9d356ed92caf8f904b4a1da6684fda7/transformed/media-1.2.1/res" />
       <root url="file://D:/AndroidGradle/caches/transforms-3/e9d356ed92caf8f904b4a1da6684fda7/transformed/media-1.2.1/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e9d356ed92caf8f904b4a1da6684fda7/transformed/media-1.2.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e9d356ed92caf8f904b4a1da6684fda7/transformed/media-1.2.1/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/e9d356ed92caf8f904b4a1da6684fda7/transformed/media-1.2.1/jars/classes.jar!/" />
       <root url="jar://E:/AndroidGradle/caches/transforms-3/df7966879ffeb59a7ae6524ca6618b52/transformed/media-1.2.1/jars/classes.jar!/" />
       <root url="file://E:/AndroidGradle/caches/transforms-3/df7966879ffeb59a7ae6524ca6618b52/transformed/media-1.2.1/res" />
       <root url="file://E:/AndroidGradle/caches/transforms-3/df7966879ffeb59a7ae6524ca6618b52/transformed/media-1.2.1/AndroidManifest.xml" />

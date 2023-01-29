@@ -363,7 +363,7 @@
                                 android:layout_alignParentEnd="true"
                                 android:background="@drawable/rounded_toolbar_background"
                                 android:orientation="vertical"
-                                android:visibility="gone" />
+                                android:visibility="gone"></androidx.appcompat.widget.Toolbar>
 
 
                             <!--<ImageView
@@ -740,11 +740,21 @@
                         </LinearLayout>
                     </RelativeLayout>
 
+                    <RelativeLayout
+                        android:id="@+id/adView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center" />
+
                     <LinearLayout
+
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:orientation="vertical"
+
                         android:padding="10dp">
 
                         <TextView
@@ -931,10 +941,10 @@
         android:id="@+id/liveChatSection"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/play"
-        android:fitsSystemWindows="true"
         android:padding="10dp"
-        android:visibility="gone">
+        android:visibility="gone"
+        android:layout_below="@id/play"
+        android:fitsSystemWindows="true">
 
         <TextView
             android:id="@+id/text_live_comment"

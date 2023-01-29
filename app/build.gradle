@@ -85,7 +85,8 @@ dependencies {
 
     //firebase
     implementation 'com.google.firebase:firebase-analytics:21.2.0'
-    implementation 'com.google.firebase:firebase-messaging:23.1.0'
+    implementation 'com.google.firebase:firebase-messaging:23.1.1'
+    implementation 'com.google.firebase:firebase-database:20.1.0'
     //firebase auth
     implementation 'com.firebaseui:firebase-ui-auth:8.0.2'
 
@@ -103,7 +104,7 @@ dependencies {
     implementation 'com.facebook.shimmer:shimmer:0.5.0'
     implementation 'com.balysv:material-ripple:1.0.2'
 
-    def room_version = "2.4.3"
+    def room_version = "2.5.0"
     //Room
     implementation "androidx.room:room-runtime:$room_version"
     annotationProcessor "androidx.room:room-compiler:$room_version"
