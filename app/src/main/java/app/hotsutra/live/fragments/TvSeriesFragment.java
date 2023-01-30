@@ -204,7 +204,7 @@ public class TvSeriesFragment extends Fragment {
     }
 
     private void getTvSeriesData(int pageNum) {
-        String userId = PreferenceUtils.getUserId(requireActivity());
+        String userId = PreferenceUtils.getUserId(requireContext());
         Retrofit retrofit = RetrofitClient.getRetrofitInstance();
         TvSeriesApi api = retrofit.create(TvSeriesApi.class);
         Call<List<Video>> call = api.getTvSeries(AppConfig.API_KEY, pageNum, BuildConfig.VERSION_CODE,
@@ -242,12 +242,16 @@ public class TvSeriesFragment extends Fragment {
                 }else if (response.code() == 412) {
                     try {
                         if (response.errorBody() != null) {
-                            ApiResources.openLoginScreen(response.errorBody().string(),
-                                    requireActivity());
-                            requireActivity().finish();
+                            try {
+                                ApiResources.openLoginScreen(response.errorBody().string(),
+                                        requireContext());
+                                activity.finish();
+                            }catch(Exception e){
+                                e.printStackTrace();
+                            }
                         }
                     } catch (Exception e) {
-                        Toast.makeText(requireActivity(),
+                        Toast.makeText(requireContext(),
                                 e.getMessage(), Toast.LENGTH_LONG).show();
                     }
                 } else {

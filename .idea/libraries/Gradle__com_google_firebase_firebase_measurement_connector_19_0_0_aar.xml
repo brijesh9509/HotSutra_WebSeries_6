@@ -1,11 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.firebase:firebase-measurement-connector:19.0.0@aar">
     <CLASSES>
-      <root url="jar://E:/AndroidGradle/caches/transforms-3/7ea35a31cd0f203d0ad4c8e668f81b37/transformed/jetified-firebase-measurement-connector-19.0.0/jars/classes.jar!/" />
-      <root url="file://E:/AndroidGradle/caches/transforms-3/7ea35a31cd0f203d0ad4c8e668f81b37/transformed/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/7ea35a31cd0f203d0ad4c8e668f81b37/transformed/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/7ea35a31cd0f203d0ad4c8e668f81b37/transformed/jetified-firebase-measurement-connector-19.0.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://E:/AndroidGradle/caches/modules-2/files-2.1/com.google.firebase/firebase-measurement-connector/19.0.0/c0d58b8efa926b2c607984c54fb3d274490badd1/firebase-measurement-connector-19.0.0-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/modules-2/files-2.1/com.google.firebase/firebase-measurement-connector/19.0.0/c0d58b8efa926b2c607984c54fb3d274490badd1/firebase-measurement-connector-19.0.0-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES />
   </library>

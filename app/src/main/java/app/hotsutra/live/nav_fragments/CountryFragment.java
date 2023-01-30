@@ -174,7 +174,7 @@ public class CountryFragment extends Fragment {
 
 
     private void getAllCountry(){
-        String userId = PreferenceUtils.getUserId(requireActivity());
+        String userId = PreferenceUtils.getUserId(requireContext());
         Retrofit retrofit = RetrofitClient.getRetrofitInstance();
         CountryApi api = retrofit.create(CountryApi.class);
         Call<List<AllCountry>> call = api.getAllCountry(AppConfig.API_KEY,
@@ -206,12 +206,16 @@ public class CountryFragment extends Fragment {
                 }else if (response.code() == 412) {
                     try {
                         if (response.errorBody() != null) {
-                            ApiResources.openLoginScreen(response.errorBody().string(),
-                                    requireActivity());
-                            requireActivity().finish();
+                            try {
+                                ApiResources.openLoginScreen(response.errorBody().string(),
+                                        requireContext());
+                                activity.finish();
+                            }catch(Exception e){
+                                e.printStackTrace();
+                            }
                         }
                     } catch (Exception e) {
-                        Toast.makeText(requireActivity(),
+                        Toast.makeText(requireContext(),
                                 e.getMessage(), Toast.LENGTH_LONG).show();
                     }
                 }else {

@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.android.gms:play-services-cast:11.4.2@aar">
     <CLASSES>
-      <root url="jar://E:/AndroidGradle/caches/transforms-3/e190e89b0306da9370e0b0823f6d4e00/transformed/jetified-play-services-cast-11.4.2/jars/classes.jar!/" />
-      <root url="file://E:/AndroidGradle/caches/transforms-3/e190e89b0306da9370e0b0823f6d4e00/transformed/jetified-play-services-cast-11.4.2/AndroidManifest.xml" />
-      <root url="file://E:/AndroidGradle/caches/transforms-3/e190e89b0306da9370e0b0823f6d4e00/transformed/jetified-play-services-cast-11.4.2/res" />
+      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/e190e89b0306da9370e0b0823f6d4e00/transformed/jetified-play-services-cast-11.4.2/res" />
+      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/e190e89b0306da9370e0b0823f6d4e00/transformed/jetified-play-services-cast-11.4.2/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/e190e89b0306da9370e0b0823f6d4e00/transformed/jetified-play-services-cast-11.4.2/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

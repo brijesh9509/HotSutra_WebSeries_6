@@ -787,23 +787,20 @@ public class DetailsActivity extends AppCompatActivity implements CastPlayer.Ses
             }
         });
 
-        downloadBt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (!listInternalDownload.isEmpty() || !listExternalDownload.isEmpty()) {
-                    if (AppConfig.ENABLE_DOWNLOAD_TO_ALL) {
+        downloadBt.setOnClickListener(v -> {
+            if (!listInternalDownload.isEmpty() || !listExternalDownload.isEmpty()) {
+                if (AppConfig.ENABLE_DOWNLOAD_TO_ALL) {
+                    openDownloadServerDialog();
+                } else {
+                    if (PreferenceUtils.isLoggedIn(DetailsActivity.this) && PreferenceUtils.isActivePlan(DetailsActivity.this)) {
                         openDownloadServerDialog();
                     } else {
-                        if (PreferenceUtils.isLoggedIn(DetailsActivity.this) && PreferenceUtils.isActivePlan(DetailsActivity.this)) {
-                            openDownloadServerDialog();
-                        } else {
-                            Toast.makeText(DetailsActivity.this, R.string.download_not_permitted, Toast.LENGTH_SHORT).show();
-                            Log.e("Download", "not permitted");
-                        }
+                        Toast.makeText(DetailsActivity.this, R.string.download_not_permitted, Toast.LENGTH_SHORT).show();
+                        Log.e("Download", "not permitted");
                     }
-                } else {
-                    Toast.makeText(DetailsActivity.this, R.string.no_download_server_found, Toast.LENGTH_SHORT).show();
                 }
+            } else {
+                Toast.makeText(DetailsActivity.this, R.string.no_download_server_found, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -2312,8 +2309,9 @@ public class DetailsActivity extends AppCompatActivity implements CastPlayer.Ses
         Call<SingleDetails> call = api.getSingleDetails(AppConfig.API_KEY, vtype, vId, BuildConfig.VERSION_CODE,userId,
                 getDeviceId(DetailsActivity.this));
         call.enqueue(new Callback<SingleDetails>() {
+            @SuppressLint({"SetTextI18n", "NotifyDataSetChanged"})
             @Override
-            public void onResponse(Call<SingleDetails> call, retrofit2.Response<SingleDetails> response) {
+            public void onResponse(@NonNull Call<SingleDetails> call, @NonNull retrofit2.Response<SingleDetails> response) {
                 if (response.code() == 200) {
                     shimmerFrameLayout.stopShimmer();
                     shimmerFrameLayout.setVisibility(GONE);
@@ -2481,7 +2479,7 @@ public class DetailsActivity extends AppCompatActivity implements CastPlayer.Ses
             }
 
             @Override
-            public void onFailure(Call<SingleDetails> call, Throwable t) {
+            public void onFailure(@NonNull Call<SingleDetails> call, @NonNull Throwable t) {
                 swipeRefreshLayout.setRefreshing(false);
             }
         });

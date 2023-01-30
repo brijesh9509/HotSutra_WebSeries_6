@@ -491,11 +491,11 @@ public class HomeFragment extends Fragment {
     }
 
     private void getHomeContentDataFromServer() {
-        String userId = PreferenceUtils.getUserId(requireActivity());
+        String userId = PreferenceUtils.getUserId(activity);
         Retrofit retrofit = RetrofitClient.getRetrofitInstance();
         HomeContentApi api = retrofit.create(HomeContentApi.class);
         Call<HomeContent> call = api.getHomeContent(AppConfig.API_KEY, BuildConfig.VERSION_CODE,userId,
-                getDeviceId(requireContext()));
+                getDeviceId(activity));
         call.enqueue(new Callback<HomeContent>() {
             @Override
             public void onResponse(@NonNull Call<HomeContent> call, @NonNull retrofit2.Response<HomeContent> response) {
@@ -517,12 +517,16 @@ public class HomeFragment extends Fragment {
                 } else if (response.code() == 412) {
                     try {
                         if (response.errorBody() != null) {
-                            ApiResources.openLoginScreen(response.errorBody().string(),
-                                    requireActivity());
-                            requireActivity().finish();
+                            try {
+                                ApiResources.openLoginScreen(response.errorBody().string(),
+                                        requireContext());
+                                activity.finish();
+                            }catch(Exception e){
+                                e.printStackTrace();
+                            }
                         }
                     } catch (Exception e) {
-                        Toast.makeText(requireActivity(),
+                        Toast.makeText(requireContext(),
                                 e.getMessage(), Toast.LENGTH_LONG).show();
                     }
                 }else {
