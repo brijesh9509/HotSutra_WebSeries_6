@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.android.exoplayer:exoplayer-ui:2.14.1@aar">
     <ANNOTATIONS>
-      <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/5cd8e7af4f00d29eda7cbea24dd099a3/transformed/jetified-exoplayer-ui-2.14.1/annotations.zip!/" />
+      <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/10457f5f1345b6f50b031ac20b7e8433/transformed/jetified-exoplayer-ui-2.14.1/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/5cd8e7af4f00d29eda7cbea24dd099a3/transformed/jetified-exoplayer-ui-2.14.1/AndroidManifest.xml" />
-      <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/5cd8e7af4f00d29eda7cbea24dd099a3/transformed/jetified-exoplayer-ui-2.14.1/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/5cd8e7af4f00d29eda7cbea24dd099a3/transformed/jetified-exoplayer-ui-2.14.1/res" />
+      <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/10457f5f1345b6f50b031ac20b7e8433/transformed/jetified-exoplayer-ui-2.14.1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/10457f5f1345b6f50b031ac20b7e8433/transformed/jetified-exoplayer-ui-2.14.1/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/10457f5f1345b6f50b031ac20b7e8433/transformed/jetified-exoplayer-ui-2.14.1/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

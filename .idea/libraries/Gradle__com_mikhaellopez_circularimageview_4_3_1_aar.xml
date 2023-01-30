@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.mikhaellopez:circularimageview:4.3.1@aar">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/6c93b64e4475036bd036ffbcfa7afa16/transformed/jetified-circularimageview-4.3.1/AndroidManifest.xml" />
-      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/6c93b64e4475036bd036ffbcfa7afa16/transformed/jetified-circularimageview-4.3.1/res" />
-      <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/6c93b64e4475036bd036ffbcfa7afa16/transformed/jetified-circularimageview-4.3.1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/91cae7f70b6cffce261aff4101081cdf/transformed/jetified-circularimageview-4.3.1/res" />
+      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/91cae7f70b6cffce261aff4101081cdf/transformed/jetified-circularimageview-4.3.1/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/91cae7f70b6cffce261aff4101081cdf/transformed/jetified-circularimageview-4.3.1/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

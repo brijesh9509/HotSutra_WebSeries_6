@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.balysv:material-ripple:1.0.2@aar">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/121acf5298f9c7a91cf5653522f40707/transformed/jetified-material-ripple-1.0.2/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/121acf5298f9c7a91cf5653522f40707/transformed/jetified-material-ripple-1.0.2/AndroidManifest.xml" />
-      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/121acf5298f9c7a91cf5653522f40707/transformed/jetified-material-ripple-1.0.2/res" />
+      <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/b7eb1fbf761167c2825fc899e72d10d0/transformed/jetified-material-ripple-1.0.2/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/b7eb1fbf761167c2825fc899e72d10d0/transformed/jetified-material-ripple-1.0.2/res" />
+      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/b7eb1fbf761167c2825fc899e72d10d0/transformed/jetified-material-ripple-1.0.2/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/modules-2/files-2.1/com.balysv/material-ripple/1.0.2/ed8a7ced09e531cc44a86c8f024a28302452df0c/material-ripple-1.0.2-javadoc.jar!/" />

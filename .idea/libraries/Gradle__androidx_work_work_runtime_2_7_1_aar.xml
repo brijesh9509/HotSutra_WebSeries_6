@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.work:work-runtime:2.7.1@aar">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/dca4a72e8bd7ed6a61f86893360a05a5/transformed/work-runtime-2.7.1/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/dca4a72e8bd7ed6a61f86893360a05a5/transformed/work-runtime-2.7.1/res" />
-      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/dca4a72e8bd7ed6a61f86893360a05a5/transformed/work-runtime-2.7.1/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/adf9573634e6f79210ed57b33a7c0785/transformed/work-runtime-2.7.1/res" />
+      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/adf9573634e6f79210ed57b33a7c0785/transformed/work-runtime-2.7.1/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/adf9573634e6f79210ed57b33a7c0785/transformed/work-runtime-2.7.1/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

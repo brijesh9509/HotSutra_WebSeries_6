@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.media:media:1.2.1@aar">
     <ANNOTATIONS>
-      <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/81fc5227b769f8b628905ab1b71452ec/transformed/media-1.2.1/annotations.zip!/" />
+      <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/3512fc4f2a2b5b2ccb73b73e5b97468f/transformed/media-1.2.1/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/81fc5227b769f8b628905ab1b71452ec/transformed/media-1.2.1/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/81fc5227b769f8b628905ab1b71452ec/transformed/media-1.2.1/AndroidManifest.xml" />
-      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/81fc5227b769f8b628905ab1b71452ec/transformed/media-1.2.1/res" />
+      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/3512fc4f2a2b5b2ccb73b73e5b97468f/transformed/media-1.2.1/res" />
+      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/3512fc4f2a2b5b2ccb73b73e5b97468f/transformed/media-1.2.1/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/3512fc4f2a2b5b2ccb73b73e5b97468f/transformed/media-1.2.1/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

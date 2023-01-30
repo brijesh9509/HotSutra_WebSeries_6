@@ -1,3 +1,6 @@
 # ninja log v5
 1	721	691400561	CMakeFiles/api_config.dir/api_config.cpp.o	8b609c091b179b52
 723	892	691400561	F:/Flutter/Demo/HotSutra_WebSeries_6/app/build/intermediates/cxx/Debug/6t3266k3/obj/armeabi-v7a/libapi_config.so	44008e0c1d61eff9
+18	33	0	clean	6f45ba1bad46d958
+4	880	696786525	CMakeFiles/api_config.dir/api_config.cpp.o	8b609c091b179b52
+880	1668	696786526	F:/Flutter/Demo/HotSutra_WebSeries_6/app/build/intermediates/cxx/Debug/6t3266k3/obj/armeabi-v7a/libapi_config.so	44008e0c1d61eff9

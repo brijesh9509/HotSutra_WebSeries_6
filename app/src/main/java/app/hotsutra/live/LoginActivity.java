@@ -26,8 +26,6 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
 
-import app.hotsutra.live.R;
-
 import app.hotsutra.live.database.DatabaseHelper;
 import app.hotsutra.live.network.apis.FirebaseAuthApi;
 import app.hotsutra.live.network.apis.LoginApi;

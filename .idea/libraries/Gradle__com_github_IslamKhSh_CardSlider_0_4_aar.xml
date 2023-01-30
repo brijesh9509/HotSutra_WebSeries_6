@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.IslamKhSh:CardSlider:0.4@aar">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/b8cd25450cabdb76801e0c6fc72ce16e/transformed/jetified-CardSlider-0.4/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/b8cd25450cabdb76801e0c6fc72ce16e/transformed/jetified-CardSlider-0.4/res" />
-      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/b8cd25450cabdb76801e0c6fc72ce16e/transformed/jetified-CardSlider-0.4/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/85946dc9792b016269f38df8c11cd40c/transformed/jetified-CardSlider-0.4/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/85946dc9792b016269f38df8c11cd40c/transformed/jetified-CardSlider-0.4/res" />
+      <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/85946dc9792b016269f38df8c11cd40c/transformed/jetified-CardSlider-0.4/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

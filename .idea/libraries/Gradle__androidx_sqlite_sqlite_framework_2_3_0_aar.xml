@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.sqlite:sqlite-framework:2.3.0@aar">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/4846b3483180c7756c879b020b7b1763/transformed/sqlite-framework-2.3.0/AndroidManifest.xml" />
-      <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/4846b3483180c7756c879b020b7b1763/transformed/sqlite-framework-2.3.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/4846b3483180c7756c879b020b7b1763/transformed/sqlite-framework-2.3.0/res" />
+      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/a355e30b400b98b6d2da28b646e3196f/transformed/sqlite-framework-2.3.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/a355e30b400b98b6d2da28b646e3196f/transformed/sqlite-framework-2.3.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/a355e30b400b98b6d2da28b646e3196f/transformed/sqlite-framework-2.3.0/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

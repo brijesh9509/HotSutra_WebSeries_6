@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.mediarouter:mediarouter:1.0.0-alpha5@aar">
     <ANNOTATIONS>
-      <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/340482613369a90874ae91ab15baec13/transformed/mediarouter-1.0.0-alpha5/annotations.zip!/" />
+      <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/304adbdf22ac194423fc8456c2b75dc6/transformed/mediarouter-1.0.0-alpha5/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/340482613369a90874ae91ab15baec13/transformed/mediarouter-1.0.0-alpha5/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/340482613369a90874ae91ab15baec13/transformed/mediarouter-1.0.0-alpha5/res" />
-      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/340482613369a90874ae91ab15baec13/transformed/mediarouter-1.0.0-alpha5/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/304adbdf22ac194423fc8456c2b75dc6/transformed/mediarouter-1.0.0-alpha5/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/304adbdf22ac194423fc8456c2b75dc6/transformed/mediarouter-1.0.0-alpha5/res" />
+      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/304adbdf22ac194423fc8456c2b75dc6/transformed/mediarouter-1.0.0-alpha5/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

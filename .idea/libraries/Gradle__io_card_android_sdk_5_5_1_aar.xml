@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: io.card:android-sdk:5.5.1@aar">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/6fcada21da35a88a37d37cc9168c9eb3/transformed/jetified-android-sdk-5.5.1/res" />
-      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/6fcada21da35a88a37d37cc9168c9eb3/transformed/jetified-android-sdk-5.5.1/AndroidManifest.xml" />
-      <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/6fcada21da35a88a37d37cc9168c9eb3/transformed/jetified-android-sdk-5.5.1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/b39220ede5c56655a93f527c458e2a35/transformed/jetified-android-sdk-5.5.1/res" />
+      <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/b39220ede5c56655a93f527c458e2a35/transformed/jetified-android-sdk-5.5.1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/b39220ede5c56655a93f527c458e2a35/transformed/jetified-android-sdk-5.5.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/modules-2/files-2.1/io.card/android-sdk/5.5.1/36b64abd31ed163886c93b1c86e31038e82b265b/android-sdk-5.5.1-javadoc.jar!/" />

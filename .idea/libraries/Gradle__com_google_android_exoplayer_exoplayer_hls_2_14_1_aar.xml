@@ -1,11 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.android.exoplayer:exoplayer-hls:2.14.1@aar">
     <ANNOTATIONS>
-      <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/c2c2aa39269b76a3f2f447e8a1c9519a/transformed/jetified-exoplayer-hls-2.14.1/annotations.zip!/" />
+      <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/46595aaf9c6510589e15e6e76b242b3c/transformed/jetified-exoplayer-hls-2.14.1/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/c2c2aa39269b76a3f2f447e8a1c9519a/transformed/jetified-exoplayer-hls-2.14.1/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/c2c2aa39269b76a3f2f447e8a1c9519a/transformed/jetified-exoplayer-hls-2.14.1/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/46595aaf9c6510589e15e6e76b242b3c/transformed/jetified-exoplayer-hls-2.14.1/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/46595aaf9c6510589e15e6e76b242b3c/transformed/jetified-exoplayer-hls-2.14.1/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

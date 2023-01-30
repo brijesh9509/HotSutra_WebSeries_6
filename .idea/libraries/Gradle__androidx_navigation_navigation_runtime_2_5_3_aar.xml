@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.navigation:navigation-runtime:2.5.3@aar">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/330cbc984e7f115ed9a39394aa376765/transformed/navigation-runtime-2.5.3/AndroidManifest.xml" />
-      <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/330cbc984e7f115ed9a39394aa376765/transformed/navigation-runtime-2.5.3/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/330cbc984e7f115ed9a39394aa376765/transformed/navigation-runtime-2.5.3/res" />
+      <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/0f21226b99e1bef528e7c5dbb3aae9bc/transformed/navigation-runtime-2.5.3/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/0f21226b99e1bef528e7c5dbb3aae9bc/transformed/navigation-runtime-2.5.3/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/0f21226b99e1bef528e7c5dbb3aae9bc/transformed/navigation-runtime-2.5.3/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

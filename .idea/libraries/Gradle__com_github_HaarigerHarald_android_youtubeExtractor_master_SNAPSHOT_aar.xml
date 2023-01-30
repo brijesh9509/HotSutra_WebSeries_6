@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.HaarigerHarald:android-youtubeExtractor:master-SNAPSHOT@aar">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/b7ca35939bd1fd0d6bf8b7775d6d7c65/transformed/jetified-android-youtubeExtractor-master-SNAPSHOT/AndroidManifest.xml" />
-      <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/b7ca35939bd1fd0d6bf8b7775d6d7c65/transformed/jetified-android-youtubeExtractor-master-SNAPSHOT/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/b7ca35939bd1fd0d6bf8b7775d6d7c65/transformed/jetified-android-youtubeExtractor-master-SNAPSHOT/res" />
+      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/05a1d6734292e6d06436382e5f120713/transformed/jetified-android-youtubeExtractor-master-SNAPSHOT/res" />
+      <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/05a1d6734292e6d06436382e5f120713/transformed/jetified-android-youtubeExtractor-master-SNAPSHOT/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/05a1d6734292e6d06436382e5f120713/transformed/jetified-android-youtubeExtractor-master-SNAPSHOT/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

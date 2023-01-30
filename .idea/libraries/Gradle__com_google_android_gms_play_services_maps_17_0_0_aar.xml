@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.android.gms:play-services-maps:17.0.0@aar">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/038c498b77a05b60f37f43a2bbc6b69a/transformed/jetified-play-services-maps-17.0.0/res" />
-      <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/038c498b77a05b60f37f43a2bbc6b69a/transformed/jetified-play-services-maps-17.0.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/038c498b77a05b60f37f43a2bbc6b69a/transformed/jetified-play-services-maps-17.0.0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/cf47acf2dff2762c7e47ffe0596c4113/transformed/jetified-play-services-maps-17.0.0/res" />
+      <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/cf47acf2dff2762c7e47ffe0596c4113/transformed/jetified-play-services-maps-17.0.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/cf47acf2dff2762c7e47ffe0596c4113/transformed/jetified-play-services-maps-17.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/modules-2/files-2.1/com.google.android.gms/play-services-maps/17.0.0/d997ae8f2b0b4a330bcafcba55f8af323c816562/play-services-maps-17.0.0-javadoc.jar!/" />

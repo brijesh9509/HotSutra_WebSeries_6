@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.android.material:material:1.7.0@aar">
     <ANNOTATIONS>
-      <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/059621e19c9549e0939ea9574c4f120b/transformed/material-1.7.0/annotations.zip!/" />
+      <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/d84972565d18055abc5b6f9ff7170872/transformed/material-1.7.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/059621e19c9549e0939ea9574c4f120b/transformed/material-1.7.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/059621e19c9549e0939ea9574c4f120b/transformed/material-1.7.0/AndroidManifest.xml" />
-      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/059621e19c9549e0939ea9574c4f120b/transformed/material-1.7.0/res" />
+      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/d84972565d18055abc5b6f9ff7170872/transformed/material-1.7.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/d84972565d18055abc5b6f9ff7170872/transformed/material-1.7.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/d84972565d18055abc5b6f9ff7170872/transformed/material-1.7.0/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
