@@ -1,31 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.interpolator:interpolator:1.0.0@aar">
     <CLASSES>
-      <root url="file://D:/AndroidGradle/caches/transforms-3/a87094b54d92fb6b7f01b700e378d11d/transformed/interpolator-1.0.0/res" />
-      <root url="file://D:/AndroidGradle/caches/transforms-3/000b6a779ff99c6f207671ad011151ef/transformed/interpolator-1.0.0/res" />
-      <root url="file://D:/AndroidGradle/caches/transforms-3/eca6b4d3919a67c40726811bb74aba4e/transformed/interpolator-1.0.0/res" />
-      <root url="jar://D:/AndroidGradle/caches/transforms-3/eca6b4d3919a67c40726811bb74aba4e/transformed/interpolator-1.0.0/jars/classes.jar!/" />
-      <root url="file://D:/AndroidGradle/caches/transforms-3/eca6b4d3919a67c40726811bb74aba4e/transformed/interpolator-1.0.0/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/eca6b4d3919a67c40726811bb74aba4e/transformed/interpolator-1.0.0/res" />
-      <root url="file://E:/AndroidGradle/caches/transforms-3/eca6b4d3919a67c40726811bb74aba4e/transformed/interpolator-1.0.0/res" />
-      <root url="file://E:/AndroidGradle/caches/transforms-3/dcbc39babe434827bb4616337b8aaa82/transformed/interpolator-1.0.0/res" />
-      <root url="file://E:/AndroidGradle/caches/transforms-3/dcbc39babe434827bb4616337b8aaa82/transformed/interpolator-1.0.0/AndroidManifest.xml" />
-      <root url="jar://E:/AndroidGradle/caches/transforms-3/dcbc39babe434827bb4616337b8aaa82/transformed/interpolator-1.0.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/dcbc39babe434827bb4616337b8aaa82/transformed/interpolator-1.0.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0e53a5e3f9a2110b5619638cef5be8dc/transformed/interpolator-1.0.0/res" />
-      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/0e53a5e3f9a2110b5619638cef5be8dc/transformed/interpolator-1.0.0/res" />
-      <root url="jar://E:/AndroidGradle/caches/transforms-3/9dfa3d111ede28bfc3a7516edf59ae4c/transformed/interpolator-1.0.0/jars/classes.jar!/" />
-      <root url="file://E:/AndroidGradle/caches/transforms-3/9dfa3d111ede28bfc3a7516edf59ae4c/transformed/interpolator-1.0.0/AndroidManifest.xml" />
-      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/2d2e591ea81a82d09aa6024c490c7044/transformed/interpolator-1.0.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/2d2e591ea81a82d09aa6024c490c7044/transformed/interpolator-1.0.0/AndroidManifest.xml" />
       <root url="file://E:/AndroidGradle/caches/transforms-3/2d2e591ea81a82d09aa6024c490c7044/transformed/interpolator-1.0.0/AndroidManifest.xml" />
       <root url="jar://E:/AndroidGradle/caches/transforms-3/2d2e591ea81a82d09aa6024c490c7044/transformed/interpolator-1.0.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://D:/AndroidGradle/caches/modules-2/files-2.1/androidx.interpolator/interpolator/1.0.0/fefd5e3cbc479b6b4a9532d05688a1e659e8d3d2/interpolator-1.0.0-sources.jar!/" />
       <root url="jar://E:/AndroidGradle/caches/modules-2/files-2.1/androidx.interpolator/interpolator/1.0.0/fefd5e3cbc479b6b4a9532d05688a1e659e8d3d2/interpolator-1.0.0-sources.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/modules-2/files-2.1/androidx.interpolator/interpolator/1.0.0/fefd5e3cbc479b6b4a9532d05688a1e659e8d3d2/interpolator-1.0.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

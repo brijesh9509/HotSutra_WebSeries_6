@@ -1,28 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.android.gms:play-services-ads-identifier:18.0.0@aar">
     <CLASSES>
-      <root url="jar://D:/AndroidGradle/caches/transforms-3/a9464abe81f70874b9293161adc8c2b2/transformed/jetified-play-services-ads-identifier-18.0.0/jars/classes.jar!/" />
-      <root url="file://D:/AndroidGradle/caches/transforms-3/a9464abe81f70874b9293161adc8c2b2/transformed/jetified-play-services-ads-identifier-18.0.0/res" />
-      <root url="file://D:/AndroidGradle/caches/transforms-3/a9464abe81f70874b9293161adc8c2b2/transformed/jetified-play-services-ads-identifier-18.0.0/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a9464abe81f70874b9293161adc8c2b2/transformed/jetified-play-services-ads-identifier-18.0.0/res" />
-      <root url="file://E:/AndroidGradle/caches/transforms-3/a9464abe81f70874b9293161adc8c2b2/transformed/jetified-play-services-ads-identifier-18.0.0/res" />
-      <root url="jar://E:/AndroidGradle/caches/transforms-3/1ce6c48f94223aef5f53ce769e49bc31/transformed/jetified-play-services-ads-identifier-18.0.0/jars/classes.jar!/" />
-      <root url="file://E:/AndroidGradle/caches/transforms-3/1ce6c48f94223aef5f53ce769e49bc31/transformed/jetified-play-services-ads-identifier-18.0.0/AndroidManifest.xml" />
-      <root url="file://E:/AndroidGradle/caches/transforms-3/1ce6c48f94223aef5f53ce769e49bc31/transformed/jetified-play-services-ads-identifier-18.0.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1ce6c48f94223aef5f53ce769e49bc31/transformed/jetified-play-services-ads-identifier-18.0.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/bc4057fcf953effae5cbd2bd624d49d0/transformed/jetified-play-services-ads-identifier-18.0.0/res" />
-      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/bc4057fcf953effae5cbd2bd624d49d0/transformed/jetified-play-services-ads-identifier-18.0.0/res" />
-      <root url="file://E:/AndroidGradle/caches/transforms-3/8393eb6574cb5e4a0a2a23e1cd02095f/transformed/jetified-play-services-ads-identifier-18.0.0/AndroidManifest.xml" />
-      <root url="jar://E:/AndroidGradle/caches/transforms-3/8393eb6574cb5e4a0a2a23e1cd02095f/transformed/jetified-play-services-ads-identifier-18.0.0/jars/classes.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/f9019b1dee7e10d6dcdba4a4cdbd7256/transformed/jetified-play-services-ads-identifier-18.0.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/f9019b1dee7e10d6dcdba4a4cdbd7256/transformed/jetified-play-services-ads-identifier-18.0.0/AndroidManifest.xml" />
       <root url="file://E:/AndroidGradle/caches/transforms-3/f9019b1dee7e10d6dcdba4a4cdbd7256/transformed/jetified-play-services-ads-identifier-18.0.0/AndroidManifest.xml" />
       <root url="jar://E:/AndroidGradle/caches/transforms-3/f9019b1dee7e10d6dcdba4a4cdbd7256/transformed/jetified-play-services-ads-identifier-18.0.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://D:/AndroidGradle/caches/modules-2/files-2.1/com.google.android.gms/play-services-ads-identifier/18.0.0/71d2e97dbe034b36f64b28491590ec2b2ec324e3/play-services-ads-identifier-18.0.0-javadoc.jar!/" />
       <root url="jar://E:/AndroidGradle/caches/modules-2/files-2.1/com.google.android.gms/play-services-ads-identifier/18.0.0/71d2e97dbe034b36f64b28491590ec2b2ec324e3/play-services-ads-identifier-18.0.0-javadoc.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/modules-2/files-2.1/com.google.android.gms/play-services-ads-identifier/18.0.0/71d2e97dbe034b36f64b28491590ec2b2ec324e3/play-services-ads-identifier-18.0.0-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES />
   </library>

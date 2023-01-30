@@ -1,18 +1,6 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.android.gms:play-services-safetynet:17.0.0@aar">
     <CLASSES>
-      <root url="jar://E:/AndroidGradle/caches/transforms-3/070082088042a8332392e301e743089a/transformed/jetified-play-services-safetynet-17.0.0/jars/classes.jar!/" />
-      <root url="file://E:/AndroidGradle/caches/transforms-3/070082088042a8332392e301e743089a/transformed/jetified-play-services-safetynet-17.0.0/res" />
-      <root url="file://E:/AndroidGradle/caches/transforms-3/070082088042a8332392e301e743089a/transformed/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/070082088042a8332392e301e743089a/transformed/jetified-play-services-safetynet-17.0.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e1e807244c1a81116df700f4c503afd8/transformed/jetified-play-services-safetynet-17.0.0/res" />
-      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/e1e807244c1a81116df700f4c503afd8/transformed/jetified-play-services-safetynet-17.0.0/res" />
-      <root url="file://E:/AndroidGradle/caches/transforms-3/22ae74ba82a03522d8885267c7938f08/transformed/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml" />
-      <root url="jar://E:/AndroidGradle/caches/transforms-3/22ae74ba82a03522d8885267c7938f08/transformed/jetified-play-services-safetynet-17.0.0/jars/classes.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/22ae74ba82a03522d8885267c7938f08/transformed/jetified-play-services-safetynet-17.0.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/22ae74ba82a03522d8885267c7938f08/transformed/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml" />
-      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/8c76fb59127257f91582685887f18e51/transformed/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml" />
-      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/8c76fb59127257f91582685887f18e51/transformed/jetified-play-services-safetynet-17.0.0/jars/classes.jar!/" />
       <root url="file://E:/AndroidGradle/caches/transforms-3/8c76fb59127257f91582685887f18e51/transformed/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml" />
       <root url="jar://E:/AndroidGradle/caches/transforms-3/8c76fb59127257f91582685887f18e51/transformed/jetified-play-services-safetynet-17.0.0/jars/classes.jar!/" />
     </CLASSES>

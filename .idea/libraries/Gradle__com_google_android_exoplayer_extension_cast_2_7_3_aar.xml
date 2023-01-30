@@ -1,37 +1,14 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.android.exoplayer:extension-cast:2.7.3@aar">
     <CLASSES>
-      <root url="jar://D:/AndroidGradle/caches/transforms-3/1f7e35c6b1cb0588edecf51e410751fc/transformed/jetified-extension-cast-2.7.3/jars/classes.jar!/" />
-      <root url="file://D:/AndroidGradle/caches/transforms-3/1f7e35c6b1cb0588edecf51e410751fc/transformed/jetified-extension-cast-2.7.3/res" />
-      <root url="file://D:/AndroidGradle/caches/transforms-3/1f7e35c6b1cb0588edecf51e410751fc/transformed/jetified-extension-cast-2.7.3/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1e92af0c6caa2d30b94c58b9f444e66b/transformed/jetified-extension-cast-2.7.3/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1e92af0c6caa2d30b94c58b9f444e66b/transformed/jetified-extension-cast-2.7.3/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/1e92af0c6caa2d30b94c58b9f444e66b/transformed/jetified-extension-cast-2.7.3/jars/classes.jar!/" />
-      <root url="file://E:/AndroidGradle/caches/transforms-3/b109e8a67665b61ca640903f6fa061c7/transformed/jetified-extension-cast-2.7.3/res" />
-      <root url="jar://E:/AndroidGradle/caches/transforms-3/7a5a8491e7819160c2f36e6de0c7291c/transformed/jetified-extension-cast-2.7.3/jars/classes.jar!/" />
-      <root url="file://E:/AndroidGradle/caches/transforms-3/7a5a8491e7819160c2f36e6de0c7291c/transformed/jetified-extension-cast-2.7.3/AndroidManifest.xml" />
-      <root url="file://E:/AndroidGradle/caches/transforms-3/7a5a8491e7819160c2f36e6de0c7291c/transformed/jetified-extension-cast-2.7.3/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/cb44e6d09227777c369983518939cdc9/transformed/jetified-extension-cast-2.7.3/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3b0ea5f1523ca105234806a94f272537/transformed/jetified-extension-cast-2.7.3/res" />
-      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/35514e399eba7774b194fbce9bfc24bd/transformed/jetified-extension-cast-2.7.3/AndroidManifest.xml" />
-      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/35514e399eba7774b194fbce9bfc24bd/transformed/jetified-extension-cast-2.7.3/res" />
-      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/35514e399eba7774b194fbce9bfc24bd/transformed/jetified-extension-cast-2.7.3/jars/classes.jar!/" />
-      <root url="jar://E:/AndroidGradle/caches/transforms-3/e3978d28ebea869c921a39a95bc44572/transformed/jetified-extension-cast-2.7.3/jars/classes.jar!/" />
-      <root url="file://E:/AndroidGradle/caches/transforms-3/e3978d28ebea869c921a39a95bc44572/transformed/jetified-extension-cast-2.7.3/AndroidManifest.xml" />
-      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/a6c5b8213cc8c114bf0557fadca6349b/transformed/jetified-extension-cast-2.7.3/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/a6c5b8213cc8c114bf0557fadca6349b/transformed/jetified-extension-cast-2.7.3/AndroidManifest.xml" />
       <root url="jar://E:/AndroidGradle/caches/transforms-3/a6c5b8213cc8c114bf0557fadca6349b/transformed/jetified-extension-cast-2.7.3/jars/classes.jar!/" />
       <root url="file://E:/AndroidGradle/caches/transforms-3/a6c5b8213cc8c114bf0557fadca6349b/transformed/jetified-extension-cast-2.7.3/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://D:/AndroidGradle/caches/modules-2/files-2.1/com.google.android.exoplayer/extension-cast/2.7.3/5b310eba0b8f9fe0a483222dd4eabe5492f7e174/extension-cast-2.7.3-javadoc.jar!/" />
       <root url="jar://E:/AndroidGradle/caches/modules-2/files-2.1/com.google.android.exoplayer/extension-cast/2.7.3/5b310eba0b8f9fe0a483222dd4eabe5492f7e174/extension-cast-2.7.3-javadoc.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/modules-2/files-2.1/com.google.android.exoplayer/extension-cast/2.7.3/5b310eba0b8f9fe0a483222dd4eabe5492f7e174/extension-cast-2.7.3-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://D:/AndroidGradle/caches/modules-2/files-2.1/com.google.android.exoplayer/extension-cast/2.7.3/28815cc3989b178f6140273ec0e02e34b585fe63/extension-cast-2.7.3-sources.jar!/" />
       <root url="jar://E:/AndroidGradle/caches/modules-2/files-2.1/com.google.android.exoplayer/extension-cast/2.7.3/28815cc3989b178f6140273ec0e02e34b585fe63/extension-cast-2.7.3-sources.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/modules-2/files-2.1/com.google.android.exoplayer/extension-cast/2.7.3/28815cc3989b178f6140273ec0e02e34b585fe63/extension-cast-2.7.3-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
