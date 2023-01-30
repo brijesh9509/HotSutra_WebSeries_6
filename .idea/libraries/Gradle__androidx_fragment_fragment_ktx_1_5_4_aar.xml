@@ -4,10 +4,14 @@
       <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/5c431e975e22555012c90ed42b8c14a7/transformed/jetified-fragment-ktx-1.5.4/res" />
       <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/5c431e975e22555012c90ed42b8c14a7/transformed/jetified-fragment-ktx-1.5.4/AndroidManifest.xml" />
       <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/5c431e975e22555012c90ed42b8c14a7/transformed/jetified-fragment-ktx-1.5.4/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/5c431e975e22555012c90ed42b8c14a7/transformed/jetified-fragment-ktx-1.5.4/res" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/5c431e975e22555012c90ed42b8c14a7/transformed/jetified-fragment-ktx-1.5.4/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/5c431e975e22555012c90ed42b8c14a7/transformed/jetified-fragment-ktx-1.5.4/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/modules-2/files-2.1/androidx.fragment/fragment-ktx/1.5.4/656ee3b3618f377f8671e3a678a0fce0c8f56b1e/fragment-ktx-1.5.4-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/modules-2/files-2.1/androidx.fragment/fragment-ktx/1.5.4/656ee3b3618f377f8671e3a678a0fce0c8f56b1e/fragment-ktx-1.5.4-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

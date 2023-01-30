@@ -4,12 +4,17 @@
       <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/44766e71f5577524857b565066b15e97/transformed/jetified-stripe-android-16.0.0/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/44766e71f5577524857b565066b15e97/transformed/jetified-stripe-android-16.0.0/AndroidManifest.xml" />
       <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/44766e71f5577524857b565066b15e97/transformed/jetified-stripe-android-16.0.0/res" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/44766e71f5577524857b565066b15e97/transformed/jetified-stripe-android-16.0.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/44766e71f5577524857b565066b15e97/transformed/jetified-stripe-android-16.0.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/44766e71f5577524857b565066b15e97/transformed/jetified-stripe-android-16.0.0/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/modules-2/files-2.1/com.stripe/stripe-android/16.0.0/2acb15af902480bd2f74e127d73afb95ead23ad2/stripe-android-16.0.0-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/modules-2/files-2.1/com.stripe/stripe-android/16.0.0/2acb15af902480bd2f74e127d73afb95ead23ad2/stripe-android-16.0.0-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
       <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/modules-2/files-2.1/com.stripe/stripe-android/16.0.0/1fb07fd78207dfa29dd192fb7e85f8b6ff6d53bc/stripe-android-16.0.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/modules-2/files-2.1/com.stripe/stripe-android/16.0.0/1fb07fd78207dfa29dd192fb7e85f8b6ff6d53bc/stripe-android-16.0.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

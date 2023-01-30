@@ -72,7 +72,6 @@ public class SplashScreenActivity extends AppCompatActivity {
         //check VPN connection is set or not
         vpnStatus = new HelperUtils(SplashScreenActivity.this).isVpnConnectionAvailable();
 
-
     }
 
     @Override
@@ -90,16 +89,13 @@ public class SplashScreenActivity extends AppCompatActivity {
         //print keyHash for facebook login
         // createKeyHash(SplashScreenActivity.this, BuildConfig.APPLICATION_ID);
 
-
         timer = new Thread() {
             public void run() {
                 try {
                     sleep(SPLASH_TIME);
-
                 } catch (Exception e) {
                     e.printStackTrace();
                 } finally {
-
                     if (PreferenceUtils.isLoggedIn(SplashScreenActivity.this)) {
                         Intent intent = new Intent(SplashScreenActivity.this, MainActivity.class);
                         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);

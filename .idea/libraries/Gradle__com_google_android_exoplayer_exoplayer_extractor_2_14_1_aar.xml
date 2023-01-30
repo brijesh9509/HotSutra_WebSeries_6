@@ -2,14 +2,18 @@
   <library name="Gradle: com.google.android.exoplayer:exoplayer-extractor:2.14.1@aar">
     <ANNOTATIONS>
       <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/de51412782fe74292933d85a647f8e6b/transformed/jetified-exoplayer-extractor-2.14.1/annotations.zip!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/de51412782fe74292933d85a647f8e6b/transformed/jetified-exoplayer-extractor-2.14.1/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/de51412782fe74292933d85a647f8e6b/transformed/jetified-exoplayer-extractor-2.14.1/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/de51412782fe74292933d85a647f8e6b/transformed/jetified-exoplayer-extractor-2.14.1/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/de51412782fe74292933d85a647f8e6b/transformed/jetified-exoplayer-extractor-2.14.1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/de51412782fe74292933d85a647f8e6b/transformed/jetified-exoplayer-extractor-2.14.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/modules-2/files-2.1/com.google.android.exoplayer/exoplayer-extractor/2.14.1/4743b6a431e69ed193acc32b17470ff048cba1e5/exoplayer-extractor-2.14.1-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/modules-2/files-2.1/com.google.android.exoplayer/exoplayer-extractor/2.14.1/4743b6a431e69ed193acc32b17470ff048cba1e5/exoplayer-extractor-2.14.1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

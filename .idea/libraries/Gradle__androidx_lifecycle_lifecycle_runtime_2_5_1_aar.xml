@@ -4,10 +4,14 @@
       <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/d926ebe3109dd01641de49fed8e83879/transformed/lifecycle-runtime-2.5.1/res" />
       <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/d926ebe3109dd01641de49fed8e83879/transformed/lifecycle-runtime-2.5.1/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/d926ebe3109dd01641de49fed8e83879/transformed/lifecycle-runtime-2.5.1/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/d926ebe3109dd01641de49fed8e83879/transformed/lifecycle-runtime-2.5.1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/d926ebe3109dd01641de49fed8e83879/transformed/lifecycle-runtime-2.5.1/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/d926ebe3109dd01641de49fed8e83879/transformed/lifecycle-runtime-2.5.1/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-runtime/2.5.1/d255b447102736e536a28b97671c6a736c801b7/lifecycle-runtime-2.5.1-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-runtime/2.5.1/d255b447102736e536a28b97671c6a736c801b7/lifecycle-runtime-2.5.1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

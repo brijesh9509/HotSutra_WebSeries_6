@@ -3,12 +3,16 @@
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/15b99587eb0f383fde0a89fc40ef2807/transformed/jetified-transport-runtime-3.1.8/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/15b99587eb0f383fde0a89fc40ef2807/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/15b99587eb0f383fde0a89fc40ef2807/transformed/jetified-transport-runtime-3.1.8/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/15b99587eb0f383fde0a89fc40ef2807/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/modules-2/files-2.1/com.google.android.datatransport/transport-runtime/3.1.8/448df02831bf02af4fece264a7b96a3889f4f594/transport-runtime-3.1.8-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/modules-2/files-2.1/com.google.android.datatransport/transport-runtime/3.1.8/448df02831bf02af4fece264a7b96a3889f4f594/transport-runtime-3.1.8-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
       <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/modules-2/files-2.1/com.google.android.datatransport/transport-runtime/3.1.8/9b00f2ea90e62a04032d60248cb67f05abe81fcf/transport-runtime-3.1.8-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/modules-2/files-2.1/com.google.android.datatransport/transport-runtime/3.1.8/9b00f2ea90e62a04032d60248cb67f05abe81fcf/transport-runtime-3.1.8-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
