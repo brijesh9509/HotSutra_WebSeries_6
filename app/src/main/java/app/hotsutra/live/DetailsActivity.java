@@ -91,7 +91,6 @@ import com.google.android.exoplayer2.source.ProgressiveMediaSource;
 import com.google.android.exoplayer2.source.SingleSampleMediaSource;
 import com.google.android.exoplayer2.source.hls.HlsMediaSource;
 import com.google.android.exoplayer2.trackselection.DefaultTrackSelector;
-import com.google.android.exoplayer2.trackselection.MappingTrackSelector;
 import com.google.android.exoplayer2.ui.AspectRatioFrameLayout;
 import com.google.android.exoplayer2.ui.PlayerControlView;
 import com.google.android.exoplayer2.ui.PlayerView;
@@ -276,9 +275,8 @@ public class DetailsActivity extends AppCompatActivity implements CastPlayer.Ses
     private String title;
     String castImageUrl;
 
-    private LinearLayout tvLayout, sheduleLayout, tvTopLayout;
+    private LinearLayout tvLayout, scheduleLayout, tvTopLayout;
     private TextView tvTitleTv, watchStatusTv, timeTv, programTv, proGuideTv, watchLiveTv;
-    private ProgramAdapter programAdapter;
     List<Program> programs = new ArrayList<>();
     private RecyclerView programRv;
     private ImageView tvThumbIv, shareIv, tvReportIV;
@@ -362,7 +360,7 @@ public class DetailsActivity extends AppCompatActivity implements CastPlayer.Ses
 
         if (isDark) {
             tvTopLayout.setBackgroundColor(getResources().getColor(R.color.black_window_light));
-            sheduleLayout.setBackground(getResources().getDrawable(R.drawable.rounded_black_transparent));
+            scheduleLayout.setBackground(getResources().getDrawable(R.drawable.rounded_black_transparent));
             etComment.setBackground(getResources().getDrawable(R.drawable.round_grey_transparent));
             btnComment.setTextColor(getResources().getColor(R.color.grey_20));
             topbarLayout.setBackgroundColor(getResources().getColor(R.color.dark));
@@ -450,68 +448,48 @@ public class DetailsActivity extends AppCompatActivity implements CastPlayer.Ses
         rvComment.setNestedScrollingEnabled(false);
         rvComment.setAdapter(commentsAdapter);
         getComments();
-        imgFull.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                controlFullScreenPlayer();
-            }
-        });
-        imgSubtitle.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                showSubtitleDialog(DetailsActivity.this, listSub);
-            }
-        });
+        imgFull.setOnClickListener(v -> controlFullScreenPlayer());
+        imgSubtitle.setOnClickListener(v -> showSubtitleDialog(DetailsActivity.this, listSub));
 
-        imgAudio.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                MappingTrackSelector.MappedTrackInfo mappedTrackInfo;
-                DefaultTrackSelector.Parameters parameters = trackSelector.getParameters();
+        imgAudio.setOnClickListener(view -> {
+            try {
                 TrackSelectionDialog trackSelectionDialog =
                         TrackSelectionDialog.createForTrackSelector(
                                 trackSelector,
                                 /* onDismissListener= */ dismissedDialog -> {
                                 });
                 trackSelectionDialog.show(getSupportFragmentManager(), null);
+            } catch (Exception e) {
+                e.printStackTrace();
             }
         });
 
-        btnComment.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (!PreferenceUtils.isLoggedIn(DetailsActivity.this)) {
-                    startActivity(new Intent(DetailsActivity.this, LoginActivity.class));
-                    new ToastMsg(DetailsActivity.this).toastIconError(getString(R.string.login_first));
-                } else if (etComment.getText().toString().equals("")) {
-                    new ToastMsg(DetailsActivity.this).toastIconError(getString(R.string.comment_empty));
-                } else {
-                    String comment = etComment.getText().toString();
-                    addComment(id, PreferenceUtils.getUserId(DetailsActivity.this), comment);
-                }
+        btnComment.setOnClickListener(v -> {
+            if (!PreferenceUtils.isLoggedIn(DetailsActivity.this)) {
+                startActivity(new Intent(DetailsActivity.this, LoginActivity.class));
+                new ToastMsg(DetailsActivity.this).toastIconError(getString(R.string.login_first));
+            } else if (etComment.getText().toString().equals("")) {
+                new ToastMsg(DetailsActivity.this).toastIconError(getString(R.string.comment_empty));
+            } else {
+                String comment = etComment.getText().toString();
+                addComment(id, PreferenceUtils.getUserId(DetailsActivity.this), comment);
             }
         });
 
-        imgAddFav.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (isFav) {
-                    removeFromFav();
-                } else {
-                    addToFav();
-                }
+        imgAddFav.setOnClickListener(v -> {
+            if (isFav) {
+                removeFromFav();
+            } else {
+                addToFav();
             }
         });
 
         // its for tv series only when description layout visibility gone.
-        favIv.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (isFav) {
-                    removeFromFav();
-                } else {
-                    addToFav();
-                }
+        favIv.setOnClickListener(v -> {
+            if (isFav) {
+                removeFromFav();
+            } else {
+                addToFav();
             }
         });
 
@@ -519,12 +497,9 @@ public class DetailsActivity extends AppCompatActivity implements CastPlayer.Ses
         if (!isNetworkAvailable()) {
             new ToastMsg(DetailsActivity.this).toastIconError(getString(R.string.no_internet));
         }
-        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
-            @Override
-            public void onRefresh() {
-                clear_previous();
-                initGetData();
-            }
+        swipeRefreshLayout.setOnRefreshListener(() -> {
+            clear_previous();
+            initGetData();
         });
 
     }
@@ -546,7 +521,6 @@ public class DetailsActivity extends AppCompatActivity implements CastPlayer.Ses
         lPlay = findViewById(R.id.play);
         rvRelated = findViewById(R.id.rv_related);
         tvRelated = findViewById(R.id.tv_related);
-        TextView nowWatchingTV = findViewById(R.id.now_watching_tv);
         shimmerFrameLayout = findViewById(R.id.shimmer_view_container);
         btnComment = findViewById(R.id.btn_comment);
         etComment = findViewById(R.id.et_comment);
@@ -574,7 +548,7 @@ public class DetailsActivity extends AppCompatActivity implements CastPlayer.Ses
         chromeCastTv = findViewById(R.id.chrome_cast_tv);
         castControlView = findViewById(R.id.cast_control_view);
         tvLayout = findViewById(R.id.tv_layout);
-        sheduleLayout = findViewById(R.id.p_shedule_layout);
+        scheduleLayout = findViewById(R.id.p_shedule_layout);
         tvTitleTv = findViewById(R.id.tv_title_tv);
         programRv = findViewById(R.id.program_guide_rv);
         tvTopLayout = findViewById(R.id.tv_top_layout);
@@ -1522,7 +1496,7 @@ public class DetailsActivity extends AppCompatActivity implements CastPlayer.Ses
                 rvRelated.removeAllViews();
                 listRelated.clear();
 
-                programAdapter = new ProgramAdapter(programs, this);
+                ProgramAdapter programAdapter = new ProgramAdapter(programs, this);
                 programRv.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
                 programRv.setHasFixedSize(true);
                 programRv.setAdapter(programAdapter);

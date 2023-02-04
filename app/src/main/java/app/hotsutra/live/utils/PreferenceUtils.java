@@ -5,6 +5,8 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+
 import app.hotsutra.live.AppConfig;
 import app.hotsutra.live.database.DatabaseHelper;
 import app.hotsutra.live.network.RetrofitClient;
@@ -105,7 +107,7 @@ public class PreferenceUtils {
                 BuildConfig.VERSION_CODE, Constants.getDeviceId(context));
         call.enqueue(new Callback<ActiveStatus>() {
             @Override
-            public void onResponse(Call<ActiveStatus> call, Response<ActiveStatus> response) {
+            public void onResponse(@NonNull Call<ActiveStatus> call, @NonNull Response<ActiveStatus> response) {
                 if (response.code() == 200) {
                     ActiveStatus activeStatus = response.body();
                     DatabaseHelper db = new DatabaseHelper(context);
@@ -125,7 +127,7 @@ public class PreferenceUtils {
             }
 
             @Override
-            public void onFailure(Call<ActiveStatus> call, Throwable t) {
+            public void onFailure(@NonNull Call<ActiveStatus> call, @NonNull Throwable t) {
                 t.printStackTrace();
             }
         });
@@ -146,6 +148,4 @@ public class PreferenceUtils {
         DatabaseHelper databaseHelper = new DatabaseHelper(context);
         return databaseHelper.getConfigurationData().getAppConfig().getProgramGuideEnable();
     }
-
-
 }

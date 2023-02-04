@@ -517,13 +517,9 @@ public class HomeFragment extends Fragment {
                 } else if (response.code() == 412) {
                     try {
                         if (response.errorBody() != null) {
-                            try {
-                                ApiResources.openLoginScreen(response.errorBody().string(),
-                                        requireContext());
-                                activity.finish();
-                            }catch(Exception e){
-                                e.printStackTrace();
-                            }
+                            ApiResources.openLoginScreen(response.errorBody().string(),
+                                    requireContext());
+                            activity.finish();
                         }
                     } catch (Exception e) {
                         Toast.makeText(requireContext(),
@@ -612,6 +608,4 @@ public class HomeFragment extends Fragment {
         int moveY = hide ? -(2 * searchRootLayout.getHeight()) : 0;
         searchRootLayout.animate().translationY(moveY).setStartDelay(100).setDuration(300).start();
     }
-
-
 }

@@ -47,7 +47,6 @@ public class SplashScreenActivity extends AppCompatActivity {
     private final int SPLASH_TIME = 1500;
     private Thread timer;
     private DatabaseHelper db;
-    private final boolean isRestricted = false;
     private final boolean isUpdate = false;
     private boolean vpnStatus = false;
     private HelperUtils helperUtils;
@@ -273,15 +272,11 @@ public class SplashScreenActivity extends AppCompatActivity {
     }
 
     private void showErrorDialog(String title, String message) {
-        new MaterialAlertDialogBuilder(this)
-                .setTitle(title)
-                .setCancelable(false)
-                .setMessage(message)
-                .setPositiveButton("Ok", (dialog, which) -> {
-                    System.exit(0);
+        new MaterialAlertDialogBuilder(SplashScreenActivity.this).setTitle(title)
+                .setCancelable(false).setMessage(message).setPositiveButton("Ok", (dialog, which) -> {
+                    dialog.dismiss();
                     finish();
-                })
-                .show();
+                }).show();
     }
 
     private boolean isNeedUpdate(String versionCode) {

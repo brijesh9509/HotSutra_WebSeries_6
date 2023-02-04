@@ -36,7 +36,6 @@ import app.hotsutra.live.network.model.AllPackage;
 import app.hotsutra.live.network.model.Package;
 import app.hotsutra.live.network.model.config.PaymentConfig;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
-import app.hotsutra.live.R;
 import app.hotsutra.live.network.RetrofitClient;
 import app.hotsutra.live.utils.PreferenceUtils;
 import app.hotsutra.live.utils.ApiResources;
@@ -375,24 +374,24 @@ public class PurchasePlanActivity extends AppCompatActivity
 
     @Override
     public void onBottomShitClick(String paymentMethodName) {
-        if (paymentMethodName.equals(PaymentBottomShitDialog.PAYPAL)) {
+        if (paymentMethodName.equals(Constants.PAYPAL)) {
             processPaypalPayment(packageItem);
 
-        } else if (paymentMethodName.equals(PaymentBottomShitDialog.STRIP)) {
+        } else if (paymentMethodName.equals(Constants.STRIP)) {
             Intent intent = new Intent(PurchasePlanActivity.this, StripePaymentActivity.class);
             intent.putExtra("package", packageItem);
             intent.putExtra("currency", currency);
             startActivity(intent);
 
-        } else if (paymentMethodName.equalsIgnoreCase(PaymentBottomShitDialog.RAZOR_PAY)) {
+        } else if (paymentMethodName.equalsIgnoreCase(Constants.RAZOR_PAY)) {
             Intent intent = new Intent(PurchasePlanActivity.this, RazorPayActivity.class);
             intent.putExtra("package", packageItem);
             intent.putExtra("currency", currency);
             startActivity(intent);
-        } else if (paymentMethodName.equalsIgnoreCase(PaymentBottomShitDialog.OFFLINE_PAY)) {
+        } else if (paymentMethodName.equalsIgnoreCase(Constants.OFFLINE_PAY)) {
             //show an alert dialog
             showOfflinePaymentDialog();
-        } else if (paymentMethodName.equalsIgnoreCase(PaymentBottomShitDialog.GOOGLE_PAY)) {
+        } else if (paymentMethodName.equalsIgnoreCase(Constants.GOOGLE_PAY)) {
             //show an alert dialog
             //showOfflinePaymentDialog();
             establishConnection(packageItem.getProductId());

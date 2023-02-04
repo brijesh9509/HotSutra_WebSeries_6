@@ -9,8 +9,8 @@ import androidx.lifecycle.LiveData;
 import app.hotsutra.live.models.home_content.HomeContent;
 
 public class HomeContentRepository {
-    private HomeContentDao homeContentDao;
-    private LiveData<HomeContent> homeContentLiveData;
+    private final HomeContentDao homeContentDao;
+    private final LiveData<HomeContent> homeContentLiveData;
     private static HomeContent homeContent = null;
 
     public HomeContentRepository(Application application){
@@ -22,9 +22,7 @@ public class HomeContentRepository {
 
     public void insert(HomeContent homeContent){
        // new InsertHomeContentAsyncTask(homeContentDao).execute(homeContent);
-        HomeContentDatabase.databaseWriteExecutor.execute(() -> {
-            homeContentDao.insertHomeContentData(homeContent);
-        });
+        HomeContentDatabase.databaseWriteExecutor.execute(() -> homeContentDao.insertHomeContentData(homeContent));
     }
 
     public void update(HomeContent homeContent){
@@ -36,13 +34,10 @@ public class HomeContentRepository {
     }
 
     public HomeContent getHomeContentData(){
-        HomeContentDatabase.databaseWriteExecutor.execute(new Runnable() {
-            @Override
-            public void run() {
-                homeContent = homeContentDao.getHomeContentData();
-                //Log.e("HomeContentDatabase", "Movie: " + homeContent.getLatestMovies().get(0).getTitle());
+        HomeContentDatabase.databaseWriteExecutor.execute(() -> {
+            homeContent = homeContentDao.getHomeContentData();
+            //Log.e("HomeContentDatabase", "Movie: " + homeContent.getLatestMovies().get(0).getTitle());
 
-            }
         });
         return homeContent;
     }
@@ -52,8 +47,8 @@ public class HomeContentRepository {
     }
 
 
-    private class InsertHomeContentAsyncTask extends AsyncTask<HomeContent, Void, Void>{
-        private HomeContentDao homeContentDao;
+    private static class InsertHomeContentAsyncTask extends AsyncTask<HomeContent, Void, Void>{
+        private final HomeContentDao homeContentDao;
 
         public InsertHomeContentAsyncTask(HomeContentDao homeContentDao) {
             this.homeContentDao = homeContentDao;
@@ -67,8 +62,8 @@ public class HomeContentRepository {
         }
     }
 
-    private class UpdateHomeContentAsyncTask extends AsyncTask<HomeContent, Void, Void>{
-        private HomeContentDao homeContentDao;
+    private static class UpdateHomeContentAsyncTask extends AsyncTask<HomeContent, Void, Void>{
+        private final HomeContentDao homeContentDao;
 
         public UpdateHomeContentAsyncTask(HomeContentDao dao) {
             this.homeContentDao = dao;
@@ -82,8 +77,8 @@ public class HomeContentRepository {
         }
     }
 
-    private class DeleteAllHomeContentAsyncTask extends AsyncTask<Void, Void, Void>{
-        private HomeContentDao homeContentDao;
+    private static class DeleteAllHomeContentAsyncTask extends AsyncTask<Void, Void, Void>{
+        private final HomeContentDao homeContentDao;
 
         public DeleteAllHomeContentAsyncTask(HomeContentDao homeContentDao) {
             this.homeContentDao = homeContentDao;

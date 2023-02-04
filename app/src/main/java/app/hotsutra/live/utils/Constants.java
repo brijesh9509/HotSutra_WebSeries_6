@@ -19,6 +19,12 @@ public class Constants {
     public static final String START_APP = "startApp";
     public static final String NETWORK_AUDIENCE = "fan";
 
+    public static final String PAYPAL = "paypal";
+    public static final String STRIP = "strip";
+    public static final String RAZOR_PAY = "razorpay";
+    public static final String OFFLINE_PAY = "offline_pay";
+    public static final String GOOGLE_PAY = "google_pay";
+
     public static String workId;
 
     //public static String DOWNLOAD_DIR = Environment.getExternalStorageDirectory().toString()+File.separator + Environment.DIRECTORY_DOWNLOADS + File.separator;

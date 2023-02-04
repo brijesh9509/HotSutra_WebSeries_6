@@ -387,9 +387,14 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
     public void deleteAllActiveStatusData() {
-        SQLiteDatabase db = this.getWritableDatabase();
-        db.execSQL("delete from " + SUBS_TABLE_NAME);
-        db.close();
+        try {
+            SQLiteDatabase db = this.getWritableDatabase();
+            db.execSQL("delete from " + SUBS_TABLE_NAME);
+            db.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
     }
 
     public int getActiveStatusCount() {

@@ -83,7 +83,7 @@ public class LiveTvFragment extends Fragment {
 
         initComponent(view);
 
-        pageTitle.setText(getResources().getString(R.string.live_tv));
+        pageTitle.setText(requireContext().getResources().getString(R.string.live_tv));
 
         if (activity.isDark) {
             pageTitle.setTextColor(activity.getResources().getColor(R.color.white));
@@ -143,7 +143,7 @@ public class LiveTvFragment extends Fragment {
         if (new NetworkInst(activity).isNetworkAvailable()) {
             getLiveTvData();
         } else {
-            tvNoItem.setText(getString(R.string.no_internet));
+            tvNoItem.setText(requireContext().getString(R.string.no_internet));
             shimmerFrameLayout.stopShimmer();
             shimmerFrameLayout.setVisibility(View.GONE);
             coordinatorLayout.setVisibility(View.VISIBLE);
@@ -159,7 +159,7 @@ public class LiveTvFragment extends Fragment {
             if (new NetworkInst(activity).isNetworkAvailable()) {
                 getLiveTvData();
             } else {
-                tvNoItem.setText(getString(R.string.no_internet));
+                tvNoItem.setText(requireContext().getString(R.string.no_internet));
                 shimmerFrameLayout.stopShimmer();
                 shimmerFrameLayout.setVisibility(View.GONE);
                 swipeRefreshLayout.setRefreshing(false);
@@ -179,7 +179,7 @@ public class LiveTvFragment extends Fragment {
     }
 
     private void getLiveTvData() {
-        String userId = PreferenceUtils.getUserId(requireContext());
+        String userId = PreferenceUtils.getUserId(requireActivity());
         Retrofit retrofit = RetrofitClient.getRetrofitInstance();
         LiveTvApi api = retrofit.create(LiveTvApi.class);
         api.getLiveTvCategories(AppConfig.API_KEY, BuildConfig.VERSION_CODE,userId,getDeviceId(requireContext()))
@@ -204,16 +204,12 @@ public class LiveTvFragment extends Fragment {
                         }else if (response.code() == 412) {
                             try {
                                 if (response.errorBody() != null) {
-                                    try {
-                                        ApiResources.openLoginScreen(response.errorBody().string(),
-                                                requireContext());
-                                        activity.finish();
-                                    }catch(Exception e){
-                                        e.printStackTrace();
-                                    }
+                                    ApiResources.openLoginScreen(response.errorBody().string(),
+                                            requireActivity());
+                                    requireActivity().finish();
                                 }
                             } catch (Exception e) {
-                                Toast.makeText(requireContext(),
+                                Toast.makeText(requireActivity(),
                                         e.getMessage(), Toast.LENGTH_LONG).show();
                             }
                         } else {
@@ -237,7 +233,7 @@ public class LiveTvFragment extends Fragment {
                         shimmerFrameLayout.setVisibility(View.GONE);
 
                         coordinatorLayout.setVisibility(View.VISIBLE);
-                        tvNoItem.setText(getResources().getString(R.string.something_went_text));
+                        tvNoItem.setText(requireContext().getResources().getString(R.string.something_went_text));
 
                         t.printStackTrace();
                     }
@@ -253,6 +249,4 @@ public class LiveTvFragment extends Fragment {
         int moveY = hide ? -(2 * searchRootLayout.getHeight()) : 0;
         searchRootLayout.animate().translationY(moveY).setStartDelay(100).setDuration(300).start();
     }
-
-
 }
