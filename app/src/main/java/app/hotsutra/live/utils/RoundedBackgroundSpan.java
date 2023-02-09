@@ -10,7 +10,7 @@ import app.hotsutra.live.R;
 
 public class RoundedBackgroundSpan extends ReplacementSpan {
 
-    private static int CORNER_RADIUS = 8;
+    private static final int CORNER_RADIUS = 8;
     private int backgroundColor = 0;
     private int textColor = 0;
 

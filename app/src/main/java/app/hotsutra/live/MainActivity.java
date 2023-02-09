@@ -452,11 +452,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     // ------------------ checking storage permission ------------
     private boolean checkStoragePermission() {
         int result = ContextCompat.checkSelfPermission(this, android.Manifest.permission.WRITE_EXTERNAL_STORAGE);
-        if (result == PackageManager.PERMISSION_GRANTED) {
-            return true;
-        } else {
-            return false;
-        }
+        return result == PackageManager.PERMISSION_GRANTED;
     }
 
     private void requestPermission() {

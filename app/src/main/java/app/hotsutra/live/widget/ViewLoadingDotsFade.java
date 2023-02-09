@@ -32,10 +32,10 @@ public class ViewLoadingDotsFade extends LinearLayout {
 
     private Context context;
     private ImageView[] img;
-    private GradientDrawable circle = new GradientDrawable();
+    private final GradientDrawable circle = new GradientDrawable();
     private static final int OBJECT_SIZE = 3;
     private static final int DURATION = 400;
-    private ObjectAnimator animator[];
+    private ObjectAnimator[] animator;
 
     public ViewLoadingDotsFade(Context context) {
         super(context);

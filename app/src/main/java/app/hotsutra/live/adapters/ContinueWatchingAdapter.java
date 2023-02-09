@@ -32,7 +32,7 @@ import static app.hotsutra.live.utils.Constants.STREAM_URL;
 
 public class ContinueWatchingAdapter extends RecyclerView.Adapter<ContinueWatchingAdapter.ContinueWatchingViewHolder> {
 
-    private Context context;
+    private final Context context;
     private List<ContinueWatchingModel> list = new ArrayList<>();
 
     public ContinueWatchingAdapter(Context context, List<ContinueWatchingModel> list) {
@@ -80,10 +80,10 @@ public class ContinueWatchingAdapter extends RecyclerView.Adapter<ContinueWatchi
 
 
     public class ContinueWatchingViewHolder extends RecyclerView.ViewHolder{
-        private TextView title;
-        private ImageView posterIV;
-        private ProgressBar progressBar;
-        private MaterialRippleLayout lyt_parent;
+        private final TextView title;
+        private final ImageView posterIV;
+        private final ProgressBar progressBar;
+        private final MaterialRippleLayout lyt_parent;
 
         public ContinueWatchingViewHolder(@NonNull View itemView) {
             super(itemView);

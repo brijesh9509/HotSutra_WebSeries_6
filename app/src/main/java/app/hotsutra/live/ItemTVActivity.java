@@ -44,7 +44,7 @@ public class ItemTVActivity extends AppCompatActivity {
     private ShimmerFrameLayout shimmerFrameLayout;
     private RecyclerView recyclerView;
     private LiveTVAdapter mAdapter;
-    private List<CommonModels> list = new ArrayList<>();
+    private final List<CommonModels> list = new ArrayList<>();
 
     private boolean isLoading = false;
     private ProgressBar progressBar;
@@ -93,7 +93,7 @@ public class ItemTVActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_item_tv);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         //check vpn connection
         helperUtils = new HelperUtils(this);
         vpnStatus = helperUtils.isVpnConnectionAvailable();

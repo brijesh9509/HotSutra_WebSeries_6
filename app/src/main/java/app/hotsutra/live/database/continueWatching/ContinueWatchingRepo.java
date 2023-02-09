@@ -11,10 +11,10 @@ import java.util.List;
 
 public class ContinueWatchingRepo {
 
-    private ArrayList<ContinueWatchingModel> contentArrayList = new ArrayList<>();
+    private final ArrayList<ContinueWatchingModel> contentArrayList = new ArrayList<>();
 
-    private ContinueWatchingDao continueWatchingDao;
-    private LiveData<List<ContinueWatchingModel>> allContents;
+    private final ContinueWatchingDao continueWatchingDao;
+    private final LiveData<List<ContinueWatchingModel>> allContents;
 
     public ContinueWatchingRepo(Application application) {
         ContinueWatchingDatabase continueWatchingDB = ContinueWatchingDatabase.getInstance(application);
@@ -44,7 +44,7 @@ public class ContinueWatchingRepo {
     }
 
     private static class InsertContentAsyncTask extends AsyncTask<ContinueWatchingModel, Void, Void>{
-        private ContinueWatchingDao continueWatchingDao;
+        private final ContinueWatchingDao continueWatchingDao;
 
         private InsertContentAsyncTask(ContinueWatchingDao continueWatchingDao) {
             this.continueWatchingDao = continueWatchingDao;
@@ -59,7 +59,7 @@ public class ContinueWatchingRepo {
     }
 
     private static class UpdateContentAsyncTask extends AsyncTask<ContinueWatchingModel, Void, Void>{
-        private ContinueWatchingDao continueWatchingDao;
+        private final ContinueWatchingDao continueWatchingDao;
 
         private UpdateContentAsyncTask(ContinueWatchingDao continueWatchingDao) {
             this.continueWatchingDao = continueWatchingDao;
@@ -74,7 +74,7 @@ public class ContinueWatchingRepo {
     }
 
     private static class DeleteContentAsyncTask extends AsyncTask<ContinueWatchingModel, Void, Void>{
-        private ContinueWatchingDao continueWatchingDao;
+        private final ContinueWatchingDao continueWatchingDao;
 
         private DeleteContentAsyncTask(ContinueWatchingDao continueWatchingDao) {
             this.continueWatchingDao = continueWatchingDao;
@@ -88,7 +88,7 @@ public class ContinueWatchingRepo {
     }
 
     private static class DeleteAllContentAsyncTask extends AsyncTask<Void, Void, Void>{
-        private ContinueWatchingDao continueWatchingDao;
+        private final ContinueWatchingDao continueWatchingDao;
 
         private DeleteAllContentAsyncTask(ContinueWatchingDao continueWatchingDao) {
             this.continueWatchingDao = continueWatchingDao;

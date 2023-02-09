@@ -26,7 +26,7 @@ public interface ContinueWatchingDao {
     void delete(ContinueWatchingModel continueWatchingModel);
 
     @Query("SELECT * from continue_watching where `Content_ID`=:id")
-    public ContinueWatchingModel getContent(String id);
+    ContinueWatchingModel getContent(String id);
 
     @Query("SELECT * from continue_watching")
     LiveData<List<ContinueWatchingModel>> getAllContent();

@@ -9,9 +9,9 @@ import android.view.View;
  */
 public class SpacingItemDecoration extends RecyclerView.ItemDecoration {
 
-    private int spanCount;
-    private int spacingPx;
-    private boolean includeEdge;
+    private final int spanCount;
+    private final int spacingPx;
+    private final boolean includeEdge;
 
     public SpacingItemDecoration(int spanCount, int spacingPx, boolean includeEdge) {
         this.spanCount = spanCount;

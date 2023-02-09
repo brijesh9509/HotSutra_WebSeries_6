@@ -66,7 +66,7 @@ public class StripePaymentActivity extends AppCompatActivity {
     private ProgressBar progressBar;
     private CardInputWidget cardInputWidget;
 
-    private Calendar myCalendar = Calendar.getInstance();
+    private final Calendar myCalendar = Calendar.getInstance();
     private int month, year;
     private String userId;
     private String secretKey, publisherKey;
@@ -255,7 +255,7 @@ public class StripePaymentActivity extends AppCompatActivity {
 
     public class ChargeAsyncTask extends AsyncTask<Void, Void, Void> {
         private Charge charge;
-        private Map<String, Object> params;
+        private final Map<String, Object> params;
 
         public ChargeAsyncTask(Map<String, Object> params) {
             this.params = params;

@@ -19,11 +19,11 @@ import app.hotsutra.live.utils.ItemAnimation;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class LiveChatAdapter extends RecyclerView.Adapter<LiveChatAdapter.LiveCommentViewHolder> {
-    private List<LiveChat> liveChatList;
-    private Context context;
+    private final List<LiveChat> liveChatList;
+    private final Context context;
     private int lastPosition = -1;
     private boolean on_attach = true;
-    private int animation_type = 2;
+    private final int animation_type = 2;
 
 
     public LiveChatAdapter(List<LiveChat> liveChatList, Context context) {

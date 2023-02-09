@@ -18,8 +18,8 @@ import java.util.List;
 
 public class LiveTvCategoryAdapter extends RecyclerView.Adapter<LiveTvCategoryAdapter.ViewHolder> {
 
-    private Context context;
-    private List<LiveTvCategory> liveTvCategories;
+    private final Context context;
+    private final List<LiveTvCategory> liveTvCategories;
 
     public LiveTvCategoryAdapter(Context context, List<LiveTvCategory> liveTvCategories) {
         this.context = context;

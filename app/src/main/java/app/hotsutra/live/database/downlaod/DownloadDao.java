@@ -28,7 +28,7 @@ public interface DownloadDao {
     void deleteAll();
 
     @Query("SELECT * FROM download_table WHERE `download_id`=:id")
-    public DownloadInfo getDownloadById(long id);
+    DownloadInfo getDownloadById(long id);
 
     @Query("SELECT * FROM download_table")
     LiveData<List<DownloadInfo>> getAllDownloads();

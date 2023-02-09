@@ -25,12 +25,12 @@ import java.util.List;
 public class LiveTvHomeAdapter extends RecyclerView.Adapter<LiveTvHomeAdapter.OriginalViewHolder> {
 
     private List<CommonModels> items = new ArrayList<>();
-    private Activity ctx;
-    private String fromActivity;
+    private final Activity ctx;
+    private final String fromActivity;
 
     private int lastPosition = -1;
     private boolean on_attach = true;
-    private int animation_type = 2;
+    private final int animation_type = 2;
 
     public LiveTvHomeAdapter(Activity context, List<CommonModels> items, String fromActivity) {
         this.items = items;

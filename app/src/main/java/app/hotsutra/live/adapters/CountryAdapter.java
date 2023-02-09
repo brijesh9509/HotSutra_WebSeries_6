@@ -23,14 +23,14 @@ import com.squareup.picasso.Picasso;
 import java.util.List;
 
 public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.ViewHolder> {
-    private Context context;
-    private List<CommonModels> commonModels;
-    private String layout;
+    private final Context context;
+    private final List<CommonModels> commonModels;
+    private final String layout;
     private int c;
 
     private int lastPosition = -1;
     private boolean on_attach = true;
-    private int animation_type = 2;
+    private final int animation_type = 2;
 
     public CountryAdapter(Context context, List<CommonModels> commonModels, String layout) {
         this.context = context;
@@ -110,8 +110,8 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.ViewHold
 
     private int getColor() {
 
-        int colorList[] = {R.color.red_400, R.color.blue_400, R.color.indigo_400, R.color.orange_400, R.color.light_green_400, R.color.blue_grey_400};
-        int colorList2[] = {R.drawable.gradient_1, R.drawable.gradient_2, R.drawable.gradient_3, R.drawable.gradient_4, R.drawable.gradient_5, R.drawable.gradient_6};
+        int[] colorList = {R.color.red_400, R.color.blue_400, R.color.indigo_400, R.color.orange_400, R.color.light_green_400, R.color.blue_grey_400};
+        int[] colorList2 = {R.drawable.gradient_1, R.drawable.gradient_2, R.drawable.gradient_3, R.drawable.gradient_4, R.drawable.gradient_5, R.drawable.gradient_6};
 
         if (c >= 6) {
             c = 0;

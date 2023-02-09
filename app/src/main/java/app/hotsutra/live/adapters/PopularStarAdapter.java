@@ -25,11 +25,11 @@ import de.hdodenhof.circleimageview.CircleImageView;
 import static app.hotsutra.live.ItemMovieActivity.INTENT_TYPE_STAR;
 
 public class PopularStarAdapter extends RecyclerView.Adapter<PopularStarAdapter.StarViewHolder> {
-    private Activity context;
-    private List<PopularStars> starsList;
+    private final Activity context;
+    private final List<PopularStars> starsList;
     private int lastPosition = -1;
     private boolean on_attach = true;
-    private int animation_type = 2;
+    private final int animation_type = 2;
 
     public PopularStarAdapter(Activity context, List<PopularStars> starsList) {
         this.context = context;
@@ -71,9 +71,9 @@ public class PopularStarAdapter extends RecyclerView.Adapter<PopularStarAdapter.
 
 
     class StarViewHolder extends RecyclerView.ViewHolder{
-        private CircleImageView imageView;
-        private TextView starName;
-        private LinearLayout cardView;
+        private final CircleImageView imageView;
+        private final TextView starName;
+        private final LinearLayout cardView;
 
         public StarViewHolder(@NonNull View itemView) {
             super(itemView);

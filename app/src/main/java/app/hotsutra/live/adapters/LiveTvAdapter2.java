@@ -21,12 +21,12 @@ import java.util.List;
 
 public class LiveTvAdapter2 extends RecyclerView.Adapter<LiveTvAdapter2.ViewHolder> {
 
-    private Context context;
-    private List<TvModel>tvModels;
+    private final Context context;
+    private final List<TvModel>tvModels;
 
     private int lastPosition = -1;
     private boolean on_attach = true;
-    private int animation_type = 2;
+    private final int animation_type = 2;
 
     public LiveTvAdapter2(Context context, List<TvModel> tvModels) {
         this.context = context;

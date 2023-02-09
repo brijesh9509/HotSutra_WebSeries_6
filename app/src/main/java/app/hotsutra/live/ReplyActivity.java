@@ -40,7 +40,7 @@ public class ReplyActivity extends AppCompatActivity {
     private EditText etComment;
     private Button btnComment;
 
-    private List<GetCommentsModel> list = new ArrayList<>();
+    private final List<GetCommentsModel> list = new ArrayList<>();
     private ReplyAdapter replyAdapter;
     private String strCommentID, strAllReplyURL, videoId;
 

@@ -26,11 +26,11 @@ import java.util.List;
 public class HomePageAdapter extends RecyclerView.Adapter<HomePageAdapter.OriginalViewHolder> {
 
     private List<CommonModels> items = new ArrayList<>();
-    private Context ctx;
+    private final Context ctx;
 
     private int lastPosition = -1;
     private boolean on_attach = true;
-    private int animation_type = 2;
+    private final int animation_type = 2;
 
     public HomePageAdapter(Context context, List<CommonModels> items) {
         this.items = items;

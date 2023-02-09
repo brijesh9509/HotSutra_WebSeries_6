@@ -25,12 +25,12 @@ import static app.hotsutra.live.ItemMovieActivity.INTENT_TYPE_STAR;
 
 public class CastCrewAdapter extends RecyclerView.Adapter<CastCrewAdapter.ViewHolder> {
 
-    private Context context;
-    private List<CastCrew> castCrewList;
+    private final Context context;
+    private final List<CastCrew> castCrewList;
 
     private int lastPosition = -1;
     private boolean on_attach = true;
-    private int animation_type = 2;
+    private final int animation_type = 2;
 
     public CastCrewAdapter(Context context, List<CastCrew> castCrewList) {
         this.context = context;

@@ -21,7 +21,7 @@ import java.util.List;
 import static android.content.Context.ACTIVITY_SERVICE;
 
 public class HelperUtils {
-    private Activity activity;
+    private final Activity activity;
 
     public HelperUtils(Activity activity) {
         this.activity = activity;

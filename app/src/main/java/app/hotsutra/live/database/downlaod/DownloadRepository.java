@@ -12,9 +12,9 @@ import java.util.List;
 public class DownloadRepository {
     private static final String TAG = "DownloadRepository";
 
-    private ArrayList<DownloadInfo> downloadList = new ArrayList<>();
-    private DownloadDao downloadDao;
-    private LiveData<List<DownloadInfo>> allDownloadData;
+    private final ArrayList<DownloadInfo> downloadList = new ArrayList<>();
+    private final DownloadDao downloadDao;
+    private final LiveData<List<DownloadInfo>> allDownloadData;
 
     public DownloadRepository(Application application) {
         DownloadDatabase database = DownloadDatabase.getInstance(application);
