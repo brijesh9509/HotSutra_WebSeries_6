@@ -1905,12 +1905,11 @@ public class DetailsActivity extends AppCompatActivity implements CastPlayer.Ses
                 liveChatList.add(liveChat);
                 liveChatAdapter.notifyItemInserted(liveChatAdapter.getItemCount() - 1);
                 liveChatRV.scrollToPosition(liveChatAdapter.getItemCount() - 1);
-
             }
 
             @Override
             public void onChildChanged(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
-
+                Log.e("snapshot=====", snapshot.toString());
             }
 
             @Override
@@ -1932,7 +1931,6 @@ public class DetailsActivity extends AppCompatActivity implements CastPlayer.Ses
         liveChatMsgSendBtn.setOnClickListener(v -> {
             if (PreferenceUtils.isLoggedIn(DetailsActivity.this)) {
                 Log.e(TAG, "onClick: user logged in");
-
                 sendLiveChatMsg();
             } else {
                 Toast.makeText(DetailsActivity.this, "Please login to comment.", Toast.LENGTH_SHORT).show();
