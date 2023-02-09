@@ -342,7 +342,7 @@ public class PurchasePlanActivity extends AppCompatActivity
             PaymentConfig paymentConfig = new DatabaseHelper(PurchasePlanActivity.this).getConfigurationData().getPaymentConfig();
             double exchangeRate = Double.parseDouble(paymentConfig.getExchangeRate());
             double price = Double.parseDouble(packageItem.getPrice());
-            double priceInUSD = (double) price / exchangeRate;
+            double priceInUSD = price / exchangeRate;
             PayPalPayment payPalPayment = new PayPalPayment((new BigDecimal(String.valueOf(priceInUSD))),
                     "USD",
                     "Payment for Package",

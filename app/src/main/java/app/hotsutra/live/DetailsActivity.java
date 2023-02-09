@@ -46,7 +46,6 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.mediarouter.app.MediaRouteButton;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -361,13 +360,13 @@ public class DetailsActivity extends AppCompatActivity implements CastPlayer.Ses
 
         if (isDark) {
             tvTopLayout.setBackgroundColor(getResources().getColor(R.color.black_window_light));
-            scheduleLayout.setBackground(ContextCompat.getDrawable(this,R.drawable.rounded_black_transparent));
-            etComment.setBackground(ContextCompat.getDrawable(this,R.drawable.round_grey_transparent));
+            scheduleLayout.setBackground(getResources().getDrawable(R.drawable.rounded_black_transparent));
+            etComment.setBackground(getResources().getDrawable(R.drawable.round_grey_transparent));
             btnComment.setTextColor(getResources().getColor(R.color.grey_20));
             topbarLayout.setBackgroundColor(getResources().getColor(R.color.dark));
-            subscribeBt.setBackground(ContextCompat.getDrawable(this,R.drawable.btn_rounded_dark));
+            subscribeBt.setBackground(getResources().getDrawable(R.drawable.btn_rounded_dark));
 
-            descriptionContainer.setBackground(ContextCompat.getDrawable(this,R.drawable.gradient_black_transparent));
+            descriptionContainer.setBackground(getResources().getDrawable(R.drawable.gradient_black_transparent));
         }
         // chrome cast
         CastButtonFactory.setUpMediaRouteButton(getApplicationContext(), mediaRouteButton);

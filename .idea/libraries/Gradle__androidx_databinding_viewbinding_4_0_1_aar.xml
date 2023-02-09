@@ -3,13 +3,10 @@
     <CLASSES>
       <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/331ce7fdcc94c456a7dca04ab42d7bf1/transformed/jetified-viewbinding-4.0.1/AndroidManifest.xml" />
       <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/331ce7fdcc94c456a7dca04ab42d7bf1/transformed/jetified-viewbinding-4.0.1/jars/classes.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/331ce7fdcc94c456a7dca04ab42d7bf1/transformed/jetified-viewbinding-4.0.1/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/331ce7fdcc94c456a7dca04ab42d7bf1/transformed/jetified-viewbinding-4.0.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/modules-2/files-2.1/androidx.databinding/viewbinding/4.0.1/f61a9e2dca678d7a7a2d72eac80eca681469c103/viewbinding-4.0.1-sources.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/modules-2/files-2.1/androidx.databinding/viewbinding/4.0.1/f61a9e2dca678d7a7a2d72eac80eca681469c103/viewbinding-4.0.1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

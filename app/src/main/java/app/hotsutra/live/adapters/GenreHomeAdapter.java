@@ -23,12 +23,12 @@ import java.util.List;
 public class GenreHomeAdapter extends RecyclerView.Adapter<GenreHomeAdapter.OriginalViewHolder> {
 
     private List<GenreModel> items = new ArrayList<>();
-    private List<CommonModels> listData = new ArrayList<>();
-    private Context ctx;
+    private final List<CommonModels> listData = new ArrayList<>();
+    private final Context ctx;
 
     private int lastPosition = -1;
     private boolean on_attach = true;
-    private int animation_type = 2;
+    private final int animation_type = 2;
 
 
     public GenreHomeAdapter(Context context, List<GenreModel> items) {

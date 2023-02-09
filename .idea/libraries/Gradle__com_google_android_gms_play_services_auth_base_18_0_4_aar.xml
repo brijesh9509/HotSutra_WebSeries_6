@@ -3,12 +3,9 @@
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/53cfc9978bd1b0df5da2bc4e5bf75df0/transformed/jetified-play-services-auth-base-18.0.4/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/53cfc9978bd1b0df5da2bc4e5bf75df0/transformed/jetified-play-services-auth-base-18.0.4/AndroidManifest.xml" />
-      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/53cfc9978bd1b0df5da2bc4e5bf75df0/transformed/jetified-play-services-auth-base-18.0.4/AndroidManifest.xml" />
-      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/53cfc9978bd1b0df5da2bc4e5bf75df0/transformed/jetified-play-services-auth-base-18.0.4/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/modules-2/files-2.1/com.google.android.gms/play-services-auth-base/18.0.4/4b7787e0e66302f46261e84cbdd60ccf21d5d0a0/play-services-auth-base-18.0.4-javadoc.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/modules-2/files-2.1/com.google.android.gms/play-services-auth-base/18.0.4/4b7787e0e66302f46261e84cbdd60ccf21d5d0a0/play-services-auth-base-18.0.4-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES />
   </library>

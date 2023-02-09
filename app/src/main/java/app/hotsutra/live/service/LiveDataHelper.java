@@ -8,9 +8,9 @@ import app.hotsutra.live.models.DownloadInfo;
 import java.util.List;
 
 public class LiveDataHelper {
-    private MediatorLiveData<DownloadInfo> _downloadInfo = new MediatorLiveData<>();
-    private MediatorLiveData<DownloadInfo> _isCompleted = new MediatorLiveData<>();
-    private MediatorLiveData<List<DownloadInfo>> _list = new MediatorLiveData<>();
+    private final MediatorLiveData<DownloadInfo> _downloadInfo = new MediatorLiveData<>();
+    private final MediatorLiveData<DownloadInfo> _isCompleted = new MediatorLiveData<>();
+    private final MediatorLiveData<List<DownloadInfo>> _list = new MediatorLiveData<>();
 
     private LiveDataHelper() {}
 

@@ -17,8 +17,8 @@ import java.util.List;
 
 public class InactiveSubscriptionAdapter extends RecyclerView.Adapter<InactiveSubscriptionAdapter.ViewHolder> {
 
-    private List<InactiveSubscription> inactiveSubscriptions;
-    private Context context;
+    private final List<InactiveSubscription> inactiveSubscriptions;
+    private final Context context;
 
     public InactiveSubscriptionAdapter(List<InactiveSubscription> inactiveSubscriptions, Context context) {
         this.inactiveSubscriptions = inactiveSubscriptions;

@@ -15,7 +15,7 @@ import app.hotsutra.live.R;
 public class PaidDialog extends Dialog implements
         android.view.View.OnClickListener{
 
-    private Context context;
+    private final Context context;
     private Dialog d;
     private Button continueBtn;
     private TextView instruction_text_view;

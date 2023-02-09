@@ -17,8 +17,8 @@ import java.util.List;
 
 public class ActiveSubscriptionAdapter extends RecyclerView.Adapter<ActiveSubscriptionAdapter.ViewHolder> {
 
-    private List<ActiveSubscription> activeSubscriptions;
-    private Context context;
+    private final List<ActiveSubscription> activeSubscriptions;
+    private final Context context;
     private OnItemClickLiestener onItemClickLiestener;
 
     public ActiveSubscriptionAdapter(List<ActiveSubscription> activeSubscriptions, Context context) {

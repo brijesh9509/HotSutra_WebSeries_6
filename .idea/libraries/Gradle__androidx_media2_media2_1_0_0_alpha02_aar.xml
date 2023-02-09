@@ -2,18 +2,14 @@
   <library name="Gradle: androidx.media2:media2:1.0.0-alpha02@aar">
     <ANNOTATIONS>
       <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/a8a23198130dca0a397e68bd230bc4c8/transformed/jetified-media2-1.0.0-alpha02/annotations.zip!/" />
-      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/a8a23198130dca0a397e68bd230bc4c8/transformed/jetified-media2-1.0.0-alpha02/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/a8a23198130dca0a397e68bd230bc4c8/transformed/jetified-media2-1.0.0-alpha02/AndroidManifest.xml" />
       <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/a8a23198130dca0a397e68bd230bc4c8/transformed/jetified-media2-1.0.0-alpha02/jars/classes.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/a8a23198130dca0a397e68bd230bc4c8/transformed/jetified-media2-1.0.0-alpha02/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/a8a23198130dca0a397e68bd230bc4c8/transformed/jetified-media2-1.0.0-alpha02/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/modules-2/files-2.1/androidx.media2/media2/1.0.0-alpha02/1c38cdf08f8985ee9d3c8c5987c744d4fc6893d6/media2-1.0.0-alpha02-sources.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/modules-2/files-2.1/androidx.media2/media2/1.0.0-alpha02/1c38cdf08f8985ee9d3c8c5987c744d4fc6893d6/media2-1.0.0-alpha02-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

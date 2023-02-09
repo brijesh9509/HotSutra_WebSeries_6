@@ -25,11 +25,11 @@ public class EpisodeDownloadAdapter extends RecyclerView.Adapter<EpisodeDownload
     private static final String TAG = "SeasonDownloadAdapter";
     private int lastPosition = -1;
     private boolean on_attach = true;
-    private int animation_type = 2;
+    private final int animation_type = 2;
 
-    private Activity context;
-    private List<DownloadLink> downloadLinks;
-    private DownloadViewModel viewModel;
+    private final Activity context;
+    private final List<DownloadLink> downloadLinks;
+    private final DownloadViewModel viewModel;
 
     public EpisodeDownloadAdapter(Activity context, List<DownloadLink> downloadLinks, DownloadViewModel viewModel) {
         this.context = context;
@@ -80,9 +80,9 @@ public class EpisodeDownloadAdapter extends RecyclerView.Adapter<EpisodeDownload
     }
 
     class SeasonDownloadViewModel extends RecyclerView.ViewHolder{
-        private TextView episodeName;
-        private ImageView downloadImageView;
-        private CardView seasonDownloadLayout;
+        private final TextView episodeName;
+        private final ImageView downloadImageView;
+        private final CardView seasonDownloadLayout;
 
         public SeasonDownloadViewModel(@NonNull View itemView) {
             super(itemView);

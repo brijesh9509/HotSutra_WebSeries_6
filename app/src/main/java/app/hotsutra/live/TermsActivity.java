@@ -41,7 +41,7 @@ public class TermsActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_terms);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
 
         if (!isDark) {
             toolbar.setBackgroundColor(getResources().getColor(R.color.colorPrimary));

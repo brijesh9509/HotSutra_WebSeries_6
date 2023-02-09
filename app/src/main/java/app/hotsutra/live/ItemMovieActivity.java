@@ -51,7 +51,7 @@ public class ItemMovieActivity extends AppCompatActivity {
     private ShimmerFrameLayout shimmerFrameLayout;
     private RecyclerView recyclerView;
     private CommonGridAdapter mAdapter;
-    private List<CommonModels> list = new ArrayList<>();
+    private final List<CommonModels> list = new ArrayList<>();
 
     private boolean isLoading = false;
     private ProgressBar progressBar;
@@ -102,7 +102,7 @@ public class ItemMovieActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_item_show);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
 
         //check vpn connection
         helperUtils = new HelperUtils(ItemMovieActivity.this);

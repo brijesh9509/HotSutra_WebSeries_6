@@ -9,8 +9,8 @@ import androidx.lifecycle.LiveData;
 import app.hotsutra.live.models.home_content.HomeContent;
 
 public class HomeContentViewModel extends AndroidViewModel {
-    private HomeContentRepository repository;
-    private LiveData<HomeContent> homeContentLiveData;
+    private final HomeContentRepository repository;
+    private final LiveData<HomeContent> homeContentLiveData;
 
     public HomeContentViewModel(@NonNull Application application) {
         super(application);

@@ -67,7 +67,8 @@ public class ProfileActivity extends AppCompatActivity {
     private AutoCompleteTextView genderSpinner;
     private Button btnUpdate, deactivateBt, setPasswordBtn;
     private ProgressDialog dialog;
-    private String URL = "", strGender;
+    private final String URL = "";
+    private String strGender;
     private CircleImageView userIv;
     private ImageView editProfilePicture;
     private static final int GALLERY_REQUEST_CODE = 1;
