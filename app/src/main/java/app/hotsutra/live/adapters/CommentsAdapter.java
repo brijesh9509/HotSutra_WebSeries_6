@@ -20,7 +20,7 @@ import java.util.List;
 public class CommentsAdapter extends RecyclerView.Adapter<CommentsAdapter.OriginalViewHolder> {
 
     private List<GetCommentsModel> items = new ArrayList<>();
-    private Context ctx;
+    private final Context ctx;
 
 
 
@@ -70,9 +70,11 @@ public class CommentsAdapter extends RecyclerView.Adapter<CommentsAdapter.Origin
 
     public class OriginalViewHolder extends RecyclerView.ViewHolder {
 
-        private TextView name,comment,reply;
-        private View lyt_parent;
-        private CircularImageView imageView;
+        private final TextView name;
+        private final TextView comment;
+        private final TextView reply;
+        private final View lyt_parent;
+        private final CircularImageView imageView;
 
 
         public OriginalViewHolder(View v) {

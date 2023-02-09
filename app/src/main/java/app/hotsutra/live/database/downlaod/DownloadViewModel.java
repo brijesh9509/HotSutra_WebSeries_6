@@ -13,8 +13,8 @@ import java.util.List;
 
 public class DownloadViewModel extends AndroidViewModel {
     private static final String TAG = "DownloadViewModel";
-    private DownloadRepository repository;
-    private LiveData<List<DownloadInfo>> allDownloads;
+    private final DownloadRepository repository;
+    private final LiveData<List<DownloadInfo>> allDownloads;
 
     public DownloadViewModel(@NonNull Application application) {
         super(application);

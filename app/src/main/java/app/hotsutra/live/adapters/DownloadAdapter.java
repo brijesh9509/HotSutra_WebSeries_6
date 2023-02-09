@@ -24,10 +24,10 @@ public class DownloadAdapter extends RecyclerView.Adapter<DownloadAdapter.Origin
     private static final String TAG = "DownloadAdapter";
     private static final int DOWNLOAD_JOB_KEY = 101;
     private List<CommonModels> items = new ArrayList<>();
-    private Activity context;
-    private boolean isDialog;
+    private final Activity context;
+    private final boolean isDialog;
     private View v = null;
-    private DownloadViewModel viewModel;
+    private final DownloadViewModel viewModel;
 
 
     public DownloadAdapter(Activity context, List<CommonModels> items, boolean isDialog, DownloadViewModel viewModel) {

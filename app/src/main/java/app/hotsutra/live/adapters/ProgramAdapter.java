@@ -18,13 +18,13 @@ import java.util.List;
 
 public class ProgramAdapter extends RecyclerView.Adapter<ProgramAdapter.ViewHolder> {
 
-    private List<Program> programs;
-    private Context context;
+    private final List<Program> programs;
+    private final Context context;
     private OnProgramClickListener onProgramClickListener;
 
     private int lastPosition = -1;
     private boolean on_attach = true;
-    private int animation_type = 2;
+    private final int animation_type = 2;
 
     public ProgramAdapter(List<Program> programs, Context context) {
         this.programs = programs;

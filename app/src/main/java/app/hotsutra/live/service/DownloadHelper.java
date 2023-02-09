@@ -32,10 +32,10 @@ import static android.content.Context.DOWNLOAD_SERVICE;
 public class DownloadHelper {
     private static final String TAG = "DownloadHelper";
     private String title;
-    private String url;
-    private Activity context;
-    private List<DownloadInfo> list = new ArrayList<>();
-    private DownloadViewModel downloadViewModel;
+    private final String url;
+    private final Activity context;
+    private final List<DownloadInfo> list = new ArrayList<>();
+    private final DownloadViewModel downloadViewModel;
     private  DownloadInfo download;
 
     public DownloadHelper(String title, String url, Activity context, DownloadViewModel downloadViewModel) {

@@ -4,9 +4,6 @@
       <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/f7d7db31c8d942763cc3d31df901b7cd/transformed/jetified-play-services-cast-15.0.1/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/f7d7db31c8d942763cc3d31df901b7cd/transformed/jetified-play-services-cast-15.0.1/AndroidManifest.xml" />
       <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/f7d7db31c8d942763cc3d31df901b7cd/transformed/jetified-play-services-cast-15.0.1/res" />
-      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/f7d7db31c8d942763cc3d31df901b7cd/transformed/jetified-play-services-cast-15.0.1/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/f7d7db31c8d942763cc3d31df901b7cd/transformed/jetified-play-services-cast-15.0.1/AndroidManifest.xml" />
-      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/f7d7db31c8d942763cc3d31df901b7cd/transformed/jetified-play-services-cast-15.0.1/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

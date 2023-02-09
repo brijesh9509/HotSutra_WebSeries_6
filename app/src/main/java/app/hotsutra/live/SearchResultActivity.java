@@ -49,16 +49,16 @@ public class SearchResultActivity extends AppCompatActivity implements SearchAda
     private RecyclerView movieRv, tvRv, tvSeriesRv;
     private SearchAdapter movieAdapter, tvSeriesAdapter;
     private LiveTvAdapter2 tvAdapter;
-    private List<CommonModel> movieList = new ArrayList<>();
-    private List<TvModel> tvList = new ArrayList<>();
-    private List<CommonModel> tvSeriesList = new ArrayList<>();
+    private final List<CommonModel> movieList = new ArrayList<>();
+    private final List<TvModel> tvList = new ArrayList<>();
+    private final List<CommonModel> tvSeriesList = new ArrayList<>();
 
     private ApiResources apiResources;
 
     private String URL = null;
-    private boolean isLoading = false;
+    private final boolean isLoading = false;
     private ProgressBar progressBar;
-    private int pageCount = 1;
+    private final int pageCount = 1;
     private LinearLayout movieLayout, tvSeriesLayout, tvLayout;
     private CoordinatorLayout coordinatorLayout;
     private Toolbar toolbar;

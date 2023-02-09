@@ -22,12 +22,12 @@ import java.util.List;
 
 public class ChannelAdapter extends RecyclerView.Adapter<ChannelAdapter.ViewHolder> {
 
-    private Context context;
-    private List<Channel> channels;
+    private final Context context;
+    private final List<Channel> channels;
 
     private int lastPosition = -1;
     private boolean on_attach = true;
-    private int animation_type = 2;
+    private final int animation_type = 2;
 
 
     public ChannelAdapter(Context context, List<Channel> channels) {

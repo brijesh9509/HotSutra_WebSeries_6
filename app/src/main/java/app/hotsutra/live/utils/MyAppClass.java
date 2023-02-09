@@ -51,7 +51,7 @@ public class MyAppClass extends Application {
         OneSignal.setLogLevel(OneSignal.LOG_LEVEL.ERROR, OneSignal.LOG_LEVEL.NONE);
         OneSignal.setAppId(AppConfig.ONE_SIGNAL_APP_ID);
         OneSignal.initWithContext(this);
-        OneSignal.setNotificationOpenedHandler((OneSignal.OSNotificationOpenedHandler) new NotificationClickHandler(mContext));
+        OneSignal.setNotificationOpenedHandler(new NotificationClickHandler(mContext));
         SharedPreferences preferences = getSharedPreferences("push", MODE_PRIVATE);
         OneSignal.disablePush(!preferences.getBoolean("status", true));
 

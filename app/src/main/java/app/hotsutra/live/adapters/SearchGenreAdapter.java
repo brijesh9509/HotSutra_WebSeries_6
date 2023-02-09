@@ -19,11 +19,11 @@ import java.util.List;
 
 public class SearchGenreAdapter extends RecyclerView.Adapter<SearchGenreAdapter.ViewHolder> {
 
-    private List<CommonModels> genreModels;
-    private Context context;
+    private final List<CommonModels> genreModels;
+    private final Context context;
     private OnItemClickListener itemClickListener;
     String type;
-    private List<ViewHolder> viewHolderArr = new ArrayList<>();
+    private final List<ViewHolder> viewHolderArr = new ArrayList<>();
     int checkCount;
 
     public SearchGenreAdapter(List<CommonModels> genreModels, Context context, String type) {
@@ -62,8 +62,8 @@ public class SearchGenreAdapter extends RecyclerView.Adapter<SearchGenreAdapter.
 
 
         MaterialCheckBox checkBox;
-        private TextView genreTv;
-        private LinearLayout linearLayout;
+        private final TextView genreTv;
+        private final LinearLayout linearLayout;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -101,11 +101,7 @@ public class SearchGenreAdapter extends RecyclerView.Adapter<SearchGenreAdapter.
 
                             linearLayout.setSelected(!linearLayout.isSelected());
 
-                            if (checkCount == viewHolderArr.size() || checkCount == viewHolderArr.size() -1) {
-                                viewHolderArr.get(0).linearLayout.setSelected(true);
-                            } else {
-                                viewHolderArr.get(0).linearLayout.setSelected(false);
-                            }
+                            viewHolderArr.get(0).linearLayout.setSelected(checkCount == viewHolderArr.size() || checkCount == viewHolderArr.size() - 1);
 
                         }
 

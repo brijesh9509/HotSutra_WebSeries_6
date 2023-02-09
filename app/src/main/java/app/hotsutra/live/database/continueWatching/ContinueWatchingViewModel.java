@@ -9,8 +9,8 @@ import androidx.lifecycle.LiveData;
 import java.util.List;
 
 public class ContinueWatchingViewModel extends AndroidViewModel {
-    private ContinueWatchingRepo continueWatchingRepo;
-    private LiveData<List<ContinueWatchingModel>> allContents;
+    private final ContinueWatchingRepo continueWatchingRepo;
+    private final LiveData<List<ContinueWatchingModel>> allContents;
 
     public ContinueWatchingViewModel(@NonNull Application application) {
         super(application);

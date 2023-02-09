@@ -3,13 +3,10 @@
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/19d27b3780ec4e97dcf6b5a53542b2c3/transformed/jetified-rtl-viewpager-2.0.0/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/19d27b3780ec4e97dcf6b5a53542b2c3/transformed/jetified-rtl-viewpager-2.0.0/AndroidManifest.xml" />
-      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/19d27b3780ec4e97dcf6b5a53542b2c3/transformed/jetified-rtl-viewpager-2.0.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/19d27b3780ec4e97dcf6b5a53542b2c3/transformed/jetified-rtl-viewpager-2.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/modules-2/files-2.1/com.duolingo.open/rtl-viewpager/2.0.0/624b9263c8e7e3f95300956636a49572e8402114/rtl-viewpager-2.0.0-sources.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/modules-2/files-2.1/com.duolingo.open/rtl-viewpager/2.0.0/624b9263c8e7e3f95300956636a49572e8402114/rtl-viewpager-2.0.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

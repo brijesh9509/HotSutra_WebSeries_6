@@ -52,14 +52,14 @@ public class DownloadActivity extends AppCompatActivity implements DownloadHisto
     private TextView downloadedFileTV, downloadingFileTv;
     private Work work;
     private ImageView startPauseIv, cancelIV;
-    private boolean isDownloading = true;
+    private final boolean isDownloading = true;
     private int actionPosition;
     private FileDownloadingAdapter downloadingAdapter;
     private DownloadHistoryAdapter downloadHistoryAdapter;
 
-    private List<VideoFile> videoFiles = new ArrayList<>();
+    private final List<VideoFile> videoFiles = new ArrayList<>();
     private boolean isDark;
-    private List<DownloadInfo> downloadingFileList = new ArrayList<>();
+    private final List<DownloadInfo> downloadingFileList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

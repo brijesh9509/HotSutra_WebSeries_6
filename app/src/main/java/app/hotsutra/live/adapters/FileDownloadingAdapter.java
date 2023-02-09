@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FileDownloadingAdapter extends RecyclerView.Adapter<FileDownloadingAdapter.ViewHolder> {
-    private Context context;
+    private final Context context;
     private List<DownloadInfo> downloadInfoList = new ArrayList<>();
 
     public FileDownloadingAdapter(Context context, List<DownloadInfo> downloadInfoList) {

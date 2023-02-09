@@ -39,7 +39,7 @@ public class SearchActivity extends AppCompatActivity {
     private LinearLayout rangeLayout;
     private RelativeLayout tvCategoryLayout, genreLayout, countryLayout;
     private EditText genreSpinner, countrySpinner, tvCategorySpinner;
-    private boolean [] selectedType = new boolean[3];
+    private final boolean [] selectedType = new boolean[3];
     private int selectedGenreId = 0;
     private int selectedTvCategoryId = 0;
     private int selectedCountryId = 0;

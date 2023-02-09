@@ -24,13 +24,13 @@ import java.util.List;
 
 public class RelatedTvAdapter  extends RecyclerView.Adapter<RelatedTvAdapter.RelatedViewHolder> {
     private List<CommonModels> items = new ArrayList<>();
-    private Activity ctx;
+    private final Activity ctx;
     private String fromActivity;
     private RelatedTvClickListener listener;
 
     private int lastPosition = -1;
     private boolean on_attach = true;
-    private int animation_type = 2;
+    private final int animation_type = 2;
 
     public RelatedTvAdapter(List<CommonModels> items, Activity ctx) {
         this.items = items;

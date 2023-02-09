@@ -17,11 +17,11 @@ import java.util.List;
 
 public class PackageAdapter extends RecyclerView.Adapter<PackageAdapter.ViewHolder> {
 
-    private Context context;
-    private List<Package> packageList;
+    private final Context context;
+    private final List<Package> packageList;
     private int c;
     private OnItemClickListener itemClickListener;
-    private String currency;
+    private final String currency;
 
     public PackageAdapter(Context context, List<Package> packageList, String currency) {
         this.context = context;
@@ -84,7 +84,7 @@ public class PackageAdapter extends RecyclerView.Adapter<PackageAdapter.ViewHold
 
     private int getColor(){
 
-        int colorList[] = {R.color.red_400,R.color.blue_400,R.color.indigo_400,R.color.orange_400,R.color.light_green_400,R.color.blue_grey_400};
+        int[] colorList = {R.color.red_400,R.color.blue_400,R.color.indigo_400,R.color.orange_400,R.color.light_green_400,R.color.blue_grey_400};
         //int colorList2[] = {R.drawable.gradient_1 ,R.drawable.gradient_2,R.drawable.gradient_3,R.drawable.gradient_4,R.drawable.gradient_5,R.drawable.gradient_6};
 
         if (c>=6){

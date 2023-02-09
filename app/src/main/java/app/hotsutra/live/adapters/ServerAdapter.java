@@ -18,9 +18,9 @@ import java.util.List;
 
 public class ServerAdapter extends RecyclerView.Adapter<ServerAdapter.OriginalViewHolder> {
 
-    private String type;
+    private final String type;
     private List<CommonModels> items = new ArrayList<>();
-    private Context ctx;
+    private final Context ctx;
 
     private ServerAdapter.OnItemClickListener mOnItemClickListener;
 

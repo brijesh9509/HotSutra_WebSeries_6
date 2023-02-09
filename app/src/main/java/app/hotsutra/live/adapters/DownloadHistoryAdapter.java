@@ -20,8 +20,8 @@ import java.util.List;
 
 public class DownloadHistoryAdapter extends RecyclerView.Adapter<DownloadHistoryAdapter.ViewHolder> {
     private OnDeleteDownloadFileListener listener;
-    private Context context;
-    private List<VideoFile> videoFiles;
+    private final Context context;
+    private final List<VideoFile> videoFiles;
 
     public DownloadHistoryAdapter(Context context, List<VideoFile> videoFiles) {
         this.context = context;
