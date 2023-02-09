@@ -3,6 +3,8 @@
     <CLASSES>
       <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/f9bf3044753510c53f3fef940e72fa06/transformed/jetified-paypal-android-sdk-2.16.0/AndroidManifest.xml" />
       <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/f9bf3044753510c53f3fef940e72fa06/transformed/jetified-paypal-android-sdk-2.16.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/f9bf3044753510c53f3fef940e72fa06/transformed/jetified-paypal-android-sdk-2.16.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/f9bf3044753510c53f3fef940e72fa06/transformed/jetified-paypal-android-sdk-2.16.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

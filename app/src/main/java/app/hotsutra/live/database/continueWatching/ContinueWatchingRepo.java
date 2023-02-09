@@ -68,7 +68,7 @@ public class ContinueWatchingRepo {
         @Override
         protected Void doInBackground(ContinueWatchingModel... continueWatchingModels) {
             continueWatchingDao.updateInfo(continueWatchingModels[0]);
-            Log.e("123", "updated: " + continueWatchingModels[0].getPosition());
+            //Log.e("123", "updated: " + continueWatchingModels[0].getPosition());
             return null;
         }
     }

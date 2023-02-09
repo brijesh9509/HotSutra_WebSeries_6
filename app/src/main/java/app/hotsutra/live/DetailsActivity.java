@@ -2002,17 +2002,17 @@ public class DetailsActivity extends AppCompatActivity implements CastPlayer.Ses
 
             @Override
             public void onChildRemoved(@NonNull DataSnapshot snapshot) {
-
+                Log.e("snapshot=====", snapshot.toString());
             }
 
             @Override
             public void onChildMoved(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
-
+                Log.e("snapshot=====", snapshot.toString());
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-
+                Log.e("snapshot=====", error.toString());
             }
         });
 
