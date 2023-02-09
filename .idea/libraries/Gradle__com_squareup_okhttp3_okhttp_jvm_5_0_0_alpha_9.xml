@@ -2,12 +2,15 @@
   <library name="Gradle: com.squareup.okhttp3:okhttp-jvm:5.0.0-alpha.9">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-jvm/5.0.0-alpha.9/ec73c0aef28cd80589795a67c2da9d368d23f27a/okhttp-jvm-5.0.0-alpha.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-jvm/5.0.0-alpha.9/ec73c0aef28cd80589795a67c2da9d368d23f27a/okhttp-jvm-5.0.0-alpha.9.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-jvm/5.0.0-alpha.9/6b88d4f43736c8032297978f61021a22a7177ab7/okhttp-jvm-5.0.0-alpha.9-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-jvm/5.0.0-alpha.9/6b88d4f43736c8032297978f61021a22a7177ab7/okhttp-jvm-5.0.0-alpha.9-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
       <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-jvm/5.0.0-alpha.9/94064a10284f7cd918dcc5818798e5d8c7899db9/okhttp-jvm-5.0.0-alpha.9-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-jvm/5.0.0-alpha.9/94064a10284f7cd918dcc5818798e5d8c7899db9/okhttp-jvm-5.0.0-alpha.9-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
