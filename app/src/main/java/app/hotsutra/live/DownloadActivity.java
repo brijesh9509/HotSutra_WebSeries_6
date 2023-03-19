@@ -29,8 +29,6 @@ import app.hotsutra.live.models.VideoFile;
 import app.hotsutra.live.models.Work;
 import app.hotsutra.live.utils.Constants;
 import app.hotsutra.live.utils.RtlUtils;
-import app.hotsutra.live.R;
-
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;

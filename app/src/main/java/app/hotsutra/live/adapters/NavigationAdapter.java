@@ -36,13 +36,11 @@ public class NavigationAdapter extends RecyclerView.Adapter<NavigationAdapter.Or
         this.mOnItemClickListener = mItemClickListener;
     }
 
-
     public NavigationAdapter(Context context, List<NavigationModel> items, String menuStyle) {
         this.items = items;
-        ctx = context;
+        this.ctx = context;
         this.menuStyle = menuStyle;
     }
-
 
     @NonNull
     @Override
@@ -59,7 +57,7 @@ public class NavigationAdapter extends RecyclerView.Adapter<NavigationAdapter.Or
     }
 
     @Override
-    public void onBindViewHolder(@NonNull final NavigationAdapter.OriginalViewHolder holder, @SuppressLint("RecyclerView") int position) {
+    public void onBindViewHolder(@NonNull final NavigationAdapter.OriginalViewHolder holder, @SuppressLint("RecyclerView") final int position) {
 
         NavigationModel obj = items.get(position);
 
@@ -69,14 +67,53 @@ public class NavigationAdapter extends RecyclerView.Adapter<NavigationAdapter.Or
                 holder.cardView.setCardBackgroundColor(ctx.getResources().getColor(R.color.colorPrimary));
                 holder.name.setTextColor(ctx.getResources().getColor(R.color.white));
             } else {
-                holder.selectedLayout.setBackground(ContextCompat.getDrawable(ctx,R.drawable.round_grey_transparent));
+                holder.selectedLayout.setBackgroundResource(R.drawable.round_grey_transparent);
                 holder.name.setTextColor(ctx.getResources().getColor(R.color.colorPrimary));
             }
-
         }
         holder.name.setText(obj.getTitle());
-//        holder.image.setImageResource(obj.getImg());
-        holder.image.setImageResource(getImageId(ctx, obj.getImg()));
+
+        switch (obj.getTitle()){
+            case "Home":
+                holder.image.setImageResource(R.drawable.outline_home_24);
+                break;
+            case "Movies":
+                holder.image.setImageResource(R.drawable.outline_movie_24);
+                break;
+            case "Series":
+                holder.image.setImageResource(R.drawable.outline_local_movies_24);
+                break;
+            case "Live TV":
+                holder.image.setImageResource(R.drawable.outline_live_tv_24);
+                break;
+            case "Genre":
+                holder.image.setImageResource(R.drawable.outline_folder_24);
+                break;
+            case "Country":
+                holder.image.setImageResource(R.drawable.outline_outlined_flag_24);
+                break;
+            case "Profile":
+                holder.image.setImageResource(R.drawable.outline_person_24);
+                break;
+            case "Favorite":
+                holder.image.setImageResource(R.drawable.outline_favorite_border_24);
+                break;
+            case "Subscription":
+                holder.image.setImageResource(R.drawable.ic_subscriptions_black_24dp);
+                break;
+            case "Downloads":
+                holder.image.setImageResource(R.drawable.ic_file_download_black_24dp);
+                break;
+            case "Settings":
+                holder.image.setImageResource(R.drawable.outline_settings_24);
+                break;
+            case "Login":
+            case "Sign Out":
+            default:
+                holder.image.setImageResource(R.drawable.outline_lock_24);
+                break;
+        }
+
         if (menuStyle.equals("grid")) {
             holder.cardView.setOnClickListener(v -> {
                 if (mOnItemClickListener != null) {
@@ -90,15 +127,12 @@ public class NavigationAdapter extends RecyclerView.Adapter<NavigationAdapter.Or
                 }
             });
         }
-
-
     }
 
     @Override
     public int getItemCount() {
         return items.size();
     }
-
 
     public class OriginalViewHolder extends RecyclerView.ViewHolder {
 
@@ -120,7 +154,6 @@ public class NavigationAdapter extends RecyclerView.Adapter<NavigationAdapter.Or
                 selectedLayout = v.findViewById(R.id.selected_layout);
             }
         }
-
     }
 
     public void chanColor(NavigationAdapter.OriginalViewHolder holder, int pos, int bgColor) {
@@ -145,12 +178,6 @@ public class NavigationAdapter extends RecyclerView.Adapter<NavigationAdapter.Or
                 holder.selectedLayout.setBackgroundColor(ctx.getResources()
                         .getColor(android.R.color.transparent));
             }
-
         }
-
-    }
-
-    public static int getImageId(Context context, String imageName) {
-        return context.getResources().getIdentifier("drawable/" + imageName, null, context.getPackageName());
     }
 }

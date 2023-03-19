@@ -7,12 +7,9 @@ import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 
-import app.hotsutra.live.R;
-
 public class WebViewActivity extends AppCompatActivity {
 
     private WebView webView;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

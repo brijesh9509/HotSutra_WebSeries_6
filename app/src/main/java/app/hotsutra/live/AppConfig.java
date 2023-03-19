@@ -8,14 +8,14 @@ public class AppConfig {
 
     public static native String getApiServerUrl();
 
-    public static native String getApiKey();
+   // public static native String getApiKey();
 
     public static native String getPurchaseCode();
 
     public static native String getOneSignalAppID();
 
     public static final String API_SERVER_URL = getApiServerUrl();
-    public static final String API_KEY = getApiKey();
+    //public static final String API_KEY = getApiKey();
     //copy your terms url from php admin dashboard & paste below
     public static final String TERMS_URL = "https://hotsutra.live/index.php/privacy-policy/";
     public static final String ONE_SIGNAL_APP_ID = getOneSignalAppID();

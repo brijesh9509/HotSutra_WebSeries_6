@@ -16,8 +16,6 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
-import app.hotsutra.live.R;
-
 import app.hotsutra.live.adapters.CommonGridAdapter;
 import app.hotsutra.live.models.CommonModels;
 import app.hotsutra.live.models.home_content.Video;
@@ -25,6 +23,7 @@ import app.hotsutra.live.network.RetrofitClient;
 import app.hotsutra.live.network.apis.TvSeriesApi;
 import app.hotsutra.live.utils.ApiResources;
 import app.hotsutra.live.utils.HelperUtils;
+import app.hotsutra.live.utils.MyAppClass;
 import app.hotsutra.live.utils.NetworkInst;
 import app.hotsutra.live.utils.PreferenceUtils;
 import app.hotsutra.live.utils.RtlUtils;
@@ -193,7 +192,7 @@ public class ItemSeriesActivity extends AppCompatActivity {
         String userId = PreferenceUtils.getUserId(this);
         Retrofit retrofit = RetrofitClient.getRetrofitInstance();
         TvSeriesApi api = retrofit.create(TvSeriesApi.class);
-        Call<List<Video>> call = api.getTvSeries(AppConfig.API_KEY, pageNum,
+        Call<List<Video>> call = api.getTvSeries(MyAppClass.API_KEY, pageNum,
                 BuildConfig.VERSION_CODE,userId, Constants.getDeviceId(this));
         call.enqueue(new Callback<List<Video>>() {
             @Override

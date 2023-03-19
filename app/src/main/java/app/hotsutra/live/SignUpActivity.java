@@ -12,8 +12,6 @@ import android.os.Bundle;
 
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.content.ContextCompat;
-
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -21,9 +19,6 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import app.hotsutra.live.R;
-
 import app.hotsutra.live.database.DatabaseHelper;
 import app.hotsutra.live.network.RetrofitClient;
 import app.hotsutra.live.network.apis.FirebaseAuthApi;
@@ -33,6 +28,7 @@ import app.hotsutra.live.network.model.ActiveStatus;
 import app.hotsutra.live.network.model.User;
 import app.hotsutra.live.utils.ApiResources;
 import app.hotsutra.live.utils.Constants;
+import app.hotsutra.live.utils.MyAppClass;
 import app.hotsutra.live.utils.RtlUtils;
 import app.hotsutra.live.utils.ToastMsg;
 import com.firebase.ui.auth.AuthUI;
@@ -159,7 +155,7 @@ public class SignUpActivity extends AppCompatActivity {
         dialog.show();
         Retrofit retrofit = RetrofitClient.getRetrofitInstance();
         SignUpApi signUpApi = retrofit.create(SignUpApi.class);
-        Call<User> call = signUpApi.signUp(AppConfig.API_KEY, email, pass, name,
+        Call<User> call = signUpApi.signUp(MyAppClass.API_KEY, email, pass, name,
                 BuildConfig.VERSION_CODE, Constants.getDeviceId(this));
         call.enqueue(new Callback<User>() {
             @Override
@@ -228,7 +224,7 @@ public class SignUpActivity extends AppCompatActivity {
         Retrofit retrofit = RetrofitClient.getRetrofitInstance();
         SubscriptionApi subscriptionApi = retrofit.create(SubscriptionApi.class);
 
-        Call<ActiveStatus> call = subscriptionApi.getActiveStatus(AppConfig.API_KEY, userId,
+        Call<ActiveStatus> call = subscriptionApi.getActiveStatus(MyAppClass.API_KEY, userId,
                 BuildConfig.VERSION_CODE, Constants.getDeviceId(this));
         call.enqueue(new Callback<ActiveStatus>() {
             @Override
@@ -368,7 +364,7 @@ public class SignUpActivity extends AppCompatActivity {
         String uid = FirebaseAuth.getInstance().getCurrentUser().getUid();
         Retrofit retrofit = RetrofitClient.getRetrofitInstance();
         FirebaseAuthApi api = retrofit.create(FirebaseAuthApi.class);
-        Call<User> call = api.getPhoneAuthStatus(AppConfig.API_KEY, uid, phoneNo,
+        Call<User> call = api.getPhoneAuthStatus(MyAppClass.API_KEY, uid, phoneNo,
                 BuildConfig.VERSION_CODE, Constants.getDeviceId(this));
         call.enqueue(new Callback<User>() {
             @Override
@@ -427,13 +423,9 @@ public class SignUpActivity extends AppCompatActivity {
         if (user.getPhoneNumber() != null)
             phone = user.getPhoneNumber();
 
-        Log.d(TAG, "onActivityResult: " + user.getEmail());
-        Log.d(TAG, "onActivityResult: " + user.getDisplayName());
-        Log.d(TAG, "onActivityResult: " + user.getPhoneNumber());
-
         Retrofit retrofit = RetrofitClient.getRetrofitInstance();
         FirebaseAuthApi api = retrofit.create(FirebaseAuthApi.class);
-        Call<User> call = api.getGoogleAuthStatus(AppConfig.API_KEY, uid, email, username, image, phone,
+        Call<User> call = api.getGoogleAuthStatus(MyAppClass.API_KEY, uid, email, username, image, phone,
                 BuildConfig.VERSION_CODE, Constants.getDeviceId(this));
         call.enqueue(new Callback<User>() {
             @Override
@@ -484,7 +476,7 @@ public class SignUpActivity extends AppCompatActivity {
         String uid = FirebaseAuth.getInstance().getCurrentUser().getUid();
         Retrofit retrofit = RetrofitClient.getRetrofitInstance();
         FirebaseAuthApi api = retrofit.create(FirebaseAuthApi.class);
-        Call<User> call = api.getFacebookAuthStatus(AppConfig.API_KEY, uid, username, email, Uri.parse(photoUrl),
+        Call<User> call = api.getFacebookAuthStatus(MyAppClass.API_KEY, uid, username, email, Uri.parse(photoUrl),
                 BuildConfig.VERSION_CODE, Constants.getDeviceId(this));
         call.enqueue(new Callback<User>() {
             @Override

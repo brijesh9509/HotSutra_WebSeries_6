@@ -1,10 +1,16 @@
 package app.hotsutra.live.models;
 
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
 public class NavigationModel {
 
+    @SerializedName("img")
+    @Expose
     String img;
+    @SerializedName("title")
+    @Expose
     String title;
-
 
     public NavigationModel(String img, String title) {
         this.img = img;

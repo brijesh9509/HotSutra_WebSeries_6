@@ -19,7 +19,7 @@ import app.hotsutra.live.network.model.Package;
 import app.hotsutra.live.network.model.User;
 import app.hotsutra.live.network.model.config.PaymentConfig;
 import app.hotsutra.live.utils.ApiResources;
-import app.hotsutra.live.R;
+import app.hotsutra.live.utils.MyAppClass;
 import app.hotsutra.live.utils.PreferenceUtils;
 import app.hotsutra.live.utils.ToastMsg;
 import com.razorpay.Checkout;
@@ -93,8 +93,8 @@ public class RazorPayActivity extends AppCompatActivity implements PaymentResult
 
     @Override
     public void onPaymentError(int i, String message) {
-        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
-        Log.e(TAG, "Error: " + message);
+        //Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
+        //Log.e(TAG, "Error: " + message);
         finish();
     }
 
@@ -102,7 +102,7 @@ public class RazorPayActivity extends AppCompatActivity implements PaymentResult
         progressBar.setVisibility(View.VISIBLE);
         Retrofit retrofit = RetrofitClient.getRetrofitInstance();
         PaymentApi paymentApi = retrofit.create(PaymentApi.class);
-        Call<ResponseBody> call = paymentApi.savePayment(AppConfig.API_KEY, aPackage.getPlanId(),
+        Call<ResponseBody> call = paymentApi.savePayment(MyAppClass.API_KEY, aPackage.getPlanId(),
                 databaseHelper.getUserData().getUserId(),
                 amountPaidInRupee,
                 token, "RazorPay", BuildConfig.VERSION_CODE, Constants.getDeviceId(this));
@@ -146,7 +146,7 @@ public class RazorPayActivity extends AppCompatActivity implements PaymentResult
         Retrofit retrofit = RetrofitClient.getRetrofitInstance();
         SubscriptionApi subscriptionApi = retrofit.create(SubscriptionApi.class);
 
-        Call<ActiveStatus> call = subscriptionApi.getActiveStatus(AppConfig.API_KEY,
+        Call<ActiveStatus> call = subscriptionApi.getActiveStatus(MyAppClass.API_KEY,
                 PreferenceUtils.getUserId(this),
                 BuildConfig.VERSION_CODE, Constants.getDeviceId(this));
         call.enqueue(new Callback<ActiveStatus>() {

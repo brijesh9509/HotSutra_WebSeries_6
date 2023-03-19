@@ -19,13 +19,11 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import app.hotsutra.live.R;
-
 import app.hotsutra.live.utils.ApiResources;
 import com.onesignal.OneSignal;
 import app.hotsutra.live.network.RetrofitClient;
 import app.hotsutra.live.network.apis.MovieRequestApi;
+import app.hotsutra.live.utils.MyAppClass;
 import app.hotsutra.live.utils.PreferenceUtils;
 import app.hotsutra.live.utils.RtlUtils;
 import app.hotsutra.live.utils.ToastMsg;
@@ -138,7 +136,7 @@ public class SettingsActivity extends AppCompatActivity {
             if (!name.isEmpty() && !email.isEmpty() && !movieName.isEmpty() && !message.isEmpty()) {
                 Retrofit retrofit = RetrofitClient.getRetrofitInstance();
                 MovieRequestApi api = retrofit.create(MovieRequestApi.class);
-                Call<ResponseBody> call = api.submitRequest(AppConfig.API_KEY, name, email, movieName,
+                Call<ResponseBody> call = api.submitRequest(MyAppClass.API_KEY, name, email, movieName,
                         message, BuildConfig.VERSION_CODE, userId, Constants.getDeviceId(this));
                 call.enqueue(new Callback<ResponseBody>() {
                     @Override

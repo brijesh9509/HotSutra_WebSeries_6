@@ -1,5 +1,12 @@
 package app.hotsutra.live.bottomshit;
 
+import static app.hotsutra.live.utils.Constants.GOOGLE_PAY;
+import static app.hotsutra.live.utils.Constants.OFFLINE_PAY;
+import static app.hotsutra.live.utils.Constants.PAYPAL;
+import static app.hotsutra.live.utils.Constants.PAYTM;
+import static app.hotsutra.live.utils.Constants.RAZOR_PAY;
+import static app.hotsutra.live.utils.Constants.STRIP;
+
 import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -21,11 +28,11 @@ public class PaymentBottomShitDialog extends BottomSheetDialogFragment {
 
     private final boolean isInAppPurchase;
 
+    private OnBottomShitClickListener bottomShitClickListener;
+
     public PaymentBottomShitDialog(boolean isInAppPurchase) {
         this.isInAppPurchase = isInAppPurchase;
     }
-
-    private OnBottomShitClickListener bottomShitClickListener;
 
     @Nullable
     @Override
@@ -34,20 +41,24 @@ public class PaymentBottomShitDialog extends BottomSheetDialogFragment {
                 false);
         DatabaseHelper databaseHelper = new DatabaseHelper(getContext());
         PaymentConfig config = databaseHelper.getConfigurationData().getPaymentConfig();
-        CardView paypalBt, stripBt, razorpayBt, offlineBtn, googlePlay_btn;
+        CardView paypalBt, stripBt, razorpayBt, offlineBtn, googlePlay_btn,paytm_btn;
         paypalBt = view.findViewById(R.id.paypal_btn);
         stripBt = view.findViewById(R.id.stripe_btn);
         razorpayBt = view.findViewById(R.id.razorpay_btn);
         offlineBtn = view.findViewById(R.id.offline_btn);
         googlePlay_btn = view.findViewById(R.id.googlePlay_btn);
+        paytm_btn = view.findViewById(R.id.paytm_btn);
         Space space = view.findViewById(R.id.space2);
         Space space4 = view.findViewById(R.id.space4);
+        Space space5 = view.findViewById(R.id.space5);
         Space space6 = view.findViewById(R.id.space6);
 
-        if (!config.getPaypalEnable()) {
+        /*if (!config.getPaypalEnable()) {
             paypalBt.setVisibility(View.GONE);
             space.setVisibility(View.GONE);
-        }
+        }*/
+        paypalBt.setVisibility(View.GONE);
+        space.setVisibility(View.GONE);
 
         if (!config.getStripeEnable()) {
             stripBt.setVisibility(View.GONE);
@@ -60,25 +71,33 @@ public class PaymentBottomShitDialog extends BottomSheetDialogFragment {
             offlineBtn.setVisibility(View.GONE);
             space4.setVisibility(View.GONE);
         }
+
         if (!isInAppPurchase) {
             googlePlay_btn.setVisibility(View.GONE);
             space6.setVisibility(View.GONE);
         }
 
-        paypalBt.setOnClickListener(view1 -> bottomShitClickListener.onBottomShitClick(Constants.PAYPAL));
+        paypalBt.setOnClickListener(view1 -> bottomShitClickListener.onBottomShitClick(PAYPAL));
 
-        stripBt.setOnClickListener(view12 -> bottomShitClickListener.onBottomShitClick(Constants.STRIP));
+        stripBt.setOnClickListener(view12 -> bottomShitClickListener.onBottomShitClick(STRIP));
 
-        razorpayBt.setOnClickListener(v -> bottomShitClickListener.onBottomShitClick(Constants.RAZOR_PAY));
+        razorpayBt.setOnClickListener(v -> bottomShitClickListener.onBottomShitClick(RAZOR_PAY));
 
-        offlineBtn.setOnClickListener(v -> bottomShitClickListener.onBottomShitClick(Constants.OFFLINE_PAY));
+        offlineBtn.setOnClickListener(v -> bottomShitClickListener.onBottomShitClick(OFFLINE_PAY));
 
         googlePlay_btn.setOnClickListener(v -> {
             dismiss();
-            bottomShitClickListener.onBottomShitClick(Constants.GOOGLE_PAY);
+            bottomShitClickListener.onBottomShitClick(GOOGLE_PAY);
         });
 
+        paytm_btn.setOnClickListener(v -> {
+            dismiss();
+            bottomShitClickListener.onBottomShitClick(PAYTM);
+        });
+
+
         return view;
+
     }
 
 
@@ -89,7 +108,7 @@ public class PaymentBottomShitDialog extends BottomSheetDialogFragment {
         try {
             bottomShitClickListener = (OnBottomShitClickListener) context;
         } catch (Exception e) {
-            throw new ClassCastException(context + " must be implemented");
+            throw new ClassCastException(context.toString() + " must be implemented");
         }
 
     }
@@ -99,4 +118,3 @@ public class PaymentBottomShitDialog extends BottomSheetDialogFragment {
     }
 
 }
-

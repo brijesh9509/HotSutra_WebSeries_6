@@ -35,9 +35,6 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import app.hotsutra.live.R;
-
 import app.hotsutra.live.adapters.NavigationAdapter;
 import app.hotsutra.live.database.DatabaseHelper;
 import app.hotsutra.live.fragments.LiveTvFragment;

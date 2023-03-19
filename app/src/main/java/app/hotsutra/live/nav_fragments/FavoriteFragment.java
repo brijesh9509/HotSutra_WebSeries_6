@@ -24,7 +24,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.facebook.shimmer.ShimmerFrameLayout;
-import app.hotsutra.live.AppConfig;
 import app.hotsutra.live.BuildConfig;
 import app.hotsutra.live.MainActivity;
 import app.hotsutra.live.R;
@@ -34,6 +33,7 @@ import app.hotsutra.live.models.Movie;
 import app.hotsutra.live.network.RetrofitClient;
 import app.hotsutra.live.network.apis.FavouriteApi;
 import app.hotsutra.live.utils.ApiResources;
+import app.hotsutra.live.utils.MyAppClass;
 import app.hotsutra.live.utils.PreferenceUtils;
 import app.hotsutra.live.utils.NetworkInst;
 import app.hotsutra.live.utils.SpacingItemDecoration;
@@ -209,7 +209,7 @@ public class FavoriteFragment extends Fragment {
     private void getData(String userID, int pageNum) {
         Retrofit retrofit = RetrofitClient.getRetrofitInstance();
         FavouriteApi api = retrofit.create(FavouriteApi.class);
-        Call<List<Movie>> call = api.getFavoriteList(AppConfig.API_KEY, userID, pageNum,
+        Call<List<Movie>> call = api.getFavoriteList(MyAppClass.API_KEY, userID, pageNum,
                 BuildConfig.VERSION_CODE,getDeviceId(requireContext()));
         call.enqueue(new Callback<List<Movie>>() {
             @SuppressLint("NotifyDataSetChanged")
