@@ -28,13 +28,12 @@ import app.hotsutra.live.network.model.CommonModel;
 import app.hotsutra.live.network.model.SearchModel;
 import app.hotsutra.live.network.model.TvModel;
 import app.hotsutra.live.utils.ApiResources;
+import app.hotsutra.live.utils.MyAppClass;
 import app.hotsutra.live.utils.PreferenceUtils;
 import app.hotsutra.live.utils.RtlUtils;
 import app.hotsutra.live.utils.ToastMsg;
 import com.facebook.shimmer.ShimmerFrameLayout;
 import com.google.firebase.analytics.FirebaseAnalytics;
-import app.hotsutra.live.R;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -49,16 +48,16 @@ public class SearchResultActivity extends AppCompatActivity implements SearchAda
     private RecyclerView movieRv, tvRv, tvSeriesRv;
     private SearchAdapter movieAdapter, tvSeriesAdapter;
     private LiveTvAdapter2 tvAdapter;
-    private final List<CommonModel> movieList = new ArrayList<>();
-    private final List<TvModel> tvList = new ArrayList<>();
-    private final List<CommonModel> tvSeriesList = new ArrayList<>();
+    private List<CommonModel> movieList = new ArrayList<>();
+    private List<TvModel> tvList = new ArrayList<>();
+    private List<CommonModel> tvSeriesList = new ArrayList<>();
 
     private ApiResources apiResources;
 
     private String URL = null;
-    private final boolean isLoading = false;
+    private boolean isLoading = false;
     private ProgressBar progressBar;
-    private final int pageCount = 1;
+    private int pageCount = 1;
     private LinearLayout movieLayout, tvSeriesLayout, tvLayout;
     private CoordinatorLayout coordinatorLayout;
     private Toolbar toolbar;
@@ -161,7 +160,7 @@ public class SearchResultActivity extends AppCompatActivity implements SearchAda
         String userId = PreferenceUtils.getUserId(this);
         Retrofit retrofit = RetrofitClient.getRetrofitInstance();
         SearchApi searchApi = retrofit.create(SearchApi.class);
-        Call<SearchModel> call = searchApi.getSearchData(AppConfig.API_KEY, query, type, range_to, range_from,
+        Call<SearchModel> call = searchApi.getSearchData(MyAppClass.API_KEY, query, type, range_to, range_from,
                 tvCategoryId, genreId, countryId, BuildConfig.VERSION_CODE, userId, Constants.getDeviceId(this));
         call.enqueue(new Callback<SearchModel>() {
             @Override

@@ -1,5 +1,6 @@
 package app.hotsutra.live.network.apis;
 
+import app.hotsutra.live.network.model.ConfigResponse;
 import app.hotsutra.live.network.model.config.Configuration;
 
 import retrofit2.Call;
@@ -13,4 +14,7 @@ public interface ConfigurationApi {
                                              @Query("version") Integer id,
                                              @Query("user_id") String userId
                                              /*@Query("udid") String uDID*/);
+
+    @GET("app_config")
+    Call<ConfigResponse> getConfigData(@Query("user_id") String userId);
 }

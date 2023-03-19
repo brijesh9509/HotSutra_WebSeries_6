@@ -26,6 +26,7 @@ import android.widget.Toast;
 
 import app.hotsutra.live.BuildConfig;
 import app.hotsutra.live.utils.ApiResources;
+import app.hotsutra.live.utils.MyAppClass;
 import app.hotsutra.live.utils.PreferenceUtils;
 import com.facebook.shimmer.ShimmerFrameLayout;
 import app.hotsutra.live.AppConfig;
@@ -88,8 +89,8 @@ public class LiveTvFragment extends Fragment {
         if (activity.isDark) {
             pageTitle.setTextColor(activity.getResources().getColor(R.color.white));
             searchBar.setCardBackgroundColor(activity.getResources().getColor(R.color.black_window_light));
-            menuIv.setImageDrawable(ContextCompat.getDrawable(requireContext(),R.drawable.ic_menu));
-            searchIv.setImageDrawable(ContextCompat.getDrawable(requireContext(),R.drawable.ic_search_white));
+            menuIv.setImageDrawable(ContextCompat.getDrawable(requireContext(), R.drawable.ic_menu));
+            searchIv.setImageDrawable(ContextCompat.getDrawable(requireContext(), R.drawable.ic_search_white));
         }
     }
 
@@ -179,65 +180,60 @@ public class LiveTvFragment extends Fragment {
     }
 
     private void getLiveTvData() {
-        String userId = PreferenceUtils.getUserId(requireActivity());
+        String userId = PreferenceUtils.getUserId(activity);
         Retrofit retrofit = RetrofitClient.getRetrofitInstance();
         LiveTvApi api = retrofit.create(LiveTvApi.class);
-        api.getLiveTvCategories(AppConfig.API_KEY, BuildConfig.VERSION_CODE,userId,getDeviceId(requireContext()))
-                .enqueue(new Callback<List<LiveTvCategory>>() {
-                    @SuppressLint("NotifyDataSetChanged")
-                    @Override
-                    public void onResponse(@NonNull Call<List<LiveTvCategory>> call,
-                                           @NonNull retrofit2.Response<List<LiveTvCategory>> response) {
-                        swipeRefreshLayout.setRefreshing(false);
-                        progressBar.setVisibility(View.GONE);
-                        shimmerFrameLayout.stopShimmer();
-                        shimmerFrameLayout.setVisibility(View.GONE);
-                        if (response.code() == 200) {
-                            liveTvCategories.addAll(response.body());
+        api.getLiveTvCategories(MyAppClass.API_KEY, BuildConfig.VERSION_CODE, userId, getDeviceId(requireContext())).enqueue(new Callback<List<LiveTvCategory>>() {
+            @SuppressLint("NotifyDataSetChanged")
+            @Override
+            public void onResponse(@NonNull Call<List<LiveTvCategory>> call, @NonNull retrofit2.Response<List<LiveTvCategory>> response) {
+                swipeRefreshLayout.setRefreshing(false);
+                progressBar.setVisibility(View.GONE);
+                shimmerFrameLayout.stopShimmer();
+                shimmerFrameLayout.setVisibility(View.GONE);
+                if (response.code() == 200) {
+                    liveTvCategories.addAll(response.body());
 
-                            if (liveTvCategories.size() == 0) {
-                                coordinatorLayout.setVisibility(View.VISIBLE);
-                            } else {
-                                adapter.notifyDataSetChanged();
-                            }
-
-                        }else if (response.code() == 412) {
-                            try {
-                                if (response.errorBody() != null) {
-                                    ApiResources.openLoginScreen(response.errorBody().string(),
-                                            requireActivity());
-                                    requireActivity().finish();
-                                }
-                            } catch (Exception e) {
-                                Toast.makeText(requireActivity(),
-                                        e.getMessage(), Toast.LENGTH_LONG).show();
-                            }
-                        } else {
-                            swipeRefreshLayout.setRefreshing(false);
-                            progressBar.setVisibility(View.GONE);
-                            shimmerFrameLayout.stopShimmer();
-                            shimmerFrameLayout.setVisibility(View.GONE);
-
-                            coordinatorLayout.setVisibility(View.VISIBLE);
-                            tvNoItem.setText(getResources().getString(R.string.something_went_text));
-                            new ToastMsg(activity).toastIconError("Something went wrong...");
-                        }
-
-                    }
-
-                    @Override
-                    public void onFailure(@NonNull Call<List<LiveTvCategory>> call, @NonNull Throwable t) {
-                        swipeRefreshLayout.setRefreshing(false);
-                        progressBar.setVisibility(View.GONE);
-                        shimmerFrameLayout.stopShimmer();
-                        shimmerFrameLayout.setVisibility(View.GONE);
-
+                    if (liveTvCategories.size() == 0) {
                         coordinatorLayout.setVisibility(View.VISIBLE);
-                        tvNoItem.setText(requireContext().getResources().getString(R.string.something_went_text));
-
-                        t.printStackTrace();
+                    } else {
+                        adapter.notifyDataSetChanged();
                     }
-                });
+                } else if (response.code() == 412) {
+                    try {
+                        if (response.errorBody() != null) {
+                            ApiResources.openLoginScreen(response.errorBody().string(), activity);
+                            activity.finish();
+                        }
+                    } catch (Exception e) {
+                        Toast.makeText(activity, e.getMessage(), Toast.LENGTH_LONG).show();
+                    }
+                } else {
+                    swipeRefreshLayout.setRefreshing(false);
+                    progressBar.setVisibility(View.GONE);
+                    shimmerFrameLayout.stopShimmer();
+                    shimmerFrameLayout.setVisibility(View.GONE);
+
+                    coordinatorLayout.setVisibility(View.VISIBLE);
+                    tvNoItem.setText(getResources().getString(R.string.something_went_text));
+                    new ToastMsg(activity).toastIconError("Something went wrong...");
+                }
+
+            }
+
+            @Override
+            public void onFailure(@NonNull Call<List<LiveTvCategory>> call, @NonNull Throwable t) {
+                swipeRefreshLayout.setRefreshing(false);
+                progressBar.setVisibility(View.GONE);
+                shimmerFrameLayout.stopShimmer();
+                shimmerFrameLayout.setVisibility(View.GONE);
+
+                coordinatorLayout.setVisibility(View.VISIBLE);
+                tvNoItem.setText(requireContext().getResources().getString(R.string.something_went_text));
+
+                t.printStackTrace();
+            }
+        });
 
     }
 

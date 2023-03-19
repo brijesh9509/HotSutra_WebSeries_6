@@ -118,18 +118,14 @@ public class MainHomeFragment extends Fragment {
     }
 
     //----load fragment----------------------
-    private boolean loadFragment(Fragment fragment){
+    private void loadFragment(Fragment fragment){
         if (fragment!=null){
             getChildFragmentManager()
                     .beginTransaction()
                     .replace(R.id.fragment_container,fragment)
                     .commit();
 
-            return true;
         }
-        return false;
 
     }
-
-
 }

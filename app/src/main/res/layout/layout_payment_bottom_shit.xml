@@ -26,7 +26,7 @@
             android:layout_row="0"
             android:orientation="horizontal">
 
-            <androidx.legacy.widget.Space
+            <Space
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1" />
@@ -59,7 +59,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <androidx.legacy.widget.Space
+            <Space
                 android:id="@+id/space2"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -93,7 +93,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <androidx.legacy.widget.Space
+            <Space
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1" />
@@ -106,7 +106,7 @@
             android:layout_row="1"
             android:orientation="horizontal">
 
-            <androidx.legacy.widget.Space
+            <Space
                 android:id="@+id/space3"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -129,7 +129,7 @@
                         android:layout_height="120dp"
                         android:background="@color/white"
                         android:padding="10dp"
-                        android:src="@drawable/razorpay"/>
+                        app:srcCompat="@drawable/razorpay" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -141,7 +141,7 @@
 
             </androidx.cardview.widget.CardView>
 
-            <androidx.legacy.widget.Space
+            <Space
                 android:id="@+id/space4"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -177,7 +177,7 @@
 
             </androidx.cardview.widget.CardView>
 
-            <androidx.legacy.widget.Space
+            <Space
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1" />
@@ -190,7 +190,7 @@
             android:layout_row="0"
             android:orientation="horizontal">
 
-            <androidx.legacy.widget.Space
+            <Space
                 android:id="@+id/space5"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -226,8 +226,44 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <androidx.legacy.widget.Space
+            <Space
                 android:id="@+id/space6"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/paytm_btn"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="5sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:background="@color/white"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="10dp"
+                        app:srcCompat="@drawable/paytm_logo"
+                        tools:ignore="ImageContrastCheck" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/paytm"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Space
+                android:id="@+id/space7"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1" />

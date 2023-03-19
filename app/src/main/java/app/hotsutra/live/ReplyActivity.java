@@ -20,12 +20,11 @@ import app.hotsutra.live.models.PostCommentModel;
 import app.hotsutra.live.network.RetrofitClient;
 import app.hotsutra.live.network.apis.CommentApi;
 import app.hotsutra.live.utils.ApiResources;
+import app.hotsutra.live.utils.MyAppClass;
 import app.hotsutra.live.utils.PreferenceUtils;
 import app.hotsutra.live.utils.RtlUtils;
 import app.hotsutra.live.utils.ToastMsg;
 import com.google.firebase.analytics.FirebaseAnalytics;
-import app.hotsutra.live.R;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -121,7 +120,7 @@ public class ReplyActivity extends AppCompatActivity {
         String userId = PreferenceUtils.getUserId(ReplyActivity.this);
         Retrofit retrofit = RetrofitClient.getRetrofitInstance();
         CommentApi api = retrofit.create(CommentApi.class);
-        Call<PostCommentModel> call = api.postReply(AppConfig.API_KEY, videoId, userId, comments,
+        Call<PostCommentModel> call = api.postReply(MyAppClass.API_KEY, videoId, userId, comments,
                 strCommentID, BuildConfig.VERSION_CODE, Constants.getDeviceId(this));
         call.enqueue(new Callback<PostCommentModel>() {
             @Override
@@ -164,7 +163,7 @@ public class ReplyActivity extends AppCompatActivity {
         String userId = PreferenceUtils.getUserId(ReplyActivity.this);
         Retrofit retrofit = RetrofitClient.getRetrofitInstance();
         CommentApi api = retrofit.create(CommentApi.class);
-        Call<List<GetCommentsModel>> call = api.getAllReply(AppConfig.API_KEY, strCommentID,
+        Call<List<GetCommentsModel>> call = api.getAllReply(MyAppClass.API_KEY, strCommentID,
                 BuildConfig.VERSION_CODE,userId, Constants.getDeviceId(this));
         call.enqueue(new Callback<List<GetCommentsModel>>() {
             @Override

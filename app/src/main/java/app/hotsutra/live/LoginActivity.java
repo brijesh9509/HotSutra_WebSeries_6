@@ -40,6 +40,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import app.hotsutra.live.network.RetrofitClient;
 import app.hotsutra.live.utils.Constants;
+import app.hotsutra.live.utils.MyAppClass;
 import app.hotsutra.live.utils.RtlUtils;
 import app.hotsutra.live.utils.ToastMsg;
 
@@ -168,7 +169,7 @@ public class LoginActivity extends AppCompatActivity {
         dialog.show();
         Retrofit retrofit = RetrofitClient.getRetrofitInstance();
         LoginApi api = retrofit.create(LoginApi.class);
-        Call<User> call = api.postLoginStatus(AppConfig.API_KEY, email, password,
+        Call<User> call = api.postLoginStatus(MyAppClass.API_KEY, email, password,
                 BuildConfig.VERSION_CODE, Constants.getDeviceId(this));
         call.enqueue(new Callback<User>() {
             @Override
@@ -234,7 +235,7 @@ public class LoginActivity extends AppCompatActivity {
         Retrofit retrofit = RetrofitClient.getRetrofitInstance();
         SubscriptionApi subscriptionApi = retrofit.create(SubscriptionApi.class);
 
-        Call<ActiveStatus> call = subscriptionApi.getActiveStatus(AppConfig.API_KEY, userId,
+        Call<ActiveStatus> call = subscriptionApi.getActiveStatus(MyAppClass.API_KEY, userId,
                 BuildConfig.VERSION_CODE, Constants.getDeviceId(this));
         call.enqueue(new Callback<ActiveStatus>() {
             @Override
@@ -436,7 +437,7 @@ public class LoginActivity extends AppCompatActivity {
         String uid = FirebaseAuth.getInstance().getCurrentUser().getUid();
         Retrofit retrofit = RetrofitClient.getRetrofitInstance();
         FirebaseAuthApi api = retrofit.create(FirebaseAuthApi.class);
-        Call<User> call = api.getPhoneAuthStatus(AppConfig.API_KEY, uid, phoneNo,
+        Call<User> call = api.getPhoneAuthStatus(MyAppClass.API_KEY, uid, phoneNo,
                 BuildConfig.VERSION_CODE, Constants.getDeviceId(this));
         call.enqueue(new Callback<User>() {
             @Override
@@ -494,7 +495,7 @@ public class LoginActivity extends AppCompatActivity {
 
         Retrofit retrofit = RetrofitClient.getRetrofitInstance();
         FirebaseAuthApi api = retrofit.create(FirebaseAuthApi.class);
-        Call<User> call = api.getGoogleAuthStatus(AppConfig.API_KEY, uid, email, username, image, phone,
+        Call<User> call = api.getGoogleAuthStatus(MyAppClass.API_KEY, uid, email, username, image, phone,
                 BuildConfig.VERSION_CODE, Constants.getDeviceId(this));
         call.enqueue(new Callback<User>() {
             @Override
@@ -542,7 +543,7 @@ public class LoginActivity extends AppCompatActivity {
         String uid = FirebaseAuth.getInstance().getCurrentUser().getUid();
         Retrofit retrofit = RetrofitClient.getRetrofitInstance();
         FirebaseAuthApi api = retrofit.create(FirebaseAuthApi.class);
-        Call<User> call = api.getFacebookAuthStatus(AppConfig.API_KEY, uid, username, email, Uri.parse(photoUrl),
+        Call<User> call = api.getFacebookAuthStatus(MyAppClass.API_KEY, uid, username, email, Uri.parse(photoUrl),
                 BuildConfig.VERSION_CODE, Constants.getDeviceId(this));
         call.enqueue(new Callback<User>() {
             @Override

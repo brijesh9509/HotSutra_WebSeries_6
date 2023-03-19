@@ -17,10 +17,8 @@ import android.widget.ProgressBar;
 
 import app.hotsutra.live.utils.ApiResources;
 import com.google.firebase.analytics.FirebaseAnalytics;
-import app.hotsutra.live.R;
 
 public class TermsActivity extends AppCompatActivity {
-
 
     private WebView webView;
     private ProgressBar progressBar;

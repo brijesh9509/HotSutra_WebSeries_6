@@ -143,6 +143,7 @@ import app.hotsutra.live.models.single_details_tv.SingleDetailsTV;
 import app.hotsutra.live.network.RetrofitClient;
 import app.hotsutra.live.network.model.User;
 import app.hotsutra.live.utils.HelperUtils;
+import app.hotsutra.live.utils.MyAppClass;
 import app.hotsutra.live.utils.PreferenceUtils;
 import app.hotsutra.live.utils.RtlUtils;
 import app.hotsutra.live.utils.ToastMsg;
@@ -184,7 +185,6 @@ import static app.hotsutra.live.utils.Constants.YOUTUBE_LIVE;
 import static app.hotsutra.live.utils.Constants.getDeviceId;
 
 @SuppressLint("StaticFieldLeak")
-@SuppressWarnings("unchecked")
 public class DetailsActivity extends AppCompatActivity implements CastPlayer.SessionAvailabilityListener, ProgramAdapter.OnProgramClickListener, EpisodeAdapter.OnTVSeriesEpisodeItemClickListener,
         RelatedTvAdapter.RelatedTvClickListener {
     private static final int PERMISSION_REQUEST_CODE = 1;
@@ -326,7 +326,7 @@ public class DetailsActivity extends AppCompatActivity implements CastPlayer.Ses
         }
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details);
-        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_VISIBLE | WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE);
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE);
 
 
         //check vpn connection
@@ -885,7 +885,7 @@ public class DetailsActivity extends AppCompatActivity implements CastPlayer.Ses
                     return PreferenceUtils.isValid(DetailsActivity.this);
                 }
             }
-        }
+        } else return paid.equals("0");
         return false;
     }
 
@@ -942,7 +942,7 @@ public class DetailsActivity extends AppCompatActivity implements CastPlayer.Ses
             String userId = PreferenceUtils.getUserId(getApplicationContext());
             Retrofit retrofit = RetrofitClient.getRetrofitInstance();
             ReportApi api = retrofit.create(ReportApi.class);
-            Call<ResponseBody> call = api.submitReport(AppConfig.API_KEY, categoryType, id, videoReport,
+            Call<ResponseBody> call = api.submitReport(MyAppClass.API_KEY, categoryType, id, videoReport,
                     audioReport, subtitleReport, messageReport, BuildConfig.VERSION_CODE, userId,
                     getDeviceId(DetailsActivity.this));
             call.enqueue(new Callback<ResponseBody>() {
@@ -1753,7 +1753,7 @@ public class DetailsActivity extends AppCompatActivity implements CastPlayer.Ses
     private void addToFav() {
         Retrofit retrofit = RetrofitClient.getRetrofitInstance();
         FavouriteApi api = retrofit.create(FavouriteApi.class);
-        Call<FavoriteModel> call = api.addToFavorite(AppConfig.API_KEY, userId, id, BuildConfig.VERSION_CODE,
+        Call<FavoriteModel> call = api.addToFavorite(MyAppClass.API_KEY, userId, id, BuildConfig.VERSION_CODE,
                 getDeviceId(DetailsActivity.this));
         call.enqueue(new Callback<FavoriteModel>() {
             @Override
@@ -1812,7 +1812,7 @@ public class DetailsActivity extends AppCompatActivity implements CastPlayer.Ses
         String userId = PreferenceUtils.getUserId(this);
         Retrofit retrofit = RetrofitClient.getRetrofitInstance();
         SingleDetailsTVApi api = retrofit.create(SingleDetailsTVApi.class);
-        Call<SingleDetailsTV> call = api.getSingleDetails(AppConfig.API_KEY, vtype, vId, BuildConfig.VERSION_CODE, userId,
+        Call<SingleDetailsTV> call = api.getSingleDetails(MyAppClass.API_KEY, vtype, vId, BuildConfig.VERSION_CODE, userId,
                 getDeviceId(DetailsActivity.this));
         call.enqueue(new Callback<SingleDetailsTV>() {
             @SuppressLint("NotifyDataSetChanged")
@@ -1924,7 +1924,7 @@ public class DetailsActivity extends AppCompatActivity implements CastPlayer.Ses
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-                Log.e("snapshot=====", error.toString());
+
             }
         });
 
@@ -1979,7 +1979,7 @@ public class DetailsActivity extends AppCompatActivity implements CastPlayer.Ses
         String userId = PreferenceUtils.getUserId(this);
         Retrofit retrofit = RetrofitClient.getRetrofitInstance();
         SingleDetailsApi api = retrofit.create(SingleDetailsApi.class);
-        Call<SingleDetails> call = api.getSingleDetails(AppConfig.API_KEY, vtype, vId, BuildConfig.VERSION_CODE, userId,
+        Call<SingleDetails> call = api.getSingleDetails(MyAppClass.API_KEY, vtype, vId, BuildConfig.VERSION_CODE, userId,
                 getDeviceId(DetailsActivity.this));
         call.enqueue(new Callback<SingleDetails>() {
             @SuppressLint({"SetTextI18n", "NotifyDataSetChanged"})
@@ -2189,7 +2189,7 @@ public class DetailsActivity extends AppCompatActivity implements CastPlayer.Ses
         String userId = PreferenceUtils.getUserId(this);
         Retrofit retrofit = RetrofitClient.getRetrofitInstance();
         SingleDetailsApi api = retrofit.create(SingleDetailsApi.class);
-        Call<SingleDetails> call = api.getSingleDetails(AppConfig.API_KEY, vtype, vId, BuildConfig.VERSION_CODE, userId,
+        Call<SingleDetails> call = api.getSingleDetails(MyAppClass.API_KEY, vtype, vId, BuildConfig.VERSION_CODE, userId,
                 getDeviceId(DetailsActivity.this));
         call.enqueue(new Callback<SingleDetails>() {
             @SuppressLint({"SetTextI18n", "NotifyDataSetChanged"})
@@ -2370,7 +2370,7 @@ public class DetailsActivity extends AppCompatActivity implements CastPlayer.Ses
     private void getFavStatus() {
         Retrofit retrofit = RetrofitClient.getRetrofitInstance();
         FavouriteApi api = retrofit.create(FavouriteApi.class);
-        Call<FavoriteModel> call = api.verifyFavoriteList(AppConfig.API_KEY, userId, id, BuildConfig.VERSION_CODE,
+        Call<FavoriteModel> call = api.verifyFavoriteList(MyAppClass.API_KEY, userId, id, BuildConfig.VERSION_CODE,
                 getDeviceId(DetailsActivity.this));
         call.enqueue(new Callback<FavoriteModel>() {
             @Override
@@ -2400,7 +2400,7 @@ public class DetailsActivity extends AppCompatActivity implements CastPlayer.Ses
     private void removeFromFav() {
         Retrofit retrofit = RetrofitClient.getRetrofitInstance();
         FavouriteApi api = retrofit.create(FavouriteApi.class);
-        Call<FavoriteModel> call = api.removeFromFavorite(AppConfig.API_KEY, userId, id, BuildConfig.VERSION_CODE,
+        Call<FavoriteModel> call = api.removeFromFavorite(MyAppClass.API_KEY, userId, id, BuildConfig.VERSION_CODE,
                 getDeviceId(DetailsActivity.this));
         call.enqueue(new Callback<FavoriteModel>() {
             @Override
@@ -2438,7 +2438,7 @@ public class DetailsActivity extends AppCompatActivity implements CastPlayer.Ses
 
         Retrofit retrofit = RetrofitClient.getRetrofitInstance();
         CommentApi api = retrofit.create(CommentApi.class);
-        Call<PostCommentModel> call = api.postComment(AppConfig.API_KEY, videoId, userId, comments, BuildConfig.VERSION_CODE,
+        Call<PostCommentModel> call = api.postComment(MyAppClass.API_KEY, videoId, userId, comments, BuildConfig.VERSION_CODE,
                 getDeviceId(DetailsActivity.this));
         call.enqueue(new Callback<PostCommentModel>() {
             @Override
@@ -2465,7 +2465,7 @@ public class DetailsActivity extends AppCompatActivity implements CastPlayer.Ses
         String userId = PreferenceUtils.getUserId(this);
         Retrofit retrofit = RetrofitClient.getRetrofitInstance();
         CommentApi api = retrofit.create(CommentApi.class);
-        Call<List<GetCommentsModel>> call = api.getAllComments(AppConfig.API_KEY, id, BuildConfig.VERSION_CODE, userId,
+        Call<List<GetCommentsModel>> call = api.getAllComments(MyAppClass.API_KEY, id, BuildConfig.VERSION_CODE, userId,
                 getDeviceId(DetailsActivity.this));
         call.enqueue(new Callback<List<GetCommentsModel>>() {
             @SuppressLint("NotifyDataSetChanged")

@@ -25,6 +25,7 @@ import android.widget.Toast;
 
 import app.hotsutra.live.BuildConfig;
 import app.hotsutra.live.utils.ApiResources;
+import app.hotsutra.live.utils.MyAppClass;
 import app.hotsutra.live.utils.PreferenceUtils;
 import com.facebook.shimmer.ShimmerFrameLayout;
 import app.hotsutra.live.AppConfig;
@@ -207,7 +208,7 @@ public class TvSeriesFragment extends Fragment {
         String userId = PreferenceUtils.getUserId(requireContext());
         Retrofit retrofit = RetrofitClient.getRetrofitInstance();
         TvSeriesApi api = retrofit.create(TvSeriesApi.class);
-        Call<List<Video>> call = api.getTvSeries(AppConfig.API_KEY, pageNum, BuildConfig.VERSION_CODE,
+        Call<List<Video>> call = api.getTvSeries(MyAppClass.API_KEY, pageNum, BuildConfig.VERSION_CODE,
                 userId,getDeviceId(requireContext()));
         call.enqueue(new Callback<List<Video>>() {
             @SuppressLint("NotifyDataSetChanged")

@@ -5,7 +5,7 @@
 std::string API_KEY = "0e73a6a2b6ec22ab250db32e";*/
 
 std::string SERVER_URL = "https://hotsutra.live/phpadmin/rest-api"; //LIVE
-std::string API_KEY = "da64cb369c5bdf300750fa95";  //LIVE
+//std::string API_KEY = "da64cb369c5bdf300750fa95";  //LIVE
 
 /*std::string SERVER_URL = "http://phpstack-781815-2699502.cloudwaysapps.com/phpadmin/rest-api"; //Test
 std::string API_KEY = "da64cb369c5bdf300750fa95";  //Test*/
@@ -22,12 +22,12 @@ Java_app_hotsutra_live_AppConfig_getApiServerUrl(
     return env->NewStringUTF(SERVER_URL.c_str());
 }
 
-extern "C" JNIEXPORT jstring JNICALL
+/*extern "C" JNIEXPORT jstring JNICALL
 Java_app_hotsutra_live_AppConfig_getApiKey(
         JNIEnv *env,
         jclass clazz) {
     return env->NewStringUTF(API_KEY.c_str());
-}
+}*/
 
 extern "C" JNIEXPORT jstring JNICALL
 Java_app_hotsutra_live_AppConfig_getPurchaseCode(

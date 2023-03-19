@@ -16,13 +16,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
-import app.hotsutra.live.R;
-
 import app.hotsutra.live.network.RetrofitClient;
 import app.hotsutra.live.network.apis.PassResetApi;
 import app.hotsutra.live.network.model.PasswordReset;
 import app.hotsutra.live.utils.ApiResources;
+import app.hotsutra.live.utils.MyAppClass;
 import app.hotsutra.live.utils.RtlUtils;
 import app.hotsutra.live.utils.ToastMsg;
 import com.google.firebase.analytics.FirebaseAnalytics;
@@ -36,7 +34,6 @@ import retrofit2.Retrofit;
 public class PassResetActivity extends AppCompatActivity {
     private EditText etEmail;
     private ProgressDialog dialog;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -96,7 +93,7 @@ public class PassResetActivity extends AppCompatActivity {
         dialog.show();
         Retrofit retrofit = RetrofitClient.getRetrofitInstance();
         PassResetApi passResetApi = retrofit.create(PassResetApi.class);
-        Call<PasswordReset> call = passResetApi.resetPassword(AppConfig.API_KEY, email,
+        Call<PasswordReset> call = passResetApi.resetPassword(MyAppClass.API_KEY, email,
                 BuildConfig.VERSION_CODE, Constants.getDeviceId(this));
         call.enqueue(new Callback<PasswordReset>() {
             @Override

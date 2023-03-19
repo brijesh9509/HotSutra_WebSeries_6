@@ -15,9 +15,6 @@ import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
-
-import app.hotsutra.live.R;
-
 import app.hotsutra.live.adapters.CommonGridAdapter;
 import app.hotsutra.live.models.CommonModels;
 import app.hotsutra.live.models.home_content.Video;
@@ -25,6 +22,7 @@ import app.hotsutra.live.network.RetrofitClient;
 import app.hotsutra.live.network.apis.MovieApi;
 import app.hotsutra.live.utils.ApiResources;
 import app.hotsutra.live.utils.HelperUtils;
+import app.hotsutra.live.utils.MyAppClass;
 import app.hotsutra.live.utils.NetworkInst;
 import app.hotsutra.live.utils.PreferenceUtils;
 import app.hotsutra.live.utils.RtlUtils;
@@ -46,7 +44,6 @@ public class ItemMovieActivity extends AppCompatActivity {
     public static final String INTENT_TYPE_STAR = "star";
     public static final String INTENT_TYPE_GENRE = "genre";
     public static final String INTENT_TYPE_COUNTRY = "star";
-
 
     private ShimmerFrameLayout shimmerFrameLayout;
     private RecyclerView recyclerView;
@@ -212,7 +209,7 @@ public class ItemMovieActivity extends AppCompatActivity {
         String userId = PreferenceUtils.getUserId(this);
         Retrofit retrofit = RetrofitClient.getRetrofitInstance();
         MovieApi api = retrofit.create(MovieApi.class);
-        Call<List<Video>> call = api.getMovieByStarId(AppConfig.API_KEY, id, pageCount,
+        Call<List<Video>> call = api.getMovieByStarId(MyAppClass.API_KEY, id, pageCount,
                 BuildConfig.VERSION_CODE,userId, Constants.getDeviceId(this));
         call.enqueue(new Callback<List<Video>>() {
             @Override
@@ -304,7 +301,7 @@ public class ItemMovieActivity extends AppCompatActivity {
         String userId = PreferenceUtils.getUserId(this);
         Retrofit retrofit = RetrofitClient.getRetrofitInstance();
         MovieApi api = retrofit.create(MovieApi.class);
-        Call<List<Video>> call = api.getMovieByGenreId(AppConfig.API_KEY, id, pageNum,
+        Call<List<Video>> call = api.getMovieByGenreId(MyAppClass.API_KEY, id, pageNum,
                 BuildConfig.VERSION_CODE,userId, Constants.getDeviceId(this));
         call.enqueue(new Callback<List<Video>>() {
             @Override
@@ -382,7 +379,7 @@ public class ItemMovieActivity extends AppCompatActivity {
         String userId = PreferenceUtils.getUserId(this);
         Retrofit retrofit = RetrofitClient.getRetrofitInstance();
         MovieApi api = retrofit.create(MovieApi.class);
-        Call<List<Video>> call = api.getMovieByCountryId(AppConfig.API_KEY, id, pageNum,
+        Call<List<Video>> call = api.getMovieByCountryId(MyAppClass.API_KEY, id, pageNum,
                 BuildConfig.VERSION_CODE,userId, Constants.getDeviceId(this));
         call.enqueue(new Callback<List<Video>>() {
             @Override
@@ -460,7 +457,7 @@ public class ItemMovieActivity extends AppCompatActivity {
         String userId = PreferenceUtils.getUserId(this);
         Retrofit retrofit = RetrofitClient.getRetrofitInstance();
         MovieApi api = retrofit.create(MovieApi.class);
-        Call<List<Video>> call = api.getMovies(AppConfig.API_KEY, pageNum, BuildConfig.VERSION_CODE,
+        Call<List<Video>> call = api.getMovies(MyAppClass.API_KEY, pageNum, BuildConfig.VERSION_CODE,
                 userId, Constants.getDeviceId(this));
         call.enqueue(new Callback<List<Video>>() {
             @Override

@@ -3,8 +3,7 @@ package app.hotsutra.live;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-
-import android.content.DialogInterface;
+import androidx.core.content.ContextCompat;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -18,9 +17,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import app.hotsutra.live.widget.RangeSeekBar;
-import com.crystal.crystalrangeseekbar.interfaces.OnRangeSeekbarChangeListener;
 import com.google.firebase.analytics.FirebaseAnalytics;
-import app.hotsutra.live.R;
 import app.hotsutra.live.utils.Constants;
 import app.hotsutra.live.utils.NetworkInst;
 import app.hotsutra.live.utils.RtlUtils;
@@ -31,7 +28,6 @@ import java.util.Calendar;
 import java.util.List;
 
 public class SearchActivity extends AppCompatActivity {
-    private boolean isDark;
     private RangeSeekBar range_seek_bar;
     private TextView year_min, year_max, range_tv;
     private Button search_btn, clear_btn, btn_flex_1, btn_flex_2, btn_flex_3;
@@ -48,7 +44,7 @@ public class SearchActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         RtlUtils.setScreenDirection(this);
         SharedPreferences sharedPreferences = getSharedPreferences("push", MODE_PRIVATE);
-        isDark = sharedPreferences.getBoolean("dark", false);
+        boolean isDark = sharedPreferences.getBoolean("dark", false);
 
         if (isDark) {
             setTheme(R.style.AppThemeDark);
@@ -66,13 +62,13 @@ public class SearchActivity extends AppCompatActivity {
             toolbar.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
             search_btn.setBackgroundResource(R.drawable.btn_rect_primary);
             search_btn.setTextColor(getResources().getColor(R.color.white));
-            genreSpinner.setBackground(getResources().getDrawable(R.drawable.edit_text_round_bg_overlay_light));
-            tvCategorySpinner.setBackground(getResources().getDrawable(R.drawable.edit_text_round_bg_overlay_light));
-            countrySpinner.setBackground(getResources().getDrawable(R.drawable.edit_text_round_bg_overlay_light));
+            genreSpinner.setBackground(ContextCompat.getDrawable(this,R.drawable.edit_text_round_bg_overlay_light));
+            tvCategorySpinner.setBackground(ContextCompat.getDrawable(this,R.drawable.edit_text_round_bg_overlay_light));
+            countrySpinner.setBackground(ContextCompat.getDrawable(this,R.drawable.edit_text_round_bg_overlay_light));
             //flex btn
-            btn_flex_1.setBackground(getResources().getDrawable(R.drawable.btn_rounded_primary_outline_flex));
-            btn_flex_2.setBackground(getResources().getDrawable(R.drawable.btn_rounded_primary_outline_flex));
-            btn_flex_3.setBackground(getResources().getDrawable(R.drawable.btn_rounded_primary_outline_flex));
+            btn_flex_1.setBackground(ContextCompat.getDrawable(this,R.drawable.btn_rounded_primary_outline_flex));
+            btn_flex_2.setBackground(ContextCompat.getDrawable(this,R.drawable.btn_rounded_primary_outline_flex));
+            btn_flex_3.setBackground(ContextCompat.getDrawable(this,R.drawable.btn_rounded_primary_outline_flex));
         }else {
             toolbar.setBackgroundColor(getResources().getColor(R.color.black_window_light));
             search_btn.setBackgroundResource(R.drawable.btn_rect_grey_outline);
@@ -84,13 +80,13 @@ public class SearchActivity extends AppCompatActivity {
             range_seek_bar.setLeftThumbColor(getResources().getColor(R.color.grey_60));
             range_seek_bar.setLeftThumbHighlightColor(getResources().getColor(R.color.grey_90));
             //spinner
-            genreSpinner.setBackground(getResources().getDrawable(R.drawable.edit_text_round_bg_overlay_dark));
-            tvCategorySpinner.setBackground(getResources().getDrawable(R.drawable.edit_text_round_bg_overlay_dark));
-            countrySpinner.setBackground(getResources().getDrawable(R.drawable.edit_text_round_bg_overlay_dark));
+            genreSpinner.setBackground(ContextCompat.getDrawable(this,R.drawable.edit_text_round_bg_overlay_dark));
+            tvCategorySpinner.setBackground(ContextCompat.getDrawable(this,R.drawable.edit_text_round_bg_overlay_dark));
+            countrySpinner.setBackground(ContextCompat.getDrawable(this,R.drawable.edit_text_round_bg_overlay_dark));
             //flex btn
-            btn_flex_1.setBackground(getResources().getDrawable(R.drawable.btn_rounded_grey_outline_flex));
-            btn_flex_2.setBackground(getResources().getDrawable(R.drawable.btn_rounded_grey_outline_flex));
-            btn_flex_3.setBackground(getResources().getDrawable(R.drawable.btn_rounded_grey_outline_flex));
+            btn_flex_1.setBackground(ContextCompat.getDrawable(this,R.drawable.btn_rounded_grey_outline_flex));
+            btn_flex_2.setBackground(ContextCompat.getDrawable(this,R.drawable.btn_rounded_grey_outline_flex));
+            btn_flex_3.setBackground(ContextCompat.getDrawable(this,R.drawable.btn_rounded_grey_outline_flex));
         }
 
         setSupportActionBar(toolbar);
@@ -139,24 +135,18 @@ public class SearchActivity extends AppCompatActivity {
             genreArray[i] = genreList.get(i);
         }
 
-        genreSpinner.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(final View v) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(SearchActivity.this);
-                builder.setTitle("Select Genre");
-                builder.setSingleChoiceItems(genreArray, -1, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        ((TextView) v).setText(genreArray[i]);
-                        if (i != 0)
-                            selectedGenreId = Integer.parseInt(Constants.genreList.get(i - 1).getGenreId());
-                        else
-                            selectedGenreId = 0;
-                        dialogInterface.dismiss();
-                    }
-                });
-                builder.show();
-            }
+        genreSpinner.setOnClickListener(v -> {
+            AlertDialog.Builder builder = new AlertDialog.Builder(SearchActivity.this);
+            builder.setTitle("Select Genre");
+            builder.setSingleChoiceItems(genreArray, -1, (dialogInterface, i) -> {
+                ((TextView) v).setText(genreArray[i]);
+                if (i != 0)
+                    selectedGenreId = Integer.parseInt(Constants.genreList.get(i - 1).getGenreId());
+                else
+                    selectedGenreId = 0;
+                dialogInterface.dismiss();
+            });
+            builder.show();
         });
 
         //setup tv category spinner
@@ -172,24 +162,18 @@ public class SearchActivity extends AppCompatActivity {
             tvCategoryArray[i] = tvCategoryList.get(i);
         }
 
-        tvCategorySpinner.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(final View v) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(SearchActivity.this);
-                builder.setTitle("Select Tv Category");
-                builder.setSingleChoiceItems(tvCategoryArray, -1, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        ((TextView) v).setText(tvCategoryArray[i]);
-                        if (i != 0)
-                            selectedTvCategoryId = Integer.parseInt(Constants.tvCategoryList.get(i - 1).getLiveTvCategoryId());
-                        else
-                            selectedTvCategoryId = 0;
-                        dialogInterface.dismiss();
-                    }
-                });
-                builder.show();
-            }
+        tvCategorySpinner.setOnClickListener(v -> {
+            AlertDialog.Builder builder = new AlertDialog.Builder(SearchActivity.this);
+            builder.setTitle("Select Tv Category");
+            builder.setSingleChoiceItems(tvCategoryArray, -1, (dialogInterface, i) -> {
+                ((TextView) v).setText(tvCategoryArray[i]);
+                if (i != 0)
+                    selectedTvCategoryId = Integer.parseInt(Constants.tvCategoryList.get(i - 1).getLiveTvCategoryId());
+                else
+                    selectedTvCategoryId = 0;
+                dialogInterface.dismiss();
+            });
+            builder.show();
         });
 
 
@@ -206,24 +190,18 @@ public class SearchActivity extends AppCompatActivity {
         for (int i = 0; i < countryList.size(); i++) {
             countryArray[i] = countryList.get(i);
         }
-        countrySpinner.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(final View v) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(SearchActivity.this);
-                builder.setTitle("Select Country");
-                builder.setSingleChoiceItems(countryArray, -1, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        ((TextView) v).setText(countryArray[i]);
-                        if (i != 0)
-                            selectedCountryId = Integer.parseInt(Constants.countryList.get(i - 1).getCountryId());
-                        else
-                            selectedCountryId = 0;
-                        dialogInterface.dismiss();
-                    }
-                });
-                builder.show();
-            }
+        countrySpinner.setOnClickListener(v -> {
+            AlertDialog.Builder builder = new AlertDialog.Builder(SearchActivity.this);
+            builder.setTitle("Select Country");
+            builder.setSingleChoiceItems(countryArray, -1, (dialogInterface, i) -> {
+                ((TextView) v).setText(countryArray[i]);
+                if (i != 0)
+                    selectedCountryId = Integer.parseInt(Constants.countryList.get(i - 1).getCountryId());
+                else
+                    selectedCountryId = 0;
+                dialogInterface.dismiss();
+            });
+            builder.show();
         });
 
         range_tv = findViewById(R.id.rangeTV);
@@ -236,26 +214,13 @@ public class SearchActivity extends AppCompatActivity {
         range_seek_bar.setMaxValue(Float.parseFloat(String.valueOf(Calendar.getInstance().get(Calendar.YEAR))));
         range_seek_bar.setMinValue(Float.parseFloat(getString(R.string.year_range_start)));
         // set listener
-        range_seek_bar.setOnRangeSeekbarChangeListener(new OnRangeSeekbarChangeListener() {
-            @Override
-            public void valueChanged(Number minValue, Number maxValue) {
-                year_min.setText(String.valueOf(minValue));
-                year_max.setText(String.valueOf(maxValue));
-            }
+        range_seek_bar.setOnRangeSeekbarChangeListener((minValue, maxValue) -> {
+            year_min.setText(String.valueOf(minValue));
+            year_max.setText(String.valueOf(maxValue));
         });
 
-        search_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                search();
-            }
-        });
-        clear_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
+        search_btn.setOnClickListener(v -> search());
+        clear_btn.setOnClickListener(v -> finish());
     }
 
     private void search() {

@@ -26,6 +26,7 @@ import android.widget.Toast;
 
 import app.hotsutra.live.BuildConfig;
 import app.hotsutra.live.utils.ApiResources;
+import app.hotsutra.live.utils.MyAppClass;
 import app.hotsutra.live.utils.PreferenceUtils;
 import com.facebook.shimmer.ShimmerFrameLayout;
 import app.hotsutra.live.AppConfig;
@@ -211,7 +212,7 @@ public class MoviesFragment extends Fragment {
         String userId = PreferenceUtils.getUserId(requireContext());
         Retrofit retrofit = RetrofitClient.getRetrofitInstance();
         MovieApi api = retrofit.create(MovieApi.class);
-        Call<List<Video>> call = api.getMovies(AppConfig.API_KEY, pageNum,
+        Call<List<Video>> call = api.getMovies(MyAppClass.API_KEY, pageNum,
                 BuildConfig.VERSION_CODE,userId,getDeviceId(requireContext()));
         call.enqueue(new Callback<List<Video>>() {
             @SuppressLint("NotifyDataSetChanged")

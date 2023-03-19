@@ -24,6 +24,7 @@ public class Constants {
     public static final String RAZOR_PAY = "razorpay";
     public static final String OFFLINE_PAY = "offline_pay";
     public static final String GOOGLE_PAY = "google_pay";
+    public static final String PAYTM = "paytm";
 
     public static String workId;
 
