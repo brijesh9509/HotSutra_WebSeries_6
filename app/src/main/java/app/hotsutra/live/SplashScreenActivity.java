@@ -15,9 +15,12 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.MediaController;
 import android.widget.Toast;
+import android.widget.VideoView;
 
 import app.hotsutra.live.database.DatabaseHelper;
 import app.hotsutra.live.network.apis.ConfigurationApi;
@@ -28,9 +31,6 @@ import app.hotsutra.live.network.model.config.ApkUpdateInfo;
 import app.hotsutra.live.network.model.config.Configuration;
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
-import com.onesignal.OneSignal;
-
-import java.util.Objects;
 
 import app.hotsutra.live.network.RetrofitClient;
 import app.hotsutra.live.utils.HelperUtils;
@@ -38,27 +38,28 @@ import app.hotsutra.live.utils.MyAppClass;
 import app.hotsutra.live.utils.PreferenceUtils;
 import app.hotsutra.live.utils.ApiResources;
 import app.hotsutra.live.utils.Constants;
+import app.hotsutra.live.utils.ToastMsg;
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 
+
 @SuppressLint("CustomSplashScreen")
 public class SplashScreenActivity extends AppCompatActivity {
     private static final String TAG = "SplashScreen";
-    private final int SPLASH_TIME = 0;
-    //private int SPLASH_TIME = 1500;
+    private final int PERMISSION_REQUEST_CODE = 100;
+    private final int SPLASH_TIME = 1500;
     private Thread timer;
     private DatabaseHelper db;
-    //    private boolean isRestricted = false;
-    //    private boolean isUpdate = false;
+    private final boolean isUpdate = false;
     private boolean vpnStatus = false;
     private HelperUtils helperUtils;
 
     @Override
     protected void onStart() {
         super.onStart();
-
         //check any restricted app is available or not
        /* ApplicationInfo restrictedApp = helperUtils.getRestrictApp();
         if (restrictedApp != null){
@@ -76,16 +77,12 @@ public class SplashScreenActivity extends AppCompatActivity {
         //check VPN connection is set or not
         vpnStatus = new HelperUtils(SplashScreenActivity.this).isVpnConnectionAvailable();
 
-
-        String userId = Objects.requireNonNull(OneSignal.getDeviceState()).getUserId();
-
-        Log.e("debugdebug", "User:" + userId);
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_splashscreen);
@@ -101,12 +98,13 @@ public class SplashScreenActivity extends AppCompatActivity {
             public void run() {
                 try {
                     sleep(SPLASH_TIME);
-
                 } catch (Exception e) {
                     e.printStackTrace();
                 } finally {
                     if (PreferenceUtils.isLoggedIn(SplashScreenActivity.this)) {
                         Intent intent = new Intent(SplashScreenActivity.this, MainActivity.class);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                         intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                         startActivity(intent);
                         finish();
@@ -115,24 +113,44 @@ public class SplashScreenActivity extends AppCompatActivity {
                         intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                         startActivity(intent);
                         finish();
-                       /* if (isLoginMandatory()) {
+                        /*if (isLoginMandatory()) {
                             Intent intent = new Intent(SplashScreenActivity.this, LoginActivity.class);
+                            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                             intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                             startActivity(intent);
                             finish();
                         } else {
                             Intent intent = new Intent(SplashScreenActivity.this, MainActivity.class);
+                            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                             intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                             startActivity(intent);
                             finish();
                         }*/
                     }
+
                 }
             }
         };
 
+        VideoView videoView = findViewById(R.id.vdVw);
+        //Set MediaController  to enable play, pause, forward, etc options.
+        MediaController mediaController = new MediaController(this);
+        mediaController.setAnchorView(videoView);
+        mediaController.hide();
+        mediaController.setVisibility(View.GONE);
+        //Location of Media File
+        Uri uri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.video_2);
+        //Starting VideView By Setting MediaController and URI
+        videoView.setMediaController(mediaController);
+        videoView.setVideoURI(uri);
+        videoView.requestFocus();
+        videoView.start();
 
-        /*if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+        videoView.setOnCompletionListener(mp -> {
+
+            /*if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             getConfigData();
         } else {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
@@ -143,23 +161,38 @@ public class SplashScreenActivity extends AppCompatActivity {
                 getConfigData();
             }
         }*/
-        if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-            getConfigurationData();
+            if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+                getConfigurationData();
 
-            // fetched and save the user active status if user is logged in
-            if (PreferenceUtils.isLoggedIn(SplashScreenActivity.this)) {
                 // fetched and save the user active status if user is logged in
-                // fetched and save the user active status if user is logged in
-                String userId = PreferenceUtils.getUserId(SplashScreenActivity.this);
-                if (userId != null) {
-                    if (!userId.isEmpty()) {
-                        updateActiveStatus(userId);
+                if (PreferenceUtils.isLoggedIn(SplashScreenActivity.this)) {
+                    // fetched and save the user active status if user is logged in
+                    // fetched and save the user active status if user is logged in
+                    String userId = PreferenceUtils.getUserId(SplashScreenActivity.this);
+                    if (userId != null) {
+                        if (!userId.isEmpty()) {
+                            updateActiveStatus(userId);
+                        }
                     }
                 }
-            }
-        } else {
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                if (checkStoragePermission()) {
+            } else {
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                    if (checkStoragePermission()) {
+                        getConfigurationData();
+
+                        // fetched and save the user active status if user is logged in
+                        if (PreferenceUtils.isLoggedIn(SplashScreenActivity.this)) {
+                            // fetched and save the user active status if user is logged in
+                            // fetched and save the user active status if user is logged in
+                            String userId = PreferenceUtils.getUserId(SplashScreenActivity.this);
+                            if (userId != null) {
+                                if (!userId.isEmpty()) {
+                                    updateActiveStatus(userId);
+                                }
+                            }
+                        }
+                    }
+                } else {
                     getConfigurationData();
 
                     // fetched and save the user active status if user is logged in
@@ -174,95 +207,26 @@ public class SplashScreenActivity extends AppCompatActivity {
                         }
                     }
                 }
-            } else {
-                getConfigurationData();
-
-                // fetched and save the user active status if user is logged in
-                if (PreferenceUtils.isLoggedIn(SplashScreenActivity.this)) {
-                    // fetched and save the user active status if user is logged in
-                    // fetched and save the user active status if user is logged in
-                    String userId = PreferenceUtils.getUserId(SplashScreenActivity.this);
-                    if (userId != null) {
-                        if (!userId.isEmpty()) {
-                            updateActiveStatus(userId);
-                        }
-                    }
-                }
             }
-        }
+        });
+
+        // Log.e("OneSignal User ID", OneSignal.getDeviceState().getUserId().toString());
     }
 
     public boolean isLoginMandatory() {
         return db.getConfigurationData().getAppConfig().getMandatoryLogin();
     }
 
-    public void getConfigData() {
-        if (!vpnStatus) {
-            Retrofit retrofit = RetrofitClient.getRetrofitInstance();
-            ConfigurationApi api = retrofit.create(ConfigurationApi.class);
-            Call<ConfigResponse> call = api.getConfigData(PreferenceUtils.getUserId(this));
-            call.enqueue(new Callback<ConfigResponse>() {
-                @Override
-                public void onResponse(@NonNull Call<ConfigResponse> call, @NonNull Response<ConfigResponse> response) {
-                    Log.e("response.code()", response.code() + "");
-                    if (response.code() == 200) {
-                        ConfigResponse configuration = response.body();
-                        if (configuration != null) {
-                            MyAppClass.API_KEY = configuration.getApiKey();
-
-                            getConfigurationData();
-
-                            // fetched and save the user active status if user is logged in
-                            if (PreferenceUtils.isLoggedIn(SplashScreenActivity.this)) {
-                                // fetched and save the user active status if user is logged in
-                                // fetched and save the user active status if user is logged in
-                                String userId = PreferenceUtils.getUserId(SplashScreenActivity.this);
-                                if (userId != null) {
-                                    if (!userId.isEmpty()) {
-                                        updateActiveStatus(userId);
-                                    }
-                                }
-                            }
-                        } else {
-                            showErrorDialog(getString(R.string.error_toast), getString(R.string.failed_to_communicate));
-                        }
-                    } else if (response.code() == 412) {
-                        try {
-                            if (response.errorBody() != null) {
-                                ApiResources.openLoginScreen(response.errorBody().string(),
-                                        SplashScreenActivity.this);
-                                finish();
-                            }
-                        } catch (Exception e) {
-                            Toast.makeText(SplashScreenActivity.this,
-                                    e.getMessage(), Toast.LENGTH_LONG).show();
-                        }
-                    } else {
-                        showErrorDialog(getString(R.string.error_toast), getString(R.string.failed_to_communicate));
-                    }
-                }
-
-                @Override
-                public void onFailure(@NonNull Call<ConfigResponse> call, @NonNull Throwable t) {
-                    Log.e("ConfigError", t.getLocalizedMessage());
-                    showErrorDialog(getString(R.string.error_toast), getString(R.string.failed_to_communicate));
-                }
-            });
-        } else {
-            helperUtils.showWarningDialog(SplashScreenActivity.this, getString(R.string.vpn_detected), getString(R.string.close_vpn));
-        }
-    }
-
     public void getConfigurationData() {
+        String userId = PreferenceUtils.getUserId(this);
         if (!vpnStatus) {
             Retrofit retrofit = RetrofitClient.getRetrofitInstance();
             ConfigurationApi api = retrofit.create(ConfigurationApi.class);
-            Call<Configuration> call = api.getConfigurationData(MyAppClass.API_KEY,
-                    BuildConfig.VERSION_CODE, PreferenceUtils.getUserId(this));
+            Call<Configuration> call = api.getConfigurationData(MyAppClass.API_KEY, BuildConfig.VERSION_CODE, userId);
             call.enqueue(new Callback<Configuration>() {
                 @Override
+
                 public void onResponse(@NonNull Call<Configuration> call, @NonNull Response<Configuration> response) {
-                    Log.e("response.code()", response.code() + "");
                     if (response.code() == 200) {
                         Configuration configuration = response.body();
                         if (configuration != null) {
@@ -276,8 +240,6 @@ public class SplashScreenActivity extends AppCompatActivity {
                             Constants.genreList = configuration.getGenre();
                             Constants.countryList = configuration.getCountry();
                             Constants.tvCategoryList = configuration.getTvCategory();
-
-                            Log.e("ADS ADS", configuration.getAdsConfig().getAdsEnable());
 
                             db.deleteAllDownloadData();
                             //db.deleteAllAppConfig();
@@ -347,6 +309,7 @@ public class SplashScreenActivity extends AppCompatActivity {
                         if (db.getConfigurationData() != null) {
                             timer.start();
                         } else {
+                            new ToastMsg(SplashScreenActivity.this).toastIconError(getString(R.string.error_toast));
                             finish();
                         }
                     } else {
@@ -359,15 +322,11 @@ public class SplashScreenActivity extends AppCompatActivity {
     }
 
     private void showErrorDialog(String title, String message) {
-        new MaterialAlertDialogBuilder(this)
-                .setTitle(title)
-                .setCancelable(false)
-                .setMessage(message)
-                .setPositiveButton("Ok", (dialog, which) -> {
-                    System.exit(0);
+        new MaterialAlertDialogBuilder(SplashScreenActivity.this).setTitle(title)
+                .setCancelable(false).setMessage(message).setPositiveButton("Ok", (dialog, which) -> {
+                    dialog.dismiss();
                     finish();
-                })
-                .show();
+                }).show();
     }
 
     private boolean isNeedUpdate(String versionCode) {
@@ -393,7 +352,6 @@ public class SplashScreenActivity extends AppCompatActivity {
             return true;
         }
     }
-
 
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
@@ -426,6 +384,65 @@ public class SplashScreenActivity extends AppCompatActivity {
             helperUtils.showWarningDialog(SplashScreenActivity.this, getString(R.string.vpn_detected), getString(R.string.close_vpn));
         }
     }
+
+
+    public void getConfigData() {
+        if (!vpnStatus) {
+            Retrofit retrofit = RetrofitClient.getRetrofitInstance();
+            ConfigurationApi api = retrofit.create(ConfigurationApi.class);
+            Call<ConfigResponse> call = api.getConfigData(PreferenceUtils.getUserId(this));
+            call.enqueue(new Callback<ConfigResponse>() {
+                @Override
+                public void onResponse(@NonNull Call<ConfigResponse> call, @NonNull Response<ConfigResponse> response) {
+                    Log.e("response.code()", response.code() + "");
+                    if (response.code() == 200) {
+                        ConfigResponse configuration = response.body();
+                        if (configuration != null) {
+                            MyAppClass.API_KEY = configuration.getApiKey();
+
+                            getConfigurationData();
+
+                            // fetched and save the user active status if user is logged in
+                            if (PreferenceUtils.isLoggedIn(SplashScreenActivity.this)) {
+                                // fetched and save the user active status if user is logged in
+                                // fetched and save the user active status if user is logged in
+                                String userId = PreferenceUtils.getUserId(SplashScreenActivity.this);
+                                if (userId != null) {
+                                    if (!userId.isEmpty()) {
+                                        updateActiveStatus(userId);
+                                    }
+                                }
+                            }
+                        } else {
+                            showErrorDialog(getString(R.string.error_toast), getString(R.string.failed_to_communicate));
+                        }
+                    } else if (response.code() == 412) {
+                        try {
+                            if (response.errorBody() != null) {
+                                ApiResources.openLoginScreen(response.errorBody().string(),
+                                        SplashScreenActivity.this);
+                                finish();
+                            }
+                        } catch (Exception e) {
+                            Toast.makeText(SplashScreenActivity.this,
+                                    e.getMessage(), Toast.LENGTH_LONG).show();
+                        }
+                    } else {
+                        showErrorDialog(getString(R.string.error_toast), getString(R.string.failed_to_communicate));
+                    }
+                }
+
+                @Override
+                public void onFailure(@NonNull Call<ConfigResponse> call, @NonNull Throwable t) {
+                    Log.e("ConfigError", t.getLocalizedMessage());
+                    showErrorDialog(getString(R.string.error_toast), getString(R.string.failed_to_communicate));
+                }
+            });
+        } else {
+            helperUtils.showWarningDialog(SplashScreenActivity.this, getString(R.string.vpn_detected), getString(R.string.close_vpn));
+        }
+    }
+
 
     private void updateActiveStatus(String userId) {
         Retrofit retrofit = RetrofitClient.getRetrofitInstance();
