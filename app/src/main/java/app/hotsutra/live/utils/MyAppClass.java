@@ -25,7 +25,8 @@ public class MyAppClass extends Application {
     @SuppressLint("StaticFieldLeak")
     private static Context mContext;
 
-    public static String API_KEY = "";
+    //public static String API_KEY = "";
+    public static String API_KEY = "da64cb369c5bdf300750fa95";
 
     @Override
     public void onCreate() {
