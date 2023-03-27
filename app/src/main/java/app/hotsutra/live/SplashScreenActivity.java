@@ -72,10 +72,8 @@ public class SplashScreenActivity extends AppCompatActivity {
             Log.e(TAG, "No restricted app installed!!");
         }*/
 
-
         //check VPN connection is set or not
         vpnStatus = new HelperUtils(SplashScreenActivity.this).isVpnConnectionAvailable();
-
     }
 
     @Override
@@ -149,62 +147,15 @@ public class SplashScreenActivity extends AppCompatActivity {
 
         videoView.setOnCompletionListener(mp -> {
 
-            /*if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-            getConfigData();
-        } else {
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                if (checkStoragePermission()) {
-                    getConfigData();
-                }
-            } else {
-                getConfigData();
-            }
-        }*/
             if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-                getConfigurationData();
-
-                // fetched and save the user active status if user is logged in
-                if (PreferenceUtils.isLoggedIn(SplashScreenActivity.this)) {
-                    // fetched and save the user active status if user is logged in
-                    // fetched and save the user active status if user is logged in
-                    String userId = PreferenceUtils.getUserId(SplashScreenActivity.this);
-                    if (userId != null) {
-                        if (!userId.isEmpty()) {
-                            updateActiveStatus(userId);
-                        }
-                    }
-                }
+                getConfigData();
             } else {
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                     if (checkStoragePermission()) {
-                        getConfigurationData();
-
-                        // fetched and save the user active status if user is logged in
-                        if (PreferenceUtils.isLoggedIn(SplashScreenActivity.this)) {
-                            // fetched and save the user active status if user is logged in
-                            // fetched and save the user active status if user is logged in
-                            String userId = PreferenceUtils.getUserId(SplashScreenActivity.this);
-                            if (userId != null) {
-                                if (!userId.isEmpty()) {
-                                    updateActiveStatus(userId);
-                                }
-                            }
-                        }
+                        getConfigData();
                     }
                 } else {
-                    getConfigurationData();
-
-                    // fetched and save the user active status if user is logged in
-                    if (PreferenceUtils.isLoggedIn(SplashScreenActivity.this)) {
-                        // fetched and save the user active status if user is logged in
-                        // fetched and save the user active status if user is logged in
-                        String userId = PreferenceUtils.getUserId(SplashScreenActivity.this);
-                        if (userId != null) {
-                            if (!userId.isEmpty()) {
-                                updateActiveStatus(userId);
-                            }
-                        }
-                    }
+                    getConfigData();
                 }
             }
         });
@@ -358,20 +309,7 @@ public class SplashScreenActivity extends AppCompatActivity {
         if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED
                 && grantResults.length > 0 && grantResults[1] == PackageManager.PERMISSION_GRANTED) {
             //resume tasks needing this permission
-            //getConfigData();
-            getConfigurationData();
-
-            // fetched and save the user active status if user is logged in
-            if (PreferenceUtils.isLoggedIn(SplashScreenActivity.this)) {
-                // fetched and save the user active status if user is logged in
-                // fetched and save the user active status if user is logged in
-                String userId = PreferenceUtils.getUserId(SplashScreenActivity.this);
-                if (userId != null) {
-                    if (!userId.isEmpty()) {
-                        updateActiveStatus(userId);
-                    }
-                }
-            }
+            getConfigData();
         }
     }
 
@@ -383,7 +321,6 @@ public class SplashScreenActivity extends AppCompatActivity {
             helperUtils.showWarningDialog(SplashScreenActivity.this, getString(R.string.vpn_detected), getString(R.string.close_vpn));
         }
     }
-
 
     public void getConfigData() {
         if (!vpnStatus) {
