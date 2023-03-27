@@ -1,5 +1,6 @@
 package app.hotsutra.live.database;
 
+import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -21,8 +22,8 @@ import java.util.List;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
 
-    private static final int DATABASE_VERSION = 5;
-    public static final String DATABASE_NAME = "com.app.hotsutra.db";
+    private static final int DATABASE_VERSION = 6;
+    public static final String DATABASE_NAME = "com.hotsutra.live.db";
 
     //config table
     private static final String CONFIG_TABLE_NAME = "configurations";
@@ -60,6 +61,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String PAYMENT_CONFIG_OFFLINE_PAYMENT_ENABLED = "payment_enabled";
     private static final String PAYMENT_CONFIG_OFFLINE_PAYMENT_TITLE = "offline_payment_title";
     private static final String PAYMENT_CONFIG_OFFLINE_PAYMENT_INSTRUCTION = "offline_payment_instruction";
+    private static final String PAYMENT_CONFIG_PAYTM_ENABLE = "paytm_enable";
 
     //subscription table
     private static final String SUBS_TABLE_NAME = "subscription_table";
@@ -166,6 +168,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 PAYMENT_CONFIG_OFFLINE_PAYMENT_ENABLED + " INTEGER DEFAULT 0," +
                 PAYMENT_CONFIG_OFFLINE_PAYMENT_TITLE + " TEXT," +
                 PAYMENT_CONFIG_OFFLINE_PAYMENT_INSTRUCTION + " TEXT," +
+                PAYMENT_CONFIG_PAYTM_ENABLE + " INTEGER DEFAULT 0," +
                 PAYMENT_CONFIG_CURRENCY + " TEXT" + ")";
     }
 
@@ -208,6 +211,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         contentValues.put(PAYMENT_CONFIG_OFFLINE_PAYMENT_ENABLED, configuration.getPaymentConfig().isOfflinePaymentEnable());
         contentValues.put(PAYMENT_CONFIG_OFFLINE_PAYMENT_TITLE, configuration.getPaymentConfig().getOfflinePaymentTitle());
         contentValues.put(PAYMENT_CONFIG_OFFLINE_PAYMENT_INSTRUCTION, configuration.getPaymentConfig().getOfflinePaymentInstruction());
+        contentValues.put(PAYMENT_CONFIG_PAYTM_ENABLE, configuration.getPaymentConfig().getPaytmEnable());
 
         long id = db.insert(CONFIG_TABLE_NAME, null, contentValues);
         db.close();
@@ -215,6 +219,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return id;
     }
 
+    @SuppressLint("Range")
     public Configuration getConfigurationData() {
         SQLiteDatabase db = this.getReadableDatabase();
         Configuration configuration = new Configuration();
@@ -258,6 +263,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                     paymentConfig.setPaypalEnable(cursor.getInt(cursor.getColumnIndex(PAYMENT_CONFIG_PAYPAL_ENABLE)) > 0);
                     paymentConfig.setStripeEnable(cursor.getInt(cursor.getColumnIndex(PAYMENT_CONFIG_STRIPE_ENABLE)) > 0);
                     paymentConfig.setRazorpayEnable(cursor.getInt(cursor.getColumnIndex(PAYMENT_CONFIG_RAZORPAY_ENABLE)) > 0);
+                    paymentConfig.setPaytmEnable(cursor.getInt(cursor.getColumnIndex(PAYMENT_CONFIG_PAYTM_ENABLE)) > 0);
                     // paymentConfig.setRazorpayExchangeRate(cursor.getString(cursor.getColumnIndex(PAYMENT_CONFIG_RAZORPAY_EXCHANGE_RATE)));
                     paymentConfig.setOfflinePaymentEnable(cursor.getInt(cursor.getColumnIndex(PAYMENT_CONFIG_OFFLINE_PAYMENT_ENABLED)) > 0);
                     paymentConfig.setOfflinePaymentTitle(cursor.getString(cursor.getColumnIndex(PAYMENT_CONFIG_OFFLINE_PAYMENT_TITLE)));
@@ -332,6 +338,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         contentValues.put(PAYMENT_CONFIG_OFFLINE_PAYMENT_ENABLED, configuration.getPaymentConfig().isOfflinePaymentEnable());
         contentValues.put(PAYMENT_CONFIG_OFFLINE_PAYMENT_TITLE, configuration.getPaymentConfig().getOfflinePaymentTitle());
         contentValues.put(PAYMENT_CONFIG_OFFLINE_PAYMENT_INSTRUCTION, configuration.getPaymentConfig().getOfflinePaymentInstruction());
+        contentValues.put(PAYMENT_CONFIG_PAYTM_ENABLE, configuration.getPaymentConfig().getPaytmEnable());
 
         // updating row
         return db.update(CONFIG_TABLE_NAME, contentValues, CONFIG_COLUMN_ID + " = ?",
@@ -362,6 +369,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return id;
     }
 
+    @SuppressLint("Range")
     public ActiveStatus getActiveStatusData() {
         SQLiteDatabase db = this.getReadableDatabase();
         ActiveStatus activeStatus = new ActiveStatus();
@@ -387,14 +395,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
     public void deleteAllActiveStatusData() {
-        try {
-            SQLiteDatabase db = this.getWritableDatabase();
-            db.execSQL("delete from " + SUBS_TABLE_NAME);
-            db.close();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.execSQL("delete from " + SUBS_TABLE_NAME);
+        db.close();
     }
 
     public int getActiveStatusCount() {
@@ -450,6 +453,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return id;
     }
 
+    @SuppressLint("Range")
     public User getUserData() {
         // get readable database as we are not inserting anything
         SQLiteDatabase db = this.getReadableDatabase();
@@ -588,6 +592,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.close();
     }
 
+    @SuppressLint("Range")
     public Work getWorkByDownloadId(int downloadId) {
         String sql = "SELECT * FROM " + DOWNLOAD_TABLE_NAME + " WHERE " + DOWNLOAD_ID + "=" + downloadId;
 
@@ -611,6 +616,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     }
 
+    @SuppressLint("Range")
     public List<Work> getAllWork() {
         List<Work> works = new ArrayList<>();
         // Select All Query

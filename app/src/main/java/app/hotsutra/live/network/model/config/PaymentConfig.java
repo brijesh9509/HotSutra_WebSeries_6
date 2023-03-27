@@ -52,6 +52,9 @@ public class PaymentConfig {
     @SerializedName("offline_payment_instruction")
     @Expose
     private String offlinePaymentInstruction;
+    @SerializedName("paytm_enable")
+    @Expose
+    private Boolean paytmEnable;
 
 
     public String getCurrencySymbol() {
@@ -180,5 +183,13 @@ public class PaymentConfig {
 
     public void setOfflinePaymentInstruction(String offlinePaymentInstruction) {
         this.offlinePaymentInstruction = offlinePaymentInstruction;
+    }
+
+    public Boolean getPaytmEnable() {
+        return paytmEnable;
+    }
+
+    public void setPaytmEnable(Boolean paytmEnable) {
+        this.paytmEnable = paytmEnable;
     }
 }
