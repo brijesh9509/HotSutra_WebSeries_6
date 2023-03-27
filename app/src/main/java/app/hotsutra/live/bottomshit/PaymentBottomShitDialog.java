@@ -52,6 +52,7 @@ public class PaymentBottomShitDialog extends BottomSheetDialogFragment {
         Space space4 = view.findViewById(R.id.space4);
         Space space5 = view.findViewById(R.id.space5);
         Space space6 = view.findViewById(R.id.space6);
+        Space space7 = view.findViewById(R.id.space7);
 
         /*if (!config.getPaypalEnable()) {
             paypalBt.setVisibility(View.GONE);
@@ -70,6 +71,10 @@ public class PaymentBottomShitDialog extends BottomSheetDialogFragment {
         if (!config.isOfflinePaymentEnable()) {
             offlineBtn.setVisibility(View.GONE);
             space4.setVisibility(View.GONE);
+        }
+        if (!config.getPaytmEnable()) {
+            paytm_btn.setVisibility(View.GONE);
+            space7.setVisibility(View.GONE);
         }
 
         if (!isInAppPurchase) {
