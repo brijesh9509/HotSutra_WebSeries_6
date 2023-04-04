@@ -3,21 +3,13 @@ apply plugin: 'com.android.application'
 apply plugin: 'com.google.gms.google-services'
 
 android {
-    signingConfigs {
-        release {
-            storeFile file('F:\\AndroidStudioProjects\\QfonApp\\HotSutra_WebSeries_6\\keystore.jks')
-            storePassword '123456!@#$%^'
-            keyPassword '123456!@#$%^'
-            keyAlias 'key0'
-        }
-    }
     compileSdkVersion 33
     defaultConfig {
         applicationId "app.hotsutra.live"
         minSdkVersion 21
         targetSdkVersion 33
-        versionCode 4
-        versionName "1.0.1"
+        versionCode 5
+        versionName "1.0.2"
         multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
@@ -27,7 +19,6 @@ android {
                 cppFlags ""
             }
         }
-        signingConfig signingConfigs.release
     }
     buildTypes {
         release {
