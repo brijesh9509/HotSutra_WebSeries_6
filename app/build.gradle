@@ -3,6 +3,14 @@ apply plugin: 'com.android.application'
 apply plugin: 'com.google.gms.google-services'
 
 android {
+    signingConfigs {
+        release {
+            storeFile file('F:\\AndroidStudioProjects\\QfonApp\\HotSutra_WebSeries_6\\keystore.jks')
+            storePassword '123456!@#$%^'
+            keyPassword '123456!@#$%^'
+            keyAlias 'key0'
+        }
+    }
     compileSdkVersion 33
     defaultConfig {
         applicationId "app.hotsutra.live"
@@ -19,6 +27,7 @@ android {
                 cppFlags ""
             }
         }
+        signingConfig signingConfigs.release
     }
     buildTypes {
         release {
@@ -71,7 +80,7 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-livedata:$lifecycle_version"
 
     //firebase
-    implementation 'com.google.firebase:firebase-analytics:21.2.0'
+    implementation 'com.google.firebase:firebase-analytics:21.2.1'
     implementation 'com.google.firebase:firebase-messaging:23.1.2'
     implementation 'com.google.firebase:firebase-database:20.1.0'
     //firebase auth

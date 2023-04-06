@@ -379,7 +379,6 @@ public class SplashScreenActivity extends AppCompatActivity {
         }
     }
 
-
     private void updateActiveStatus(String userId) {
         Retrofit retrofit = RetrofitClient.getRetrofitInstance();
         SubscriptionApi subscriptionApi = retrofit.create(SubscriptionApi.class);
