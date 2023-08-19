@@ -1,16 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: com.mikhaellopez:circularimageview:4.3.1@aar">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/91cae7f70b6cffce261aff4101081cdf/transformed/jetified-circularimageview-4.3.1/res" />
-      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/91cae7f70b6cffce261aff4101081cdf/transformed/jetified-circularimageview-4.3.1/AndroidManifest.xml" />
-      <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/91cae7f70b6cffce261aff4101081cdf/transformed/jetified-circularimageview-4.3.1/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/91cae7f70b6cffce261aff4101081cdf/transformed/jetified-circularimageview-4.3.1/AndroidManifest.xml" />
-      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/91cae7f70b6cffce261aff4101081cdf/transformed/jetified-circularimageview-4.3.1/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/91cae7f70b6cffce261aff4101081cdf/transformed/jetified-circularimageview-4.3.1/res" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/df6eaa03caf28c61a1f480729dd21052/transformed/jetified-circularimageview-4.3.1/res" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/df6eaa03caf28c61a1f480729dd21052/transformed/jetified-circularimageview-4.3.1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/df6eaa03caf28c61a1f480729dd21052/transformed/jetified-circularimageview-4.3.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/modules-2/files-2.1/com.mikhaellopez/circularimageview/4.3.1/1f07b02ef3bb96be0e69b47ac6ec8a9abda0ae5d/circularimageview-4.3.1-sources.jar!/" />
       <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/modules-2/files-2.1/com.mikhaellopez/circularimageview/4.3.1/1f07b02ef3bb96be0e69b47ac6ec8a9abda0ae5d/circularimageview-4.3.1-sources.jar!/" />
     </SOURCES>
   </library>

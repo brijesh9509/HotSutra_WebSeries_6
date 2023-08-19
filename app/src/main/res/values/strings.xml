@@ -342,4 +342,15 @@
     <string name="lbl_contact_email">Contact email</string>
     <string name="paytm">Paytm</string>
 
+    <string name="lbl_unlimited_streaming_and_downloads">Unlimited Streaming and Downloads.</string>
+    <string name="lbl_access_extra_feature_with_premium_subscription">Access extra feature with premium subscription -</string>
+    <string name="lbl_amazon_upi">Amazon Pay UPI</string>
+    <string name="lbl_bhim_upi">BHIM UPI</string>
+    <string name="lbl_paytm_upi">Paytm UPI</string>
+    <string name="lbl_google_pay">GPay UPI</string>
+    <string name="international_amp_domestic_debit_credit_cards"><![CDATA[International & Domestic, Debit/Credit Cards]]></string>
+    <string name="domestic_debit_credit_cards_amp_net_banking"><![CDATA[Domestic Debit/Credit Cards & Net Banking]]></string>
+    <string name="instamojo_upi">Instamojo UPI</string>
+    <string name="lbl_phonepe">PhonePe UPI</string>
+    <string name="lbl_toll_free">Need Help? Click Here!</string>
 </resources>

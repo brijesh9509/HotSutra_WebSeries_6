@@ -1,0 +1,766 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ctx=".PurchasePlanActivity">
+
+    <LinearLayout
+        android:id="@+id/llMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llTollFree"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="end"
+                android:layout_marginStart="16dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="10dp"
+                android:src="@drawable/logo_dark" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/close_iv"
+                android:layout_width="@dimen/dimen_50dp"
+                android:layout_height="@dimen/dimen_50dp"
+                android:layout_alignParentEnd="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="10dp"
+                android:src="@drawable/ic_close_black_24dp"
+                app:tint="@color/white" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_6dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:background="@drawable/gray_border_back"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_16dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtPackageDays"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:textSize="18sp"
+                    tools:text="100" />
+
+                <TextView
+                    android:id="@+id/txtPackageRupees"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="18sp"
+                    tools:ignore="RelativeOverlap"
+                    tools:text="100" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_4dp"
+                android:text="@string/lbl_unlimited_streaming_and_downloads"
+                android:textColor="@color/grey_40"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:layout_marginBottom="@dimen/dimen_16dp"
+            android:gravity="center"
+            android:text="@string/please_select_your_payment_method" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/paypal_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_10dp"
+                    android:layout_marginVertical="@dimen/dimen_4dp"
+                    app:cardCornerRadius="5sp"
+                    app:contentPaddingBottom="@dimen/dimen_8dp"
+                    app:contentPaddingLeft="@dimen/dimen_16dp"
+                    app:contentPaddingRight="@dimen/dimen_16dp"
+                    app:contentPaddingTop="@dimen/dimen_8dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="@dimen/dimen_60dp"
+                                android:layout_height="@dimen/dimen_40dp"
+                                android:background="@color/paypalColor"
+                                android:padding="@dimen/dimen_8dp"
+                                app:srcCompat="@drawable/paypal_logo" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/dimen_16dp"
+                                android:gravity="center"
+                                android:text="@string/paypal"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="@dimen/dimen_20dp"
+                            android:layout_height="@dimen/dimen_40dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/baseline_arrow_forward_ios_24" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/stripe_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_10dp"
+                    android:layout_marginVertical="@dimen/dimen_4dp"
+                    app:cardCornerRadius="5sp"
+                    app:contentPaddingBottom="@dimen/dimen_8dp"
+                    app:contentPaddingLeft="@dimen/dimen_16dp"
+                    app:contentPaddingRight="@dimen/dimen_16dp"
+                    app:contentPaddingTop="@dimen/dimen_8dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="@dimen/dimen_60dp"
+                                android:layout_height="@dimen/dimen_40dp"
+                                android:background="@color/colorPrimary"
+                                android:padding="@dimen/dimen_8dp"
+                                app:srcCompat="@drawable/stripe_logo" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/dimen_16dp"
+                                android:gravity="center"
+                                android:text="@string/stripe"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="@dimen/dimen_20dp"
+                            android:layout_height="@dimen/dimen_40dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/baseline_arrow_forward_ios_24" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/razorpay_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_10dp"
+                    android:layout_marginVertical="@dimen/dimen_4dp"
+                    app:cardCornerRadius="5sp"
+                    app:contentPaddingBottom="@dimen/dimen_8dp"
+                    app:contentPaddingLeft="@dimen/dimen_16dp"
+                    app:contentPaddingRight="@dimen/dimen_16dp"
+                    app:contentPaddingTop="@dimen/dimen_8dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="@dimen/dimen_60dp"
+                                android:layout_height="@dimen/dimen_40dp"
+                                android:background="@color/white"
+                                app:srcCompat="@drawable/razorpay" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/dimen_16dp"
+                                android:gravity="center"
+                                android:text="@string/razorpay"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="@dimen/dimen_20dp"
+                            android:layout_height="@dimen/dimen_40dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/baseline_arrow_forward_ios_24" />
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/offline_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_10dp"
+                    android:layout_marginVertical="@dimen/dimen_4dp"
+                    app:cardCornerRadius="5sp"
+                    app:contentPaddingBottom="@dimen/dimen_8dp"
+                    app:contentPaddingLeft="@dimen/dimen_16dp"
+                    app:contentPaddingRight="@dimen/dimen_16dp"
+                    app:contentPaddingTop="@dimen/dimen_8dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="@dimen/dimen_60dp"
+                                android:layout_height="@dimen/dimen_40dp"
+                                android:background="@color/white"
+                                android:padding="@dimen/dimen_8dp"
+                                app:srcCompat="@drawable/offline" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/dimen_16dp"
+                                android:gravity="center"
+                                android:text="@string/offline"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="@dimen/dimen_20dp"
+                            android:layout_height="@dimen/dimen_40dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/baseline_arrow_forward_ios_24" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/googlePlay_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_10dp"
+                    android:layout_marginVertical="@dimen/dimen_4dp"
+                    app:cardCornerRadius="5sp"
+                    app:contentPaddingBottom="@dimen/dimen_8dp"
+                    app:contentPaddingLeft="@dimen/dimen_16dp"
+                    app:contentPaddingRight="@dimen/dimen_16dp"
+                    app:contentPaddingTop="@dimen/dimen_8dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toStartOf="@+id/gPlayImage"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="@dimen/dimen_60dp"
+                                android:layout_height="@dimen/dimen_40dp"
+                                android:background="@color/white"
+                                android:padding="@dimen/dimen_8dp"
+                                app:srcCompat="@drawable/google_play"
+                                tools:ignore="ImageContrastCheck" />
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/dimen_16dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/google_play"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:text="@string/international_amp_domestic_debit_credit_cards"
+                                    android:textSize="14sp" />
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+                        </LinearLayout>
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/gPlayImage"
+                            android:layout_width="@dimen/dimen_20dp"
+                            android:layout_height="@dimen/dimen_40dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/baseline_arrow_forward_ios_24" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/instamojo_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_10dp"
+                    android:layout_marginVertical="@dimen/dimen_4dp"
+                    app:cardCornerRadius="5sp"
+                    app:contentPaddingBottom="@dimen/dimen_8dp"
+                    app:contentPaddingLeft="@dimen/dimen_16dp"
+                    app:contentPaddingRight="@dimen/dimen_16dp"
+                    app:contentPaddingTop="@dimen/dimen_8dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="@dimen/dimen_60dp"
+                                android:layout_height="@dimen/dimen_40dp"
+                                android:background="@color/white"
+                                app:srcCompat="@drawable/debit_credit_card_icon"
+                                tools:ignore="ImageContrastCheck" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/dimen_16dp"
+                                android:gravity="center"
+                                android:text="@string/instamojo_upi"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="@dimen/dimen_20dp"
+                            android:layout_height="@dimen/dimen_40dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/baseline_arrow_forward_ios_24" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/phonePeBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_10dp"
+                    android:layout_marginVertical="@dimen/dimen_4dp"
+                    app:cardCornerRadius="5sp"
+                    app:contentPaddingBottom="@dimen/dimen_8dp"
+                    app:contentPaddingLeft="@dimen/dimen_16dp"
+                    app:contentPaddingRight="@dimen/dimen_16dp"
+                    app:contentPaddingTop="@dimen/dimen_8dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="@dimen/dimen_60dp"
+                                android:layout_height="@dimen/dimen_40dp"
+                                android:background="@color/white"
+                                android:padding="@dimen/dimen_8dp"
+                                app:srcCompat="@drawable/phonepe_icon"
+                                tools:ignore="ImageContrastCheck" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/dimen_16dp"
+                                android:gravity="center"
+                                android:text="@string/lbl_phonepe"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="@dimen/dimen_20dp"
+                            android:layout_height="@dimen/dimen_40dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/baseline_arrow_forward_ios_24" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/gPayBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_10dp"
+                    android:layout_marginVertical="@dimen/dimen_4dp"
+                    app:cardCornerRadius="5sp"
+                    app:contentPaddingBottom="@dimen/dimen_8dp"
+                    app:contentPaddingLeft="@dimen/dimen_16dp"
+                    app:contentPaddingRight="@dimen/dimen_16dp"
+                    app:contentPaddingTop="@dimen/dimen_8dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="@dimen/dimen_60dp"
+                                android:layout_height="@dimen/dimen_40dp"
+                                android:background="@color/white"
+                                android:padding="@dimen/dimen_8dp"
+                                app:srcCompat="@drawable/gpay"
+                                tools:ignore="ImageContrastCheck" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/dimen_16dp"
+                                android:gravity="center"
+                                android:text="@string/lbl_google_pay"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="@dimen/dimen_20dp"
+                            android:layout_height="@dimen/dimen_40dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/baseline_arrow_forward_ios_24" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/paytmUpiBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_10dp"
+                    android:layout_marginVertical="@dimen/dimen_4dp"
+                    app:cardCornerRadius="5sp"
+                    app:contentPaddingBottom="@dimen/dimen_8dp"
+                    app:contentPaddingLeft="@dimen/dimen_16dp"
+                    app:contentPaddingRight="@dimen/dimen_16dp"
+                    app:contentPaddingTop="@dimen/dimen_8dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="@dimen/dimen_60dp"
+                                android:layout_height="@dimen/dimen_40dp"
+                                android:background="@color/white"
+                                android:padding="@dimen/dimen_4dp"
+                                app:srcCompat="@drawable/paytm_upi"
+                                tools:ignore="ImageContrastCheck" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/dimen_16dp"
+                                android:gravity="center"
+                                android:text="@string/lbl_paytm_upi"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="@dimen/dimen_20dp"
+                            android:layout_height="@dimen/dimen_40dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/baseline_arrow_forward_ios_24" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/paytm_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_10dp"
+                    android:layout_marginVertical="@dimen/dimen_4dp"
+                    app:cardCornerRadius="5sp"
+                    app:contentPaddingBottom="@dimen/dimen_8dp"
+                    app:contentPaddingLeft="@dimen/dimen_16dp"
+                    app:contentPaddingRight="@dimen/dimen_16dp"
+                    app:contentPaddingTop="@dimen/dimen_8dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toStartOf="@+id/imgPaytm"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="@dimen/dimen_60dp"
+                                android:layout_height="@dimen/dimen_40dp"
+                                android:background="@color/white"
+                                android:padding="@dimen/dimen_8dp"
+                                app:srcCompat="@drawable/paytm_logo"
+                                tools:ignore="ImageContrastCheck" />
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/dimen_16dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/paytm"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:text="@string/domestic_debit_credit_cards_amp_net_banking"
+                                    android:textSize="14sp" />
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        </LinearLayout>
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/imgPaytm"
+                            android:layout_width="@dimen/dimen_20dp"
+                            android:layout_height="@dimen/dimen_40dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/baseline_arrow_forward_ios_24" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/bhimBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_10dp"
+                    android:layout_marginVertical="@dimen/dimen_4dp"
+                    app:cardCornerRadius="5sp"
+                    app:contentPaddingBottom="@dimen/dimen_8dp"
+                    app:contentPaddingLeft="@dimen/dimen_16dp"
+                    app:contentPaddingRight="@dimen/dimen_16dp"
+                    app:contentPaddingTop="@dimen/dimen_8dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            tools:ignore="TooManyViews">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="@dimen/dimen_60dp"
+                                android:layout_height="@dimen/dimen_40dp"
+                                android:background="@color/white"
+                                android:padding="@dimen/dimen_8dp"
+                                app:srcCompat="@drawable/bhim_upi"
+                                tools:ignore="ImageContrastCheck" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/dimen_16dp"
+                                android:gravity="center"
+                                android:text="@string/lbl_bhim_upi"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="@dimen/dimen_20dp"
+                            android:layout_height="@dimen/dimen_40dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/baseline_arrow_forward_ios_24" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/amazonBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_10dp"
+                    android:layout_marginVertical="@dimen/dimen_4dp"
+                    app:cardCornerRadius="5sp"
+                    app:contentPaddingBottom="@dimen/dimen_8dp"
+                    app:contentPaddingLeft="@dimen/dimen_16dp"
+                    app:contentPaddingRight="@dimen/dimen_16dp"
+                    app:contentPaddingTop="@dimen/dimen_8dp"
+                    tools:ignore="TooManyViews">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="@dimen/dimen_60dp"
+                                android:layout_height="@dimen/dimen_40dp"
+                                android:background="@color/white"
+                                android:padding="@dimen/dimen_4dp"
+                                app:srcCompat="@drawable/amazon_pay"
+                                tools:ignore="ImageContrastCheck" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/dimen_16dp"
+                                android:gravity="center"
+                                android:text="@string/lbl_amazon_upi"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="@dimen/dimen_20dp"
+                            android:layout_height="@dimen/dimen_40dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/baseline_arrow_forward_ios_24" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llTollFree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:paddingVertical="@dimen/fragment_title_padding_10">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/dimen_24dp"
+            android:layout_height="@dimen/dimen_24dp"
+            app:srcCompat="@drawable/ic_call_24" />
+
+        <TextView
+            android:id="@+id/txtTollFree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:gravity="center"
+            android:text="@string/lbl_toll_free"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

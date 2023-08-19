@@ -51,5 +51,10 @@
       <option name="name" value="maven2" />
       <option name="url" value="https://artifactory.paytm.in/libs-release-local" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven3" />
+      <option name="name" value="maven3" />
+      <option name="url" value="https://s3-ap-southeast-1.amazonaws.com/godel-release/godel/" />
+    </remote-repository>
   </component>
 </project>

@@ -13,5 +13,7 @@
     <dimen name="lb_details_v2_card_height">430dp</dimen>
 
     <dimen name="default_text_size">16sp</dimen>
+    <dimen name="dimen_40dp">40dp</dimen>
+    <dimen name="dimen_44dp">44dp</dimen>
 
 </resources>

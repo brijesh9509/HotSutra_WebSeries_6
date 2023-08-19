@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.stripe:stripe-3ds2-android:4.1.0@aar">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/05855db70d60eb79b76964b8ad868dec/transformed/jetified-stripe-3ds2-android-4.1.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/05855db70d60eb79b76964b8ad868dec/transformed/jetified-stripe-3ds2-android-4.1.0/res" />
-      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/05855db70d60eb79b76964b8ad868dec/transformed/jetified-stripe-3ds2-android-4.1.0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/c64b6de929403af0b5cb7e60b38a043b/transformed/jetified-stripe-3ds2-android-4.1.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/c64b6de929403af0b5cb7e60b38a043b/transformed/jetified-stripe-3ds2-android-4.1.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/c64b6de929403af0b5cb7e60b38a043b/transformed/jetified-stripe-3ds2-android-4.1.0/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

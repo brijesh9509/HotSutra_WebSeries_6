@@ -22,7 +22,7 @@ import java.util.List;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
 
-    private static final int DATABASE_VERSION = 6;
+    private static final int DATABASE_VERSION = 7;
     public static final String DATABASE_NAME = "com.hotsutra.live.db";
 
     //config table
@@ -62,6 +62,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String PAYMENT_CONFIG_OFFLINE_PAYMENT_TITLE = "offline_payment_title";
     private static final String PAYMENT_CONFIG_OFFLINE_PAYMENT_INSTRUCTION = "offline_payment_instruction";
     private static final String PAYMENT_CONFIG_PAYTM_ENABLE = "paytm_enable";
+    private static final String PAYMENT_CONFIG_PHONEPE_ENABLE = "phonepe_enable";
+    private static final String PAYMENT_CONFIG_PHONEPE_IS_PRODUCTION_ENABLE = "phonepe_is_production";
+    private static final String PAYMENT_CONFIG_INSTAMOJO_ENABLE = "instamojo_enable";
+    private static final String PAYMENT_CONFIG_INSTAMOJO_IS_PRODUCTION = "instamojo_is_production";
 
     //subscription table
     private static final String SUBS_TABLE_NAME = "subscription_table";
@@ -169,6 +173,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 PAYMENT_CONFIG_OFFLINE_PAYMENT_TITLE + " TEXT," +
                 PAYMENT_CONFIG_OFFLINE_PAYMENT_INSTRUCTION + " TEXT," +
                 PAYMENT_CONFIG_PAYTM_ENABLE + " INTEGER DEFAULT 0," +
+                PAYMENT_CONFIG_PHONEPE_ENABLE + " INTEGER DEFAULT 0," +
+                PAYMENT_CONFIG_PHONEPE_IS_PRODUCTION_ENABLE + " INTEGER DEFAULT 0," +
+                PAYMENT_CONFIG_INSTAMOJO_ENABLE + " INTEGER DEFAULT 0," +
+                PAYMENT_CONFIG_INSTAMOJO_IS_PRODUCTION + " INTEGER DEFAULT 0," +
                 PAYMENT_CONFIG_CURRENCY + " TEXT" + ")";
     }
 
@@ -212,6 +220,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         contentValues.put(PAYMENT_CONFIG_OFFLINE_PAYMENT_TITLE, configuration.getPaymentConfig().getOfflinePaymentTitle());
         contentValues.put(PAYMENT_CONFIG_OFFLINE_PAYMENT_INSTRUCTION, configuration.getPaymentConfig().getOfflinePaymentInstruction());
         contentValues.put(PAYMENT_CONFIG_PAYTM_ENABLE, configuration.getPaymentConfig().getPaytmEnable());
+        contentValues.put(PAYMENT_CONFIG_PHONEPE_ENABLE, configuration.getPaymentConfig().getPhonepe_enable());
+        contentValues.put(PAYMENT_CONFIG_PHONEPE_IS_PRODUCTION_ENABLE, configuration.getPaymentConfig().getPhonepe_is_production());
+        contentValues.put(PAYMENT_CONFIG_INSTAMOJO_ENABLE, configuration.getPaymentConfig().getInstamojoEnable());
+        contentValues.put(PAYMENT_CONFIG_INSTAMOJO_IS_PRODUCTION, configuration.getPaymentConfig().getInstamojoIsProduction());
 
         long id = db.insert(CONFIG_TABLE_NAME, null, contentValues);
         db.close();
@@ -264,6 +276,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                     paymentConfig.setStripeEnable(cursor.getInt(cursor.getColumnIndex(PAYMENT_CONFIG_STRIPE_ENABLE)) > 0);
                     paymentConfig.setRazorpayEnable(cursor.getInt(cursor.getColumnIndex(PAYMENT_CONFIG_RAZORPAY_ENABLE)) > 0);
                     paymentConfig.setPaytmEnable(cursor.getInt(cursor.getColumnIndex(PAYMENT_CONFIG_PAYTM_ENABLE)) > 0);
+                    paymentConfig.setPhonepe_enable(cursor.getInt(cursor.getColumnIndex(PAYMENT_CONFIG_PHONEPE_ENABLE)) > 0);
+                    paymentConfig.setPhonepe_is_production(cursor.getInt(cursor.getColumnIndex(PAYMENT_CONFIG_PHONEPE_IS_PRODUCTION_ENABLE)) > 0);
+                    paymentConfig.setInstamojoEnable(cursor.getInt(cursor.getColumnIndex(PAYMENT_CONFIG_INSTAMOJO_ENABLE)) > 0);
+                    paymentConfig.setInstamojoIsProduction(cursor.getInt(cursor.getColumnIndex(PAYMENT_CONFIG_INSTAMOJO_IS_PRODUCTION)) > 0);
                     // paymentConfig.setRazorpayExchangeRate(cursor.getString(cursor.getColumnIndex(PAYMENT_CONFIG_RAZORPAY_EXCHANGE_RATE)));
                     paymentConfig.setOfflinePaymentEnable(cursor.getInt(cursor.getColumnIndex(PAYMENT_CONFIG_OFFLINE_PAYMENT_ENABLED)) > 0);
                     paymentConfig.setOfflinePaymentTitle(cursor.getString(cursor.getColumnIndex(PAYMENT_CONFIG_OFFLINE_PAYMENT_TITLE)));
@@ -339,6 +355,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         contentValues.put(PAYMENT_CONFIG_OFFLINE_PAYMENT_TITLE, configuration.getPaymentConfig().getOfflinePaymentTitle());
         contentValues.put(PAYMENT_CONFIG_OFFLINE_PAYMENT_INSTRUCTION, configuration.getPaymentConfig().getOfflinePaymentInstruction());
         contentValues.put(PAYMENT_CONFIG_PAYTM_ENABLE, configuration.getPaymentConfig().getPaytmEnable());
+        contentValues.put(PAYMENT_CONFIG_PHONEPE_ENABLE, configuration.getPaymentConfig().getPhonepe_enable());
+        contentValues.put(PAYMENT_CONFIG_PHONEPE_IS_PRODUCTION_ENABLE, configuration.getPaymentConfig().getPhonepe_is_production());
+        contentValues.put(PAYMENT_CONFIG_INSTAMOJO_ENABLE, configuration.getPaymentConfig().getInstamojoEnable());
+        contentValues.put(PAYMENT_CONFIG_INSTAMOJO_IS_PRODUCTION, configuration.getPaymentConfig().getInstamojoIsProduction());
 
         // updating row
         return db.update(CONFIG_TABLE_NAME, contentValues, CONFIG_COLUMN_ID + " = ?",

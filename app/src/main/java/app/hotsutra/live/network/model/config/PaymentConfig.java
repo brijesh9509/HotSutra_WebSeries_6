@@ -55,6 +55,35 @@ public class PaymentConfig {
     @SerializedName("paytm_enable")
     @Expose
     private Boolean paytmEnable;
+    @SerializedName("phonepe_enable")
+    @Expose
+    private Boolean phonepe_enable;
+    @SerializedName("phonepe_is_production")
+    @Expose
+    private Boolean phonepe_is_production;
+
+    public Boolean getPhonepe_enable() {
+        return phonepe_enable;
+    }
+
+    public void setPhonepe_enable(Boolean phonepe_enable) {
+        this.phonepe_enable = phonepe_enable;
+    }
+
+    public Boolean getPhonepe_is_production() {
+        return phonepe_is_production;
+    }
+
+    public void setPhonepe_is_production(Boolean phonepe_is_production) {
+        this.phonepe_is_production = phonepe_is_production;
+    }
+
+    @SerializedName("instamojo_enable")
+    @Expose
+    private Boolean instamojoEnable;
+    @SerializedName("instamojo_is_production")
+    @Expose
+    private Boolean instamojoIsProduction;
 
 
     public String getCurrencySymbol() {
@@ -191,5 +220,21 @@ public class PaymentConfig {
 
     public void setPaytmEnable(Boolean paytmEnable) {
         this.paytmEnable = paytmEnable;
+    }
+
+    public Boolean getInstamojoEnable() {
+        return instamojoEnable;
+    }
+
+    public void setInstamojoEnable(Boolean instamojoEnable) {
+        this.instamojoEnable = instamojoEnable;
+    }
+
+    public Boolean getInstamojoIsProduction() {
+        return instamojoIsProduction;
+    }
+
+    public void setInstamojoIsProduction(Boolean instamojoIsProduction) {
+        this.instamojoIsProduction = instamojoIsProduction;
     }
 }

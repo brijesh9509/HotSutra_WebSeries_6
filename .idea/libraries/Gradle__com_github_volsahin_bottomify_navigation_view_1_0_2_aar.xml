@@ -1,16 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.volsahin:bottomify-navigation-view:1.0.2@aar">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/16246babeeaa5c415599aac023668992/transformed/jetified-bottomify-navigation-view-1.0.2/res" />
-      <root url="file://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/16246babeeaa5c415599aac023668992/transformed/jetified-bottomify-navigation-view-1.0.2/AndroidManifest.xml" />
-      <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/transforms-3/16246babeeaa5c415599aac023668992/transformed/jetified-bottomify-navigation-view-1.0.2/jars/classes.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/16246babeeaa5c415599aac023668992/transformed/jetified-bottomify-navigation-view-1.0.2/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/16246babeeaa5c415599aac023668992/transformed/jetified-bottomify-navigation-view-1.0.2/res" />
-      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/16246babeeaa5c415599aac023668992/transformed/jetified-bottomify-navigation-view-1.0.2/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/4742b8dca94d1e5ca7ca80685238549b/transformed/jetified-bottomify-navigation-view-1.0.2/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/4742b8dca94d1e5ca7ca80685238549b/transformed/jetified-bottomify-navigation-view-1.0.2/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/4742b8dca94d1e5ca7ca80685238549b/transformed/jetified-bottomify-navigation-view-1.0.2/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$PROJECT_DIR$/../Livestream-Clone-Android/caches/modules-2/files-2.1/com.github.volsahin/bottomify-navigation-view/1.0.2/a54e02e46d2009dc66c53441a2de4423a88d027/bottomify-navigation-view-1.0.2-sources.jar!/" />
       <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/modules-2/files-2.1/com.github.volsahin/bottomify-navigation-view/1.0.2/a54e02e46d2009dc66c53441a2de4423a88d027/bottomify-navigation-view-1.0.2-sources.jar!/" />
     </SOURCES>
   </library>

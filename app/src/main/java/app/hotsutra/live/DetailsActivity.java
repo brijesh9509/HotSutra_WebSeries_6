@@ -158,9 +158,6 @@ import org.jetbrains.annotations.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
-import at.huber.youtubeExtractor.VideoMeta;
-import at.huber.youtubeExtractor.YouTubeExtractor;
-import at.huber.youtubeExtractor.YtFile;
 import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -1662,7 +1659,7 @@ public class DetailsActivity extends AppCompatActivity implements CastPlayer.Ses
     @SuppressLint("StaticFieldLeak")
     private void extractYoutubeUrl(String url, final Context context) {
         Log.e("Trailer", "onExtractUrl");
-        new YouTubeExtractor(context) {
+       /* new YouTubeExtractor(context) {
             @Override
             public void onExtractionComplete(SparseArray<YtFile> ytFiles, VideoMeta vMeta) {
                 if (ytFiles != null) {
@@ -1686,7 +1683,7 @@ public class DetailsActivity extends AppCompatActivity implements CastPlayer.Ses
                     }
                 }
             }
-        }.extract(url, true, true);
+        }.extract(url, true, true);*/
     }
 
     private MediaSource rtmpMediaSource(Uri uri) {

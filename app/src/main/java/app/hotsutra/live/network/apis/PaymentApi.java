@@ -1,7 +1,9 @@
 package app.hotsutra.live.network.apis;
 
 
+import app.hotsutra.live.network.model.InstaMojo2Response;
 import app.hotsutra.live.network.model.PaytmResponse;
+import app.hotsutra.live.network.model.PhonepeResponse;
 import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.http.Field;
@@ -31,4 +33,18 @@ public interface PaymentApi {
                                       @Query("user_id") String userId,
                                       @Query("version") Integer vId,
                                       @Query("udid") String uDID);
+
+    @GET("instamojo_transaction_initiate")
+    Call<InstaMojo2Response> getIntaMojoToken(@Header("API-KEY") String apiKey,
+                                              @Query("plan_id") String planId,
+                                              @Query("user_id") String userId,
+                                              @Query("version") Integer vId,
+                                              @Query("udid") String uDID);
+
+    @GET("phonepe_transaction_initiate")
+    Call<PhonepeResponse> getPhonePeToken(@Header("API-KEY") String apiKey,
+                                          @Query("plan_id") String planId,
+                                          @Query("user_id") String userId,
+                                          @Query("version") Integer vId,
+                                          @Query("udid") String uDID);
 }

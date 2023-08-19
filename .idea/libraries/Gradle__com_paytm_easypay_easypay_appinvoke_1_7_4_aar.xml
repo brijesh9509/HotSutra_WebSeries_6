@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.paytm.easypay:easypay-appinvoke:1.7.4@aar">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/cd45dacf7879fb2f2a500d3a2aeb29e2/transformed/jetified-easypay-appinvoke-1.7.4/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/cd45dacf7879fb2f2a500d3a2aeb29e2/transformed/jetified-easypay-appinvoke-1.7.4/res" />
-      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/cd45dacf7879fb2f2a500d3a2aeb29e2/transformed/jetified-easypay-appinvoke-1.7.4/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/faa69d4e97d93d69a21a314cb359274d/transformed/jetified-easypay-appinvoke-1.7.4/res" />
+      <root url="file://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/faa69d4e97d93d69a21a314cb359274d/transformed/jetified-easypay-appinvoke-1.7.4/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../../Android Gradle/caches/transforms-3/faa69d4e97d93d69a21a314cb359274d/transformed/jetified-easypay-appinvoke-1.7.4/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

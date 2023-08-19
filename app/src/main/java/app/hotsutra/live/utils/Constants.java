@@ -25,6 +25,8 @@ public class Constants {
     public static final String OFFLINE_PAY = "offline_pay";
     public static final String GOOGLE_PAY = "google_pay";
     public static final String PAYTM = "paytm";
+    public static final String INSTAMOJO = "instamojo";
+    public static final String PHONEPE = "phonePe";
 
     public static String workId;
 
@@ -32,8 +34,8 @@ public class Constants {
 
     public static String getDownloadDir(Context context) {
         //downloads/oxoo
-       // return  Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).toString() + File.separator;
-       //return context.getExternalFilesDirs(Environment.DIRECTORY_DOWNLOADS).toString() + File.separator;
+        // return  Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).toString() + File.separator;
+        //return context.getExternalFilesDirs(Environment.DIRECTORY_DOWNLOADS).toString() + File.separator;
 
         File dir = new File(Environment.getExternalStorageDirectory() + "/Download/" + context.getString(R.string.app_name));
         if (!dir.exists()) {
@@ -57,7 +59,7 @@ public class Constants {
     public static final String CONTENT_TITLE = "title";
     public static final String IMAGE_URL = "image_url";
     public static final String PROGRESS = "progress";
-    public static final String POSITION ="position";
+    public static final String POSITION = "position";
     public static final String STREAM_URL = "stream_url";
     public static final String CATEGORY_TYPE = "category_type";
     public static final String SERVER_TYPE = "server_type";

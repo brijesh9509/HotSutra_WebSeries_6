@@ -3,6 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/HotSutra_WebSeries_6.iml" filepath="$PROJECT_DIR$/.idea/modules/HotSutra_WebSeries_6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/android-sdk/HotSutra_WebSeries_6.android-sdk.iml" filepath="$PROJECT_DIR$/.idea/modules/android-sdk/HotSutra_WebSeries_6.android-sdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/android-sdk/HotSutra_WebSeries_6.android-sdk.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/android-sdk/HotSutra_WebSeries_6.android-sdk.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/android-sdk/HotSutra_WebSeries_6.android-sdk.main.iml" filepath="$PROJECT_DIR$/.idea/modules/android-sdk/HotSutra_WebSeries_6.android-sdk.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/android-sdk/HotSutra_WebSeries_6.android-sdk.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/android-sdk/HotSutra_WebSeries_6.android-sdk.unitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/HotSutra_WebSeries_6.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/HotSutra_WebSeries_6.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/HotSutra_WebSeries_6.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/HotSutra_WebSeries_6.app.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/HotSutra_WebSeries_6.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/HotSutra_WebSeries_6.app.main.iml" />

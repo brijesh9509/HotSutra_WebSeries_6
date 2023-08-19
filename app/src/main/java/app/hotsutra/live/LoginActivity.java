@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -34,7 +35,12 @@ import app.hotsutra.live.network.model.ActiveStatus;
 import app.hotsutra.live.network.model.User;
 import app.hotsutra.live.utils.ApiResources;
 import com.firebase.ui.auth.AuthUI;
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
+import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+import com.google.android.gms.common.api.ApiException;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -61,6 +67,7 @@ public class LoginActivity extends AppCompatActivity {
     private ProgressBar progressBar;
     private AppCompatImageView imgWPSupport, imgTelegramSupport;
 
+    private GoogleSignInClient mGoogleSignInClient;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -125,6 +132,15 @@ public class LoginActivity extends AppCompatActivity {
             phoneAuthButton.setVisibility(View.VISIBLE);
         }
 
+        GoogleSignInOptions googleOptions = new GoogleSignInOptions.Builder(
+                GoogleSignInOptions.DEFAULT_SIGN_IN)
+                //.requestIdToken(getString(R.string.default_web_client_id))
+                .requestEmail()
+                .requestProfile()
+                .build();
+
+        mGoogleSignInClient = GoogleSignIn.getClient(this, googleOptions);
+
         firebaseAuth = FirebaseAuth.getInstance();
 
         if (isDark) {
@@ -159,9 +175,56 @@ public class LoginActivity extends AppCompatActivity {
 
         facebookAuthButton.setOnClickListener(v -> facebookSignIn());
 
-        googleAuthButton.setOnClickListener(v -> googleSignIn());
+        googleAuthButton.setOnClickListener(v -> signIn());
 
         supportLinkClick();
+    }
+
+    private void signIn() {
+        Intent signInIntent = mGoogleSignInClient.getSignInIntent();
+        startActivityForResult(signInIntent, 1000);
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        // Result returned from launching the Intent from GoogleSignInClient.getSignInIntent(...);
+        if (requestCode == 1000) {
+            // The Task returned from this call is always completed, no need to attach
+            // a listener.
+            Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
+            handleSignInResult(task);
+        }
+    }
+
+    private void handleSignInResult(Task<GoogleSignInAccount> completedTask) {
+        try {
+            GoogleSignInAccount account = completedTask.getResult(ApiException.class);
+
+            // Signed in successfully, show authenticated UI.
+
+            String name = "";
+            if (account.getDisplayName() != null) {
+                name = account.getDisplayName();
+            }
+            String email = "";
+            if (account.getEmail() != null) {
+                email = account.getEmail();
+            }
+            if (!email.isEmpty()) {
+                sendGoogleDataToServer(account.getId(),email, name, account.getPhotoUrl());
+            }
+
+            mGoogleSignInClient.signOut()
+                    .addOnCompleteListener(this, task -> Log.e("Logout", "Logout"));
+            //updateUI(account);
+        } catch (ApiException e) {
+            // The ApiException status code indicates the detailed failure reason.
+            // Please refer to the GoogleSignInStatusCodes class reference for more information.
+            Log.w("TAG", "signInResult:failed code=" + e.getStatusCode());
+            //updateUI(null);
+        }
     }
 
     private void login(String email, final String password) {
@@ -356,7 +419,7 @@ public class LoginActivity extends AppCompatActivity {
                     if (result.getResultCode() == RESULT_OK) {
                         final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
                         if (!user.getUid().isEmpty()) {
-                            sendGoogleDataToServer();
+                            //sendGoogleDataToServer();
 
                         } else {
                             Toast.makeText(LoginActivity.this, getString(R.string.something_went_wrong), Toast.LENGTH_SHORT).show();
@@ -403,7 +466,7 @@ public class LoginActivity extends AppCompatActivity {
         progressBar.setVisibility(View.VISIBLE);
         FirebaseAuth auth = FirebaseAuth.getInstance();
         if (auth.getCurrentUser() != null) {
-            sendGoogleDataToServer();
+            //sendGoogleDataToServer();
 
         } else {
             progressBar.setVisibility(View.GONE);
@@ -482,20 +545,20 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
-    private void sendGoogleDataToServer() {
+    private void sendGoogleDataToServer(String accountID,String email, String username, Uri image) {
         progressBar.setVisibility(View.VISIBLE);
-        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        /*FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         String username = user.getDisplayName();
         String email = user.getEmail();
         Uri image = user.getPhotoUrl();
         String uid = user.getUid();
         String phone = "";
         if (user.getPhoneNumber() != null)
-            phone = user.getPhoneNumber();
+            phone = user.getPhoneNumber();*/
 
         Retrofit retrofit = RetrofitClient.getRetrofitInstance();
         FirebaseAuthApi api = retrofit.create(FirebaseAuthApi.class);
-        Call<User> call = api.getGoogleAuthStatus(MyAppClass.API_KEY, uid, email, username, image, phone,
+        Call<User> call = api.getGoogleAuthStatus(MyAppClass.API_KEY, accountID, email, username, image, "",
                 BuildConfig.VERSION_CODE, Constants.getDeviceId(this));
         call.enqueue(new Callback<User>() {
             @Override
@@ -533,7 +596,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onFailure(@NonNull Call<User> call, @NonNull Throwable t) {
                 progressBar.setVisibility(View.GONE);
-                googleSignIn();
+                //googleSignIn();
             }
         });
     }

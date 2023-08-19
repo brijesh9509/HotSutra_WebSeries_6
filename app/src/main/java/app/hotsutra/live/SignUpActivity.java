@@ -12,6 +12,8 @@ import android.os.Bundle;
 
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.content.ContextCompat;
+
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -34,7 +36,12 @@ import app.hotsutra.live.utils.ToastMsg;
 import com.firebase.ui.auth.AuthUI;
 import com.firebase.ui.auth.ErrorCodes;
 import com.firebase.ui.auth.IdpResponse;
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
+import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+import com.google.android.gms.common.api.ApiException;
+import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.firebase.auth.FirebaseAuth;
@@ -57,6 +64,8 @@ public class SignUpActivity extends AppCompatActivity {
     private ProgressDialog dialog;
     FirebaseAuth firebaseAuth;
     private ProgressBar progressBar;
+
+    private GoogleSignInClient mGoogleSignInClient;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -137,18 +146,61 @@ public class SignUpActivity extends AppCompatActivity {
             phoneAuthButton.setVisibility(View.VISIBLE);
         }
 
+        GoogleSignInOptions googleOptions = new GoogleSignInOptions.Builder(
+                GoogleSignInOptions.DEFAULT_SIGN_IN)
+                //.requestIdToken(getString(R.string.default_web_client_id))
+                .requestEmail()
+                .requestProfile()
+                .build();
+
+        mGoogleSignInClient = GoogleSignIn.getClient(this, googleOptions);
+
         firebaseAuth = FirebaseAuth.getInstance();
 
         phoneAuthButton.setOnClickListener(v -> phoneSignIn());
 
         facebookAuthButton.setOnClickListener(v -> facebookSignIn());
 
-        googleAuthButton.setOnClickListener(v -> googleSignIn());
+        googleAuthButton.setOnClickListener(v -> signIn());
 
         tvLogin.setOnClickListener(v -> {
             startActivity(new Intent(SignUpActivity.this, LoginActivity.class));
             finish();
         });
+    }
+
+    private void signIn() {
+        Intent signInIntent = mGoogleSignInClient.getSignInIntent();
+        startActivityForResult(signInIntent, 1000);
+    }
+
+    private void handleSignInResult(Task<GoogleSignInAccount> completedTask) {
+        try {
+            GoogleSignInAccount account = completedTask.getResult(ApiException.class);
+
+            // Signed in successfully, show authenticated UI.
+
+            String name = "";
+            if (account.getDisplayName() != null) {
+                name = account.getDisplayName();
+            }
+            String email = "";
+            if (account.getEmail() != null) {
+                email = account.getEmail();
+            }
+            if (!email.isEmpty()) {
+                sendGoogleDataToServer(account.getId(), email, name, account.getPhotoUrl());
+            }
+
+            mGoogleSignInClient.signOut()
+                    .addOnCompleteListener(this, task -> Log.e("Logout", "Logout"));
+            //updateUI(account);
+        } catch (ApiException e) {
+            // The ApiException status code indicates the detailed failure reason.
+            // Please refer to the GoogleSignInStatusCodes class reference for more information.
+            Log.w("TAG", "signInResult:failed code=" + e.getStatusCode());
+            //updateUI(null);
+        }
     }
 
     private void signUp(String email, String pass, String name) {
@@ -328,7 +380,7 @@ public class SignUpActivity extends AppCompatActivity {
         progressBar.setVisibility(View.VISIBLE);
         FirebaseAuth auth = FirebaseAuth.getInstance();
         if (auth.getCurrentUser() != null) {
-            sendGoogleDataToServer();
+            //sendGoogleDataToServer();
 
         } else {
             progressBar.setVisibility(View.VISIBLE);
@@ -412,20 +464,20 @@ public class SignUpActivity extends AppCompatActivity {
 
     }
 
-    private void sendGoogleDataToServer() {
+    private void sendGoogleDataToServer(String accountID, String email, String username, Uri image) {
         progressBar.setVisibility(View.VISIBLE);
-        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        /*FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         String username = user.getDisplayName();
         String email = user.getEmail();
         Uri image = user.getPhotoUrl();
         String uid = user.getUid();
         String phone = "";
         if (user.getPhoneNumber() != null)
-            phone = user.getPhoneNumber();
+            phone = user.getPhoneNumber();*/
 
         Retrofit retrofit = RetrofitClient.getRetrofitInstance();
         FirebaseAuthApi api = retrofit.create(FirebaseAuthApi.class);
-        Call<User> call = api.getGoogleAuthStatus(MyAppClass.API_KEY, uid, email, username, image, phone,
+        Call<User> call = api.getGoogleAuthStatus(MyAppClass.API_KEY, accountID, email, username, image, "",
                 BuildConfig.VERSION_CODE, Constants.getDeviceId(this));
         call.enqueue(new Callback<User>() {
             @Override
@@ -466,7 +518,6 @@ public class SignUpActivity extends AppCompatActivity {
             @Override
             public void onFailure(@NonNull Call<User> call, @NonNull Throwable t) {
                 progressBar.setVisibility(View.GONE);
-                googleSignIn();
             }
         });
     }
@@ -594,11 +645,11 @@ public class SignUpActivity extends AppCompatActivity {
                 // Successfully signed in
                 FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
                 if (!user.getUid().isEmpty()) {
-                    sendGoogleDataToServer();
+                   // sendGoogleDataToServer();
 
                 } else {
                     //empty
-                    googleSignIn();
+                    //googleSignIn();
                 }
             } else {
                 // sign in failed
@@ -616,6 +667,11 @@ public class SignUpActivity extends AppCompatActivity {
                     progressBar.setVisibility(View.GONE);
                 }
             }
+        } else if (requestCode == 1000) {
+            // The Task returned from this call is always completed, no need to attach
+            // a listener.
+            Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
+            handleSignInResult(task);
         }
     }
 

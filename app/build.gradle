@@ -1,6 +1,25 @@
 apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
 apply plugin: 'com.android.application'
 apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+
+buildscript {
+    repositories {
+        maven { url 'https://plugins.gradle.org/m2/' }
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:0.14.0'
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        url "https://s3-ap-southeast-1.amazonaws.com/godel-release/godel/"
+    }
+    maven { url 'https://maven.google.com' }
+}
 
 android {
     signingConfigs {
@@ -11,9 +30,10 @@ android {
             keyAlias 'key0'
         }
     }
-    compileSdkVersion 33
+
     defaultConfig {
         applicationId "app.hotsutra.live"
+        compileSdk 33
         minSdkVersion 21
         targetSdkVersion 33
         versionCode 5
@@ -55,24 +75,33 @@ android {
     }
     namespace 'app.hotsutra.live'
 
+    packagingOptions {
+        exclude("META-INF/DEPENDENCIES")
+        exclude("META-INF/LICENSE")
+        exclude("META-INF/LICENSE.txt")
+        exclude("META-INF/license.txt")
+        exclude("META-INF/NOTICE")
+        exclude("META-INF/NOTICE.txt")
+        exclude("META-INF/notice.txt")
+        exclude("META-INF/ASL2.0")
+        exclude("META-INF/*.kotlin_module")
+    }
 }
 
 dependencies {
+    implementation project(":android-sdk")
     implementation files('libs/YouTubeAndroidPlayerApi.jar')
-    implementation 'androidx.navigation:navigation-fragment:2.5.3'
-    implementation 'androidx.navigation:navigation-ui:2.5.3'
+    implementation 'androidx.navigation:navigation-fragment:2.6.0'
+    implementation 'androidx.navigation:navigation-ui:2.6.0'
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'com.google.android.material:material:1.9.0'
 
-    testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
-    def lifecycle_version = "2.5.1"
+    def lifecycle_version = "2.6.1"
     // ViewModel
     implementation "androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version"
     implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
@@ -80,11 +109,14 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-livedata:$lifecycle_version"
 
     //firebase
-    implementation 'com.google.firebase:firebase-analytics:21.2.1'
+    implementation 'com.google.firebase:firebase-analytics:21.3.0'
     implementation 'com.google.firebase:firebase-messaging:23.1.2'
-    implementation 'com.google.firebase:firebase-database:20.1.0'
+    implementation 'com.google.firebase:firebase-database:20.2.2'
+    implementation 'com.google.firebase:firebase-crashlytics:18.3.5'
+
     //firebase auth
     implementation 'com.firebaseui:firebase-ui-auth:8.0.2'
+    implementation "com.google.firebase:firebase-auth:22.1.1"
 
     implementation 'com.google.android:flexbox:0.3.2'                  // google flexible box
     implementation 'com.crystal:crystalrangeseekbar:1.1.3'             // range seek bar
@@ -95,12 +127,14 @@ dependencies {
 
     //bottom navigation
     implementation 'com.github.volsahin:bottomify-navigation-view:1.0.2'
+    // card slider
+    implementation 'com.github.IslamKhSh:CardSlider:0.4'
 
     // shimmer layout
     implementation 'com.facebook.shimmer:shimmer:0.5.0'
     implementation 'com.balysv:material-ripple:1.0.2'
 
-    def room_version = "2.5.0"
+    def room_version = "2.5.2"
     //Room
     implementation "androidx.room:room-runtime:$room_version"
     annotationProcessor "androidx.room:room-compiler:$room_version"
@@ -120,9 +154,7 @@ dependencies {
     // paypal
     implementation 'com.paypal.sdk:paypal-android-sdk:2.16.0'
     // razor pay
-    implementation 'com.razorpay:checkout:1.6.29'
-    // card slider
-    implementation 'com.github.IslamKhSh:CardSlider:0.4'
+    implementation 'com.razorpay:checkout:1.6.34'
     //OneSignal
     implementation 'com.onesignal:OneSignal:[4.0.0, 4.99.99]'
     // exo player
@@ -132,10 +164,16 @@ dependencies {
     implementation 'com.google.android.exoplayer:exoplayer-hls:2.14.1'
     implementation 'com.google.android.exoplayer:extension-rtmp:2.14.1'
     implementation 'com.google.android.exoplayer:extension-cast:2.7.3'
-    implementation 'com.github.HaarigerHarald:android-youtubeExtractor:master-SNAPSHOT'
+    //implementation 'com.github.HaarigerHarald:android-youtubeExtractor:master-SNAPSHOT'
 
     implementation 'com.android.billingclient:billing:4.1.0'
     //implementation "com.android.billingclient:billing:5.0.0"
 
     implementation 'com.paytm.appinvokesdk:appinvokesdk:1.6.11'
+
+    implementation "androidx.work:work-runtime:2.8.1"
+
+    implementation(platform('org.jetbrains.kotlin:kotlin-bom:1.9.0'))
+
+    //implementation group: 'com.instamojo', name: 'instamojo-java', version: '2.0.2'
 }

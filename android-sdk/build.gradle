@@ -1,0 +1,89 @@
+apply plugin: 'com.android.library'
+
+ext {
+    sdkVersion = '3.7.1'
+    sdkVersionCode = 24
+    libraryDescription = 'Instamojo Payments Android SDK'
+    siteUrl = 'https://github.com/Instamojo/instamojo-android-sdk'
+    gitUrl = 'https://github.com/Instamojo/instamojo-android-sdk.git'
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        url "https://s3-ap-southeast-1.amazonaws.com/godel-release/godel/"
+    }
+}
+
+
+android {
+    compileSdkVersion 33
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 33
+        versionCode sdkVersionCode
+        versionName sdkVersion
+        vectorDrawables.useSupportLibrary = true
+        consumerProguardFiles 'proguard-rules.pro'
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles 'proguard-rules.pro'
+            buildConfigField("int", "VERSION_CODE", "${defaultConfig.versionCode}")
+            buildConfigField("String","VERSION_NAME","\"${defaultConfig.versionName}\"")
+        }
+        debug {
+            debuggable true
+            testCoverageEnabled true
+            buildConfigField("int", "VERSION_CODE", "${defaultConfig.versionCode}")
+            buildConfigField("String","VERSION_NAME","\"${defaultConfig.versionName}\"")
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude '.readme'
+    }
+    lintOptions {
+        abortOnError true
+        ignoreWarnings false
+        textReport true
+        textOutput 'stdout'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    productFlavors {
+    }
+    testOptions {
+        execution 'ANDROIDX_TEST_ORCHESTRATOR'
+        animationsDisabled true
+
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
+
+
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api 'androidx.appcompat:appcompat:1.6.1'
+    api 'com.rengwuxian.materialedittext:library:2.1.4'
+    api 'in.juspay:godel:0.6.25.4.1423'
+    api 'com.squareup.retrofit2:retrofit:2.9.0'
+    api 'com.squareup.retrofit2:converter-gson:2.9.0'
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'pl.pragmatists:JUnitParams:1.1.1'
+}
+
+/*
+apply from: '../install.gradle'
+apply from: '../nexus-publish.gradle'
+apply from: '../coverage.gradle'
+*/
+
