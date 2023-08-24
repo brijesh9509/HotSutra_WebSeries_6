@@ -1,0 +1,1 @@
+F:\AndroidStudioProjects\QfonApp\HotSutra_WebSeries_6\app\src\main\jni\CMakeLists.txt

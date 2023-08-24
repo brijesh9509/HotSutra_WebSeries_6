@@ -19,12 +19,18 @@ public class RetrofitClient {
     public static Retrofit getRetrofitInstance() {
 
         HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
-        interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
+        interceptor.setLevel(HttpLoggingInterceptor.Level.NONE);
         OkHttpClient client = new OkHttpClient.Builder()
                 .addInterceptor(interceptor)
                 .addInterceptor(new BasicAuthInterceptor(API_USER_NAME, API_PASSWORD)).build();
 
         if (retrofit == null) {
+             /*retrofit = new Retrofit.Builder()
+                    .baseUrl(AESHelper.decrypt(MyAppClass.HASH_KEY,AppConfig.API_SERVER_URL) + API_URL_EXTENSION)
+                    .addConverterFactory(GsonConverterFactory.create())
+                    .client(client)
+                    .build();*/
+
             retrofit = new Retrofit.Builder()
                     .baseUrl(AppConfig.API_SERVER_URL + API_URL_EXTENSION)
                     .addConverterFactory(GsonConverterFactory.create())

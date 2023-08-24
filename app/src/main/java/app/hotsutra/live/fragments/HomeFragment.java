@@ -498,7 +498,7 @@ public class HomeFragment extends Fragment {
         Retrofit retrofit = RetrofitClient.getRetrofitInstance();
         HomeContentApi api = retrofit.create(HomeContentApi.class);
         Call<HomeContent> call = api.getHomeContent(MyAppClass.API_KEY, BuildConfig.VERSION_CODE, userId,
-                getDeviceId(activity));
+                getDeviceId(activity), BuildConfig.APPLICATION_ID,MyAppClass.HASH_KEY);
         call.enqueue(new Callback<HomeContent>() {
             @Override
             public void onResponse(@NonNull Call<HomeContent> call, @NonNull retrofit2.Response<HomeContent> response) {

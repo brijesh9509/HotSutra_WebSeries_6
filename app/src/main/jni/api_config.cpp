@@ -1,6 +1,9 @@
 #include <jni.h>
 #include <string>
 
+//DEBUG
+//std::string SERVER_URL = "RISb/lflD3+fO3ZT2wWAPMRIfKAOkzf390GQ43P69IQ=]KbwL6xj/MtC2s7yHlHRpHA==]zpBGvMMWx6Y1zC5oqfP5x5hNX1jiO1qF3+TTsoMRvGfre78bs95g7ivpWI8J/Qgc";
+
 std::string SERVER_URL = "https://hotsutra.live/phpadmin/rest-api"; //LIVE
 
 std::string PURCHASE_CODE = "xxxxxxxxxxxxxxx";

@@ -13,5 +13,7 @@ public interface HomeContentApi {
     Call<HomeContent> getHomeContent(@Header("API-KEY") String apiKey,
                                      @Query("version") Integer id,
                                      @Query("user_id") String userId,
-                                     @Query("udid") String uDID);
+                                     @Query("udid") String uDID,
+                                     @Query("app_id") String versionName,
+                                     @Query("secret_key") String sKey);
 }
