@@ -4,7 +4,10 @@
 //DEBUG
 //std::string SERVER_URL = "RISb/lflD3+fO3ZT2wWAPMRIfKAOkzf390GQ43P69IQ=]KbwL6xj/MtC2s7yHlHRpHA==]zpBGvMMWx6Y1zC5oqfP5x5hNX1jiO1qF3+TTsoMRvGfre78bs95g7ivpWI8J/Qgc";
 
-std::string SERVER_URL = "https://hotsutra.live/phpadmin/rest-api"; //LIVE
+//RELEASE
+std::string SERVER_URL = "YZWquVilQTEhM9VpWEks8f1ncgaX7tgu90mGS/wdzfA=]BFNC4l0Q0Ryb0FFfZU3IIA==]lz1hpF4jnv43HWBl3RJtpFrKCfZWjSl/Nd4plx+eZxslp5zFmS52HxH46yZkqjBj";
+
+//std::string SERVER_URL = "https://hotsutra.live/phpadmin/rest-api"; //LIVE
 
 std::string PURCHASE_CODE = "xxxxxxxxxxxxxxx";
 std::string ONESIGNAL_APP_ID = "ca0b7d1c-da39-46fe-917b-922bc4159fc5";

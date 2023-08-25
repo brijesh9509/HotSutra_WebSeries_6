@@ -89,7 +89,7 @@ public class SplashScreenActivity extends AppCompatActivity {
         helperUtils = new HelperUtils(SplashScreenActivity.this);
         vpnStatus = new HelperUtils(SplashScreenActivity.this).isVpnConnectionAvailable();
 
-        Log.e("AAAAAAAAAAAAAAAAAA====", AESHelper.encrypt(MyAppClass.HASH_KEY,AppConfig.API_SERVER_URL));
+        //Log.e("AAAAAAAAAAAAAAAAAA====", AESHelper.encrypt(MyAppClass.HASH_KEY,AppConfig.API_SERVER_URL));
 
         //print keyHash for facebook login
         // createKeyHash(SplashScreenActivity.this, BuildConfig.APPLICATION_ID);
