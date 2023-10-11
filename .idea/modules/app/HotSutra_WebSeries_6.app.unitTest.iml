@@ -167,7 +167,7 @@
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.palette:palette:1.0.0-rc01@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-cast-framework:11.4.2@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-cast:11.4.2@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.android.billingclient:billing:4.1.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.android.billingclient:billing:6.0.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.paytm.appinvokesdk:appinvokesdk:1.6.11@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.paytm.easypay:easypay-appinvoke:1.7.4@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.airbnb.android:lottie:3.4.0@aar" level="project" />

@@ -28,27 +28,12 @@ import com.android.billingclient.api.BillingClient;
 import com.android.billingclient.api.BillingClientStateListener;
 import com.android.billingclient.api.BillingFlowParams;
 import com.android.billingclient.api.BillingResult;
+import com.android.billingclient.api.ProductDetails;
+import com.android.billingclient.api.ProductDetailsResponseListener;
 import com.android.billingclient.api.Purchase;
-import com.android.billingclient.api.SkuDetails;
-import com.android.billingclient.api.SkuDetailsParams;
+import com.android.billingclient.api.QueryProductDetailsParams;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.instamojo.android.Instamojo;
-import app.hotsutra.live.database.DatabaseHelper;
-import app.hotsutra.live.network.RetrofitClient;
-import app.hotsutra.live.network.apis.PaymentApi;
-import app.hotsutra.live.network.apis.SubscriptionApi;
-import app.hotsutra.live.network.model.ActiveStatus;
-import app.hotsutra.live.network.model.InstaMojo2Response;
-import app.hotsutra.live.network.model.PaytmResponse;
-import app.hotsutra.live.network.model.PhonepeResponse;
-import app.hotsutra.live.network.model.config.PaymentConfig;
-import app.hotsutra.live.network.model.Package;
-import app.hotsutra.live.utils.ApiResources;
-import app.hotsutra.live.utils.Constants;
-import app.hotsutra.live.utils.MyAppClass;
-import app.hotsutra.live.utils.PreferenceUtils;
-import app.hotsutra.live.utils.RtlUtils;
-import app.hotsutra.live.utils.ToastMsg;
 import com.paytm.pgsdk.PaytmOrder;
 import com.paytm.pgsdk.PaytmPaymentTransactionCallback;
 import com.paytm.pgsdk.TransactionManager;
@@ -60,6 +45,22 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
+import app.hotsutra.live.database.DatabaseHelper;
+import app.hotsutra.live.network.RetrofitClient;
+import app.hotsutra.live.network.apis.PaymentApi;
+import app.hotsutra.live.network.apis.SubscriptionApi;
+import app.hotsutra.live.network.model.ActiveStatus;
+import app.hotsutra.live.network.model.InstaMojo2Response;
+import app.hotsutra.live.network.model.Package;
+import app.hotsutra.live.network.model.PaytmResponse;
+import app.hotsutra.live.network.model.PhonepeResponse;
+import app.hotsutra.live.network.model.config.PaymentConfig;
+import app.hotsutra.live.utils.ApiResources;
+import app.hotsutra.live.utils.Constants;
+import app.hotsutra.live.utils.MyAppClass;
+import app.hotsutra.live.utils.PreferenceUtils;
+import app.hotsutra.live.utils.RtlUtils;
+import app.hotsutra.live.utils.ToastMsg;
 import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -130,13 +131,12 @@ public class PaymentOptionsActivity extends AppCompatActivity
                 .enablePendingPurchases()
                 .setListener(
                         (billingResult, list) -> {
-                            if (billingResult.getResponseCode() == BillingClient.BillingResponseCode.OK && list != null) {
 
+                            if (billingResult.getResponseCode() == BillingClient.BillingResponseCode.OK && list != null) {
                                 for (Purchase purchase : list) {
                                     verifySubPurchase(purchase);
                                 }
                             }
-
                         }
                 ).build();
 
@@ -601,7 +601,7 @@ public class PaymentOptionsActivity extends AppCompatActivity
         });
 
         googlePlay_btn.setOnClickListener(view1 -> {
-            establishConnection(packageItem.getProductId());
+            establishConnection();
         });
 
         paytm_btn.setOnClickListener(view1 -> {
@@ -653,15 +653,15 @@ public class PaymentOptionsActivity extends AppCompatActivity
 
     }
 
-    void establishConnection(String productId) {
+    void establishConnection() {
 
         billingClient.startConnection(new BillingClientStateListener() {
             @Override
             public void onBillingSetupFinished(@NonNull BillingResult billingResult) {
                 if (billingResult.getResponseCode() == BillingClient.BillingResponseCode.OK) {
                     // The BillingClient is ready. You can query purchases here.
-                    showProducts(productId);
-
+                    //showProducts(productId);
+                    GetSubPurchasesNEWINAPP();
                 }
             }
 
@@ -669,72 +669,15 @@ public class PaymentOptionsActivity extends AppCompatActivity
             public void onBillingServiceDisconnected() {
                 // Try to restart the connection on the next request to
                 // Google Play by calling the startConnection() method.
-                establishConnection(productId);
+                establishConnection();
             }
         });
-    }
-
-    void showProducts(String productId) {
-
-        List<String> skuList = new ArrayList<>();
-        skuList.add(productId);
-        SkuDetailsParams.Builder params = SkuDetailsParams.newBuilder();
-        params.setSkusList(skuList).setType(BillingClient.SkuType.SUBS);
-        billingClient.querySkuDetailsAsync(params.build(),
-                (billingResult, skuDetailsList) -> {
-                    if (billingResult.getResponseCode() == BillingClient.BillingResponseCode.OK && skuDetailsList != null) {
-                        // Process the result.
-                        Log.e("skuDetailsList", skuDetailsList.toString());
-                        for (SkuDetails skuDetails : skuDetailsList) {
-                            if (skuDetails.getSku().equals(productId)) {
-                                //Now update the UI
-                                launchPurchaseFlow(skuDetails);
-                            }
-                        }
-                    }
-                });
-    }
-
-    void launchPurchaseFlow(SkuDetails skuDetails) {
-        BillingFlowParams billingFlowParams = BillingFlowParams.newBuilder()
-                .setSkuDetails(skuDetails)
-                .build();
-        billingClient.launchBillingFlow(PaymentOptionsActivity.this, billingFlowParams);
-    }
-
-    void verifySubPurchase(Purchase purchases) {
-        Log.e("purchases", purchases.toString());
-
-        AcknowledgePurchaseParams acknowledgePurchaseParams = AcknowledgePurchaseParams
-                .newBuilder()
-                .setPurchaseToken(purchases.getPurchaseToken())
-                .build();
-
-        billingClient.acknowledgePurchase(acknowledgePurchaseParams, billingResult -> {
-            if (billingResult.getResponseCode() == BillingClient.BillingResponseCode.OK) {
-                //Toast.makeText(SubscriptionActivity.this, "Item Consumed", Toast.LENGTH_SHORT).show();
-                // Handle the success of the consume operation.
-                //user prefs to set premium
-                //Toast.makeText(PurchasePlanActivity.this, "You are a premium user now", Toast.LENGTH_SHORT).show();
-                //updateUser();
-
-                //Setting premium to 1
-                // 1 - premium
-                //0 - no premium
-            }
-        });
-
-       /* Log.e(TAG, "Purchase Token: " + purchases.getPurchaseToken());
-        Log.e(TAG, "Purchase Time: " + purchases.getPurchaseTime());
-        Log.e(TAG, "Purchase OrderID: " + purchases.getOrderId());*/
-
-        sendDataToServer(purchases.getOrderId(), "inApp");
     }
 
     protected void onResume() {
         super.onResume();
 
-        billingClient.queryPurchasesAsync(
+        /*billingClient.queryPurchasesAsync(
                 BillingClient.SkuType.SUBS,
                 (billingResult, list) -> {
                     if (billingResult.getResponseCode() == BillingClient.BillingResponseCode.OK) {
@@ -747,7 +690,7 @@ public class PaymentOptionsActivity extends AppCompatActivity
                         }
                     }
                 }
-        );
+        );*/
 
     }
 
@@ -967,5 +910,75 @@ public class PaymentOptionsActivity extends AppCompatActivity
         }
 
         return false;
+    }
+
+    void GetSubPurchasesNEWINAPP() {
+        ArrayList<QueryProductDetailsParams.Product> productList = new ArrayList<>();
+
+        productList.add(
+                QueryProductDetailsParams.Product.newBuilder()
+                        .setProductId(packageItem.getProductId())
+                        .setProductType(BillingClient.ProductType.SUBS)
+                        .build()
+        );
+
+        QueryProductDetailsParams params = QueryProductDetailsParams.newBuilder()
+                .setProductList(productList)
+                .build();
+
+
+        billingClient.queryProductDetailsAsync(params, new ProductDetailsResponseListener() {
+            @Override
+            public void onProductDetailsResponse(@NonNull BillingResult billingResult, @NonNull List<ProductDetails> list) {
+                if (list.size() > 0) {
+                    LaunchSubPurchase(list.get(0));
+                } else {
+                    Toast.makeText(PaymentOptionsActivity.this, "No subscription available", Toast.LENGTH_SHORT).show();
+                }
+
+            }
+        });
+    }
+
+    void LaunchSubPurchase(ProductDetails productDetails) {
+        assert productDetails.getSubscriptionOfferDetails() != null;
+        ArrayList<BillingFlowParams.ProductDetailsParams> productList = new ArrayList<>();
+
+        productList.add(
+                BillingFlowParams.ProductDetailsParams.newBuilder()
+                        .setProductDetails(productDetails)
+                        .setOfferToken(productDetails.getSubscriptionOfferDetails().get(0).getOfferToken())
+                        .build()
+        );
+
+        BillingFlowParams billingFlowParams = BillingFlowParams.newBuilder()
+                .setProductDetailsParamsList(productList)
+                .build();
+
+        billingClient.launchBillingFlow(this, billingFlowParams);
+    }
+
+    void verifySubPurchase(Purchase purchases) {
+        if (!purchases.isAcknowledged()) {
+            billingClient.acknowledgePurchase(AcknowledgePurchaseParams
+                    .newBuilder()
+                    .setPurchaseToken(purchases.getPurchaseToken())
+                    .build(), billingResult -> {
+
+                if (billingResult.getResponseCode() == BillingClient.BillingResponseCode.OK) {
+
+                   /* String pId="";
+                    for (String pur : purchases.getProducts()) {
+                        if (pur.equalsIgnoreCase(packageItem.getProductId())) {
+                            pId = purchases.getOrderId();
+                        }
+                    }*/
+
+
+                }
+            });
+
+            sendDataToServer(purchases.getOrderId(), "inApp");
+        }
     }
 }
