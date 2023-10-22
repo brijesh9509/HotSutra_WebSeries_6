@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:305476373270:android:3275a19b52dfce4faa5e37",
         "android_client_info": {
-          "package_name": "app.hotsutra.live"
+          "package_name": "app.hotsutra.vidz"
         }
       },
       "oauth_client": [
@@ -17,7 +17,7 @@
           "client_id": "305476373270-kssl3pk7rn3btk74a2732mlkjt7rvqji.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "app.hotsutra.live",
+            "package_name": "app.hotsutra.vidzoi8",
             "certificate_hash": "6c921bd0eec343466df1d0a95958122270378e5f"
           }
         },
