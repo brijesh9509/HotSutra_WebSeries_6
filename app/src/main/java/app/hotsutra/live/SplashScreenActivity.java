@@ -50,7 +50,7 @@ import retrofit2.Retrofit;
 public class SplashScreenActivity extends AppCompatActivity {
     private static final String TAG = "SplashScreen";
     private final int PERMISSION_REQUEST_CODE = 100;
-    private final int SPLASH_TIME = 1500;
+    private final int SPLASH_TIME = 500;
     private Thread timer;
     private DatabaseHelper db;
     private final boolean isUpdate = false;
@@ -89,7 +89,7 @@ public class SplashScreenActivity extends AppCompatActivity {
         helperUtils = new HelperUtils(SplashScreenActivity.this);
         vpnStatus = new HelperUtils(SplashScreenActivity.this).isVpnConnectionAvailable();
 
-        //Log.e("AAAAAAAAAAAAAAAAAA====", AESHelper.encrypt(MyAppClass.HASH_KEY,AppConfig.API_SERVER_URL));
+        Log.e("AAAAAAAAAAAAAAAAAA====", AESHelper.encrypt(MyAppClass.HASH_KEY,AppConfig.API_SERVER_URL));
 
         //print keyHash for facebook login
         // createKeyHash(SplashScreenActivity.this, BuildConfig.APPLICATION_ID);
@@ -134,34 +134,18 @@ public class SplashScreenActivity extends AppCompatActivity {
             }
         };
 
-        VideoView videoView = findViewById(R.id.vdVw);
-        //Set MediaController  to enable play, pause, forward, etc options.
-        MediaController mediaController = new MediaController(this);
-        mediaController.setAnchorView(videoView);
-        mediaController.hide();
-        mediaController.setVisibility(View.GONE);
-        //Location of Media File
-        Uri uri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.video_2);
-        //Starting VideView By Setting MediaController and URI
-        videoView.setMediaController(mediaController);
-        videoView.setVideoURI(uri);
-        videoView.requestFocus();
-        videoView.start();
 
-        videoView.setOnCompletionListener(mp -> {
-
-            if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-                getConfigData();
-            } else {
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                    if (checkStoragePermission()) {
-                        getConfigData();
-                    }
-                } else {
+        if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            getConfigData();
+        } else {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                if (checkStoragePermission()) {
                     getConfigData();
                 }
+            } else {
+                getConfigData();
             }
-        });
+        }
 
         // Log.e("OneSignal User ID", OneSignal.getDeviceState().getUserId().toString());
     }
