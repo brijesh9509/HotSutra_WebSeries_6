@@ -2,15 +2,15 @@
 #include <string>
 
 //DEBUG
-//std::string SERVER_URL = "RISb/lflD3+fO3ZT2wWAPMRIfKAOkzf390GQ43P69IQ=]KbwL6xj/MtC2s7yHlHRpHA==]zpBGvMMWx6Y1zC5oqfP5x5hNX1jiO1qF3+TTsoMRvGfre78bs95g7ivpWI8J/Qgc";
+//std::string SERVER_URL = "IgwzyBph8chwaxEzTEtDDGMVlNaXJngfhipW0xUGMB8=]ArLXXwoM5mFMrQt3U284SA==]vGgvrsr78mVR0mspmHAYEsbKj1/sHBblSscRL3Biu/cwlp9iadHEDx7LCHoggdMV";
 
-//RELEASE
-//std::string SERVER_URL = "YZWquVilQTEhM9VpWEks8f1ncgaX7tgu90mGS/wdzfA=]BFNC4l0Q0Ryb0FFfZU3IIA==]lz1hpF4jnv43HWBl3RJtpFrKCfZWjSl/Nd4plx+eZxslp5zFmS52HxH46yZkqjBj";
+//RELEASE LIVE
+std::string SERVER_URL = "aoZuE7yabDuC6DneRUtNuBoRKKroD8vGQAIciaPFJBQ=]dmr3CWv3fosFS4er4CPH6A==]b5n+EKbDrGBKdhLyLX3xOkl6AJio9o5VR2Cv9vZUGNNERyzpsO6pEjB3ev54f5sE";
 
-std::string SERVER_URL = "https://hotsutra.live/phpadmin/rest-api"; //LIVE
+//std::string SERVER_URL = "https://hotsutra.live/phpadmin/rest-api"; //LIVE
 
 std::string PURCHASE_CODE = "xxxxxxxxxxxxxxx";
-std::string ONESIGNAL_APP_ID = "ca0b7d1c-da39-46fe-917b-922bc4159fc5";
+std::string ONESIGNAL_APP_ID = "673fa8de-8fd1-431b-9aac-bfc4d8fa1744";
 
 
 //WARNING: ==>> Don't change anything below.

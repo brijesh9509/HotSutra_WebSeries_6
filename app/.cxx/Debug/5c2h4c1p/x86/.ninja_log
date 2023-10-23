@@ -1,2 +1,4 @@
 # ninja log v5
 1	40	0	clean	bf7f04d26f8701e0
+34	968	719757682	CMakeFiles/api_config.dir/api_config.cpp.o	cfcebd91492a7fc0
+970	2991	719757684	F:/AndroidStudioProjects/QfonApp/HotSutra_WebSeries_6/app/build/intermediates/cxx/Debug/5c2h4c1p/obj/x86/libapi_config.so	48f3d89dc816ff0b

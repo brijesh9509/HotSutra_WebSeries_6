@@ -3,7 +3,9 @@ package app.hotsutra.live;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
@@ -21,6 +23,7 @@ import androidx.activity.result.ActivityResultCallback;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.Toolbar;
@@ -34,6 +37,7 @@ import app.hotsutra.live.network.apis.SubscriptionApi;
 import app.hotsutra.live.network.model.ActiveStatus;
 import app.hotsutra.live.network.model.User;
 import app.hotsutra.live.utils.ApiResources;
+
 import com.firebase.ui.auth.AuthUI;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
@@ -44,6 +48,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+
 import app.hotsutra.live.network.RetrofitClient;
 import app.hotsutra.live.utils.Constants;
 import app.hotsutra.live.utils.MyAppClass;
@@ -69,6 +74,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private GoogleSignInClient mGoogleSignInClient;
 
+    @RequiresApi(api = Build.VERSION_CODES.TIRAMISU)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         RtlUtils.setScreenDirection(this);
@@ -178,6 +184,17 @@ public class LoginActivity extends AppCompatActivity {
         googleAuthButton.setOnClickListener(v -> signIn());
 
         supportLinkClick();
+
+        if (Build.VERSION.SDK_INT >= 32) {
+            if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_NOTIFICATION_POLICY) == PackageManager.PERMISSION_GRANTED)
+                return;
+            ActivityResultLauncher<String> launcher = registerForActivityResult(
+                    new ActivityResultContracts.RequestPermission(), isGranted -> {
+
+                    }
+            );
+            launcher.launch(android.Manifest.permission.POST_NOTIFICATIONS);
+        }
     }
 
     private void signIn() {
@@ -213,7 +230,7 @@ public class LoginActivity extends AppCompatActivity {
                 email = account.getEmail();
             }
             if (!email.isEmpty()) {
-                sendGoogleDataToServer(account.getId(),email, name, account.getPhotoUrl());
+                sendGoogleDataToServer(account.getId(), email, name, account.getPhotoUrl());
             }
 
             mGoogleSignInClient.signOut()
@@ -462,38 +479,6 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
-    private void googleSignIn() {
-        progressBar.setVisibility(View.VISIBLE);
-        FirebaseAuth auth = FirebaseAuth.getInstance();
-        if (auth.getCurrentUser() != null) {
-            //sendGoogleDataToServer();
-
-        } else {
-            progressBar.setVisibility(View.GONE);
-            // Choose authentication providers
-            GoogleSignInOptions googleOptions = new GoogleSignInOptions.Builder(
-                    GoogleSignInOptions.DEFAULT_SIGN_IN)
-                    .requestIdToken(getString(R.string.default_web_client_id))
-                    .requestEmail()
-                    .requestProfile()
-                    .build();
-
-
-            List<AuthUI.IdpConfig> providers = Collections.singletonList(
-                    new AuthUI.IdpConfig.GoogleBuilder().setSignInOptions(googleOptions).build());
-
-           /* List<AuthUI.IdpConfig> providers = Arrays.asList(
-                    new AuthUI.IdpConfig.GoogleBuilder().build());*/
-
-            // Create and launch sign-in intent
-            googleAuthResultListener.launch(AuthUI.getInstance()
-                    .createSignInIntentBuilder()
-                    .setAvailableProviders(providers)
-                    .setIsSmartLockEnabled(false)
-                    .build());
-        }
-    }
-
     private void sendDataToServer() {
         progressBar.setVisibility(View.VISIBLE);
         String phoneNo = FirebaseAuth.getInstance().getCurrentUser().getPhoneNumber();
@@ -545,7 +530,7 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
-    private void sendGoogleDataToServer(String accountID,String email, String username, Uri image) {
+    private void sendGoogleDataToServer(String accountID, String email, String username, Uri image) {
         progressBar.setVisibility(View.VISIBLE);
         /*FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         String username = user.getDisplayName();
