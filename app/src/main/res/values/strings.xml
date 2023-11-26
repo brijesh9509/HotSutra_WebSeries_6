@@ -7,11 +7,11 @@
     //startapp
     <!--<string name="startapp_app_id" translatable="false">209411604</string>-->
     <string name="startapp_app_id" translatable="false">xxxxxxxxx</string>
-    <string name="app_name">Hot Sutra</string>
+    <string name="app_name">SutraX</string>
     <!--app_title for main navigation & home title-->
-    <string name="app_title">Hot Sutra : Webseries &amp; Movies</string>
-    <string name="contact_email">admin@hotsutra.live</string>
-    <string name="copyright_text">Copyright @ Hot Sutra, All right reserved</string>
+    <string name="app_title">SutraX : Webseries &amp; Movies</string>
+    <string name="contact_email">support@sutrax.app</string>
+    <string name="copyright_text">© [2023] SutraX, All right reserved</string>
 
     <!-- App -->
     <string name="featured_tv_channels">Featured Tv Channel</string>
@@ -201,7 +201,7 @@
     <string name="to">To</string>
     <string name="action">Action</string>
     <string name="status">Status</string>
-    <string name="by_tapping_the_button_you_agree_to_oxxo_term_amp_condition_and_privacy_policy"><![CDATA[By tapping the button, you agree to Hot Sutra Term & Condition and Privacy Policy.]]></string>
+    <string name="by_tapping_the_button_you_agree_to_oxxo_term_amp_condition_and_privacy_policy"><![CDATA[By tapping the button, you agree to SutraX Term & Condition and Privacy Policy.]]></string>
 
 
     <string name="paid_content">You are trying to watch a paid content. Please subscribe a plan first.</string>
@@ -222,7 +222,7 @@
     <string name="download">Download</string>
     <string name="select_server">Select Server</string>
     <string name="home">Home</string>
-    <string name="buy_any_subscription_below_and_enjoy_oxoo_prime">Buy any subscription below and enjoy Hot Sutra prime features.</string>
+    <string name="buy_any_subscription_below_and_enjoy_oxoo_prime">Buy any subscription below and enjoy SutraX prime features.</string>
     <string name="all_tv_channels">TV Channels</string>
     <string name="all_kids_videos">All Kids Videos</string>
     <string name="all_tv_series">All TV Series</string>
@@ -353,4 +353,6 @@
     <string name="instamojo_upi">Instamojo UPI</string>
     <string name="lbl_phonepe">PhonePe UPI</string>
     <string name="lbl_toll_free">Need Help? Click Here!</string>
+    <string name="lbl_phonepe_all_in_one">PhonePe All In One</string>
+    <string name="lbl_sab_paisa">Sab Paisa</string>
 </resources>

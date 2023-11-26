@@ -410,6 +410,55 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/phonePeAllInOneBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_10dp"
+                    android:layout_marginVertical="@dimen/dimen_4dp"
+                    app:cardCornerRadius="5sp"
+                    app:contentPaddingBottom="@dimen/dimen_8dp"
+                    app:contentPaddingLeft="@dimen/dimen_16dp"
+                    app:contentPaddingRight="@dimen/dimen_16dp"
+                    app:contentPaddingTop="@dimen/dimen_8dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="@dimen/dimen_60dp"
+                                android:layout_height="@dimen/dimen_40dp"
+                                android:background="@color/white"
+                                android:padding="@dimen/dimen_8dp"
+                                app:srcCompat="@drawable/phonepe_icon"
+                                tools:ignore="ImageContrastCheck" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/dimen_16dp"
+                                android:gravity="center"
+                                android:text="@string/lbl_phonepe_all_in_one"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="@dimen/dimen_20dp"
+                            android:layout_height="@dimen/dimen_40dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/baseline_arrow_forward_ios_24" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
                     android:id="@+id/phonePeBtn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -557,7 +606,6 @@
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
 
-
                 <androidx.cardview.widget.CardView
                     android:id="@+id/paytm_btn"
                     android:layout_width="match_parent"
@@ -577,8 +625,8 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_toStartOf="@+id/imgPaytm"
                             android:gravity="center_vertical"
+                            android:layout_toStartOf="@+id/imgPaytm"
                             android:orientation="horizontal">
 
                             <androidx.appcompat.widget.AppCompatImageView
@@ -593,7 +641,8 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="@dimen/dimen_16dp"
-                                android:orientation="vertical">
+                                android:orientation="vertical"
+                                tools:ignore="TooManyViews">
 
                                 <TextView
                                     android:layout_width="wrap_content"
@@ -623,7 +672,6 @@
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
 
-
                 <androidx.cardview.widget.CardView
                     android:id="@+id/bhimBtn"
                     android:layout_width="match_parent"
@@ -645,8 +693,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:gravity="center_vertical"
-                            android:orientation="horizontal"
-                            tools:ignore="TooManyViews">
+                            android:orientation="horizontal">
 
                             <androidx.appcompat.widget.AppCompatImageView
                                 android:layout_width="@dimen/dimen_60dp"
@@ -712,6 +759,56 @@
                                 android:layout_marginStart="@dimen/dimen_16dp"
                                 android:gravity="center"
                                 android:text="@string/lbl_amazon_upi"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="@dimen/dimen_20dp"
+                            android:layout_height="@dimen/dimen_40dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/baseline_arrow_forward_ios_24" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/sabPaisaBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_10dp"
+                    android:layout_marginVertical="@dimen/dimen_4dp"
+                    app:cardCornerRadius="5sp"
+                    app:contentPaddingBottom="@dimen/dimen_8dp"
+                    app:contentPaddingLeft="@dimen/dimen_16dp"
+                    app:contentPaddingRight="@dimen/dimen_16dp"
+                    app:contentPaddingTop="@dimen/dimen_8dp"
+                    tools:ignore="TooManyViews">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="@dimen/dimen_60dp"
+                                android:layout_height="@dimen/dimen_40dp"
+                                android:background="@color/white"
+                                android:padding="@dimen/dimen_4dp"
+                                app:srcCompat="@drawable/sab_paisa"
+                                tools:ignore="ImageContrastCheck" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/dimen_16dp"
+                                android:gravity="center"
+                                android:text="@string/lbl_sab_paisa"
                                 android:textSize="16sp" />
                         </LinearLayout>
 

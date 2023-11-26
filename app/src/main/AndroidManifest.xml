@@ -33,6 +33,9 @@
         tools:targetApi="tiramisu">
 
         <activity
+            android:name=".WebViewPhonePeActivity"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".PaymentOptionsActivity"
             android:screenOrientation="portrait" />
         <activity

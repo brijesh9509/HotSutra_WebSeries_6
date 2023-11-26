@@ -27,17 +27,17 @@ public class RetrofitClient {
                 .addInterceptor(new BasicAuthInterceptor(API_USER_NAME, API_PASSWORD)).build();
 
         if (retrofit == null) {
-             retrofit = new Retrofit.Builder()
+             /*retrofit = new Retrofit.Builder()
                     .baseUrl(AESHelper.decrypt(MyAppClass.HASH_KEY,AppConfig.API_SERVER_URL) + API_URL_EXTENSION)
                     .addConverterFactory(GsonConverterFactory.create())
                     .client(client)
-                    .build();
+                    .build();*/
 
-            /*retrofit = new Retrofit.Builder()
+            retrofit = new Retrofit.Builder()
                     .baseUrl(AppConfig.API_SERVER_URL + API_URL_EXTENSION)
                     .addConverterFactory(GsonConverterFactory.create())
                     .client(client)
-                    .build();*/
+                    .build();
         }
         return retrofit;
     }

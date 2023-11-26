@@ -17,7 +17,7 @@ public class AppConfig {
     public static final String API_SERVER_URL = getApiServerUrl();
     //public static final String API_KEY = getApiKey();
     //copy your terms url from php admin dashboard & paste below
-    public static final String TERMS_URL = "https://hotsutra.live/index.php/privacy-policy/";
+    public static final String TERMS_URL = "https://sutrax.app/privacy-policy/";
     public static final String TOLL_WEB_URL = "http://tiny.cc/helpcall";
     public static final String ONE_SIGNAL_APP_ID = getOneSignalAppID();
 

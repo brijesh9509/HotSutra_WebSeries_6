@@ -25,4 +25,15 @@ public class PhonepeInstrumentResponse {
 	public String getType(){
 		return type;
 	}
+
+	@SerializedName("redirectInfo")
+	private RedirectInfoResponse redirectInfoResponse;
+
+	public void setRedirectInfoResponse(RedirectInfoResponse redirectInfoResponse){
+		this.redirectInfoResponse = redirectInfoResponse;
+	}
+
+	public RedirectInfoResponse getRedirectInfoResponse(){
+		return redirectInfoResponse;
+	}
 }
